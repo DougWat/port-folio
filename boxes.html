@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Basic HTML File</title>
+    <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700" rel="stylesheet">
+
+</head>
+
+<body>
+    <div id="IncludeHeaderBoxes" style="top:0; position:absolute; width:100%; z-index:10"></div>
+    <div>
+        <img src="resources/boxes/HeroImageCropped.png" style="max-width:100%; height:auto">
+    </div>
+    <div class="color-indecision-1 padding-3em-vert">
+        <div class="container">
+            <div class="row color d-flex">
+                <div class="col-sm-6 align-self-center content-container text-center">
+                    <h2 class="color-darkgray-text content-header">Hoppin' Boxes</h2>
+                    <div class="work-types">
+                        <div class="work-type">Unreal Engine 4</div>
+                        <div class="work-type-separator">•</div>
+                        <div class="work-type">C++</div>
+                    </div>
+                    <p class="color-darkgray-text contenttext">
+                        I've always found it fascinating how films like WALL·E and games like Portal 2 bring so much human personality to distinctly non-human characters.
+                    </p>
+                    <p class="color-darkgray-text contenttext">I wanted to try to replicate that effect in Unreal Engine 4 as an exercise, but it ended up becoming a much more involved project that I hope to expand on.</p>
+
+                    <p class="color-darkgray-text contenttext"> Take a look at the most recent render below.</p>
+                </div>
+                <div class="col-sm-6 align-self-center ">
+                    <img src="resources/boxes/boxes_01.png" class="contentimg">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div style="margin: 2em 10%">
+        <div class="videoWrapper">
+            <iframe src="https://www.youtube.com/embed/P0LlXPrHDDY?ecver=1" frameborder="0" allowfullscreen></iframe>
+        </div>
+    </div>
+
+    <div class="color-indecision-2 padding-3em-vert">
+        <div>
+            <h2 class="color-darkgray-text content-header">A Study of Personality</h2>
+            <h3 class="color-lightgray-text content-sub-header">(And the Importance of Eyes)</h3>
+            <p class="color-darkgray-text contenttext-full">Much of human communication is non-verbal, and two of the most important players in non-verbal communication are the <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2781887/">brow and the eyes</a>. You can detect entire emotional profiles by simply observing those two regions.</p>
+            <p class="color-darkgray-text contenttext-full">While animating a brow-line would be a bit out of scope for what I was developing, animating dynamic eyes was certainly not.</p>
+        </div>
+    </div>
+    <div class="color-indecision-1 padding-3em-vert">
+
+        <h2 class="color-darkgray-text content-header" style="margin-bottom:1.4em">So I took a look at these guys...</h2>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="videoWrapper" style="margin:0px 0px 1em 0px">
+                        <iframe src="https://www.youtube.com/embed/alIq_wG9FNk" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="videoWrapper">
+                        <iframe src="https://www.youtube.com/embed/JYsfhxnX-Zg" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <p class="color-darkgray-text contenttext-full" style="margin:2.4em auto">Which are fantastic examples of creating expression and personality in non-human characters. WALL·E appears to use head motion and rotating eyes to produce expression, while Portal combines the subtlety of both the head and the eye into a singular unit. Portal also utilizes a dynamic pupil to accent expressions like fear or pain</p>
+    </div>
+    <div class="color-indecision-2 padding-3em-vert">
+        <h2 class="color-darkgray-text content-header" style="margin-bottom:1.4em">The Three Heavy Hitters</h2>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4">
+                    <img src="resources/boxes/box_ic_1.png" width="40%" class="center-image" style="max-width:5rem">
+                    <p class="content-sub-header color-darkgray-text">Gaze</p>
+                    <p class="color-darkgray-text contenttext-full">A shifting gaze help's sell the illussion of a living creature. It can create a sense of direction or curiosity.</p>
+                </div>
+                <div class="col-lg-4">
+                    <img src="resources/boxes/box_ic_3.png" width="40%" class="center-image" style="max-width:5rem">
+                    <p class="content-sub-header color-darkgray-text">Pupils</p>
+                    <p class="color-darkgray-text contenttext-full">Pupils can be used to convay more complex emotions when no other features are present. Fear can be shown through contraction, while comfort can be shown through dialation.</p>
+
+                </div>
+                <div class="col-lg-4">
+                    <img src="resources/boxes/box_ic_2.png" width="40%" class="center-image" style="max-width:5rem">
+                    <p class="content-sub-header color-darkgray-text">Blinking</p>
+                    <p class="color-darkgray-text contenttext-full">Blinking in responce to stimuli can give the character presence. It's a simple responce that can be paired with anything to great effect.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="FooterIncludeCubes"></div>
+    <img src="resources/boxes/thoughtfull.png" width="100%">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script>
+        $(function() {
+            $("#IncludeHeaderBoxes").load("header.html");
+            $("#FooterIncludeCubes").load("footer.html");
+        });
+    </script>
+
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+</body>
+
+</html>
