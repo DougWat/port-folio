@@ -60,6 +60,14 @@
     color: #444444;
 }
 
+.color-white-text{
+    color:#bebebe
+}
+
+.color-dark-white-text{
+    color:#6d6d6d
+}
+
 .color-lightgray-text {
     color: #969696;
 }
@@ -173,7 +181,6 @@
 
 
 /*BOXES*/
-
 .box-video {
     margin: 0px auto 0px auto;
     width: 100%;
@@ -196,6 +203,15 @@
     background-color: rgba(0,0,0,.3)
 }
 
+/*FOREST*/
+
+.color-forest-1{
+    background-color: #090015
+}
+
+.color-forest-2{
+    background-color: #18001a
+}
 /*NAVBAR*/
 .floating-header{
     top:0; position:absolute; width:100%; z-index:10
