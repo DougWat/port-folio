@@ -206,12 +206,13 @@
 /*FOREST*/
 
 .color-forest-1{
-    background-color: #090015
+    background-color: #0a090b
 }
 
 .color-forest-2{
-    background-color: #18001a
+    background-color: #0c0b0d
 }
+
 /*NAVBAR*/
 .floating-header{
     top:0; position:absolute; width:100%; z-index:10
@@ -253,7 +254,15 @@
     text-transform: uppercase;
 }
 
+.footer-social{
+    margin:2em auto;
+}
 
+.footer-social img{
+    height:2em; 
+    width:auto; 
+    margin:1em;
+}
 /*MEDIA QUERIES*/
 @media (max-width: 980px){
     .nav-name{
