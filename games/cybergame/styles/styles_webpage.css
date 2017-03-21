@@ -1,0 +1,94 @@
+*{
+	margin:0px;
+	padding: 0px;
+	color:#CCC;
+	font-family:'Quattrocento Sans', sans-serif;	
+}
+
+
+header{
+	border-bottom:2px solid #505050;
+	border-top:2px solid #E74F4E;
+	background-color:#3C3C3C;
+	
+	text-align:center;
+	font-size:50px;
+	padding-top:1em;
+	padding-bottom:1em;
+	font-family: 'Orbitron', sans-serif;
+	color:#FE21E8;
+}
+
+body{
+	background-image: url(images/dark_matter.png);
+	background-color:#282828;
+}
+
+.preview{
+	text-align:center;
+	padding-top: .5em;
+}
+#mainImage{
+	width: 35%;
+		height: 35%;
+}
+.screenshot{
+	width: 35%;
+	height: 35%;
+}
+a{
+	font-size:18px;	
+}
+#playhere a{
+	font-size:36px;
+}
+a:hover{
+	color:#FFFFFF;
+}
+b{
+	color:#E4E4E4;	
+}
+
+h1{
+	text-align:center;
+	font-size:24px;	
+}
+h2{
+	text-align:center;
+	font-size:18px;	
+}
+h3{
+	font-family:'Marvel', sans-serif;
+	font-size:30px;
+	background-color:#535353;
+	text-align:center;
+	padding:2px;
+}
+.purp{
+	color:#FE21E8;
+}
+.info{
+	margin:auto;
+	padding-top:10px;
+	padding-bottom:10px;
+	width:700px;
+	padding-top:10px;
+}
+.info p{
+	text-indent:50px;
+	margin:10px;
+}
+#middlediv{
+	background-color:#3C3C3C;
+	width:100%;
+}
+#playhere{
+	padding:20px;
+	width:150px;
+	margin:auto;	
+}
+
+footer{
+	padding-top:2em;
+	text-align:center;
+}

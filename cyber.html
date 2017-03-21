@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Basic HTML File</title>
+    <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700" rel="stylesheet">
+</head>
+
+<body onresize="resize()">
+    <div id="IncludeHeaderCyber" class="floating-header"></div>
+    <div>
+        <img src="resources/cyber/cyberhero.png" style="width:100%; height:100%;">
+    </div>
+    <div class="cyber-background-1 padding-3em-vert">
+        <div class="container">
+            <div class="row color">
+                <div class="col-sm-12 content-container text-center">
+                    <h3 class="content-sub-header color-white-text" style="font-size:2em; margin-bottom:.3em">Grab n' Go</h3>
+                    <h2 class="content-header color-white-text" style="margin-top:.5em">Cyber Commando</h2>
+                    <div class="work-types">
+                        <div class="work-type color-dark-white-text">JavaScript</div>
+                        <div class="work-type-separator color-dark-white-text">•</div>
+                        <div class="work-type color-dark-white-text">HTML5</div>
+                    </div>
+                    <p class="color-white-text contenttext">I wanted to experiment with programming a webgame using HTML Canvas. I worked alongside Braxton Frederik, who assisted with some much-needed refactoring, to design a simple tower defence concept.</p>
+
+                    <div id="PlayIt">
+                        <a href="games/cybergame/grabngo.html" class="content-header" style="color:#ff1cef">Play It Here</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="color-indecision-2">
+    </div>
+    <div id="IncludeCyberFooter"></div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script>
+        
+        if (window.innerWidth >= 900 && window.innerHeight >= 650) {
+            var link = document.getElementById("PlayIt");
+            link.innerHTML = '<a href="games/cybergame/grabngo.html" class="content-header" style="color:#ff1cef">Play It Here</a>';
+        } else {
+            var link = document.getElementById("PlayIt");
+            link.innerHTML = '<a href="" class="content-header" style="color:#ff1cef; font-size:1em">Open this page on a desktop browser to play.</a>';
+        }
+
+        function resize() {
+            if (window.innerWidth >= 900 && window.innerHeight >= 650) {
+                var link = document.getElementById("PlayIt");
+                link.innerHTML = '<a href="games/cybergame/grabngo.html" class="content-header" style="color:#ff1cef">Play It Here</a>';
+            } else {
+                var link = document.getElementById("PlayIt");
+                link.innerHTML = '<a href="" class="content-header" style="color:#ff1cef; font-size:1em">Open this page on a desktop browser to play.</a>';
+            }
+        }
+
+        $(function() {
+            $("#IncludeHeaderCyber").load("header.html");
+            $("#Game").load("game/cybergame/grabngo.html");
+            $("#IncludeCyberFooter").load("footer.html");
+        });
+    </script>
+
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+</body>
+
+</html>

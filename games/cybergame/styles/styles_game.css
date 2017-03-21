@@ -1,0 +1,38 @@
+*{
+	margin:0px;
+	padding: 0px;	
+}
+@font-face{
+	font-family: 'Arista Light';
+	src:url(fonts/Arista_light.ttf);	
+}
+
+@font-face{
+	font-family: 'Digital';
+	src:url(fonts/digital-7.ttf);	
+}
+
+@font-face{
+	font-family: 'Mistral';
+	src:url(fonts/mistral.ttf);	
+}
+#middlediv{
+	padding:10px;	
+	position:absolute; 
+	top:0; 
+	bottom:0; 
+	left:0; 
+	right:0;
+	height:650px;
+	margin:auto;
+}
+#canvasdiv{
+	height:650px;
+	width:900px;
+	margin:auto;	
+	margin-top:10px;
+	margin-bottom:10px;
+}
+b{
+	color:#E4E4E4;	
+}
