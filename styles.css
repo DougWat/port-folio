@@ -137,6 +137,10 @@
     color: #EFEFEF
 }
 
+#IncludeHeaderIndecision .container{
+    background-color: #2F3080 !important;
+}
+
 
 /*HELPERS*/
 
@@ -248,6 +252,11 @@
 }
 
 
+/*SHOOTY*/
+.color-shooty-1{
+    background-color: #DCF1F7;
+}
+
 /*NAVBAR*/
 
 .floating-header {
@@ -277,7 +286,9 @@
     text-align: center;
 }
 
-.nav-name-mobile {}
+.nav-name-mobile {
+    
+}
 
 .nav-link {
     font-family: 'Raleway', sans-serif;
@@ -346,7 +357,11 @@
     .nav-container-mobile .nav-link-mobile a {
         color: #333333 !important;
     }
-        #IncludeHeaderCyber .nav-container-mobile{
+    #IncludeHeaderCyber .nav-container-mobile{
         background-color: rgba(0, 0, 0, 1)
+    }
+    
+    #IncludeHeaderIndecision .nav-name-mobile a, #IncludeHeaderIndecision .nav-link-mobile a{
+        color:#EFEFEF !important;
     }
 }
