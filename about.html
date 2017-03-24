@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html style="height:100%;">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Basic HTML File</title>
+    <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700" rel="stylesheet">
+</head>
+
+<body style="height:100%;">
+    <div id="IncludeHeaderAbout"></div>
+    <div style="height:80%;" class="d-flex">
+        <div class="container d-flex">
+            <div class="row align-self-center">
+                <div class="col-lg-6 d-flex justify-content-center">
+                    <img src="resources/about/picture-07.png" class="align-self-center">
+                </div>
+                <div class="col-lg-6">
+                    <p class="content-header">Hey, I'm Doug</p>
+                    <p class="contenttext">This is information about me. If you are seeing this you're either accessing my site before it's done, or I've completely forgotten to change this description before sending out applications. Regardless, since you're here, take a look at my work, and maybe send me an email at DougWatro@gmail.com.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script>
+        $(function() {
+            $("#IncludeHeaderAbout").load("header.html");
+        });
+    </script>
+
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+</body>
+
+</html>
