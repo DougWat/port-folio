@@ -186,7 +186,7 @@ function populatePlayerUnits(){
 	//DickShifter...?
 	var unit5Upgrades = new UpgradeVals(new Array(200,300,400,500),new Array(90,100,110,120),
 										new Array(1000,1150,1300), new Array(300,400,500),10);
-	game.plyType.push(new UnitType("DickShifter","unit04Base",20,unit5Upgrades,1000,"THIS IS ANOTHER DESCRIPTION"));
+	game.plyType.push(new UnitType("Tank","unit04Base",20,unit5Upgrades,1000,"THIS IS ANOTHER DESCRIPTION"));
 };
 
 //Draws the preview image of the unit

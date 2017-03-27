@@ -130,7 +130,6 @@ window.Game = (function(){
 			};
 			
 			//Draw other components
-			this.buttonPanel.draw();
 			
 			for(var i = 0; i < this.numPopArray.length; i++){
 				this.numPopArray[i].draw();
@@ -138,6 +137,8 @@ window.Game = (function(){
 			
 			this.upgradePanel.draw();
 			this.background.drawFullOverlay();
+            
+            this.buttonPanel.draw();
 			
 		};
 		

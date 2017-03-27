@@ -294,6 +294,7 @@ window.DeleteButton = (function(){
 		this.checkClick = function(){
 			if(this.hover == true)
 			{
+                if(game.unitSelection == null || game.unitSelection == -1){return;}
 				game.playerUnitArray.splice(game.unitSelection,1);
 				game.unitSelection = -1;
 				this.currentUnit = -1;
