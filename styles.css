@@ -443,6 +443,11 @@
     .index-button-overlay .overlay-content{
         visibility: hidden;
     }
+    
+    .parallax .button_hover{
+    transition:  background-color .2s;
+    background-color: rgba(0,0,0,0);
+}
 }
 
 @media (max-width: 560px) {
