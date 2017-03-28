@@ -194,7 +194,7 @@
     left: -20em;
 }
 
-.parallax:hover .left-overlay{
+.parallax:hover .left-overlay {
     left: 0%;
 }
 
@@ -211,13 +211,13 @@
     background-size: cover;
 }
 
-.parallax .button_hover{
-    transition:  background-color .2s;
-    background-color: rgba(0,0,0,.2);
+.parallax .button_hover {
+    transition: background-color .2s;
+    background-color: rgba(0, 0, 0, .2);
 }
 
-.parallax:hover .button_hover{
-    background-color: rgba(0,0,0,0);
+.parallax:hover .button_hover {
+    background-color: rgba(0, 0, 0, 0);
 }
 
 .p_boxes {
@@ -229,16 +229,16 @@
     background-image: url("resources/index/indecision_largebutton.jpg");
 }
 
-.p_forest{
+.p_forest {
     background-image: url("resources/index/forest_largebutton.jpg");
 }
 
-.p_shooty{
+.p_shooty {
     background-image: url("resources/index/shooty_largebutton.jpg");
     background-position: left;
 }
 
-.p_cyber{
+.p_cyber {
     background-image: url("resources/index/cyber_largebutton.jpg")
 }
 
@@ -320,6 +320,10 @@
 
 /*CYBER*/
 
+.cyber_header {
+    background-image: url(resources/cyber/cyberhero.png);
+}
+
 .cyber-background-1 {
     background-color: #000000
 }
@@ -351,6 +355,10 @@
 
 
 /*SHOOTY*/
+
+#IncludeHeaderShooty .nav-container {
+    background-color: rgba(255, 255, 255, .3) !important;
+}
 
 .color-shooty-1 {
     background-color: #DCF1F7;
@@ -431,9 +439,6 @@
     .nav-name-mobile {
         margin-bottom: 1.2em;
     }
-    #IncludeHeaderCyber .nav-container-mobile {
-        background-color: rgba(0, 0, 0, .3)
-    }
     .right-overlay,
     .left-overlay {
         right: auto;
@@ -441,43 +446,39 @@
         width: 100% !important;
         max-width: 100% !important;
         height: auto !important;
-        padding: 1em
+        padding: 1em;
     }
     .index-button-overlay .overlay-name {
         margin: 0em
     }
-    
-    .index-button-overlay .overlay-content{
-        visibility:collapse;
+    .index-button-overlay .overlay-content {}
+    .parallax .button_hover {
+        transition: background-color .2s;
+        background-color: rgba(0, 0, 0, 0);
     }
-    
-    .parallax .button_hover{
-    transition:  background-color .2s;
-    background-color: rgba(0,0,0,0);
-}
+    #IncludeHeaderShooty .nav-container-mobile {
+        background-color: rgba(255, 255, 255, .5);
+    }
 }
 
 @media (max-width: 560px) {
-    .floating-header {
+    #IncludeHeaderBoxes .nav-container-mobile {
+        background-color: rgba(0, 0, 0, .3)
+    }
+    #IncludeHeaderCyber .floating-header {
         top: 0;
         position: inherit;
         width: 100%;
         z-index: 0
     }
-    .nav-container-mobile {
-        background-color: #FFFFFF;
+    #IncludeHeaderCyber .nav-container-mobile {
+        background-color: rgba(0, 0, 0, 1)
+    }
+    #IncludeHeaderShooty .nav-container-mobile {
+        background-color: rgba(255, 255, 255, .5)
     }
     .nav-container-mobile .nav-name-mobile {
         margin-bottom: .6em;
-    }
-    .nav-container-mobile .nav-name-mobile a {
-        color: #333333 !important;
-    }
-    .nav-container-mobile .nav-link-mobile a {
-        color: #333333 !important;
-    }
-    #IncludeHeaderCyber .nav-container-mobile {
-        background-color: rgba(0, 0, 0, 1)
     }
     #IncludeHeaderIndecision .nav-name-mobile a,
     #IncludeHeaderIndecision .nav-link-mobile a {
