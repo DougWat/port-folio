@@ -144,8 +144,8 @@
 
 /*INDEX*/
 
-.index-button-overlay {
-    background-color: rgba(0, 0, 0, .5);
+.parallax .index-button-overlay {
+    background-color: rgba(0, 0, 0, .8);
     width: 50%;
     max-width: 20em;
     height: 500px;
@@ -158,7 +158,7 @@
     font-weight: 200;
     color: #FAFAFA;
     text-align: center;
-    margin: 1em
+    margin: 0em .5em .5em .5em;
 }
 
 .index-button-overlay .overlay-content {
@@ -184,12 +184,18 @@
     padding: 0em
 }
 
-.boxes-overlay {
+.right-overlay {
     right: 0px;
 }
 
-.indecision-overlay {
-    left: 0px
+.left-overlay {
+    transition: left .5s;
+    transition-timing-function: ease-in-out;
+    left: -20em;
+}
+
+.parallax:hover .left-overlay{
+    left: 0%;
 }
 
 
@@ -428,20 +434,21 @@
     #IncludeHeaderCyber .nav-container-mobile {
         background-color: rgba(0, 0, 0, .3)
     }
-    .boxes-overlay,
-    .indecision-overlay {
+    .right-overlay,
+    .left-overlay {
         right: auto;
         left: auto;
         width: 100% !important;
-        max-width: 100%;
-        height: 80px
+        max-width: 100% !important;
+        height: auto !important;
+        padding: 1em
     }
     .index-button-overlay .overlay-name {
         margin: 0em
     }
     
     .index-button-overlay .overlay-content{
-        visibility: hidden;
+        visibility:collapse;
     }
     
     .parallax .button_hover{
