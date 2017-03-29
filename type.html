@@ -13,24 +13,22 @@
 </head>
 
 <body onresize="resize()">
-    <div id="IncludeHeaderShooty" class="floating-header"></div>
-    <div class="parallax p_shooty">
+    <div id="IncludeHeaderType" class="floating-header"></div>
+    <div class="parallax p_type">
     </div>
     <div class="color-shooty-1 padding-3em-vert">
         <div class="container">
             <div class="row color">
                 <div class="col-sm-12 content-container text-center">
-                    <h2 class="content-header color-darkgray-text" style="margin-top:.5em">Shooty Music Game</h2>
+                    <h2 class="content-header color-darkgray-text" style="margin-top:.5em">Key-Daemon</h2>
                     <div class="work-types">
                         <div class="work-type color-dark-white-text">JavaScript</div>
                         <div class="work-type-separator color-dark-white-text">•</div>
                         <div class="work-type color-dark-white-text">HTML5</div>
-                        <div class="work-type-separator color-dark-white-text">•</div>
-                        <div class="work-type color-dark-white-text">Phaser</div>
                     </div>
-                    <p class="color-darkgray-text contenttext">I've always had a soft spot for music games that let you supply the music. At the same time, I was interested in experimenting with waveform analysis. I decided on Javascript with <a href="https://phaser.io/">Phaser</a> as my language of choice to make it easier for users to access. With a webgame, the user only needs a compatible browser.</p>
+                    <p class="color-darkgray-text contenttext">I worked alongside friends Aaron Sky, Richard Weiss, and Stephen Garabedian to create a web-based competitive typing game. The game is designed for 2-4 players, and should be played with only one keyboard.</p>
                     <div id="PlayIt">
-                        <a href="games/shootygame/shootygame.html" class="content-header" style="color:#333333">Play It Here</a>
+                        <a href="games/typegame/index.html" class="content-header" style="color:#333333">Play It Here</a>
                     </div>
                 </div>
             </div>
@@ -44,7 +42,7 @@
         
         if (window.innerWidth >= 900 && window.innerHeight >= 650) {
             var link = document.getElementById("PlayIt");
-            link.innerHTML = '<a href="games/shootygame/shootygame.html" class="content-header" style="color:#333333">Play It Here</a>';
+            link.innerHTML = '<a href="games/typegame/index.html" class="content-header" style="color:#333333">Play It Here</a>';
         } else {
             var link = document.getElementById("PlayIt");
             link.innerHTML = '<a href="" class="content-header" style="color:#333333; font-size:1em">Open this page on a desktop browser to play.</a>';
@@ -53,7 +51,7 @@
         function resize() {
             if (window.innerWidth >= 900 && window.innerHeight >= 650) {
                 var link = document.getElementById("PlayIt");
-                link.innerHTML = '<a href="games/shootygame/shootygame.html" class="content-header" style="color:#333333">Play It Here</a>';
+                link.innerHTML = '<a href="games/typegame/index.html" class="content-header" style="color:#333333">Play It Here</a>';
             } else {
                 var link = document.getElementById("PlayIt");
                 link.innerHTML = '<a href="" class="content-header" style="color:#333333; font-size:1em">Open this page on a desktop browser to play.</a>';
@@ -61,7 +59,7 @@
         }
 
         $(function() {
-            $("#IncludeHeaderShooty").load("header.html");
+            $("#IncludeHeaderType").load("header.html");
             $("#IncludeCyberFooter").load("footer.html");
         });
     </script>

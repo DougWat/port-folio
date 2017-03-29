@@ -14,7 +14,7 @@
 <body>
     <div id="IncludeHeaderBoxes" class="floating-header"></div>
     <div class="p_boxes" style="height:500px">
-<!--        <img src="resources/boxes/HeroImageCropped.png" style="max-width:100%; width:auto; height:auto">-->
+        <!--        <img src="resources/boxes/HeroImageCropped.png" style="max-width:100%; width:auto; height:auto">-->
     </div>
     <div class="color-indecision-1 padding-3em-vert">
         <div class="container">
@@ -33,19 +33,19 @@
 
                     <p class="color-darkgray-text contenttext"> Take a look at the most recent render below.</p>
                 </div>
-                                <div class="col-lg-6 align-self-center ">
+                <div class="col-lg-6 align-self-center ">
                     <img src="resources/boxes/boxes_01.png" class="contentimg">
                 </div>
             </div>
         </div>
     </div>
 
-    <div style="margin: 2em 10%">
+    <div class="color-indecision-2" style="padding: 2em 10%">
         <div class="videoWrapper">
             <iframe src="https://www.youtube.com/embed/P0LlXPrHDDY?ecver=1" frameborder="0" allowfullscreen></iframe>
         </div>
     </div>
-    <div class="color-indecision-2 padding-3em-vert">
+    <div class="color-indecision-1 padding-3em-vert">
         <div class="container">
             <div class="row color d-flex">
                 <div class="col-lg-6 align-self-center ">
@@ -97,10 +97,10 @@
                 <div class="col-lg-4">
                     <img src="resources/boxes/box_ic_5-02.png" class="center-image" style="max-width:5rem">
                     <p class="content-sub-header color-darkgray-text">Collision Avoidance</p>
-                    <p class="color-darkgray-text contenttext-full">Cubes hopping into each-other break the illusion of life entirely. To avoid this, cubes have been given basic collision avoidance logic. They will avoid hopping into something direction in front of them.</p>
+                    <p class="color-darkgray-text contenttext-full">Cubes hopping into each-other break the illusion of life entirely. To avoid this, cubes have been given basic collision avoidance logic. They will avoid hopping into something directly in front of them.</p>
                 </div>
-                                <div class="col-lg-4">
-                    <img src="resources/boxes/box_ic_5-03.png"  class="center-image" style="max-width:5rem">
+                <div class="col-lg-4">
+                    <img src="resources/boxes/box_ic_5-03.png" class="center-image" style="max-width:5rem">
                     <p class="content-sub-header color-darkgray-text">Responsiveness</p>
                     <p class="color-darkgray-text contenttext-full">Movement changes depending on outside factors. Cubes will dash away from elements that they fear, taking stronger leaps at quicker intervals, but also running the risk of tripping.</p>
 
@@ -108,40 +108,62 @@
             </div>
         </div>
     </div>
-    <div class="color-indecision-1 padding-3em-vert">
-        <h2 class="color-darkgray-text content-header" style="margin-bottom:1.4em">Three Elements of Expressive Eyes</h2>
+    <div class="color-indecision-3 padding-3em-vert">
+        <h2 class="color-white-text content-header" style="margin-bottom:1.4em">Three Elements of Expressive Eyes</h2>
         <div class="container">
             <div class="row">
                 <div class="col-lg-4">
-                    <img src="resources/boxes/box_ic_1.png" width="40%" class="center-image" style="max-width:5rem">
-                    <p class="content-sub-header color-darkgray-text">Gaze</p>
-                    <p class="color-darkgray-text contenttext-full">A shifting gaze help's sell the illusion of a living creature. It can create a sense of direction or curiosity.</p>
+                        <video height=auto width=auto style="max-width:60%" autoplay loop controls class="center-image">
+                            <source src="resources/boxes/cube_gaze.mp4" type="video/mp4">
+                        </video>
+                    <p class="content-sub-header color-white-text">Gaze</p>
+                    <p class="color-white-text contenttext-full">A shifting gaze helps to sell the illusion of a living creature. It can create a sense of direction or curiosity.</p>
                 </div>
                 <div class="col-lg-4">
-                    <img src="resources/boxes/box_ic_3.png" width="40%" class="center-image" style="max-width:5rem">
-                    <p class="content-sub-header color-darkgray-text">Pupils</p>
-                    <p class="color-darkgray-text contenttext-full">Pupils can be used to convey more complex emotions when no other features are present. Fear can be shown through contraction, while comfort can be shown through dilation.</p>
+                        <video height=auto width=auto style="max-width:60%" autoplay loop controls class="center-image">
+                            <source src="resources/boxes/cube_pupil.mp4" type="video/mp4">
+                        </video>
+                    <p class="content-sub-header color-white-text">Pupils</p>
+                    <p class="color-white-text contenttext-full">Pupils can be used to convey more complex emotions when no other features are present. Fear can be shown through contraction, while comfort can be shown through dilation.</p>
 
                 </div>
                 <div class="col-lg-4">
-                    <img src="resources/boxes/box_ic_2.png" width="40%" class="center-image" style="max-width:5rem">
-                    <p class="content-sub-header color-darkgray-text">Blinking</p>
-                    <p class="color-darkgray-text contenttext-full">Blinking in responses to stimuli can give the character presence. It's a simple action that can be paired with anything to great effect.</p>
+                        <video height=auto width=auto style="max-width:60%" autoplay loop controls class="center-image">
+                            <source src="resources/boxes/cube_blink.mp4" type="video/mp4">
+                        </video>
+                    <p class="content-sub-header color-white-text">Blinking</p>
+                    <p class="color-white-text contenttext-full">Blinking in responses to stimuli can give the character presence. It's a simple action that can be paired with anything to great effect.</p>
                 </div>
             </div>
         </div>
     </div>
-    <div id="FooterIncludeCubes"></div>
-    <img src="resources/boxes/thoughtfull.png" width="100%">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-    <script>
-        $(function() {
-            $("#IncludeHeaderBoxes").load("header.html");
-            $("#FooterIncludeCubes").load("footer.html");
-        });
-    </script>
+    <div class="color-indecision-2 padding-3em-vert">
+        <div class="container">
+            <div class="row color d-flex">
+                <div class="col-lg-6 align-self-center content-container text-center">
+                    <h2 class="color-darkgray-text content-header" style="margin-bottom:1em">Target Following</h2>
+                    <p class="color-darkgray-text contenttext">
+                        When without a target, cubes will meander about, idly hopping but with no destination.
+                    </p>
+                    <p class="color-darkgray-text contenttext">The introduction of a target sees the cubes seek out and follow the target actor. Any actor can be a target, and the cube's programming is designed in anticipation for the dynamic switching of targets. That functionality will be programmed later.</p>
+                </div>
+                                    <div class="col-lg-6 align-self-center ">
+                        <img src="resources/boxes/boxes_01.png" class="contentimg">
+                    </div>
+            </div>
+        </div>
+        <div id="FooterIncludeCubes"></div>
+        <img src="resources/boxes/thoughtfull.png" width="100%">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+        <script>
+            $(function() {
+                $("#IncludeHeaderBoxes").load("header.html");
+                $("#FooterIncludeCubes").load("footer.html");
+            });
 
-    <script src="bootstrap/js/bootstrap.min.js"></script>
+        </script>
+
+        <script src="bootstrap/js/bootstrap.min.js"></script>
 </body>
 
 </html>

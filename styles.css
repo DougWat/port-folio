@@ -80,6 +80,10 @@
     background-color: #FAFAFA
 }
 
+.color-indecision-3{
+    background-color:#333333;
+}
+
 .app-logo {
     width: auto;
     height: 6em;
@@ -239,9 +243,12 @@
 }
 
 .p_cyber {
-    background-image: url("resources/index/cyber_largebutton.jpg")
+    background-image: url("resources/index/cyber_largebutton.jpg");
 }
 
+.p_type{
+    background-image: url("resources/index/type_largebutton.jpg");
+}
 .padding-2em {
     padding: 2em;
 }
@@ -315,8 +322,13 @@
 
 .color-forest-2 {
     background-color: #0c0b0d
+    background-color: #0c0b0d
 }
 
+/*TYPE*/
+#IncludeHeaderType .nav-container{
+    background-color: rgba(255,255,255,0);
+}
 
 /*CYBER*/
 
@@ -458,6 +470,10 @@
     }
     #IncludeHeaderShooty .nav-container-mobile {
         background-color: rgba(255, 255, 255, .5);
+    }
+    
+    #IncludeHeaderType .nav-container-mobile{
+        background-color: rgba(255,255,255,0);
     }
 }
 
