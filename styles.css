@@ -80,9 +80,8 @@
     background-color: #FAFAFA
 }
 
-.color-indecision-3{
-    background-color:#222222;
-
+.color-indecision-3 {
+    background-color: #222222;
 }
 
 .app-logo {
@@ -247,9 +246,10 @@
     background-image: url("resources/index/cyber_largebutton.jpg");
 }
 
-.p_type{
+.p_type {
     background-image: url("resources/index/type_largebutton.jpg");
 }
+
 .padding-2em {
     padding: 2em;
 }
@@ -322,14 +322,16 @@
 }
 
 .color-forest-2 {
-    background-color: #0c0b0d
-    background-color: #0c0b0d
+    background-color: #0c0b0d background-color: #0c0b0d
 }
 
+
 /*TYPE*/
-#IncludeHeaderType .nav-container{
-    background-color: rgba(255,255,255,0);
+
+#IncludeHeaderType .nav-container {
+    background-color: rgba(255, 255, 255, 0);
 }
+
 
 /*CYBER*/
 
@@ -374,7 +376,7 @@
 }
 
 .color-shooty-1 {
-    background-color: #DCF1F7;
+    background-color: #DCF1F7#A5D5E1;
 }
 
 
@@ -387,7 +389,8 @@
     z-index: 10
 }
 
-.nav-container {
+.nav-container,
+.nav-container-resume {
     display: block;
     background-color: #FDFDFD;
     padding: 1em;
@@ -434,6 +437,25 @@
 }
 
 
+/*RESUME*/
+
+.resume {
+    display: block;
+    margin: 2em auto;
+    height: 100%;
+    width: 70%;
+}
+
+.resume-text {
+    font-weight: 200;
+    font-size: 2em;
+}
+
+.resume-text-container{
+    margin:2em;
+}
+
+
 /*MEDIA QUERIES*/
 
 @media (max-width: 980px) {
@@ -472,9 +494,15 @@
     #IncludeHeaderShooty .nav-container-mobile {
         background-color: rgba(255, 255, 255, .5);
     }
-    
-    #IncludeHeaderType .nav-container-mobile{
-        background-color: rgba(255,255,255,0);
+    #IncludeHeaderType .nav-container-mobile {
+        background-color: rgba(255, 255, 255, 0);
+    }
+    .resume {
+        width: 100%;
+    }
+    .resume-text {
+        font-weight: 100;
+        font-size: 1em;
     }
 }
 

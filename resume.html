@@ -1,4 +1,47 @@
 <!DOCTYPE html>
-<body style="width:100%; height:1000px">
-<iframe src="http://docs.google.com/gview?url=http://dougwatro.com/resume.pdf&embedded=true" style="width:600px; height:500px;" frameborder="0"></iframe>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Resume</title>
+    <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,200,300" rel="stylesheet">
+    <style>
+        html,
+        body {
+            height: 100%;
+        }
+
+    </style>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+
+<body class="color-indecision-1">
+    <div id="IncludeHeaderResume">
+        <div class="container nav-container-resume">
+            <div class="row">
+                <div class="col-3 align-self-center nav-link" style="font-weight:500"><a href="index.html" class="color-darkgray-text">Home</a></div>
+            </div>
+        </div>
+    </div>
+    <div class="resume-text-container">
+        <h2 class="color-darkgray-text content-header resume-text">Thanks for taking a look at my resume!</h2>
+        <h2 class="color-darkgray-text content-header resume-text"> <a href="Resume.pdf">You can download the .PDF file here.</a></h2>
+    </div>
+    <iframe src="http://docs.google.com/gview?url=http://dougwatro.com/Resume.pdf&embedded=true" class="resume" frameborder="0"></iframe>
+    <div id="FooterIncludeResume"></div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script>
+        $(function() {
+            $("#FooterIncludeResume").load("footer.html");
+        });
+
+    </script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
 </body>
+
+</html>
