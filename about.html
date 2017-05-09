@@ -10,6 +10,11 @@
     <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap-theme.min.css">
     <link rel="stylesheet" type="text/css" href="styles.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700" rel="stylesheet">
+    <script src="https://use.fontawesome.com/5d4fb5c729.js"></script>
+
+    <meta content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1" name="viewport">
+    <meta content="I'm a programmer with a love for game design. I work in languages like C++, C#, Javascript, HTML, CSS, and more. I also work in 3D art with Maya, Substance Painter and Designer, and the adobe suite." name="description">
+    <meta content="portfolio, design, 3D, game design, UI, user experience, web design, RIT, Rochester, Doug, Watro, Doug Watro, game developer, developer, new, media, ny, new york, web, interface, video games, game, C++, C#, javascript, maya, unreal engine" name="keywords">
 </head>
 
 <body style="height:100%;">
@@ -20,26 +25,28 @@
                 <div class="col-lg-4 d-flex justify-content-center" style="height:auto">
                     <img src="resources/about/picture-07.png" class="align-self-center" style="height:auto">
                 </div>
+
                 <div class="col-lg-8">
                     <p class="content-header">Hey, I'm Doug</p>
-                    <p class="contenttext about-text">I bounce a lot between programming and art. It generally  works out well for me, but it tends to double my workload when I insist my projects need to look as good as they play.</p>
+                    <div class="d-flex justify-content-center" style="margin-bottom:0em;">
+                        <div class="align-self-center">
+                            <ul class="about-socials">
+                                <li style="margin-left:0">
+                                    <a href="mailto:dougwatro@gmail.com" target="_blank"><i class="fa fa-paper-plane small"></i></a></li>
+                                <li>
+                                    <a href="http://www.linkedin.com/in/dougwatro" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+                                <li>
+                                    <a href="infinitengons.tumblr.com" target="_blank"><i class="fa fa-tumblr"></i></a></li>
+                                <li>
+                                    <a href="https://www.instagram.com/infinite_ngons/"><i class="fa fa-instagram"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <p class="contenttext about-text">I bounce a lot between programming and art. It generally works out well for me, but it tends to double my workload when I insist my projects need to look as good as they play.</p>
                     <p class="contenttext about-text">I giggle when things impress me. I get giddy and excited and clap my hands when I see pretty colors or experience existential dread. I want to bottle those feelings and sell them at a craft-fair.</p>
-                                        <p class="contenttext about-text">Right now I'm working on a 3D printing storefront through shapeways, and I'm designing a highly modified D&D campaign set in a cyberpunk Candyland.</p>
+                    <p class="contenttext about-text">Right now I'm working on a 3D printing storefront through shapeways, and I'm designing a highly modified D&D campaign set in a cyberpunk Candyland.</p>
                 </div>
             </div>
-        </div>
-        <div class="d-flex justify-content-center">
-            <div class="align-self-center">
-                <div class="contact_opt"><img src="resources/icons/ic_email.png" style="margin-left:0">
-                    <a href="mailto:dougwatro@gmail.com">DougWatro@gmail.com</a>
-                </div>
-                <div class="contact_opt"><img src="resources/icons/ic_phone.png">
-                    <p>631-681-0941</p>
-                </div>
-                <div class="contact_opt"><img src="resources/icons/ic__linkedin_dark.png">
-                    <a href="https://www.linkedin.com/in/dougwatro/">DougWatro</p>
-            </div>
-        </div>
         </div>
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
@@ -47,6 +54,15 @@
         $(function() {
             $("#IncludeHeaderAbout").load("header.html");
         });
+
+    </script>
+
+    <script>
+        $(function() {
+            var data =
+                $("head").append(meta.html)
+        });
+
     </script>
 
     <script src="bootstrap/js/bootstrap.min.js"></script>

@@ -406,6 +406,29 @@
 .about-text{
     font-size: 1.1em !important;
 }
+.about-socials {
+    line-height: normal;
+    text-align: right;
+    padding:0px;
+}
+.about-socials li{
+    font-size: 2em;
+    display: inline-block;
+    line-height: normal;
+    margin-left: 1rem;
+    vertical-align: middle;
+}
+.about-socials li a{
+        color:#333333;
+    -webkit-transition: color 200ms ease-out;
+    -moz-transition: color 200ms ease-out;
+    -o-transition: color 200ms ease-out;
+    transition: color 200ms ease-out;
+}
+
+.about-socials li a:hover{
+    color:#555555
+}
 
 /*NAVBAR*/
 
