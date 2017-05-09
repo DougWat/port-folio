@@ -249,6 +249,12 @@
 .p_type {
     background-image: url("resources/index/type_largebutton.jpg");
 }
+.p_3D {
+    background-image: url("resources/index/3D.jpg");
+}
+.p_shape{
+    background-image: url("resources/index/entropy_largebutton.jpg");
+}
 
 .padding-2em {
     padding: 2em;
@@ -376,9 +382,30 @@
 }
 
 .color-shooty-1 {
-    background-color: #DCF1F7#A5D5E1;
+    background-color: #DCF1F7;
 }
 
+/*ABOUT*/
+.contact_opt{
+   display:inline-block;
+}
+.contact_opt img{
+    height:auto;
+    width: 1.5em;
+    margin: auto .5em auto 2em ;
+}
+.contact_opt p{
+    display: inherit;
+}
+.contact_opt a{
+    display: inherit;
+}
+.test{
+    height:100px;
+}
+.about-text{
+    font-size: 1.1em !important;
+}
 
 /*NAVBAR*/
 
@@ -436,6 +463,24 @@
     margin: 1em;
 }
 
+/* 3D ART */
+
+.art-container{
+    width:100% !important;
+}
+.art-thumb{
+    width:100%;margin:0px; padding:0px
+}
+
+.art-header{
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: .05em;
+    font-weight: 200;
+    font-size: 2em;
+}
+.art-thumb-img{
+   height:auto; width:100%; margin:0px 
+}
 
 /*RESUME*/
 
