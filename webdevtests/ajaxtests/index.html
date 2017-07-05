@@ -10,7 +10,6 @@
         #Text2 {
             color: brown
         }
-
     </style>
 </head>
 
@@ -40,17 +39,18 @@
         //        }
 
         function loadDoc1() {
-            $("#demo").fadeOut();
-            $.ajax({
-                url: 'ajax_info1.html',
-                success: function(html) {
-                    document.getElementById("demo").innerHTML = "";
-                    $(html).hide().appendTo("#demo").fadeIn();
-                    document.getElementById("ajaxbutton").addEventListener('click', function() {
-                        alert("This has been called from an event listener");
-                    });
-                }
-            });
+            $("#demo").fadeOut(1000, function() {
+                $.ajax({
+                    url: 'ajax_info1.html',
+                    success: function(html) {
+                        document.getElementById("demo").innerHTML = "";
+                        $(html).hide().appendTo("#demo").fadeIn();
+                        document.getElementById("ajaxbutton").addEventListener('click', function() {
+                            alert("This has been called from an event listener");
+                        });
+                    }
+                });
+            }).;
         }
 
         function loadDoc2() {
@@ -71,7 +71,6 @@
         function ajaxFunction() {
             alert("This has been called from an ajax load")
         }
-
     </script>
 </body>
 
