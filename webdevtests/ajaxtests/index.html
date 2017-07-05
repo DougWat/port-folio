@@ -10,7 +10,6 @@
         #Text2 {
             color: brown
         }
-
     </style>
 </head>
 
@@ -23,16 +22,14 @@
     <button type="button" onclick="loadDoc2()">Change It Back</button>
 
     <script>
-        
-        document.getElementById("ajaxbutton").addEventListener('click',function(){
-            alert("This has been called from an event listener"); 
-        });
-        
         function loadDoc1() {
             var xhttp = new XMLHttpRequest();
             xhttp.onreadystatechange = function() {
                 if (this.readyState == 4 && this.status == 200) {
                     document.getElementById("demo").innerHTML = this.responseText;
+                    document.getElementById("ajaxbutton").addEventListener('click', function() {
+                        alert("This has been called from an event listener");
+                    });
                 }
             };
             xhttp.open("GET", "ajax_info1.txt", true);
@@ -57,7 +54,6 @@
         function ajaxFunction() {
             alert("This has been called from an ajax load")
         }
-
     </script>
 </body>
 
