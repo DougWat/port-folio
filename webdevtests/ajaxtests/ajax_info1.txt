@@ -1,3 +1,0 @@
-<h1 id="Text2">Depresso</h1>
-<h3>Very much depresso</h3>
-<button type="button" onclick="ajaxFunction() id="ajaxbutton">Click Me</button>
