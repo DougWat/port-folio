@@ -2,16 +2,28 @@
 <html>
 
 <head>
+    <style>
+        #Text1 {
+            color: aqua
+        }
+        
+        #Text2 {
+            color: brown
+        }
+
+    </style>
 </head>
 
 <body>
     <div id="demo">
-        <h2>I'm gunna change this</h2>
-        <button type="button" onclick="loadDoc()">Change this shit</button>
+        <h2 id="Text1">I'm gunna change this</h2>
+        <button type="button" onclick="doSomthing()">Click Me</button>
     </div>
+    <button type="button" onclick="loadDoc1()">Change this shit</button>
+    <button type="button" onclick="loadDoc2()">Change It Back</button>
 
     <script>
-        function loadDoc() {
+        function loadDoc1() {
             var xhttp = new XMLHttpRequest();
             xhttp.onreadystatechange = function() {
                 if (this.readyState == 4 && this.status == 200) {
@@ -20,8 +32,29 @@
                     document.getElementById("demo").innerHTML = this.responseText;
                 }
             };
-            xhttp.open("GET", "ajax_info.txt", true);
+            xhttp.open("GET", "ajax_info1.txt", true);
             xhttp.send();
+        }
+
+        function loadDoc2() {
+            var xhttp = new XMLHttpRequest();
+            xhttp.onreadystatechange = function() {
+                if (this.readyState == 4 && this.status == 200) {
+                    console.log("In Function");
+                    alert("in function");
+                    document.getElementById("demo").innerHTML = this.responseText;
+                }
+            };
+            xhttp.open("GET", "ajax_info2.txt", true);
+            xhttp.send();
+        }
+
+        function doSomthing() {
+            alert("Something has been done")
+        }
+
+        function ajaxFunction() {
+            alert("This has been called from an ajax load")
         }
 
     </script>
