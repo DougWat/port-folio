@@ -23,6 +23,11 @@
     <button type="button" onclick="loadDoc2()">Change It Back</button>
 
     <script>
+        
+        document.getElementById("ajaxbutton").addEventListener('click',function(){
+            alert("This has been called from an event listener"); 
+        });
+        
         function loadDoc1() {
             var xhttp = new XMLHttpRequest();
             xhttp.onreadystatechange = function() {
