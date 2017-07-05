@@ -44,7 +44,8 @@
                     url: 'ajax_info1.html',
                     success: function(html) {
                         document.getElementById("demo").innerHTML = "";
-                        $(html).hide().appendTo("#demo").fadeIn();
+                        $(html).appendTo("#demo").fadeIn();
+                        $("#demo").fadeIn();
                         document.getElementById("ajaxbutton").addEventListener('click', function() {
                             alert("This has been called from an event listener");
                         });
