@@ -34,32 +34,6 @@
     <script src="js/HealthBar.js"></script>
     <script src="js/Helper.js"></script>
     <script src="js/Debug.js"></script>
-    <script>
+    <script src="js/groupfinder.js"></script>
 
-    function validateGroup(){
-      var groupInput = document.getElementById("groupInput");
-      if(groupInput.value.trim() === ""){
-        alert("Looks like you didn't enter anything hombre")
-        return;
-      }
-      console.log(groupInput.value);
-      firebase.database().ref("Groups_Sterile").child(groupInput.value.trim()).once("value", function(snapshot){
-        if(snapshot.exists()){
-          loadNextPage("dmorplayer.html")
-        }else{
-          alert("Hey looks like thats the wrong group");
-        }
-      });
-      //loadNextPage("dmorplayer.html")
-    }
-
-    function loadNextPage(pagename){
-      $.ajax({
-        url:pagename,
-        success: function(result){
-          $("#main").html(result);
-        }
-      })
-    }
-    </script>
 </html>
