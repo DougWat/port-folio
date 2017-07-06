@@ -37,8 +37,13 @@
     <script>
 
     function validateGroup(){
-      var groupInput = $("#groupInput");
-      firebase.database().ref().child("Groups_Sterile").child(groupInput.value).once("value", function(snapshot){
+      var groupInput = document.getElementById("groupInput");
+      if(groupInput.value.trim() === ""){
+        alert("Looks like you didn't enter anything hombre")
+        return;
+      }
+      console.log(groupInput.value);
+      firebase.database().ref("Groups_Sterile").child(groupInput.value.trim()).once("value", function(snapshot){
         if(snapshot.exists()){
           loadNextPage("dmorplayer.html")
         }else{
