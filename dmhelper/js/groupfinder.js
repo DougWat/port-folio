@@ -1,5 +1,5 @@
 "use strict";
-(function () {
+
 function validateGroup(){
   var groupInput = document.getElementById("groupInput");
   if(groupInput.value.trim() === ""){
@@ -23,6 +23,5 @@ function loadNextPage(pagename){
     success: function(result){
       $("#main").html(result);
     }
-  })
+  });
 };
-}());
