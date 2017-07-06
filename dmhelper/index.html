@@ -12,7 +12,7 @@
   </head>
   <body style="height:100%">
     <div id="main" style="min-height: 100%" class="flex-center">
-      <input></input>
+      <input id="groupInput"></input>
       <button type="button" class="main-buttons" onclick="validateGroup()">Submit</button>
     <!-- <div class="container">
       <div class="row">
@@ -37,7 +37,15 @@
     <script>
 
     function validateGroup(){
-      loadNextPage("dmorplayer.html")
+      var groupInput = $("#groupInput");
+      firebase.database().ref().child("Groups_Sterile").child(groupInput.value).once("value", function(snapshot){
+        if(snapshot.exists()){
+          loadNextPage("dmorplayer.html")
+        }else{
+          alert("Hey looks like thats the wrong group");
+        }
+      });
+      //loadNextPage("dmorplayer.html")
     }
 
     function loadNextPage(pagename){
