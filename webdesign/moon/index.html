@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Lets Go To The Moon</title>
+	<link href="https://fonts.googleapis.com/css?family=Amatic+SC:400,700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="reset.css">
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	<link rel="stylesheet" type="text/css" href="mediaqueries.css">
+</head>
+
+<body>
+	<div id="page-top">
+		<div id="background-wrapper">
+			<div style="height:50%; width:100%; position:absolute; top:0px; left:0px" class="background-1"></div>
+			<div style="height:50%; width:100%; position:absolute; top:50%; left:0px" class="background-2"></div>
+		</div>
+		<nav class="navbar navbar-default">
+			<div class="container-fluid">
+				<div class="navbar-header">
+					<a href="#" class="navbar-brand" id="navlink"><span class="glyphicon glyphicon-adjust" aria-hidden="true"></span></a>
+				</div>
+				<!-- <ul class="nav navbar-nav">
+				<li><a href="#">About</a></li>
+				<li><a href="#">Contact</a></li>
+			</ul> -->
+				<ul class="nav navbar-nav navbar-right">
+					<li><a href="#" id="navlink">About</a></li>
+					<li><a href="#" id="navlink">Contact</a></li>
+				</ul>
+			</div>
+		</nav>
+		<div class="center-it" id="headertext">
+			<h2>Earth Sucks</div>
+	<div class="center-it" style="height: 100%; margin:70px">
+		<img src="resources/moon.png" id="moon">
+				<h1 id="moontext">Lets Go To The Moon</h1>
+	</div>
+	<div id="moonquote">
+		<h2 style="text-align:center; padding-bottom:20px;">"The moon has been our skyfriend for dozens of years, maybe more!"</h2>
+			<h3 style="text-align:center; margin-bottom:40px">-Carl Sagen</h3>
+		</div>
+		<hr></hr>
+	</div>
+	<div id="page-body" style="padding:140px 0">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12">
+					<h2 style="margin:50px 0">We were the first Moonfriends</h2>
+					<p>And we want you to be a Moonfriend too! Whether you're a devote practitioner of Moonfriendship, or you're just interested in learning more, everyone is welcomed on our beautiful Mother Moon. Our Mother Earth has become a Sadfriend, one who does not return our texts and when she does, it is only in single words. We love our Mother Earth, but it's also not really our job to make her feel better. I mean, it would be one thing if she was at least trying to help herself but all she does is complain. We're not psychologists, we don't know how to deal with that kind of thing.</p>
+					<button class="btn btn-primary btn-lg">OUR MOON STORY</button>
+				</div>
+				<!-- <div class="col-lg-6">
+					<h2 style="margin:50px 0">We were the first moonboys</h2>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+						dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+				</div> -->
+
+			</div>
+		</div </div>
+		<div id="quote-box">
+			<h3 id="quote-text">
+			"I went to the moon and it was really good. I would recommend moon activities to anyone interested."
+		</h3>
+			<p id="quote-name">-Sarah Brumpo</p>
+		</div>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<script>
+			var quotes = [
+				"Wow I think moons are really cool and I'm glad I can go to one. When I grow up I want to be like the moon. Thank you moon.",
+				"I can't tell you how many times I've looked up and wondered how it feels to have your hair cut on the moon. Now I know, it feels weird.",
+				"I went to the moon and it was really good. I would recommend moon activities to anyone interested.",
+				"I lost my wallet on moon if anyone finds it please give it to me.",
+				"Meow",
+				"When I was young I always thought there was more than one moon, not I know that there's actually 3!",
+				"The very friendly moon helped me move my furniture.",
+				"It looks like circle.",
+				"Our beautiful sky sphere gives life to all moon beans. If we don't have a moon than where would light go at night?"
+			];
+
+			var names = [
+				"Caitlyn Fumple",
+				"Tim Grimpo",
+				"John Talimoria",
+				"My Dad",
+				"Mr.Dink",
+				"Fuffles"
+			];
+
+			window.onload = function() {
+				slideQuote();
+			};
+
+			function slideQuote() {
+				$("#quote-text").text("\"" + quotes[getRandomInt(0, quotes.length)] + "\"");
+				$("#quote-name").text("-" + names[getRandomInt(0, names.length)]);
+				$("#quote-box").css({
+					position: "absolute",
+					left: -1000,
+					top: 300
+				}).animate({
+					left: window.innerWidth + 1000
+				}, 35000, function() {
+					slideQuote();
+				});
+			};
+
+			function getRandomInt(min, max) {
+				min = Math.ceil(min);
+				max = Math.floor(max);
+				return Math.floor(Math.random() * (max - min)) + min; //The maximum is exclusive and the minimum is inclusive
+			};
+		</script>
+</body>
+
+</html>

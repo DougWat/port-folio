@@ -2,6 +2,7 @@
 
 function validateGroup(){
   var groupInput = document.getElementById("groupInput");
+  groupCode = groupInput.value;
   if(groupInput.value.trim() === ""){
     alert("Looks like you didn't enter anything hombre")
     return;
@@ -12,8 +13,8 @@ function validateGroup(){
       loadNextPage("dmorplayer.html")
     }else{
       alert("Hey looks like thats the wrong group");
+      groupCode = "";
     }
-
   });
 };
 
