@@ -8,7 +8,7 @@
 
 <body onresize="resize()">
     <div id="IncludeHeaderShooty" class="floating-header">
-      <partial src="partials/headcontent.html"/>
+      <partial src="partials/header.html"/>
     </div>
     <div class="parallax p_shooty">
     </div>

@@ -3,37 +3,12 @@
 
 <head>
     <title>Indecision</title>
-    <meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
-<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap-theme.min.css">
-<link rel="stylesheet" type="text/css" href="styles.css">
-<link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700" rel="stylesheet">
-<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-<meta content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1" name="viewport">
-<meta content="I'm a programmer with a love for game design. I work in languages like C++, C#, Javascript, HTML, CSS, and more. I also work in 3D art with Maya, Substance Painter and Designer, and the adobe suite." name="description">
-<meta content="portfolio, design, 3D, game design, UI, user experience, web design, RIT, Rochester, Doug, Watro, Doug Watro, game developer, developer, new, media, ny, new york, web, interface, video games, game, C++, C#, javascript, maya, unreal engine" name="keywords">
-
+    <partial src="partials/headcontent.html"/>
 </head>
 
 <body>
     <div id="IncludeHeaderIndecision" style="">
-        <div class="container-fluid nav-container">
-    <div class="row">
-        <div class="col-3 align-self-center nav-link" ><a href="about.html" class="color-darkgray-text">About Me</a></div>
-        <div class="col-6 align-self-center nav-name" ><a href="index.html" class="color-darkgray-text">Doug Watro</a></div>
-        <div class="col-3 align-self-center nav-link"><a href="resume.html" class="color-darkgray-text">Resume</a></div>
-    </div>
-</div>
-<div class="container-fluid nav-container-mobile small" style="padding:2em; width:100%">
-    <div class="nav-name nav-name-mobile" ><a href="index.html" class="color-darkgray-text">Doug Watro</a></div>
-    <div class="row">
-        <div class="col-6 align-self-center nav-link nav-link-mobile" ><a href="about.html" class="color-darkgray-text">About Me</a></div>
-        <div class="col-6 align-self-center nav-link nav-link-mobile"><a href="resume.html" class="color-darkgray-text">Resume</a></div>
-    </div>
-</div>
-
+        <partial src="partials/header.html"/>
     </div>
     <div style="padding:0px 10%" class="d-flex ind-header-color">
         <div style="margin: 20% auto 20% auto; max-height:.3em" class="d-flex justify-content-center align-self-end ind-header-img">
@@ -157,23 +132,7 @@
         </div>
     </div>
     <div id="FooterIncludeIndecision">
-      <div style="background:#000000">
-  <div class="d-flex">
-    <div class="align-self-center center-image footer-social">
-      <a href="https://www.linkedin.com/in/dougwatro/"><img src="resources/icons/ic__linkedin.png"></a>
-      <a href="http://infinitengons.tumblr.com/"><img src="resources/icons/ic__tumblr.png"></a>
-      <!--            <a href="#"><img src="resources/icons/ic__twitter.png"></a>-->
-      <a href="https://www.instagram.com/infinite_ngons/"><img src="resources/icons/ic__instagram.png"></a>
-    </div>
-  </div>
-  <a href="#">
-    <p class="contenttext" style="text-align:center; margin:0px auto; color:#EFEFEF; font-size:1em;">Back To Top</p>
-  </a>
-  <div style="margin:0px; padding:0px; background:#000000; width:100%" class="d-flex">
-    <p class="align-self-center contenttext-full" style="text-align:center; width:100% color:#EFEFEF; font-size:1em; margin:2em auto">Copyright © 2017 Douglas Watro All Rights Reserved</p>
-  </div>
-</div>
-
+      <partial src="partials/footer.html"/>
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
 
