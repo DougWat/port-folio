@@ -225,35 +225,35 @@
 }
 
 .p_boxes {
-    background-image: url("resources/index/boxes_largebutton.jpg");
+    background-image: url("../resources/index/boxes_largebutton.jpg");
     background-position: 10%;
 }
 
 .p_indecision {
-    background-image: url("resources/index/indecision_largebutton.jpg");
+    background-image: url("../resources/index/indecision_largebutton.jpg");
 }
 
 .p_forest {
-    background-image: url("resources/index/forest_largebutton.jpg");
+    background-image: url("../resources/index/forest_largebutton.jpg");
 }
 
 .p_shooty {
-    background-image: url("resources/index/shooty_largebutton.jpg");
+    background-image: url("../resources/index/shooty_largebutton.jpg");
     background-position: left;
 }
 
 .p_cyber {
-    background-image: url("resources/index/cyber_largebutton.jpg");
+    background-image: url("../resources/index/cyber_largebutton.jpg");
 }
 
 .p_type {
-    background-image: url("resources/index/type_largebutton.jpg");
+    background-image: url("../resources/index/type_largebutton.jpg");
 }
 .p_3D {
-    background-image: url("resources/index/3d.jpg");
+    background-image: url("../resources/index/3d.jpg");
 }
 .p_shape{
-    background-image: url("resources/index/entropy_largebutton.jpg");
+    background-image: url("../resources/index/entropy_largebutton.jpg");
 }
 
 .padding-2em {
