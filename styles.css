@@ -303,20 +303,20 @@
     width: 100%;
 }
 
-#IncludeHeaderBoxes .nav-container {
+#IncludeHeader.boxes .nav-container {
     background-color: rgba(0, 0, 0, .3)
 }
 
-#IncludeHeaderBoxes .nav-name a {
+#IncludeHeader.boxes .nav-name a {
     font-weight: 3200;
     color: #FAFAFA
 }
 
-#IncludeHeaderBoxes .nav-link a {
+#IncludeHeader.boxes .nav-link a {
     color: #FAFAFA
 }
 
-#IncludeHeaderBoxes .nav-container-mobile {
+#IncludeHeader.boxes .nav-container-mobile {
     background-color: rgba(0, 0, 0, .3)
 }
 
@@ -502,7 +502,7 @@
     font-size: 2em;
 }
 .art-thumb-img{
-   height:auto; width:100%; margin:0px 
+   height:auto; width:100%; margin:0px
 }
 
 /*RESUME*/

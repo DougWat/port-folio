@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html style="height:100%;">
+
+<head>
+    <title>Basic HTML File</title>
+    <partial src="partials/headcontent.html"/>
+</head>
+
+<body style="height:100%;">
+    <div style="height:100%;z-index:0" class="">
+        <div class="container d-flex justify-content-center" style="margin-top">
+            <div class="row align-self-center" style="margin:3em 0 3em 0; width:100%">
+                <div class="col-lg-4 d-flex justify-content-center" style="height:auto">
+                    <img src="resources/about/picture-07.png" class="align-self-center" style="height:auto">
+                </div>
+
+                <div class="col-lg-8">
+                    <p class="content-header">Hey, I'm Doug</p>
+                    <div class="d-flex justify-content-center" style="margin-bottom:0em;">
+                        <div class="align-self-center">
+                            <ul class="about-socials">
+                                <li style="margin-left:0">
+                                    <a href="mailto:dougwatro@gmail.com" target="_blank"><i class="fa fa-paper-plane small"></i></a></li>
+                                <li>
+                                    <a href="http://www.linkedin.com/in/dougwatro" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+                                <li>
+                                    <a href="http://infinitengons.tumblr.com" target="_blank"><i class="fa fa-tumblr"></i></a></li>
+                                <li>
+                                    <a href="https://www.instagram.com/infinite_ngons/"><i class="fa fa-instagram"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <p class="contenttext about-text">I'm a programmer with a deep compulsion to make things beautiful, but only if I can back up the looks with tight, optimized, great code. I focus in on the UX for anything I create (even if it's just for me).</p>
+                    <p class="contenttext about-text">I giggle when things impress me, I can't control it, I think it's a medical condition. I want to bottle those feelings and sell them at a craft-fair.</p>
+                    <p class="contenttext about-text">Right now I'm creating a web application designed to simplify the D&D DMing experience. It's for me, my friends, and anybody else, once I deploy it.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+</body>
+
+</html>

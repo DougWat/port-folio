@@ -1,21 +1,9 @@
 <!DOCTYPE html>
 <html>
-
 <head>
     <title>Doug Watro</title>
-    <meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
-<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap-theme.min.css">
-<link rel="stylesheet" type="text/css" href="styles.css">
-<link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700" rel="stylesheet">
-<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-<meta content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1" name="viewport">
-<meta content="I'm a programmer with a love for game design. I work in languages like C++, C#, Javascript, HTML, CSS, and more. I also work in 3D art with Maya, Substance Painter and Designer, and the adobe suite." name="description">
-<meta content="portfolio, design, 3D, game design, UI, user experience, web design, RIT, Rochester, Doug, Watro, Doug Watro, game developer, developer, new, media, ny, new york, web, interface, video games, game, C++, C#, javascript, maya, unreal engine" name="keywords">
+    <partial src="partials/headcontent.html"/>
 </head>
-
 <body>
     <div id="IncludeHeaderIndex">
         <div class="container-fluid nav-container">
@@ -33,11 +21,6 @@
             </div>
         </div>
     </div>
-    <!--
-        <a href="boxes.html">
-            <img src="resources/index/boxes_largebutton.jpg" class="center-image" style="width:100%; height:auto">
-        </a>
--->
     <div style="margin:0px">
         <h2 class="color-darkgray-text content-header" style="margin:2em 2em 1em 1em; font-weight:100; font-size:2em">Hey! Welcome to my site.</h2>
         <h3 class="color-darkgray-text content-header" style="margin:0em 1em 1em 1em; font-weight:100; font-size:1.5em"><a href="about.html">Get to know me a bit</a> or just take a look at some of my work below!</h3>
