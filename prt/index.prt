@@ -29,6 +29,31 @@
           </div>
         </div>
       </a>
+      <a href="delve.html" class="entry">
+        <div class="parallax p_delve">
+          <div class="overlay">
+            <h2>Delve</h2>
+            <p class="work-types">
+              <span>Express</span>
+              <span>•</span>
+              <span>Node JS</span>
+              <span>•</span>
+              <span>RethinkDB</span>
+              <span>•</span>
+              <span>SASS</span>
+              <span>•</span>
+              <span>HTML</span>
+              <span>•</span>
+              <span>CSS</span>
+              <span>•</span>
+              <span>Javascript</span>
+            </p>
+            <div class="text-block">
+              <p>An experiment in personality and AI</p>
+            </div>
+          </div>
+        </div>
+      </a>
       <a href="indecision.html" class="entry">
         <div class="parallax p_indecision">
           <div class="overlay">

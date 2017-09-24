@@ -10,6 +10,10 @@ h1, h2, h3, h4, h5, p, a {
   font-family: Roboto, sans-serif;
 }
 
+a:hover{
+  text-decoration: none;
+}
+
 img.icon-lg {
   max-width: 100px !important;
   height: auto;
@@ -23,6 +27,35 @@ i.icon-lg {
 .container-fluid.index {
   padding-left: 0;
   padding-right: 0;
+}
+
+.socials {
+  margin: 0;
+}
+
+.socials span {
+  font-size: 2em;
+}
+
+.socials span a {
+  color: #131319;
+  -webkit-transition: color 0.2s;
+  -moz-transition: color 0.2s;
+  -o-transition: color 0.2s;
+  transition: color 0.2s;
+}
+
+.socials span a:hover {
+  text-decoration: none;
+  color: #3f3f53;
+}
+
+.socials span a:active {
+  color: #555570;
+}
+
+.socials span:nth-child(even) {
+  margin: 0 20px 0 20px;
 }
 
 .index .content {
@@ -472,6 +505,10 @@ i.background {
 
 .p_shape {
   background-image: url("../resources/index/entropy_largebutton.jpg");
+  background-attachment: scroll;
+}
+.p_delve{
+  background-image: url("../resources/index/delve.jpg");
   background-attachment: scroll;
 }
 

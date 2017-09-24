@@ -5,8 +5,10 @@
     <partial src="partials/headcontent_better.html"/>
   </head>
   <body>
-    <partial src="partials/header.html"/>
-    <div class="parallax p_boxes"></div>
+    <div class="dark">
+      <partial src="partials/header.html"/>
+    </div>
+    <div class="parallax p_delve"></div>
     <div class="container delve">
       <div class="row content headliner d-flex">
         <i class="background"></i>

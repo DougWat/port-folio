@@ -27,6 +27,11 @@ $font-stack: Roboto, sans-serif;
   -moz-border-radius: $rad;
   -webkit-border-radius: $rad;
 }
+@mixin scale($X, $Y){
+  -ms-transform: scale($X, $Y); /* IE 9 */
+  -webkit-transform: scale($X, $Y); /* Safari */
+  transform: scale($X, $Y);
+}
 @-ms-viewport{
   width: device-width;
 }
@@ -51,6 +56,28 @@ i.icon-lg{
 .container-fluid.index{
   padding-left:0;
   padding-right: 0;
+}
+
+.socials{
+  margin:0;
+  span{
+    font-size: 2em;
+    a{
+      color: $primary-color-dark;
+      @include transition(color .2s );
+      &:hover{
+        text-decoration: none;
+        color: lighten($primary-color-dark,20);
+      }
+      &:active{
+        color: lighten($primary-color-dark,30);
+      }
+    }
+    &:nth-child(even){
+      margin: 0 20px 0 20px;
+    }
+
+  }
 }
 
 .index{
