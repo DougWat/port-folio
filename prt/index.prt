@@ -1,175 +1,147 @@
 <!DOCTYPE html>
 <html>
-<head>
+  <head>
+    <partial src="partials/headcontent_better.html"/>
     <title>Doug Watro</title>
-    <partial src="partials/headcontent.html"/>
-</head>
-<body>
-    <div id="IncludeHeaderIndex">
-        <div class="container-fluid nav-container">
-            <div class="row">
-                <div class="col-3 align-self-center nav-link"><a href="about.html" class="color-darkgray-text">About Me</a></div>
-                <div class="col-6 align-self-center nav-name"><a href="#" class="color-darkgray-text">Doug Watro</a></div>
-                <div class="col-3 align-self-center nav-link"><a href="resume.html" class="color-darkgray-text">Resume</a></div>
-            </div>
+  </head>
+  <body>
+    <partial src="partials/header.html"/>
+    <div class="container-fluid index">
+      <div class="row content d-flex">
+        <i class="background"></i>
+        <div class="col-lg-12">
+          <h2>Hey! Welcome to my site.</h2>
+          <h3><a href="about.html">Get to know me a bit</a>, or just take a look at some of my work below!</h3>
         </div>
-        <div class="container nav-container-mobile small" style="padding:2em; width:100%">
-            <div class="nav-name nav-name-mobile"><a href="#" class="color-darkgray-text">Doug Watro</a></div>
-            <div class="row">
-                <div class="col-6 align-self-center nav-link nav-link-mobile"><a href="about.html" class="color-darkgray-text">About Me</a></div>
-                <div class="col-6 align-self-center nav-link nav-link-mobile"><a href="resume.html" class="color-darkgray-text">Resume</a></div>
-            </div>
-        </div>
-    </div>
-    <div style="margin:0px">
-        <h2 class="color-darkgray-text content-header" style="margin:2em 2em 1em 1em; font-weight:100; font-size:2em">Hey! Welcome to my site.</h2>
-        <h3 class="color-darkgray-text content-header" style="margin:0em 1em 1em 1em; font-weight:100; font-size:1.5em"><a href="about.html">Get to know me a bit</a> or just take a look at some of my work below!</h3>
-    </div>
-    <a href="boxes.html">
+      </div>
+      <a href="boxes.html" class="entry">
         <div class="parallax p_boxes">
-            <div class="index-button-overlay left-overlay d-flex align-items-center">
-                <div style="width:100%">
-                    <p class="overlay-name">Hoppin' Boxes</p>
-                    <div class="work-types text-center">
-                        <div class="work-type">Unreal Engine 4</div>
-                        <div class="work-type-separator">•</div>
-                        <div class="work-type">C++</div>
-                    </div>
-                    <p class="overlay-content">An experiment in personality and AI</p>
-                </div>
+          <div class="overlay">
+            <h2>Hoppin' Boxes</h2>
+            <p class="work-types">
+              <span>Unreal Engine 4</span>
+              <span>•</span>
+              <span>C++</span>
+            </p>
+            <div class="text-block">
+              <p>An experiment in personality and AI</p>
             </div>
-            <div style="width:100%; height:100%" class="button_hover"></div>
+          </div>
         </div>
-    </a>
-    <a href="indecision.html">
+      </a>
+      <a href="indecision.html" class="entry">
         <div class="parallax p_indecision">
-            <div class="index-button-overlay left-overlay d-flex align-items-center">
-                <div style="width:100%">
-                    <p class="overlay-name">InDecision</p>
-                    <div class="work-types text-center">
-                        <div class="work-type">Android Studio</div>
-                        <div class="work-type-separator">•</div>
-                        <div class="work-type">Java</div>
-                    </div>
-                    <p class="overlay-content">An android app designed to help the indecisive</p>
-                </div>
+          <div class="overlay">
+            <h2>InDecision</h2>
+            <p class="work-types">
+              <span>Android Studio</span>
+              <span>•</span>
+              <span>Java</span>
+            </p>
+            <div class="text-block">
+              <p>An android app designed to help the indecisive</p>
             </div>
-            <div style="width:100%; height:100%" class="button_hover"></div>
+          </div>
         </div>
-    </a>
-    <a href="shooty.html">
-        <div class="parallax p_shooty">
-            <div class="index-button-overlay left-overlay d-flex align-items-center">
-                <div style="width:100%">
-                    <p class="overlay-name">Shooty Music Game</p>
-                    <div class="work-types text-center">
-                        <div class="work-type">HTML5</div>
-                        <div class="work-type-separator">•</div>
-                        <div class="work-type">JAVASCRIPT</div>
-                    </div>
-                    <p class="overlay-content">A webgame that lets you play a Shoot-Em-Up with your own music.</p>
-                </div>
-            </div>
-            <div style="width:100%; height:100%" class="button_hover"></div>
-        </div>
-    </a>
-    <a href="type.html">
-        <div class="parallax p_type">
-            <div class="index-button-overlay left-overlay d-flex align-items-center">
-                <div style="width:100%">
-                    <p class="overlay-name">Key Daemon</p>
-                    <div class="work-types text-center">
-                        <div class="work-type">HTML5</div>
-                        <div class="work-type-separator">•</div>
-                        <div class="work-type">Javascript</div>
-                    </div>
-                    <p class="overlay-content">Competative typing game for a single keyboard.</p>
-                </div>
-            </div>
-            <div style="width:100%; height:100%" class="button_hover"></div>
-        </div>
-    </a>
-    <a href="forest.html">
+      </a>
+      <a href="forest.html" class="entry">
         <div class="parallax p_forest">
-            <div class="index-button-overlay left-overlay d-flex align-items-center">
-                <div style="width:100%">
-                    <p class="overlay-name">Evening Forest</p>
-                    <div class="work-types text-center">
-                        <div class="work-type">Unreal Engine 4</div>
-                        <div class="work-type-separator">•</div>
-                        <div class="work-type">C++</div>
-                        <div class="work-type-separator">•</div>
-                        <div class="work-type">Maya</div>
-                    </div>
-                    <p class="overlay-content">A forest scene, made to experiment with lighting and particles.</p>
-                </div>
+          <div class="overlay">
+            <h2>Evening Forest</h2>
+            <p class="work-types">
+              <span>Unreal Engine 4</span>
+              <span>•</span>
+              <span>C++</span>
+              <span>•</span>
+              <span>Maya</span>
+            </p>
+            <div class="text-block">
+              <p>A forest scene, made to experiment with lighting and particles.</p>
             </div>
-            <div style="width:100%; height:100%" class="button_hover"></div>
+          </div>
         </div>
-    </a>
-    <a href="cyber.html">
+      </a>
+      <a href="type.html" class="entry">
+        <div class="parallax p_type">
+          <div class="overlay">
+            <h2>Key-Daemon</h2>
+            <p class="work-types">
+              <span>HTML5</span>
+              <span>•</span>
+              <span>Javascript</span>
+            </p>
+            <div class="text-block">
+              <p>An experiment in personality and AI</p>
+            </div>
+          </div>
+        </div>
+      </a>
+      <a href="shooty.html" class="entry">
+        <div class="parallax p_shooty">
+          <div class="overlay">
+            <h2>Shooty Music Game</h2>
+            <p class="work-types">
+              <span>HTML5</span>
+              <span>•</span>
+              <span>Javascript</span>
+            </p>
+            <div class="text-block">
+              <p>A webgame that lets you play a Shoot-Em-Up with your own music.</p>
+            </div>
+          </div>
+        </div>
+      </a>
+      <a href="cyber.html" class="entry">
         <div class="parallax p_cyber">
-            <div class="index-button-overlay left-overlay d-flex align-items-center">
-                <div style="width:100%">
-                    <p class="overlay-name">Cyber Commando</p>
-                    <div class="work-types text-center">
-                        <div class="work-type">HTML5</div>
-                        <div class="work-type-separator">•</div>
-                        <div class="work-type">JAVASCRIPT</div>
-                    </div>
-                    <p class="overlay-content">HTML5 Tower Defense with an 80's</p>
-                    <p class="overlay-content">Ａｅｓｔｈｅｔｉｃ</p>
-                </div>
+          <div class="overlay">
+            <h2>Cyber Commando</h2>
+            <p class="work-types">
+              <span>HTML5</span>
+              <span>•</span>
+              <span>Javascript</span>
+            </p>
+            <div class="text-block">
+              <p>HTML5 Tower Defense with an 80's Ａｅｓｔｈｅｔｉｃ</p>
             </div>
-            <div style="width:100%; height:100%" class="button_hover"></div>
+          </div>
         </div>
-    </a>
-    <div style="margin:0px; background-color:#000000;">
-        <div style="margin:0px; background-color:#000000; padding:2em">
-            <h2 class="color-lightgray-text content-header" style="font-weight:200; font-size:2em">And a space for side projects, experiments, and hobbies.</h2>
+      </a>
+      <div class="row content dark">
+        <i class="background"></i>
+        <div class="col-lg-12">
+          <h2>Side projects, experiments, and hobbies</h2>
         </div>
-        <a href="3dart.html">
-            <div class="parallax p_3D">
-                <div class="index-button-overlay left-overlay d-flex align-items-center">
-                    <div style="width:100%">
-                        <p class="overlay-name">3D Modeling</p>
-                        <div class="work-types text-center">
-                            <div class="work-type">Maya</div>
-                            <div class="work-type-separator">•</div>
-                            <div class="work-type">Substance Painter</div>
-                            <div class="work-type-separator">•</div>
-                            <div class="work-type">Substance Designer</div>
-                            <div class="work-type-separator">•</div>
-                            <div class="work-type">Adobe CC</div>
-                        </div>
-                        <p class="overlay-content">A collection of various small scale 3D projects</p>
-                    </div>
-                </div>
-                <div style="width:100%; height:100%" class="button_hover"></div>
+      </div>
+      <a href="3dart.html" class="entry">
+        <div class="parallax p_3D">
+          <div class="overlay">
+            <h2>3D Modeling</h2>
+            <p class="work-types">
+              <span>Maya</span>
+              <span>•</span>
+              <span>Substance Painter</span>
+              <span>•</span>
+              <span>Substance Designer</span>
+              <span>•</span>
+              <span>Adobe CC</span>
+            </p>
+            <div class="text-block">
+              <p>A collection of various small-scale 3D project</p>
             </div>
-        </a>
-        <a href="https://www.shapeways.com/shops/rpg-elements">
-            <div class="parallax p_shape">
-                <div class="index-button-overlay left-overlay d-flex align-items-center">
-                    <div style="width:100%">
-                        <p class="overlay-name">Shapeways Storefront</p>
-                        <p class="overlay-content">A jewelry storefront useing 3d printing service Shapeways.</p>
-                    </div>
-                </div>
-                <div style="width:100%; height:100%" class="button_hover"></div>
+          </div>
+        </div>
+      </a>
+      <a href="https://www.shapeways.com/shops/rpg-elements" class="entry">
+        <div class="parallax p_shape">
+          <div class="overlay">
+            <h2>Shapeways Storefront</h2>
+            <div class="text-block">
+              <p>A jewelry storefront useing 3d printing service Shapeways.</p>
             </div>
-        </a>
+          </div>
+        </div>
+      </a>
     </div>
-    <div id="FooterIncludeIndex"></div>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-    <script>
-        $(function() {
-            $("#FooterIncludeIndex").load("footer.html");
-        });
-
-    </script>
-
-    <script src="bootstrap/js/bootstrap.min.js"></script>
-</body>
-
+    <partial src="partials/footer.html"/>
+  </body>
 </html>

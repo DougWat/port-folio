@@ -3,7 +3,7 @@
 
 <head>
     <title>Basic HTML File</title>
-    <partial src="partials/headcontent.html"/>
+    <partial src="partials/headcontent_better.html"/>
 </head>
 
 <body style="height:100%;">
