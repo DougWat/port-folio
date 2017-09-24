@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Delve, Make D&D Simpler</title>
+    <partial src="partials/headcontent_better.html"/>
+  </head>
+  <body>
+    <partial src="partials/header.html"/>
+    <div class="parallax p_boxes"></div>
+    <div class="container delve">
+      <div class="row content headliner d-flex">
+        <i class="background"></i>
+        <div class="col-lg-6 align-self-center">
+          <h2>Delve</h2>
+          <p class="work-types">
+            <span>Express</span>
+            <span>•</span>
+            <span>Node js</span>
+            <span>•</span>
+            <span>Rethinkdb</span>
+            <span>•</span>
+            <span>SASS</span>
+          </p>
+          <p class="work-types">
+            <span>HTML</span>
+            <span>•</span>
+            <span>CSS</span>
+            <span>•</span>
+            <span>Javascript</span>
+          </p>
+          <div class="text-block">
+            <p>The job of a D&D DM is difficult. There are so many variables to keep track of, so many stats to manage, and it all has to be done in the presence of an audience.</p>
+            <p>There are applications already that make the DMing experience digital, but many of them are exhaustive, with robust interfaces and less than good-enough UX.</p>
+            <p>Delve aims to simplify that, creating an environment that allows for quick access to player information as a supplement to the Pen-and-Paper D&D experience.</p>
+          </div>
+        </div>
+        <div class="col-lg-6 align-self-center">
+
+        </div>
+      </div>
+      <div class="row content d-flex">
+        <i class="background"></i>
+        <div class="col-lg-12">
+          <h2>Simplicity Works Best</h2>
+          <div class="text-block">
+            <p>Delve doesn't aim to devorce D&D from it's tabletop, pen-and-paper roots, but it knows the difficulties of running a game. DMs new and old stuggle with managing player information, which for some, means a lot of looking back and forth at a stack of papers.</p>
+            <p>A DM already has so much on their plate, Delve wants to lighten that load. With Delve, a DM can get at-a-glance readouts of every player's stats, and player's can get real-time updates on their vitals, straight from their phones, tablets, or laptops. </p>
+            <p>This works ontop of a discord inspired quick registration system, that allows a DM to create a group, invite their players, and build characters in less than 5 minutes. It's not a chore to use Delve.</p>
+          </div>
+        </div>
+      </div>
+      <div class="row content d-flex threes">
+        <i class="background"></i>
+        <div class="col-lg-12">
+          <h2>Core Creeds</h2>
+        </div>
+        <div class="col-lg-4">
+          <i class="fa fa-users icon-lg"></i>
+          <h3>Ease Of Access</h3>
+          <div class="text-block">
+              <p>New users need to be able to sign up quickly and add characters even quicker. No DM wants to wait for their players to figure out an application when they could just start playing their game.</p>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <i class="fa fa-eye-slash icon-lg"></i>
+          <h3>Non Distruptive</h3>
+          <div class="text-block">
+              <p>Delve should not take player attention away from the game any more than a character-sheet does. It should encourage less sheet-scanning downtime by outlining all essential character information to the player or DM at a moment's glance.</p>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <i class="fa fa-plus icon-lg"></i>
+          <h3>Suplemental</h3>
+          <div class="text-block">
+              <p>Delve needs to add value to pre-existing D&D campaigns. It should act as a way for the DM to interface more effectivly with their players, without removing the in-person element. It needs to be adaptable, helpful, and most importantly, optional.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <partial src="partials/footer.html"/>
+  </body>
+</html>

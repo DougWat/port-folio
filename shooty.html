@@ -1,122 +1,90 @@
 <!DOCTYPE html>
 <html>
-
-<head>
-    <title>Shooty Music Game</title>
+  <head>
     <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
-<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap-theme.min.css">
-<link rel="stylesheet" type="text/css" href="css/styles.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"></link>
+<link rel="stylesheet" type="text/css" href="css/betterstyles.css">
 <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700" rel="stylesheet">
 <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 <meta content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1" name="viewport">
 <meta content="I'm a programmer with a love for game design. I work in languages like C++, C#, Javascript, HTML, CSS, and more. I also work in 3D art with Maya, Substance Painter and Designer, and the adobe suite." name="description">
 <meta content="portfolio, design, 3D, game design, UI, user experience, web design, RIT, Rochester, Doug, Watro, Doug Watro, game developer, developer, new, media, ny, new york, web, interface, video games, game, C++, C#, javascript, maya, unreal engine" name="keywords">
 
-</head>
-
-<body onresize="resize()">
-    <div id="IncludeHeaderShooty" class="floating-header">
-      <div class="container-fluid nav-container">
+    <title>Shooty Music Game</title>
+  </head>
+  <body>
+    <div class="container-fluid nav-container">
     <div class="row">
-        <div class="col-3 align-self-center nav-link" ><a href="about.html" class="color-darkgray-text">About Me</a></div>
-        <div class="col-6 align-self-center nav-name" ><a href="index.html" class="color-darkgray-text">Doug Watro</a></div>
-        <div class="col-3 align-self-center nav-link"><a href="resume.html" class="color-darkgray-text">Resume</a></div>
+        <div class="col-3 link align-self-center"><a href="about.html">About Me</a></div>
+        <div class="col-6 name"><a href="index.html">Doug Watro</a></div>
+        <div class="col-3 link align-self-center"><a href="resume.html">Resume</a></div>
     </div>
 </div>
-<div class="container-fluid nav-container-mobile small" style="padding:2em; width:100%">
-    <div class="nav-name nav-name-mobile" ><a href="index.html" class="color-darkgray-text">Doug Watro</a></div>
+<div class="container-fluid nav-container mobile">
+    <div class="name" ><a href="index.html" class="color-darkgray-text">Doug Watro</a></div>
     <div class="row">
-        <div class="col-6 align-self-center nav-link nav-link-mobile" ><a href="about.html" class="color-darkgray-text">About Me</a></div>
-        <div class="col-6 align-self-center nav-link nav-link-mobile"><a href="resume.html" class="color-darkgray-text">Resume</a></div>
+        <div class="col-6 align-self-center link" ><a href="about.html" class="color-darkgray-text">About Me</a></div>
+        <div class="col-6 align-self-center link"><a href="resume.html" class="color-darkgray-text">Resume</a></div>
     </div>
 </div>
 
-    </div>
-    <div class="parallax p_shooty">
-    </div>
-    <div class="color-shooty-1 padding-3em-vert">
-        <div class="container">
-            <div class="row color">
-                <div class="col-sm-12 content-container text-center">
-                    <h2 class="content-header color-darkgray-text" style="margin-top:.5em">Shooty Music Game</h2>
-                    <div class="work-types">
-                        <div class="work-type color-dark-white-text">JavaScript</div>
-                        <div class="work-type-separator color-dark-white-text">•</div>
-                        <div class="work-type color-dark-white-text">HTML5</div>
-                        <div class="work-type-separator color-dark-white-text">•</div>
-                        <div class="work-type color-dark-white-text">Phaser</div>
-                    </div>
-                    <p class="color-darkgray-text contenttext">I've always had a soft spot for music games that let you supply the music. At the same time, I was interested in experimenting with waveform analysis. I decided on Javascript with <a href="https://phaser.io/">Phaser</a> as my language of choice to make it easier for users to access. With a webgame, the user only needs a compatible browser.</p>
-                    <div id="PlayIt">
-                        <a href="games/shootygame/shootygame.html" class="content-header" style="color:#333333">Play It Here</a>
-                    </div>
-                </div>
+      <div class="parallax p_shooty"></div>
+      <div class="container shooty">
+        <div class="row content headliner d-flex">
+          <i class="background"></i>
+          <div class="col-lg-12 align-self-center">
+            <h2>Shooty Music Game</h2>
+            <hr>
+            <p class="work-types">
+              <span>Javascript</span>
+              <span>•</span>
+              <span>HTML5</span>
+              <span>•</span>
+              <span>Phaser</span>
+            </p>
+            <div class="text-block">
+              <p>I've always had a soft spot for music games that let you supply the music. At the same time, I was interested in experimenting with waveform analysis. I decided on Javascript with Phaser as my language of choice to make it easier for users to access. With a webgame, the user only needs a compatible browser.</p>
             </div>
+          </div>
         </div>
-    </div>
-        <div class="color-indecision-2" style="padding: 2em 10%">
-        <div class="videoWrapper">
-            <iframe src="https://www.youtube.com/embed/Vu_IsZHWSHs?ecver=1" frameborder="0" allowfullscreen></iframe>
+        <div class="row content videoWrapper">
+          <i class="background"></i>
+          <iframe src="https://www.youtube.com/embed/Vu_IsZHWSHs?ecver=1" frameborder="0" allowfullscreen></iframe>
         </div>
-    </div>
-    <div class="color-indecision-1 padding-3em-vert">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-6">
-                    <h2 class="content-header color-darkgray-text">A Baseline</h2>
-                    <p class="color-darkgray-text contenttext">The backend of the game was designed with rapid iteration in mind. Using a bit of polymorphism and prototype inheritance I can add new weapons and enemies quickly. All base functions can be overridden allowing for unique effects.</p>
-                </div>
-                    <div class="col-lg-6">
-                    <h2 class="content-header color-darkgray-text">What Comes Next?</h2>
-                    <p class="color-darkgray-text contenttext">The game is simple but the fun is there. It's not perfect, but the foundation is steady enough to build off of. The next steps would be to tweak the basic gameplay, add more ways the music can affect the game, and look into deeper waveform analysis. I'll probably need to pick up a book about digital music and waveforms because that stuff is really involved.</p>
-                </div>
+        <div class="row content">
+          <i class="background"></i>
+          <div class="col-lg-6">
+            <h2>A Baseline</h2>
+            <div class="text-block">
+              <p>The backend of the game was designed with rapid iteration in mind. Using a bit of polymorphism and prototype inheritance I can add new weapons and enemies quickly. All base functions can be overridden allowing for unique effects.</p>
             </div>
+          </div>
+          <div class="col-lg-6">
+            <h2>What Comes Next?</h2>
+            <div class="text-block">
+              <p>The game is simple but the fun is there. It's not perfect, but the foundation is steady enough to build off of. The next steps would be to tweak the basic gameplay, add more ways the music can affect the game, and look into deeper waveform analysis. I'll probably need to pick up a book about digital music and waveforms because that stuff is really involved.</p>
+            </div>
+          </div>
         </div>
-    </div>
-        <div id="IncludeCyberFooter">
-          <div style="background:#000000">
-  <div class="d-flex">
-    <div class="align-self-center center-image footer-social">
-      <a href="https://www.linkedin.com/in/dougwatro/"><img src="resources/icons/ic__linkedin.png"></a>
-      <a href="http://infinitengons.tumblr.com/"><img src="resources/icons/ic__tumblr.png"></a>
-      <!--            <a href="#"><img src="resources/icons/ic__twitter.png"></a>-->
-      <a href="https://www.instagram.com/infinite_ngons/"><img src="resources/icons/ic__instagram.png"></a>
-    </div>
-  </div>
+      </div>
+    <div class="footer">
+    <span class="social">
+      <a href="https://www.linkedin.com/in/dougwatro/"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+      <a href="http://infinitengons.tumblr.com/"><i class="fa fa-tumblr" aria-hidden="true"></i></a>
+      <a href="https://www.instagram.com/infinite_ngons/"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+    </span>
   <a href="#">
-    <p class="contenttext" style="text-align:center; margin:0px auto; color:#EFEFEF; font-size:1em;">Back To Top</p>
+    <p>Back To Top</p>
   </a>
-  <div style="margin:0px; padding:0px; background:#000000; width:100%" class="d-flex">
-    <p class="align-self-center contenttext-full" style="text-align:center; width:100% color:#EFEFEF; font-size:1em; margin:2em auto">Copyright © 2017 Douglas Watro All Rights Reserved</p>
-  </div>
+    <p>Copyright © 2017 Douglas Watro All Rights Reserved</p>
 </div>
 
-        </div>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-        <script>
-            if (window.innerWidth >= 900 && window.innerHeight >= 650) {
-                var link = document.getElementById("PlayIt");
-                link.innerHTML = '<a href="games/shootygame/shootygame.html" class="content-header" style="color:#333333">Play It Here</a>';
-            } else {
-                var link = document.getElementById("PlayIt");
-                link.innerHTML = '<a href="" class="content-header" style="color:#333333; font-size:1em">Open this page on a desktop browser to play.</a>';
-            }
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
 
-            function resize() {
-                if (window.innerWidth >= 900 && window.innerHeight >= 650) {
-                    var link = document.getElementById("PlayIt");
-                    link.innerHTML = '<a href="games/shootygame/shootygame.html" class="content-header" style="color:#333333">Play It Here</a>';
-                } else {
-                    var link = document.getElementById("PlayIt");
-                    link.innerHTML = '<a href="" class="content-header" style="color:#333333; font-size:1em">Open this page on a desktop browser to play.</a>';
-                }
-            }
-        </script>
-
-        <script src="bootstrap/js/bootstrap.min.js"></script>
-</body>
-
+  </body>
 </html>

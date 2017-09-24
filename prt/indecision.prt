@@ -1,142 +1,120 @@
 <!DOCTYPE html>
 <html>
-
-<head>
+  <head>
+    <partial src="partials/headcontent_better.html"/>
     <title>Indecision</title>
-    <partial src="partials/headcontent.html"/>
-</head>
-
-<body>
-    <div id="IncludeHeaderIndecision" style="">
-        <partial src="partials/header.html"/>
-    </div>
-    <div style="padding:0px 10%" class="d-flex ind-header-color">
-        <div style="margin: 20% auto 20% auto; max-height:.3em" class="d-flex justify-content-center align-self-end ind-header-img">
-            <img src="resources/indecision/images/text_logo.png" class="align-self-center ind-header-img">
+  </head>
+  <body>
+    <partial src="partials/header.html"/>
+    <div class="parallax p_indecision"></div>
+    <div class="container indecision">
+      <div class="beta">
+        <i class="background"></i>
+        <p><a href="https://play.google.com/apps/testing/com.doug.indecision">Try out the beta here</a></p>
+      </div>
+      <div class="row content headliner d-flex">
+        <i class=background></i>
+        <div class="col-lg-6 align-self-center">
+          <h2>InDecision</h2>
+          <p class="work-types">
+            <span>Android Studio</span>
+            <span>•</span>
+            <span>Java</span>
+          </p>
+          <div class="text-block">
+            <p>Like many others, I have some trouble making perfectly arbitrary decisions. What kinda food should I buy? What game should I play? Music? There are so many options. InDecision is a response to this ever-present indecisiveness.</p>
+          </div>
         </div>
-    </div>
-    <div class="ind-beta-link">
-        <a href="https://play.google.com/apps/testing/com.doug.indecision">Try out the beta here</a>
-    </div>
-    <div class="color-indecision-2 padding-3em-vert">
-        <div class="container">
-            <div class="row color">
-                <div class="col-lg-6 content-container text-center">
-                    <h2 class="color-darkgray-text content-header">InDecision</h2>
-                    <!--                <img src="resources/indecision/images/app_logo.png" class="app-logo">-->
-                    <div class="work-types">
-                        <div class="work-type">Android Studio</div>
-                        <div class="work-type-separator">•</div>
-                        <div class="work-type">Java</div>
-                    </div>
-                    <p class="color-darkgray-text contenttext">Like many others, I have some trouble making perfectly arbitrary decisions. What kinda food should I buy? What game should I play? Music? There are so many options. InDecision is a response to this ever-present indecisiveness.</p>
-                </div>
-                <div class="col-lg-6">
-                    <div class="row  d-flex" style="height:100%">
-                        <div class="col-lg-6 align-self-center">
-                            <img src="resources/indecision/images/screenshot1.png" class="contentimg center-image">
-                        </div>
-                        <div class="col-lg-6 align-self-center">
-                            <img src="resources/indecision/images/screenshot2.png" class="contentimg center-image">
-                        </div>
-                    </div>
-                </div>
-            </div>
+        <div class="col-lg-3 col-md-6 col-sm-6 align-self-center">
+          <img src="resources/indecision/images/screenshot1.png"/>
         </div>
-    </div>
-    <div class="color-indecision-1 padding-3em-vert">
-        <div>
-            <h2 class="color-darkgray-text content-header">How it works</h2>
-            <p class="color-darkgray-text contenttext-full">The user will have a moment of indecision, where perhaps they may be unable to decide which movie to see, or at which restaurant to eat.</p>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-4">
-                        <video height=auto width=auto style="max-width:80%" autoplay loop controls class="center-image">
-                            <source src="resources/indecision/videos/example_01.mp4" type="video/mp4">
-                        </video>
-                        <p class="color-darkgray-text contenttext-full">Recognising this, the user would create a group in InDecision...</p>
-
-                    </div>
-                    <div class="col-lg-4">
-                        <video height=auto width=auto style="max-width:80%" autoplay loop controls class="center-image">
-                            <source src="resources/indecision/videos/example_02.mp4" type="video/mp4">
-                        </video>
-                        <p class="color-darkgray-text contenttext-full">...and fill it with all their potential options.</p>
-
-                    </div>
-                    <div class="col-lg-4">
-                        <video height=auto width=auto style="max-width:80%" autoplay loop controls class="center-image">
-                            <source src="resources/indecision/videos/example_03.mp4" type="video/mp4">
-                        </video>
-                        <p class="color-darkgray-text contenttext-full">Then, at the tap of a button, the user can receive a random suggestion.</p>
-                    </div>
-                    <p class="color-darkgray-text contenttext-full">InDecision will save the group and its contents so it can be accessed if issue ever comes up again.</p>
-                </div>
-            </div>
+        <div class="col-lg-3 col-md-6 col-sm-6 align-self-center">
+          <img src="resources/indecision/images/screenshot2.png"/>
         </div>
-    </div>
-    <div class="color-indecision-2 padding-3em-vert">
-        <h2 class="color-darkgray-text content-header" style="margin-bottom:1.4em">Core Creeds</h2>
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-4">
-                    <img src="resources/indecision/icons/easy-02.png" class="center-image" style="max-height:5rem">
-                    <p class="content-sub-header color-darkgray-text">Simple</p>
-                    <p class="color-darkgray-text contenttext-full">Users should be able to spontaneously create new groupings quickly and with minimal interaction.</p>
-                </div>
-                <div class="col-lg-4">
-                    <img src="resources/indecision/icons/fast-03.png" class="center-image" style="max-height:5rem">
-                    <p class="content-sub-header color-darkgray-text">Fast</p>
-                    <p class="color-darkgray-text contenttext-full">Users should be able get a result instantly. Results should be obtainable without leaving the front page.</p>
-                </div>
-                <div class="col-lg-4">
-                    <img src="resources/indecision/icons/often-04.png" class="center-image" style="max-height:5rem">
-                    <p class="content-sub-header color-darkgray-text">Reusable</p>
-                    <p class="color-darkgray-text contenttext-full">Users should ideally use this app in their day to day moments of indecision. The previous two points influence this one.</p>
-                </div>
-            </div>
+      </div>
+      <div class="row content d-flex threes">
+        <i class=background></i>
+        <div class="col-lg-12">
+            <h2>How it works</h2>
+            <p>The user will have a moment of indecision, where perhaps they may be unable to decide which movie to see, or at which restaurant to eat.</p>
         </div>
-    </div>
-    <div class="color-indecision-1 padding-3em-vert">
-        <div>
-            <h2 class="color-darkgray-text content-header">Subtlety</h2>
-            <p class="color-darkgray-text contenttext-full">Even the smallest interactions have been given subtle but satisfying responses. I've used apps before that lacked these small details, and while they were perfectly functional, the experience felt rigid. I aimed to prevent that wherever possible, without sacrificing InDecision's core of simplicity.</p>
+        <div class="col-lg-4">
+          <video height=auto width=auto style="max-width:80%" autoplay loop controls class="center-image">
+              <source src="resources/indecision/videos/example_01.mp4" type="video/mp4">
+          </video>
+          <p>Recognising this, the user would create a group in InDecision...</p>
         </div>
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-4">
-                    <video height=auto width=auto style="max-width:80%" autoplay loop controls class="center-image">
-                            <source src="resources/indecision/videos/subtle_01.mp4" type="video/mp4">
-                        </video>
-
-                </div>
-                <div class="col-lg-4">
-                    <video height=auto width=auto style="max-width:80%" autoplay loop controls class="center-image">
-                            <source src="resources/indecision/videos/subtle_02.mp4" type="video/mp4">
-                        </video>
-                </div>
-                <div class="col-lg-4">
-                    <video height=auto width=auto style="max-width:80%" autoplay loop controls class="center-image">
-                            <source src="resources/indecision/videos/subtle_03.mp4" type="video/mp4">
-                        </video>
-                </div>
-            </div>
+        <div class="col-lg-4">
+          <video height=auto width=auto style="max-width:80%" autoplay loop controls class="center-image">
+              <source src="resources/indecision/videos/example_02.mp4" type="video/mp4">
+          </video>
+          <p>...and fill it with all their potential options.</p>
         </div>
-    </div>
-    <div class="color-indecision-2 padding-3em-vert">
-        <div>
-            <h2 class="color-darkgray-text content-header">Going Forward</h2>
-            <p class="color-darkgray-text contenttext-full">I'm going to keep up support for this app throughout beta testing and release. I'm looking to make the experience for users as pleasant as possible, so my first priority is bug squashing.</p>
-            <p class="color-darkgray-text contenttext-full">Once the majority of bugs are fixed and quality of life improvements have been made as per user suggestion, I'll transition into creating more features.</p>
-            <p class="color-darkgray-text contenttext-full">Some potential additions include the ability to favorite groups, sorting and filters, and better ways to rapidly add items to groups.</p>
+        <div class="col-lg-4">
+          <video height=auto width=auto style="max-width:80%" autoplay loop controls class="center-image">
+              <source src="resources/indecision/videos/example_03.mp4" type="video/mp4">
+          </video>
+          <p>Then, at the tap of a button, the user can receive a random suggestion.</p>
         </div>
+        <div class="col-lg-12">
+            <p>InDecision will save the group and its contents so it can be accessed if issue ever comes up again.</p>
+        </div>
+      </div>
+      <div class="row content d-flex threes">
+        <i class=background></i>
+        <div class="col-lg-12">
+          <h2>Core Creeds</h2>
+        </div>
+        <div class="col-lg-4">
+          <img src="resources/indecision/icons/easy-02.png" class="icon-lg"/>
+          <h3>Simple</h3>
+          <p>Users should be able to spontaneously create new groupings quickly and with minimal interaction.</p>
+        </div>
+        <div class="col-lg-4">
+          <img src="resources/indecision/icons/fast-03.png" class="icon-lg"/>
+          <h3>Fast</h3>
+          <p>Users should be able get a result instantly. Results should be obtainable without leaving the front page.</p>
+        </div>
+        <div class="col-lg-4">
+          <img src="resources/indecision/icons/often-04.png" class="icon-lg"/>
+          <h3>Reusable</h3>
+          <p>Users should ideally use this app in their day to day moments of indecision. The previous two points influence this one.</p>
+        </div>
+      </div>
+      <div class="row content threes d-flex">
+        <i class="background"></i>
+        <div class="col-lg-12">
+          <h2>Subtlety</h2>
+          <p>Even the smallest interactions have been given subtle but satisfying responses. I've used apps before that lacked these small details, and while they were perfectly functional, the experience felt rigid. I aimed to prevent that wherever possible, without sacrificing InDecision's core of simplicity.</p>
+        </div>
+        <div class="col-lg-4">
+          <video height=auto width=auto style="max-width:80%" autoplay loop controls class="center-image">
+                  <source src="resources/indecision/videos/subtle_01.mp4" type="video/mp4">
+              </video>
+        </div>
+        <div class="col-lg-4">
+          <video height=auto width=auto style="max-width:80%" autoplay loop controls class="center-image">
+                  <source src="resources/indecision/videos/subtle_02.mp4" type="video/mp4">
+              </video>
+        </div>
+        <div class="col-lg-4">
+          <video height=auto width=auto style="max-width:80%" autoplay loop controls class="center-image">
+                  <source src="resources/indecision/videos/subtle_03.mp4" type="video/mp4">
+              </video>
+        </div>
+      </div>
+      <div class="row content d-flex">
+        <i class="background"></i>
+        <div class="col-lg-12">
+          <h2>Going Forward</h2>
+          <div class="text-block">
+            <p>I'm going to keep up support for this app throughout beta testing and release. I'm looking to make the experience for users as pleasant as possible, so my first priority is bug squashing.</p>
+            <p>Once the majority of bugs are fixed and quality of life improvements have been made as per user suggestion, I'll transition into creating more features.</p>
+            <p>Some potential additions include the ability to favorite groups, sorting and filters, and better ways to rapidly add items to groups.</p>
+          </div>
+        </div>
+      </div>
     </div>
-    <div id="FooterIncludeIndecision">
-      <partial src="partials/footer.html"/>
-    </div>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-
-    <script src="bootstrap/js/bootstrap.min.js"></script>
-</body>
-
+    <partial src="partials/footer.html"/>
+  </body>
 </html>

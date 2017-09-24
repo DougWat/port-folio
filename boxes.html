@@ -2,204 +2,177 @@
 <html>
 
 <head>
-  <title>Hoppin' Boxes</title>
   <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
-<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap-theme.min.css">
-<link rel="stylesheet" type="text/css" href="css/styles.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"></link>
+<link rel="stylesheet" type="text/css" href="css/betterstyles.css">
 <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700" rel="stylesheet">
 <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 <meta content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1" name="viewport">
 <meta content="I'm a programmer with a love for game design. I work in languages like C++, C#, Javascript, HTML, CSS, and more. I also work in 3D art with Maya, Substance Painter and Designer, and the adobe suite." name="description">
 <meta content="portfolio, design, 3D, game design, UI, user experience, web design, RIT, Rochester, Doug, Watro, Doug Watro, game developer, developer, new, media, ny, new york, web, interface, video games, game, C++, C#, javascript, maya, unreal engine" name="keywords">
 
+  <title>Hoppin' Boxes</title>
 </head>
 <body>
-  <div id="include"class="floating-header">
-    <div class="container-fluid nav-container">
+  <div class="container-fluid nav-container">
     <div class="row">
-        <div class="col-3 align-self-center nav-link" ><a href="about.html" class="color-darkgray-text">About Me</a></div>
-        <div class="col-6 align-self-center nav-name" ><a href="index.html" class="color-darkgray-text">Doug Watro</a></div>
-        <div class="col-3 align-self-center nav-link"><a href="resume.html" class="color-darkgray-text">Resume</a></div>
+        <div class="col-3 link align-self-center"><a href="about.html">About Me</a></div>
+        <div class="col-6 name"><a href="index.html">Doug Watro</a></div>
+        <div class="col-3 link align-self-center"><a href="resume.html">Resume</a></div>
     </div>
 </div>
-<div class="container-fluid nav-container-mobile small" style="padding:2em; width:100%">
-    <div class="nav-name nav-name-mobile" ><a href="index.html" class="color-darkgray-text">Doug Watro</a></div>
+<div class="container-fluid nav-container mobile">
+    <div class="name" ><a href="index.html" class="color-darkgray-text">Doug Watro</a></div>
     <div class="row">
-        <div class="col-6 align-self-center nav-link nav-link-mobile" ><a href="about.html" class="color-darkgray-text">About Me</a></div>
-        <div class="col-6 align-self-center nav-link nav-link-mobile"><a href="resume.html" class="color-darkgray-text">Resume</a></div>
+        <div class="col-6 align-self-center link" ><a href="about.html" class="color-darkgray-text">About Me</a></div>
+        <div class="col-6 align-self-center link"><a href="resume.html" class="color-darkgray-text">Resume</a></div>
     </div>
 </div>
 
-  </div>
-  <div class="p_boxes" style="height:500px">
-    <!--        <img src="resources/boxes/HeroImageCropped.png" style="max-width:100%; width:auto; height:auto">-->
-  </div>
-  <div class="color-indecision-1 padding-3em-vert">
-    <div class="container">
-      <div class="row color d-flex">
-        <div class="col-lg-6 align-self-center content-container text-center">
-          <h2 class="color-darkgray-text content-header">Hoppin' Boxes</h2>
-          <div class="work-types">
-            <div class="work-type">Unreal Engine 4</div>
-            <div class="work-type-separator">•</div>
-            <div class="work-type">C++</div>
-          </div>
-          <p class="color-darkgray-text contenttext">
-            I've always found it fascinating how films like WALL·E and games like Portal 2 bring so much human personality to distinctly non-human characters.
-          </p>
-          <p class="color-darkgray-text contenttext">I wanted to try to replicate that effect in Unreal Engine 4 as an exercise, but it ended up becoming a much more involved project that I hope to expand on.</p>
-
-          <p class="color-darkgray-text contenttext"> Take a look at the most recent render below.</p>
-        </div>
-        <div class="col-lg-6 align-self-center ">
-          <img src="resources/boxes/boxes_01.png" class="contentimg">
+  <div class="parallax p_boxes"></div>
+  <div class="container boxes">
+    <div class="row content headliner d-flex">
+      <i class="background"></i>
+      <div class="col-lg-6 align-self-center">
+        <h2>Hoppin' Boxes</h2>
+        <hr>
+        <p class="work-types">
+          <span>Unreal Engine 4</span>
+          <span>•</span>
+          <span>C++</span>
+        </p>
+        <div class="text-block">
+          <p>I've always found it fascinating how films like WALL·E and games like Portal 2 bring so much human personality to distinctly non-human characters.</p>
+          <p>I wanted to try to replicate that effect in Unreal Engine 4 as an exercise, but it ended up becoming a much more involved project that I hope to expand on.</p>
+          <p>Take a look at the most recent render below.</p>
         </div>
       </div>
+      <div class="col-lg-6 align-self-center">
+        <img class="md" src="resources/boxes/boxes_01.png">
+      </div>
     </div>
-  </div>
-
-  <div class="color-indecision-2" style="padding: 2em 10%">
-    <div class="videoWrapper">
+    <div class="row content videoWrapper">
+      <i class="background"></i>
       <iframe src="https://www.youtube.com/embed/P0LlXPrHDDY?ecver=1" frameborder="0" allowfullscreen></iframe>
     </div>
-  </div>
-  <div class="color-indecision-1 padding-3em-vert">
-    <div class="container">
-      <div class="row color d-flex">
-        <div class="col-lg-6 align-self-center ">
-          <img src="resources/boxes/boxes_02.png" class="contentimg">
-        </div>
-        <div class="col-lg-6 align-self-center content-container text-center">
-          <h2 class="color-darkgray-text content-header">The Goal</h2>
-          <p class="color-darkgray-text contenttext">To take a geometric primitive, and program it in such a way that it creates the illusion of life, and more ideally, the appearance of personality. I want to make you sympathize with a herd of cubes.</p>
+    <div class="row content d-flex">
+      <i class="background"></i>
+      <div class="col-lg-6 align-self-center">
+        <img class="sm" src="resources/boxes/boxes_02.png">
+      </div>
+      <div class="col-lg-6 align-self-center">
+        <h2>The Goal</h2>
+        <div class="text-block">
+          <p>To take a geometric primitive, and program it in such a way that it creates the illusion of life, and more ideally, the appearance of personality. I want to make you sympathize with a herd of cubes.</p>
         </div>
       </div>
     </div>
-  </div>
-  <div class="color-indecision-2 padding-3em-vert">
-    <div>
-      <h2 class="color-darkgray-text content-header">A Study of Personality</h2>
-      <h3 class="color-lightgray-text content-sub-header">(And the Importance of Eyes)</h3>
-      <p class="color-darkgray-text contenttext-full">Much of human communication is non-verbal, and two of the most important players in non-verbal communication are the <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2781887/">brow and the eyes</a>. You can detect entire emotional profiles
-        by simply observing those two regions.</p>
-      <p class="color-darkgray-text contenttext-full">While dynamic eyes are all well and good, the vehicle to present all of this is dynamic movement. Idle wandering and responses to stimuli will make these creatures believable. They should run away from things that scare them, move towards things
-        they like, and form groups amongst themselves.</p>
-    </div>
-  </div>
-  <div class="color-indecision-1 padding-3em-vert">
-
-    <h2 class="color-darkgray-text content-header" style="margin-bottom:1.4em">So I took a look at these guys...</h2>
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-6">
-          <div class="videoWrapper" style="margin:0px 0px 1em 0px">
-            <iframe src="https://www.youtube.com/embed/alIq_wG9FNk" frameborder="0" allowfullscreen></iframe>
-          </div>
-        </div>
-        <div class="col-lg-6">
-          <div class="videoWrapper">
-            <iframe src="https://www.youtube.com/embed/JYsfhxnX-Zg" frameborder="0" allowfullscreen></iframe>
-          </div>
+    <div class="row content d-flex">
+      <i class="background"></i>
+      <div class="col-lg-12">
+        <h2>A Study of Personality</h2>
+        <h3>(And the Importance of Eyes)</h3>
+        <div class="text-block">
+          <p>Much of human communication is non-verbal, and two of the most important players in non-verbal communication are the <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2781887/">brow and the eyes</a>. You can detect entire emotional profiles by simply observing those two regions.</p>
+          <p>While dynamic eyes are all well and good, the vehicle to present all of this is dynamic movement. Idle wandering and responses to stimuli will make these creatures believable. They should run away from things that scare them, move towards things they like, and form groups amongst themselves.</p>
         </div>
       </div>
     </div>
-    <p class="color-darkgray-text contenttext-full" style="margin:2.4em auto">Which are fantastic examples of creating expression and personality in non-human characters. WALL·E appears to use head motion and rotating eyes to produce expression, while Portal combines the subtlety of both the head and the eye into a singular
-      unit. Portal also utilizes a dynamic pupil to accent expressions like fear or pain</p>
-  </div>
-  <div class="color-indecision-2 padding-3em-vert">
-    <h2 class="color-darkgray-text content-header" style="margin-bottom:1.4em">Three Elements of Expressive Movement</h2>
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-4">
-          <img src="resources/boxes/box_ic_4-01.png" class="center-image" style="max-width:5rem">
-          <p class="content-sub-header color-darkgray-text">Variation</p>
-          <p class="color-darkgray-text contenttext-full">Movement looks the most convincing when it has small variations, like the time between steps or the distance moved each hop.</p>
+    <div class="row content d-flex">
+      <i class="background"></i>
+      <div class="col-lg-12"><h2>So I took a look at these guys...</h2></div>
+      <div class="col-lg-6">
+        <div class="videoWrapper">
+          <iframe src="https://www.youtube.com/embed/alIq_wG9FNk" frameborder="0" allowfullscreen></iframe>
         </div>
-        <div class="col-lg-4">
-          <img src="resources/boxes/box_ic_5-02.png" class="center-image" style="max-width:5rem">
-          <p class="content-sub-header color-darkgray-text">Collision Avoidance</p>
-          <p class="color-darkgray-text contenttext-full">Cubes hopping into each-other break the illusion of life entirely. To avoid this, cubes have been given basic collision avoidance logic. They will avoid hopping into something directly in front of them.</p>
+      </div>
+      <div class="col-lg-6">
+        <div class="videoWrapper">
+          <iframe src="https://www.youtube.com/embed/JYsfhxnX-Zg" frameborder="0" allowfullscreen></iframe>
         </div>
-        <div class="col-lg-4">
-          <img src="resources/boxes/box_ic_5-03.png" class="center-image" style="max-width:5rem">
-          <p class="content-sub-header color-darkgray-text">Responsiveness</p>
-          <p class="color-darkgray-text contenttext-full">Movement changes depending on outside factors. Cubes will dash away from elements that they fear, taking stronger leaps at quicker intervals, but also running the risk of tripping.</p>
-
+      </div>
+      <div class="col-lg-12 text-block"><p>Which are fantastic examples of creating expression and personality in non-human characters. WALL·E appears to use head motion and rotating eyes to produce expression, while Portal combines the subtlety of both the head and the eye into a singular unit. Portal also utilizes a dynamic pupil to accent expressions like fear or pain</p></div>
+    </div>
+    <div class="row content threes d-flex">
+      <i class="background"></i>
+      <div class="col-lg-12">
+      <h2>Three Elements of Expressive Movement</h2>
+      </div>
+      <div class="col-lg-4">
+        <img src="resources/boxes/box_ic_4-01.png" class="center-image" style="max-width:5rem">
+        <h3>Variation</h3>
+        <p>Movement looks the most convincing when it has small variations, like the time between steps or the distance moved each hop.</p>
+      </div>
+      <div class="col-lg-4">
+        <img src="resources/boxes/box_ic_5-02.png" class="center-image" style="max-width:5rem">
+        <h3>Collision Avoidance</h3>
+        <p>Cubes hopping into each-other break the illusion of life entirely. To avoid this, cubes have been given basic collision avoidance logic. They will avoid hopping into something directly in front of them.</p>
+      </div>
+      <div class="col-lg-4">
+        <img src="resources/boxes/box_ic_5-03.png" class="center-image" style="max-width:5rem">
+        <h3>Responsiveness</h3>
+        <p>Movement changes depending on outside factors. Cubes will dash away from elements that they fear, taking stronger leaps at quicker intervals, but also running the risk of tripping.</p>
+      </div>
+    </div>
+    <div class="row content d-flex">
+      <i class="background"></i>
+      <div class="col-lg-6 align-self-center">
+        <img class="lg" src="resources/boxes/boxes_03.png">
+      </div>
+      <div class="col-lg-6 align-self-center">
+        <h2>Target Following</h2>
+        <div class="text-block">
+          <p>When without a target, cubes will meander about, idly hopping but with no destination.</p>
+          <p>The introduction of a target sees the cubes seek out and follow the target actor. Any actor can be a target, and the cube's programming is designed in anticipation for the dynamic switching of targets. That functionality will be programmed later.</p>
         </div>
       </div>
     </div>
-  </div>
-  <div class="color-indecision-1 padding-3em-vert">
-    <div class="container">
-      <div class="row color d-flex">
-        <div class="col-lg-6 align-self-center ">
-          <img src="resources/boxes/boxes_03.png" class="contentimg">
-        </div>
-        <div class="col-lg-6 align-self-center content-container text-center">
-
-          <h2 class="color-darkgray-text content-header" style="margin-bottom:1em">Target Following</h2>
-          <p class="color-darkgray-text contenttext">
-            When without a target, cubes will meander about, idly hopping but with no destination.
-          </p>
-          <p class="color-darkgray-text contenttext">The introduction of a target sees the cubes seek out and follow the target actor. Any actor can be a target, and the cube's programming is designed in anticipation for the dynamic switching of targets. That functionality will be programmed later.</p>
-        </div>
+    <div class="row content threes d-flex dark">
+      <i class="background"></i>
+      <div class="col-lg-12">
+      <h2>Three Elements of Expressive Eyes</h2>
+      </div>
+      <div class="col-lg-4">
+        <video height=auto width=auto style="max-width:60%" autoplay loop controls class="center-image">
+          <source src="resources/boxes/cube_gaze.mp4" type="video/mp4">
+        </video>
+        <h3>Gaze</h3>
+        <p>A shifting gaze helps to sell the illusion of a living creature. It can create a sense of direction or curiosity.</p>
+      </div>
+      <div class="col-lg-4">
+        <video height=auto width=auto style="max-width:60%" autoplay loop controls class="center-image">
+          <source src="resources/boxes/cube_pupil.mp4" type="video/mp4">
+        </video>
+        <h3>Pupils</h3>
+        <p>Pupils can be used to convey more complex emotions when no other features are present. Fear can be shown through contraction, while comfort can be shown through dilation</p>
+      </div>
+      <div class="col-lg-4">
+        <video height=auto width=auto style="max-width:60%" autoplay loop controls class="center-image">
+          <source src="resources/boxes/cube_blink.mp4" type="video/mp4">
+        </video>
+        <h3>Blinking</h3>
+        <p>Blinking in responses to stimuli can give the character presence. It's a simple action that can be paired with anything to great effect.</p>
       </div>
     </div>
   </div>
-  <div class="color-indecision-3 padding-3em-vert">
-    <h2 class="color-white-text content-header" style="margin-bottom:1.4em">Three Elements of Expressive Eyes</h2>
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-4">
-          <video height=auto width=auto style="max-width:60%" autoplay loop controls class="center-image">
-                            <source src="resources/boxes/cube_gaze.mp4" type="video/mp4">
-                        </video>
-          <p class="content-sub-header color-white-text">Gaze</p>
-          <p class="color-white-text contenttext-full">A shifting gaze helps to sell the illusion of a living creature. It can create a sense of direction or curiosity.</p>
-        </div>
-        <div class="col-lg-4">
-          <video height=auto width=auto style="max-width:60%" autoplay loop controls class="center-image">
-                            <source src="resources/boxes/cube_pupil.mp4" type="video/mp4">
-                        </video>
-          <p class="content-sub-header color-white-text">Pupils</p>
-          <p class="color-white-text contenttext-full">Pupils can be used to convey more complex emotions when no other features are present. Fear can be shown through contraction, while comfort can be shown through dilation.</p>
-
-        </div>
-        <div class="col-lg-4">
-          <video height=auto width=auto style="max-width:60%" autoplay loop controls class="center-image">
-                            <source src="resources/boxes/cube_blink.mp4" type="video/mp4">
-                        </video>
-          <p class="content-sub-header color-white-text">Blinking</p>
-          <p class="color-white-text contenttext-full">Blinking in responses to stimuli can give the character presence. It's a simple action that can be paired with anything to great effect.</p>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div id="FooterInclude">
-    <div style="background:#000000">
-  <div class="d-flex">
-    <div class="align-self-center center-image footer-social">
-      <a href="https://www.linkedin.com/in/dougwatro/"><img src="resources/icons/ic__linkedin.png"></a>
-      <a href="http://infinitengons.tumblr.com/"><img src="resources/icons/ic__tumblr.png"></a>
-      <!--            <a href="#"><img src="resources/icons/ic__twitter.png"></a>-->
-      <a href="https://www.instagram.com/infinite_ngons/"><img src="resources/icons/ic__instagram.png"></a>
-    </div>
-  </div>
+  <div class="footer">
+    <span class="social">
+      <a href="https://www.linkedin.com/in/dougwatro/"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+      <a href="http://infinitengons.tumblr.com/"><i class="fa fa-tumblr" aria-hidden="true"></i></a>
+      <a href="https://www.instagram.com/infinite_ngons/"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+    </span>
   <a href="#">
-    <p class="contenttext" style="text-align:center; margin:0px auto; color:#EFEFEF; font-size:1em;">Back To Top</p>
+    <p>Back To Top</p>
   </a>
-  <div style="margin:0px; padding:0px; background:#000000; width:100%" class="d-flex">
-    <p class="align-self-center contenttext-full" style="text-align:center; width:100% color:#EFEFEF; font-size:1em; margin:2em auto">Copyright © 2017 Douglas Watro All Rights Reserved</p>
-  </div>
+    <p>Copyright © 2017 Douglas Watro All Rights Reserved</p>
 </div>
 
-  </div>
-  <img src="resources/boxes/thoughtfull.jpg" width="100%">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-  <script src="bootstrap/js/bootstrap.min.js"></script>
-</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
 
+</body>
 </html>

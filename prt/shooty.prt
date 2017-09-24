@@ -1,81 +1,50 @@
 <!DOCTYPE html>
 <html>
-
-<head>
+  <head>
+    <partial src="partials/headcontent_better.html"/>
     <title>Shooty Music Game</title>
-    <partial src="partials/headcontent.html"/>
-</head>
-
-<body onresize="resize()">
-    <div id="IncludeHeaderShooty" class="floating-header">
-      <partial src="partials/header.html"/>
-    </div>
-    <div class="parallax p_shooty">
-    </div>
-    <div class="color-shooty-1 padding-3em-vert">
-        <div class="container">
-            <div class="row color">
-                <div class="col-sm-12 content-container text-center">
-                    <h2 class="content-header color-darkgray-text" style="margin-top:.5em">Shooty Music Game</h2>
-                    <div class="work-types">
-                        <div class="work-type color-dark-white-text">JavaScript</div>
-                        <div class="work-type-separator color-dark-white-text">•</div>
-                        <div class="work-type color-dark-white-text">HTML5</div>
-                        <div class="work-type-separator color-dark-white-text">•</div>
-                        <div class="work-type color-dark-white-text">Phaser</div>
-                    </div>
-                    <p class="color-darkgray-text contenttext">I've always had a soft spot for music games that let you supply the music. At the same time, I was interested in experimenting with waveform analysis. I decided on Javascript with <a href="https://phaser.io/">Phaser</a> as my language of choice to make it easier for users to access. With a webgame, the user only needs a compatible browser.</p>
-                    <div id="PlayIt">
-                        <a href="games/shootygame/shootygame.html" class="content-header" style="color:#333333">Play It Here</a>
-                    </div>
-                </div>
+  </head>
+  <body>
+    <partial src="partials/header.html"/>
+      <div class="parallax p_shooty"></div>
+      <div class="container shooty">
+        <div class="row content headliner d-flex">
+          <i class="background"></i>
+          <div class="col-lg-12 align-self-center">
+            <h2>Shooty Music Game</h2>
+            <hr>
+            <p class="work-types">
+              <span>Javascript</span>
+              <span>•</span>
+              <span>HTML5</span>
+              <span>•</span>
+              <span>Phaser</span>
+            </p>
+            <div class="text-block">
+              <p>I've always had a soft spot for music games that let you supply the music. At the same time, I was interested in experimenting with waveform analysis. I decided on Javascript with Phaser as my language of choice to make it easier for users to access. With a webgame, the user only needs a compatible browser.</p>
             </div>
+          </div>
         </div>
-    </div>
-        <div class="color-indecision-2" style="padding: 2em 10%">
-        <div class="videoWrapper">
-            <iframe src="https://www.youtube.com/embed/Vu_IsZHWSHs?ecver=1" frameborder="0" allowfullscreen></iframe>
+        <div class="row content videoWrapper">
+          <i class="background"></i>
+          <iframe src="https://www.youtube.com/embed/Vu_IsZHWSHs?ecver=1" frameborder="0" allowfullscreen></iframe>
         </div>
-    </div>
-    <div class="color-indecision-1 padding-3em-vert">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-6">
-                    <h2 class="content-header color-darkgray-text">A Baseline</h2>
-                    <p class="color-darkgray-text contenttext">The backend of the game was designed with rapid iteration in mind. Using a bit of polymorphism and prototype inheritance I can add new weapons and enemies quickly. All base functions can be overridden allowing for unique effects.</p>
-                </div>
-                    <div class="col-lg-6">
-                    <h2 class="content-header color-darkgray-text">What Comes Next?</h2>
-                    <p class="color-darkgray-text contenttext">The game is simple but the fun is there. It's not perfect, but the foundation is steady enough to build off of. The next steps would be to tweak the basic gameplay, add more ways the music can affect the game, and look into deeper waveform analysis. I'll probably need to pick up a book about digital music and waveforms because that stuff is really involved.</p>
-                </div>
+        <div class="row content">
+          <i class="background"></i>
+          <div class="col-lg-6">
+            <h2>A Baseline</h2>
+            <div class="text-block">
+              <p>The backend of the game was designed with rapid iteration in mind. Using a bit of polymorphism and prototype inheritance I can add new weapons and enemies quickly. All base functions can be overridden allowing for unique effects.</p>
             </div>
+          </div>
+          <div class="col-lg-6">
+            <h2>What Comes Next?</h2>
+            <div class="text-block">
+              <p>The game is simple but the fun is there. It's not perfect, but the foundation is steady enough to build off of. The next steps would be to tweak the basic gameplay, add more ways the music can affect the game, and look into deeper waveform analysis. I'll probably need to pick up a book about digital music and waveforms because that stuff is really involved.</p>
+            </div>
+          </div>
         </div>
-    </div>
-        <div id="IncludeCyberFooter">
-          <partial src="partials/footer.html"/>
-        </div>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-        <script>
-            if (window.innerWidth >= 900 && window.innerHeight >= 650) {
-                var link = document.getElementById("PlayIt");
-                link.innerHTML = '<a href="games/shootygame/shootygame.html" class="content-header" style="color:#333333">Play It Here</a>';
-            } else {
-                var link = document.getElementById("PlayIt");
-                link.innerHTML = '<a href="" class="content-header" style="color:#333333; font-size:1em">Open this page on a desktop browser to play.</a>';
-            }
-
-            function resize() {
-                if (window.innerWidth >= 900 && window.innerHeight >= 650) {
-                    var link = document.getElementById("PlayIt");
-                    link.innerHTML = '<a href="games/shootygame/shootygame.html" class="content-header" style="color:#333333">Play It Here</a>';
-                } else {
-                    var link = document.getElementById("PlayIt");
-                    link.innerHTML = '<a href="" class="content-header" style="color:#333333; font-size:1em">Open this page on a desktop browser to play.</a>';
-                }
-            }
-        </script>
-
-        <script src="bootstrap/js/bootstrap.min.js"></script>
-</body>
-
+      </div>
+    <partial src="partials/footer.html"/>
+  </body>
 </html>
