@@ -1,53 +1,53 @@
 <!DOCTYPE html>
 <html>
-
-<head>
-    <title>3D Work</title>
-    <partial src="partials/headcontent.html"/>
-</head>
-
-<body>
-    <div id="IncludeHeader" class="3D">
+  <head>
+      <title>3D Work</title>
+      <partial src="partials/headcontent_better.html"/>
+  </head>
+  <body>
       <partial src="partials/header.html"/>
-    </div>
-    <div>
-        <h2 class="color-darkgray-text content-header" style="margin:2em 0 1em 0 ; font-weight:100; font-size:2em">3D modeling was always a hobbie of mine!</h2>
-        <h2 class="color-darkgray-text content-header" style="margin:1em 0 2em 0; font-weight:100; font-size:1.4em">Here's a small collection of some of my favorite peices.</h2>
-    </div>
-
-    <div class="color-indecision-1">
-        <div class="container-fluid art-container">
-            <div class="row">
-                <div class="col-lg-4 art-thumb">
-                    <img src="resources/3d/bigbullet/base.jpg" class="center-img art-thumb-img">
-                </div>
-                <div class="col-lg-4 art-thumb">
-                    <img src="resources/3d/pipe/base.jpg" class="center-image art-thumb-img">
-                </div>
-                <div class="col-lg-4 art-thumb">
-                    <img src="resources/3d/mic/base.jpg" class="center-image art-thumb-img">
-                </div>
+      <div>
+        <div class="container-fluid">
+          <div class="row content">
+            <div class="col-lg-12">
+              <h2>Just a bit of my 3D modeling work.</h2>
+              <p class="work-types">
+                <span>Maya</span>
+                <span>•</span>
+                <span>Substance Designer</span>
+                <span>•</span>
+                <span>Substance Painter</span>
+                <span>•</span>
+                <span>Adobe CC</span>
+              </p>
+            </div>
+              <div class="col-lg-6">
+                <img src="resources/3d/babies1.jpg">
+              </div>
+              <div class="col-lg-6">
+                <img src="resources/3d/babies2.jpg">
+              </div>
+              <div class="col-lg-6">
+                <img src="resources/3d/bigbullet/base.jpg">
+              </div>
+              <div class="col-lg-6">
+                <img src="resources/3d/pipe/base.jpg">
+              </div>
+              <div class="col-lg-6">
+                <img src="resources/3d/mic/base.jpg">
+              </div>
+              <div class="col-lg-6 art-thumb">
+                <img src="resources/3d/hydrant/base.jpg">
+              </div>
+              <div class="col-lg-6 art-thumb">
+                <img src="resources/3d/vend/base.jpg">
+              </div>
+              <div class="col-lg-6 art-thumb">
+                <img src="resources/3d/bricks/base.jpg">
+              </div>
             </div>
         </div>
-                <div class="container art-container">
-            <div class="row">
-                <div class="col-lg-4 art-thumb">
-                    <img src="resources/3d/hydrant/base.jpg" class="center-img art-thumb-img">
-                </div>
-                <div class="col-lg-4 art-thumb">
-                    <img src="resources/3d/vend/base.jpg" class="center-image art-thumb-img">
-                </div>
-                <div class="col-lg-4 art-thumb">
-                    <img src="resources/3d/bricks/base.jpg" class="center-image art-thumb-img">
-                </div>
-            </div>
-        </div>
-    </div>
-    <div id="FooterInclude">
-    <partial src="partials/footer.html"/>
-  </div>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-    <script src="bootstrap/js/bootstrap.min.js"></script>
-</body>
-
+      </div>
+      <partial src="partials/footer.html"/>
+  </body>
 </html>

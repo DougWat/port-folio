@@ -10,8 +10,15 @@ h1, h2, h3, h4, h5, p, a {
   font-family: Roboto, sans-serif;
 }
 
-a:hover{
-  text-decoration: none;
+canvas {
+  padding-left: 0;
+  padding-right: 0;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  width: inherit;
 }
 
 img.icon-lg {
@@ -121,6 +128,39 @@ i.icon-lg {
   left: 0;
 }
 
+.work-types:first-of-type {
+  margin-top: 50px;
+}
+
+.work-types:last-of-type {
+  margin-bottom: 50px;
+}
+
+.work-types span {
+  font-weight: 300;
+  color: #888888;
+  font-size: .9em;
+  text-transform: uppercase;
+  letter-spacing: .05em;
+}
+
+.work-types span:nth-child(even) {
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+.index .work-types:first-of-type {
+  margin-top: 15px;
+}
+
+.index .work-types:last-of-type {
+  margin-bottom: 35px;
+}
+
+.index .work-types span {
+  font-size: .7em;
+}
+
 .content {
   position: relative;
   padding-top: 7em;
@@ -192,33 +232,17 @@ i.icon-lg {
   margin: 0;
 }
 
+.content .text-block h2 {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
 .content:nth-child(even) i.background {
   background-color: #efefef;
 }
 
 .content:nth-child(odd) i.background {
   background-color: #fafafa;
-}
-
-.content.headliner .work-types:first-of-type {
-  margin-top: 50px;
-}
-
-.content.headliner .work-types:last-of-type {
-  margin-bottom: 50px;
-}
-
-.content.headliner .work-types span {
-  font-weight: 300;
-  color: #888888;
-  font-size: .9em;
-  text-transform: uppercase;
-  letter-spacing: .05em;
-}
-
-.content.headliner .work-types span:nth-child(even) {
-  margin-left: 15px;
-  margin-right: 15px;
 }
 
 .content.threes h2 {
@@ -507,7 +531,8 @@ i.background {
   background-image: url("../resources/index/entropy_largebutton.jpg");
   background-attachment: scroll;
 }
-.p_delve{
+
+.p_delve {
   background-image: url("../resources/index/delve.jpg");
   background-attachment: scroll;
 }

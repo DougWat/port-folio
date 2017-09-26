@@ -32,12 +32,18 @@
         <div class="row content">
           <i class="background"></i>
           <div class="col-lg-6">
-            <h2>A Baseline</h2>
+            <h2>Scalability</h2>
             <div class="text-block">
-              <p>The backend of the game was designed with rapid iteration in mind. Using a bit of polymorphism and prototype inheritance I can add new weapons and enemies quickly. All base functions can be overridden allowing for unique effects.</p>
+              <p>Shooty Game takes advantage of Javascript's prototype system. Each enemy and weapon type are based off of one object, which can be created and updated the same way, regardless of the specific weapon. This makes it trivial to create new, interesting weapons with unique effects, without having to make any changes to the foundation.</p>
             </div>
           </div>
           <div class="col-lg-6">
+            <img src="resources/shooty/scale 2.png" alt="" class="md">
+          </div>
+        </div>
+        <div class="row content">
+          <i class="background"></i>
+          <div class="col-lg-12">
             <h2>What Comes Next?</h2>
             <div class="text-block">
               <p>The game is simple but the fun is there. It's not perfect, but the foundation is steady enough to build off of. The next steps would be to tweak the basic gameplay, add more ways the music can affect the game, and look into deeper waveform analysis. I'll probably need to pick up a book about digital music and waveforms because that stuff is really involved.</p>
