@@ -145,16 +145,17 @@ i.icon-lg{
 }
 
 .work-types{
+  $margins: 30px;
   &:first-of-type{
-    margin-top:50px;
+    margin-top:$margins;
   }
   &:last-of-type{
-    margin-bottom:50px;
+    margin-bottom:$margins;
   }
   span{
     font-weight: 300;
     color: $secondary-color-lightgray;
-    font-size: .9em;
+    font-size: .7em;
     text-transform: uppercase;
     letter-spacing: .05em;
   }
@@ -183,32 +184,37 @@ i.icon-lg{
   text-align: center;
 
   & > div{
-    padding:0;
+    padding:15px 25px;
+    >*{
+      margin-bottom: 20px;
+    }
+    >*:last-child{
+      margin-bottom: 0;
+    }
   }
   h2, h3{
     color: $primary-color-dark;
-    font-size:2.1em;
+    font-size:1.8em;
     font-weight: 300;
     letter-spacing: .05em;
     margin:0;
   }
   h2{
-    margin-bottom: 20px;
+    margin-bottom: 40px;
   }
   hr{
-    border-color:$primary-color-dark;
+    //border-color:$primary-color-dark;
   }
   h3{
     color: $secondary-color-lightgray;
-    font-size:1.3em;
+    font-size:1.1em;
     font-weight: 200;
     letter-spacing: .1em;
-    margin:1.5em 0;
+    margin:0 0 1.5em 0 ;
   }
   img{
     width:100%;
     height:auto;
-    padding:10px;
   }
   img.sm{
     max-width: 300px;
@@ -220,7 +226,6 @@ i.icon-lg{
     max-width: 900px;
   }
   .col-lg-12{
-    margin-bottom: 1.5em;
     flex: 0 0 70%;
     margin-left:auto;
     margin-right:auto;
@@ -228,13 +233,16 @@ i.icon-lg{
   .text-block{
     p{
       text-align: left;
-      font-size: 1em;
+      font-size: .8em;
       font-weight: 300;
       letter-spacing: .11em;
       line-height: 2.2em;
       color: $primary-color-dark;
-      padding:19px;
+      padding-bottom:15px;
       margin:0;
+      &:last-of-type{
+        padding:0px;
+      }
     }
     h2{
       margin-top: 30px;
@@ -252,22 +260,27 @@ i.icon-lg{
     }
   }
   &.threes{
-    h2{
-      margin-bottom:1.2em;
+    &>div{
+      padding: 20px;
+      > *{
+        margin-bottom:  20px;
+      }
+      >*:last-child{
+        margin-bottom: 0;
+      }
     }
     p{
-      font-size: 1em;
+      font-size: .8em;
       font-weight: 300;
       letter-spacing: .11em;
       line-height: 2.2em;
       color: $primary-color-dark;
-      padding:29px;
       margin:0;
     }
     h3{
       color:$secondary-color-darkgray;
       font-weight: 300;
-      font-size: 1.5em;
+      font-size: 1.2em;
     }
   }
   &.videoWrapper, .videoWrapper {
@@ -294,14 +307,11 @@ i.icon-lg{
       background-color: #222222 !important;
     }
     h2{
-      font-size: 1.9em;
       font-weight: 200;
     }
     h3{
-      font-size: 1.3em;
     }
     p{
-      font-size: 1em;
       font-weight: 200;
     }
   }
@@ -459,10 +469,10 @@ $indecision-color-accent:#19A093;
     p{
       font-family: $font-stack;
       text-align: center;
-      font-size: 1.1em;
+      font-size: .9em;
       margin: 0;
       padding: 20px;
-      letter-spacing: .05em;
+      letter-spacing: .08em;
       font-weight: 400;
       text-transform: uppercase;
     }

@@ -129,17 +129,17 @@ i.icon-lg {
 }
 
 .work-types:first-of-type {
-  margin-top: 50px;
+  margin-top: 30px;
 }
 
 .work-types:last-of-type {
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 }
 
 .work-types span {
   font-weight: 300;
   color: #888888;
-  font-size: .9em;
+  font-size: .7em;
   text-transform: uppercase;
   letter-spacing: .05em;
 }
@@ -169,37 +169,40 @@ i.icon-lg {
 }
 
 .content > div {
-  padding: 0;
+  padding: 15px 25px;
+}
+
+.content > div > * {
+  margin-bottom: 20px;
+}
+
+.content > div > *:last-child {
+  margin-bottom: 0;
 }
 
 .content h2, .content h3 {
   color: #131319;
-  font-size: 2.1em;
+  font-size: 1.8em;
   font-weight: 300;
   letter-spacing: .05em;
   margin: 0;
 }
 
 .content h2 {
-  margin-bottom: 20px;
-}
-
-.content hr {
-  border-color: #131319;
+  margin-bottom: 40px;
 }
 
 .content h3 {
   color: #888888;
-  font-size: 1.3em;
+  font-size: 1.1em;
   font-weight: 200;
   letter-spacing: .1em;
-  margin: 1.5em 0;
+  margin: 0 0 1.5em 0;
 }
 
 .content img {
   width: 100%;
   height: auto;
-  padding: 10px;
 }
 
 .content img.sm {
@@ -215,7 +218,6 @@ i.icon-lg {
 }
 
 .content .col-lg-12 {
-  margin-bottom: 1.5em;
   flex: 0 0 70%;
   margin-left: auto;
   margin-right: auto;
@@ -223,13 +225,17 @@ i.icon-lg {
 
 .content .text-block p {
   text-align: left;
-  font-size: 1em;
+  font-size: .8em;
   font-weight: 300;
   letter-spacing: .11em;
   line-height: 2.2em;
   color: #131319;
-  padding: 19px;
+  padding-bottom: 15px;
   margin: 0;
+}
+
+.content .text-block p:last-of-type {
+  padding: 0px;
 }
 
 .content .text-block h2 {
@@ -245,24 +251,31 @@ i.icon-lg {
   background-color: #fafafa;
 }
 
-.content.threes h2 {
-  margin-bottom: 1.2em;
+.content.threes > div {
+  padding: 20px;
+}
+
+.content.threes > div > * {
+  margin-bottom: 20px;
+}
+
+.content.threes > div > *:last-child {
+  margin-bottom: 0;
 }
 
 .content.threes p {
-  font-size: 1em;
+  font-size: .8em;
   font-weight: 300;
   letter-spacing: .11em;
   line-height: 2.2em;
   color: #131319;
-  padding: 29px;
   margin: 0;
 }
 
 .content.threes h3 {
   color: #666666;
   font-weight: 300;
-  font-size: 1.5em;
+  font-size: 1.2em;
 }
 
 .content.videoWrapper, .content .videoWrapper {
@@ -292,16 +305,10 @@ i.icon-lg {
 }
 
 .content.dark h2 {
-  font-size: 1.9em;
   font-weight: 200;
 }
 
-.content.dark h3 {
-  font-size: 1.3em;
-}
-
 .content.dark p {
-  font-size: 1em;
   font-weight: 200;
 }
 
@@ -449,10 +456,10 @@ i.background {
 .indecision .beta p {
   font-family: Roboto, sans-serif;
   text-align: center;
-  font-size: 1.1em;
+  font-size: .9em;
   margin: 0;
   padding: 20px;
-  letter-spacing: .05em;
+  letter-spacing: .08em;
   font-weight: 400;
   text-transform: uppercase;
 }

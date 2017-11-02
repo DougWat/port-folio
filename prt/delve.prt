@@ -31,8 +31,8 @@
             <span>Javascript</span>
           </p>
           <div class="text-block">
-            <p>The job of a D&D DM is difficult. There are so many variables to keep track of, so many stats to manage, and it all has to be done in the presence of an audience.</p>
-            <p>There are applications already that make the DMing experience digital, but many of them are exhaustive, with robust interfaces and less than good-enough UX.</p>
+            <p>The job of a DM is difficult. There are so many variables to keep track of, so many stats to manage, and it all has to be done in the presence of an audience.</p>
+            <p>While there already are applications that digitalize D&D, many of them are exhaustive and complicated, with robust interfaces and less than steller UX.</p>
             <p>Delve aims to simplify that, creating an environment that allows for quick access to player information as a supplement to the Pen-and-Paper D&D experience.</p>
           </div>
         </div>
@@ -45,9 +45,8 @@
         <div class="col-lg-12">
           <h2>Simplicity Works Best</h2>
           <div class="text-block">
-            <p>Delve doesn't aim to devorce D&D from it's tabletop, pen-and-paper roots, but it knows the difficulties of running a game. DMs new and old stuggle with managing player information, which for some, means a lot of looking back and forth at a stack of papers.</p>
-            <p>A DM already has so much on their plate, Delve wants to lighten that load. With Delve, a DM can get at-a-glance readouts of every player's stats, and player's can get real-time updates on their vitals, straight from their phones, tablets, or laptops. </p>
-            <p>This works ontop of a discord inspired quick registration system, that allows a DM to create a group, invite their players, and build characters in less than 5 minutes. It's not a chore to use Delve.</p>
+            <p>A DM already has so much on their plate, Delve wants to lighten that load. With Delve, a DM can get at-a-glance readouts of every player's stats, and player's can get real-time updates on their vitals, straight from their phones, tablets, or laptops.</p>
+            <p>This works ontop of a discord inspired quick registration system, that allows a DM to create a group, invite their players, and build characters in less than 5 minutes. Delve enhances pen-and-paper D&D instead of replacing it.</p>
           </div>
         </div>
       </div>
