@@ -101,6 +101,42 @@ i.icon-lg{
     h3{
       margin-bottom: 0;
     }
+    &.intro{
+      i.background{
+        background-color: white;
+      }
+      hr{
+        margin-top: 20px;
+        margin-bottom:20px;
+        max-width: 300px;
+      }
+      h2{
+        letter-spacing: .1em;
+        font-weight: 300;
+        font-size: 1.4em;
+      }
+      h3{
+        color: lighten($primary-color-dark,40);
+        font-weight: 300;
+        font-size: 1em;
+        line-height: 2em;
+      }
+      &.dark{
+        i.background{
+          background-color: $background-dark-1;
+        }
+        hr{
+        }
+        h2{
+          font-weight: 200;
+          font-size: 1.2em;
+        }
+        h3{
+          font-weight: 200;
+          font-size: .9em;
+        }
+      }
+    }
   }
   .entry{
     position: relative;
@@ -425,8 +461,43 @@ i.background{
 ////////
 .delve{
   .content{
+    img{
+      height:100%;
+      width:auto;
+    }
     h2,.text-block p{
       color: lighten($secondary-color-lightgray,20);
+    }
+    b{
+      color:$primary-color-light;
+    }
+    .stack{
+      h3{
+        text-align: left;
+        font-weight: 300;
+        margin-bottom: 1em;
+        color: darken($primary-color-light,30);
+      }
+      .text-block{
+        text-align: left;
+      }
+      p{
+        display: inline-block;
+        padding:0;
+        color: darken($primary-color-light,50);
+        text-align: left;
+        margin-right: 2em;
+        &:last-of-type{
+          margin:0;
+        }
+      }
+      >div{
+        margin-bottom: 40px;
+        max-width: 300px;
+        &:last-of-type{
+          margin-bottom:0;
+        }
+      }
     }
   }
   .content:nth-child(even){
@@ -559,7 +630,8 @@ $indecision-color-accent:#19A093;
 }
 
 .p_delve{
-  background-image: url("../resources/index/delve.jpg");
+  background-image: url("../resources/index/delve.png");
+  background-size: cover;
   background-attachment: scroll;
 }
 
