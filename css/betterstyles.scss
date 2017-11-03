@@ -36,8 +36,9 @@ $font-stack: Roboto, sans-serif;
   width: device-width;
 }
 
-body{
-  overflow-x: hidden;
+html, body{
+  overflow-x: hidden !important;
+  width: 100%;
 }
 h1,h2,h3,h4,h5,p,a{
   font-family: $font-stack;
