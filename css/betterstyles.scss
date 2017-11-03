@@ -141,6 +141,7 @@ i.icon-lg{
   .entry{
     position: relative;
     color: $primary-color-light;
+    height: 500px;
     .overlay{
       padding: 20px;
       padding-top: 70px;
@@ -148,6 +149,7 @@ i.icon-lg{
       width: 300px;
       background-color: rgba(0,0,0,.8);
       position: absolute;
+      z-index: 2;
       font-weight: 300;
       font-family: $font-stack;
       color: $primary-color-light;
@@ -584,25 +586,39 @@ $indecision-color-accent:#19A093;
 }
 
 .p_boxes {
-    background-image: url("../resources/index/boxes_largebutton.jpg");
+    background-image: url("../resources/index/boxes.jpg");
     background-position: top;
 }
 .p_indecision {
-    background-image: url("../resources/index/indecision_largebutton.jpg");
+    background-image: url("../resources/index/indecision.jpg");
     background-attachment: scroll;
 }
 .p_forest {
-    background-image: url("../resources/index/forest_largebutton.jpg");
+    background-image: url("../resources/index/forest.jpg");
 }
 .p_shooty {
-    background-image: url("../resources/index/shooty_largebutton.jpg");
+    background-image: url("../resources/index/shooty.jpg");
     background-position: left;
 }
 .p_cyber {
-    background-image: url("../resources/index/cyber_largebutton.jpg");
+    background-image: url("../resources/index/cyber.jpg");
+    position: relative;
+    &::after{
+      content: "";
+      position: absolute;
+      top:0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background-image:url("../resources/index/commando_logo.png");
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: center;
+      z-index: 1;
+    }
 }
 .p_type {
-    background-image: url("../resources/index/type_largebutton.jpg");
+    background-image: url("../resources/index/type.jpg");
     background-attachment: scroll;
 }
 .p_3D {
@@ -610,21 +626,80 @@ $indecision-color-accent:#19A093;
     background-attachment: scroll;
 }
 .p_shape{
-    background-image: url("../resources/index/entropy_largebutton.jpg");
+    background-image: url("../resources/index/entropy.jpg");
     background-attachment: scroll;
 }
-
 .p_delve{
-  background-image: url("../resources/index/delve.png");
+  background-image: url("../resources/index/delve.jpg");
   background-size: cover;
   background-attachment: scroll;
 }
 
-@media (max-width: 750px) {
+@media (max-width: 850px) {
+  .p_delve{
+    background-image: url("../resources/index/delve_med.jpg");
+    background-color: #1C1C1F;
+    background-size: contain;
+  }
+  .p_indecision{
+    background-image: url("../resources/index/indecision_med.jpg");
+    background-color: #4a549b;
+    background-size: contain;
+  }
+  .p_type{
+    background-image: url("../resources/index/type_med.jpg");
+    background-color: #fde7e9;
+    background-size: contain;
+  }
+}
+@media (max-width: 1000px){
+  .index{
+    .entry{
+      .parallax{
+        //height: 300px;
+      }
+      .overlay{
+        position: relative;
+        left:0;
+        padding: 20px;
+        width:auto;
+        height: auto;
+        //background-color: #111111;
+        h2{
+          font-size: 1.3em;
+        }
+        .text-block{
+          p{
+            font-size: .8em;
+            margin: 0;
+          }
+        }
+        .work-types{
+          margin: 10px 0;
+          font-size: .8em;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 450px) {
     .nav-container {
         display: none;
     }
     .nav-container.mobile {
         display: block;
+    }
+  }
+  @media (max-width: 450px) {
+    .p_delve{
+      background-image: url("../resources/index/delve_sm.jpg");
+          background-size: contain;
+    }
+    .p_indecision{
+      background-image: url("../resources/index/indecision_sm.jpg");
+      background-size: contain;
+    }
+    .p_type{
+      background-image: url("../resources/index/type_sm.jpg");
     }
   }
