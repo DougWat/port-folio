@@ -7,15 +7,35 @@
   <body>
     <partial src="partials/header.html"/>
     <div class="container-fluid index">
-      <div class="row content d-flex intro">
+      <div class="row content d-flex">
         <i class="background"></i>
         <div class="col-lg-12">
           <h2>Hey! Welcome to my site.</h2>
-        </div>
-        <div class="col-lg-12">
+          <p class="work-types">
+            <span>C++</span>
+            <span>•</span>
+            <span>C#</span>
+            <span>•</span>
+            <span>Java</span>
+            <span>•</span>
+            <span>Javascript</span>
+          </p>
+          <p class="work-types">
+            <span>Node.Js</span>
+            <span>•</span>
+            <span>Express</span>
+            <span>•</span>
+            <span>HTML</span>
+            <span>•</span>
+            <span>CSS</span>
+          </p>
+          <p class="work-types">
+            <span>RethinkDB</span>
+            <span>•</span>
+            <span>MongoDB</span>
+          </p>
           <h3>I'm a programmer with special interest in Web Development and Game Design.</h3>
-          <hr>
-          <h3><a href="https://docs.google.com/gview?url=http://dougwatro.com/resources/Resume.pdf&embedded=true">Read my résumé</a>, take a look at some of my work below, <a href="about.html">or maybe get to know me a bit!</a></h3>
+          <h3><a href="about.html">Get to know me a bit</a>, or just take a look at some of my work below!</h3>
         </div>
       </div>
       <a href="boxes.html" class="entry">
@@ -53,7 +73,7 @@
               <span>Javascript</span>
             </p>
             <div class="text-block">
-              <p>Make the DM experience easier with digital tools.</p>
+              <p>An experiment in personality and AI</p>
             </div>
           </div>
         </div>
@@ -130,7 +150,7 @@
               <span>Javascript</span>
             </p>
             <div class="text-block">
-              <p>A competative typing game that uses only one keyboard</p>
+              <p>An experiment in personality and AI</p>
             </div>
           </div>
         </div>

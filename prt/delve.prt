@@ -10,7 +10,7 @@
     </div>
     <div class="parallax p_delve"></div>
     <div class="container delve">
-      <div class="row content headliner d-flex light">
+      <div class="row content headliner d-flex">
         <i class="background"></i>
         <div class="col-lg-6 align-self-center">
           <h2>Delve</h2>
@@ -37,49 +37,10 @@
           </div>
         </div>
         <div class="col-lg-6 align-self-center">
-          <img src="resources/delve/example.jpg" alt="">
+
         </div>
       </div>
       <div class="row content d-flex">
-        <i class="background"></i>
-        <div class="col-lg-8">
-            <h2>The Stack</h2>
-          <div class="text-block">
-            <p>Delve uses a growing selection of the latest web development libraries, frameworks, and APIs.</p>
-            <p><b>SASS</b> preprocessor is used to its fullest capabilities to produce readable, reusable, and easily editable CSS. In turn, the HTML is made readable by eliminating the need to overuse classes.</p>
-            <p><b>NodeJS</b> simplifies the programming process by unifying the front-end and back-end languages.</p>
-            <p><b>RethinkDB</b> was chosen as an alternative to the popular MongoDB for its changefeed functionality. Data will be constantly updated in Delve, so anything that allows the server to listen for database changes is invaluble.</p>
-          </div>
-        </div>
-        <div class="col-lg-4 stack align-self-center">
-          <div>
-            <h3>Front End</h3>
-            <div class="text-block">
-              <p>HTML5</p>
-              <p>SASS</p>
-              <p>jQuery</p>
-            </div>
-          </div>
-          <div>
-            <h3>Back End</h3>
-            <div class="text-block">
-              <p>NodeJS</p>
-              <p>Passport</p>
-              <p>Express</p>
-              <p>EJS</p>
-              <p>Socket.IO</p>
-            </div>
-          </div>
-          <div>
-            <h3>Database</h3>
-            <div class="text-block">
-              <p>RethinkDB</p>
-              <p>Thinky</p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="row content d-flex light">
         <i class="background"></i>
         <div class="col-lg-12">
           <h2>Simplicity Works Best</h2>

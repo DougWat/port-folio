@@ -78,43 +78,6 @@ i.icon-lg {
   margin-bottom: 0;
 }
 
-.index .content.intro i.background {
-  background-color: white;
-}
-
-.index .content.intro hr {
-  margin-top: 20px;
-  margin-bottom: 20px;
-  max-width: 300px;
-}
-
-.index .content.intro h2 {
-  letter-spacing: .1em;
-  font-weight: 300;
-  font-size: 1.4em;
-}
-
-.index .content.intro h3 {
-  color: #6b6b8d;
-  font-weight: 300;
-  font-size: 1em;
-  line-height: 2em;
-}
-
-.index .content.intro.dark i.background {
-  background-color: #131319;
-}
-
-.index .content.intro.dark h2 {
-  font-weight: 200;
-  font-size: 1.2em;
-}
-
-.index .content.intro.dark h3 {
-  font-weight: 200;
-  font-size: .9em;
-}
-
 .index .entry {
   position: relative;
   color: #efefef;
@@ -458,49 +421,8 @@ i.background {
   background-color: #0c0c10;
 }
 
-.delve .content img {
-  height: 100%;
-  width: auto;
-}
-
 .delve .content h2, .delve .content .text-block p {
   color: #bbbbbb;
-}
-
-.delve .content b {
-  color: #efefef;
-}
-
-.delve .content .stack h3 {
-  text-align: left;
-  font-weight: 300;
-  margin-bottom: 1em;
-  color: #a3a3a3;
-}
-
-.delve .content .stack .text-block {
-  text-align: left;
-}
-
-.delve .content .stack p {
-  display: inline-block;
-  padding: 0;
-  color: #707070;
-  text-align: left;
-  margin-right: 2em;
-}
-
-.delve .content .stack p:last-of-type {
-  margin: 0;
-}
-
-.delve .content .stack > div {
-  margin-bottom: 40px;
-  max-width: 300px;
-}
-
-.delve .content .stack > div:last-of-type {
-  margin-bottom: 0;
 }
 
 .delve .content:nth-child(even) i.background {
@@ -630,8 +552,7 @@ i.background {
 }
 
 .p_delve {
-  background-image: url("../resources/index/delve.png");
-  background-size: cover;
+  background-image: url("../resources/index/delve.jpg");
   background-attachment: scroll;
 }
 
