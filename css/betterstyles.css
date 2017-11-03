@@ -559,6 +559,18 @@ i.background {
   background-image: url("../resources/forest/artboard.png");
 }
 
+.resume .content {
+  padding: 50px 0;
+}
+
+.resume .content i.background {
+  background-color: white;
+}
+
+.resume .content h2 {
+  font-size: 1.3em;
+}
+
 /*HELPERS*/
 .parallax {
   /* Set a specific height */

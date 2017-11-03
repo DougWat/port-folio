@@ -565,6 +565,21 @@ $indecision-color-accent:#19A093;
   background-image: url("../resources/forest/artboard.png");
 }
 
+///////////
+//RESUME//
+/////////
+.resume{
+  .content{
+    padding:50px 0;
+    i.background{
+      background-color: white;
+    }
+    h2{
+      font-size: 1.3em;
+    }
+  }
+}
+
 /*HELPERS*/
 .parallax {
     /* Set a specific height */

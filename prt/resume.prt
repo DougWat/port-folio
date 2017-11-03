@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <partial src="partials/headcontent_better.html"/>
+    <title>About Me</title>
+  </head>
+  <body>
+    <partial src="partials/header.html"/>
+      <div class="container resume">
+        <div class="row content d-flex">
+          <i class="background"></i>
+          <div class="col-lg-12">
+            <h2>You can take a look at my resume here, or just <a href="index.html">Go Home</a></h2>
+            <h2><a href="#">Click here to download my resume to your machine.</a></h2>
+            <iframe src="http://docs.google.com/gview?url=http://dougwatro.com/resources/Resume.pdf&amp;embedded=true" class="resume" frameborder="0"></iframe>
+          </div>
+        </div>
+      </div>
+  </body>
+</html>
