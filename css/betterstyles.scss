@@ -530,7 +530,17 @@ i.background{
   }
 
   i.icon-lg{
+    font-size: 3em;
     color: $primary-color-light;
+    margin-bottom: 0;
+  }
+  .threes{
+    h3{
+      margin-top: 25px;
+    }
+  }
+  .stack{
+    border-left:1px solid darken($primary-color-dark,4);
   }
 }
 ///////////////
@@ -691,6 +701,39 @@ $indecision-color-accent:#19A093;
         .work-types{
           margin: 10px 0;
           font-size: .8em;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 767px) {
+  .content{
+    >div{
+      padding-top:30px;
+      padding-bottom: 30px;
+    }
+  }
+  .delve{
+      .stack{
+        width:80%;
+        margin: 0 auto;
+        border-left: none;
+        border-top: 1px solid darken($primary-color-dark,4);
+        >div{
+          width: 100%;
+          margin-right:0px;
+          display: inline-block;
+          max-width: none !important;
+          .text-block{
+            text-align: center;
+            p{
+              margin:0 10px;
+            }
+          }
+          h3{
+            text-align: center;
+          }
+          //display: inline-block;
         }
       }
     }

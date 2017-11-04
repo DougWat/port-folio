@@ -42,7 +42,7 @@
       </div>
       <div class="row content d-flex">
         <i class="background"></i>
-        <div class="col-lg-8">
+        <div class="col-lg-8 col-md-6">
             <h2>The Stack</h2>
           <div class="text-block">
             <p>Delve uses a growing selection of the latest web development libraries, frameworks, and APIs.</p>
@@ -51,7 +51,7 @@
             <p><b>RethinkDB</b> was chosen as an alternative to the popular MongoDB for its changefeed functionality. Data will be constantly updated in Delve, so anything that allows the server to listen for database changes is invaluble.</p>
           </div>
         </div>
-        <div class="col-lg-4 stack align-self-center">
+        <div class="col-lg-4 col-md-6 stack align-self-center">
           <div>
             <h3>Front End</h3>
             <div class="text-block">
@@ -85,7 +85,7 @@
           <h2>Simplicity Works Best</h2>
           <div class="text-block">
             <p>A DM already has so much on their plate, Delve wants to lighten that load. With Delve, a DM can get at-a-glance readouts of every player's stats, and player's can get real-time updates on their vitals, straight from their phones, tablets, or laptops.</p>
-            <p>This works ontop of a discord inspired quick registration system, that allows a DM to create a group, invite their players, and build characters in less than 5 minutes. Delve enhances pen-and-paper D&D instead of replacing it.</p>
+            <p>This works ontop of a Discord inspired quick registration system, that allows a DM to create a group, invite their players, and build characters in less than 5 minutes. Delve enhances pen-and-paper D&D instead of replacing it.</p>
           </div>
         </div>
       </div>

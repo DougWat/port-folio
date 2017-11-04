@@ -532,7 +532,17 @@ i.background {
 }
 
 .delve i.icon-lg {
+  font-size: 3em;
   color: #efefef;
+  margin-bottom: 0;
+}
+
+.delve .threes h3 {
+  margin-top: 25px;
+}
+
+.delve .stack {
+  border-left: 1px solid #0a0a0d;
 }
 
 .indecision .beta {
@@ -689,6 +699,34 @@ i.background {
   .index .entry .overlay .work-types {
     margin: 10px 0;
     font-size: .8em;
+  }
+}
+
+@media (max-width: 767px) {
+  .delve .content > div {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  .delve .content .stack {
+    width: 80%;
+    margin: 0 auto;
+    border-left: none;
+    border-top: 1px solid #0a0a0d;
+  }
+  .delve .content .stack > div {
+    width: 100%;
+    margin-right: 0px;
+    display: inline-block;
+    max-width: none !important;
+  }
+  .delve .content .stack > div .text-block {
+    text-align: center;
+  }
+  .delve .content .stack > div .text-block p {
+    margin: 0 10px;
+  }
+  .delve .content .stack > div h3 {
+    text-align: center;
   }
 }
 
