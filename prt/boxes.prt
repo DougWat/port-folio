@@ -134,6 +134,6 @@
     </div>
   </div>
   <partial src="partials/footer.html" />
-  <img src="resources/boxes/thoughtfull.jpg" alt="">
+  <img src="resources/boxes/thoughtfull.jpg" alt="" style="width:100%">
 </body>
 </html>

@@ -416,6 +416,8 @@ i.background {
 
 .footer a {
   color: #a3a3a3;
+  font-size: .8em;
+  margin-top: 20px;
   -webkit-transition: color 0.2s;
   -moz-transition: color 0.2s;
   -o-transition: color 0.2s;
@@ -425,6 +427,14 @@ i.background {
 .footer a:hover {
   color: #efefef;
   text-decoration: none;
+}
+
+.footer a p {
+  margin-top: 10px;
+}
+
+.footer > p {
+  font-size: .8em;
 }
 
 .footer .social {
@@ -659,6 +669,9 @@ i.background {
 }
 
 @media (max-width: 1000px) {
+  .content .col-lg-12 {
+    flex: 0 0 100%;
+  }
   .index .entry .overlay {
     position: relative;
     left: 0;

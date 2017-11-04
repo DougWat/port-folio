@@ -409,11 +409,19 @@ i.background{
   text-align: center;
   a{
     color: darken($primary-color-light,30);
+    font-size: .8em;
+    margin-top: 20px;
     @include transition(color .2s);
     &:hover{
       color: $primary-color-light;
       text-decoration: none;
     }
+    p{
+      margin-top: 10px;
+    }
+  }
+  >p{
+    font-size: .8em;
   }
   .social{
     padding: 20px 0;
@@ -455,7 +463,6 @@ i.background{
 //BOXES//
 ////////
 .boxes{
-
 }
 
 //////////
@@ -636,6 +643,7 @@ $indecision-color-accent:#19A093;
 }
 
 @media (max-width: 850px) {
+
   .p_delve{
     background-image: url("../resources/index/delve_med.jpg");
     background-color: #1C1C1F;
@@ -653,6 +661,12 @@ $indecision-color-accent:#19A093;
   }
 }
 @media (max-width: 1000px){
+  .content{
+    .col-lg-12{
+      flex: 0 0 100%;
+
+    }
+  }
   .index{
     .entry{
       .parallax{
