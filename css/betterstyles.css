@@ -703,29 +703,29 @@ i.background {
 }
 
 @media (max-width: 767px) {
-  .delve .content > div {
+  .content > div {
     padding-top: 30px;
     padding-bottom: 30px;
   }
-  .delve .content .stack {
+  .delve .stack {
     width: 80%;
     margin: 0 auto;
     border-left: none;
     border-top: 1px solid #0a0a0d;
   }
-  .delve .content .stack > div {
+  .delve .stack > div {
     width: 100%;
     margin-right: 0px;
     display: inline-block;
     max-width: none !important;
   }
-  .delve .content .stack > div .text-block {
+  .delve .stack > div .text-block {
     text-align: center;
   }
-  .delve .content .stack > div .text-block p {
+  .delve .stack > div .text-block p {
     margin: 0 10px;
   }
-  .delve .content .stack > div h3 {
+  .delve .stack > div h3 {
     text-align: center;
   }
 }
