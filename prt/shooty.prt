@@ -20,6 +20,7 @@
               <span>•</span>
               <span>Phaser</span>
             </p>
+            <p>This page is in the process of being completed</p>
             <div class="text-block">
               <p>I've always had a soft spot for music games that let you supply the music. At the same time, I was interested in experimenting with waveform analysis. I decided on Javascript with Phaser as my language of choice to make it easier for users to access. With a webgame, the user only needs a compatible browser.</p>
             </div>

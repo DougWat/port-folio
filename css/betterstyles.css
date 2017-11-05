@@ -4,6 +4,7 @@
 
 html {
   overflow-x: hidden !important;
+  width: 100%;
 }
 
 h1, h2, h3, h4, h5, p, a {
@@ -355,10 +356,8 @@ i.background {
   height: 100%;
   position: absolute;
   top: 0;
-  left: 0;
-  right: 0;
-  margin-left: -100%;
-  margin-right: -100%;
+  left: -100%;
+  right: -100%;
   z-index: -10;
 }
 
@@ -707,25 +706,25 @@ i.background {
     padding-top: 30px;
     padding-bottom: 30px;
   }
-  .delve .stack {
+  .delve .content .stack {
     width: 80%;
     margin: 0 auto;
     border-left: none;
     border-top: 1px solid #0a0a0d;
   }
-  .delve .stack > div {
+  .delve .content .stack > div {
     width: 100%;
     margin-right: 0px;
     display: inline-block;
     max-width: none !important;
   }
-  .delve .stack > div .text-block {
+  .delve .content .stack > div .text-block {
     text-align: center;
   }
-  .delve .stack > div .text-block p {
+  .delve .content .stack > div .text-block p {
     margin: 0 10px;
   }
-  .delve .stack > div h3 {
+  .delve .content .stack > div h3 {
     text-align: center;
   }
 }

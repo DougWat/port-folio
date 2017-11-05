@@ -38,6 +38,7 @@ $font-stack: Roboto, sans-serif;
 
 html{
   overflow-x: hidden !important;
+  width:100%;
 }
 h1,h2,h3,h4,h5,p,a{
   font-family: $font-stack;
@@ -359,10 +360,10 @@ i.background{
   height:100%;
   position: absolute;
   top:0;
-  left:0;
-  right:0;
-  margin-left: -100%;
-  margin-right: -100%;
+  left:-100%;
+  right:-100%;
+  //margin-left: -100%;
+  //margin-right: -100%;
   z-index: -10;
 }
 
@@ -714,6 +715,7 @@ $indecision-color-accent:#19A093;
     }
   }
   .delve{
+    .content{
       .stack{
         width:80%;
         margin: 0 auto;
@@ -737,6 +739,7 @@ $indecision-color-accent:#19A093;
         }
       }
     }
+  }
 }
 @media (max-width: 450px) {
     .nav-container {
