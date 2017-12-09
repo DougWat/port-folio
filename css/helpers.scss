@@ -1,0 +1,19 @@
+@mixin transition($transition...){
+  -webkit-transition: $transition;
+  -moz-transition: $transition;
+  -o-transition: $transition;
+  transition: $transition;
+}
+@mixin radius($rad){
+  border-radius: $rad;
+  -moz-border-radius: $rad;
+  -webkit-border-radius: $rad;
+}
+@mixin scale($X, $Y){
+  -ms-transform: scale($X, $Y); /* IE 9 */
+  -webkit-transform: scale($X, $Y); /* Safari */
+  transform: scale($X, $Y);
+}
+@-ms-viewport{
+  width: device-width;
+}
