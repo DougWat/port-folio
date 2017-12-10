@@ -508,6 +508,7 @@ a:focus {
 
 .hero .wrapper {
   background-color: #212121;
+  background-image: url("https://www.transparenttextures.com/patterns/az-subtle.png");
   height: 100%;
 }
 
@@ -850,6 +851,89 @@ a:focus {
   line-height: 45px;
 }
 
+.episodes .episode-card .list {
+  display: none;
+}
+
+.episodes.list .grid {
+  display: none;
+}
+
+.episodes.list > div {
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.episodes.list .episode-card {
+  height: 80px;
+  width: 100%;
+  max-width: none;
+}
+
+.episodes.list .episode-card img {
+  display: none;
+}
+
+.episodes.list .episode-card > div {
+  padding: 10px 70px 10px 320px;
+  height: 100%;
+  width: 100%;
+}
+
+.episodes.list .episode-card > div > * {
+  display: inline-block;
+}
+
+.episodes.list .episode-card > div .play-button {
+  color: #f7f7f7;
+  font-size: 3em;
+  position: absolute;
+  line-height: 80px;
+  left: 15px;
+  top: 0;
+}
+
+.episodes.list .episode-card > div h3 {
+  margin: 0;
+  position: absolute;
+  left: 70px;
+  max-width: 250px;
+  font-size: .85em;
+  top: 20px;
+}
+
+.episodes.list .episode-card > div > p {
+  max-height: none;
+  height: auto;
+  margin: 0;
+  padding: 0 10px;
+}
+
+.episodes.list .episode-card > div .meta {
+  position: absolute;
+  left: 70px;
+  top: 40px;
+  font-size: 1em;
+}
+
+.episodes.list .episode-card > div .play {
+  width: auto;
+  height: 100%;
+  top: 0;
+  padding: 0;
+  right: 10px;
+  left: auto;
+}
+
+.episodes.list .episode-card > div .play a i::before {
+  position: relative;
+  right: 0;
+}
+
+.episodes.list .episode-card > div .play a, .episodes.list .episode-card > div .play i {
+  line-height: 80px;
+}
+
 .episodes > div {
   padding-top: 15px;
   padding-bottom: 15px;
@@ -869,4 +953,130 @@ a:focus {
 
 .episodes > div:nth-child(even) .episode-card > div .play a {
   color: #212121;
+}
+
+.wrapper.footer {
+  width: 100%;
+  background-color: #212121;
+  background-image: url("https://www.transparenttextures.com/patterns/az-subtle.png");
+}
+
+.wrapper.copy {
+  width: 100%;
+  background-color: #141414;
+  background-image: url("https://www.transparenttextures.com/patterns/az-subtle.png");
+}
+
+.container.footer {
+  font-family: "Open Sans", sans-serif;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.container.footer h3 {
+  color: #f7f7f7;
+  margin-bottom: 20px;
+  font-size: .95em;
+}
+
+.container.footer p {
+  color: #ababab;
+  font-size: .65em;
+  letter-spacing: .02em;
+  line-height: 1.7em;
+  margin-bottom: 20px;
+}
+
+.container.footer .connect .subscribe {
+  position: relative;
+}
+
+.container.footer .connect .subscribe input {
+  font-size: .7em;
+  height: 45px;
+  line-height: 45px;
+  padding: 0 10px;
+  padding-right: 101px;
+  width: 100%;
+  border: none;
+}
+
+.container.footer .connect .subscribe button {
+  height: 39px;
+  width: 95px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  margin: 3px;
+  border: none;
+  background-color: #212121;
+  color: #f7f7f7;
+  font-size: .7em;
+  text-transform: uppercase;
+  letter-spacing: .06em;
+  -webkit-transition: background-color 0.2s;
+  -moz-transition: background-color 0.2s;
+  -o-transition: background-color 0.2s;
+  transition: background-color 0.2s;
+}
+
+.container.footer .connect .subscribe button:hover {
+  background-color: #141414;
+}
+
+.container.footer .connect .subscribe button:active {
+  background-color: #2e2e2e;
+}
+
+.container.footer .connect ul {
+  padding: 0;
+  margin: 0;
+  margin-top: 20px;
+  list-style: none;
+}
+
+.container.footer .connect ul li {
+  display: inline-block;
+  font-size: 1.7em;
+  margin-right: 25px;
+  cursor: pointer;
+}
+
+.container.footer .connect ul li.fb {
+  color: #3B5998;
+}
+
+.container.footer .connect ul li.twt {
+  color: #32A1EF;
+}
+
+.container.footer .connect ul li.sc {
+  color: #FB571B;
+}
+
+.container.copy p {
+  font-size: .70em;
+  color: #545454;
+  padding: 15px 0;
+  margin: 0;
+}
+
+@media (max-width: 575px) {
+  .episodes.list .episode-card > div {
+    padding: 10px 70px 10px 220px;
+  }
+  .episodes.list .episode-card > div h3 {
+    max-width: 150px;
+    font-size: .7em;
+    top: 15px;
+  }
+  .episodes.list .episode-card > div .meta {
+    top: 50px;
+  }
+}
+
+@media (max-width: 767px) {
+  .episodes.list .episode-card > div > p {
+    display: none;
+  }
 }

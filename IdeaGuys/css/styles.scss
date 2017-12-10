@@ -316,6 +316,83 @@ html{
         }
       }
     }
+
+    .list{
+      display: none;
+    }
+  }
+  &.list{
+    .grid{
+      display: none;
+    }
+    >div{
+      padding-top: 5px;
+      padding-bottom: 5px;
+    }
+    .episode-card{
+      $HEIGHT: 80px;
+      $SIDE_SPACE: 70px;
+      $NAME_SPACE: 250px;
+
+      $PADDING: 10px;
+      height: 80px;
+      width: 100%;
+      max-width: none;
+      img{
+        display:none;
+      }
+      >div{
+        padding:$PADDING $SIDE_SPACE $PADDING $SIDE_SPACE+$NAME_SPACE;
+        height:100%;
+        width: 100%;
+        >*{
+          display: inline-block;
+        }
+        .play-button{
+          color: $text_light;
+          font-size: 3em;
+          position: absolute;
+          line-height: $HEIGHT;
+          left: $PADDING + 5px;
+          top:0;
+        }
+        h3{
+          margin:0;
+          position: absolute;
+          left: $SIDE_SPACE;
+          max-width: $NAME_SPACE;
+          font-size: .85em;
+          top: 20px;
+        }
+        >p{
+          max-height: none;
+          height:auto;
+          margin: 0;
+          padding:0 $PADDING;
+        }
+        .meta{
+          position: absolute;
+          left:$SIDE_SPACE;
+          top:40px;
+          font-size: 1em;
+        }
+        .play{
+          width:auto;
+          height:100%;
+          top:0;
+          padding:0;
+          right:$PADDING;
+          left:auto;
+          a i::before{
+            position: relative;
+            right:0;
+          }
+          a,i{
+            line-height: $HEIGHT;
+          }
+        }
+      }
+    }
   }
   >div{
     padding-top: 15px;
@@ -337,6 +414,147 @@ html{
           a{
             color: $color_dark;
           }
+        }
+      }
+    }
+  }
+}
+
+.wrapper{
+  &.footer{
+    width:100%;
+    background-color: $color_dark;
+    background-image: url("https://www.transparenttextures.com/patterns/az-subtle.png");
+  }
+  &.copy{
+    width:100%;
+    background-color: darken($color_dark,5);
+    background-image: url("https://www.transparenttextures.com/patterns/az-subtle.png");
+  }
+}
+
+.container.footer{
+  font-family: $font-stack;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  h3{
+    color: $text_light;
+    margin-bottom: 20px;
+    font-size: .95em;
+  }
+  p{
+    color: darken($text_light,30);
+    font-size: .65em;
+    letter-spacing: .02em;
+    line-height: 1.7em;
+    margin-bottom: 20px;
+  }
+  .connect{
+    .subscribe{
+      $INPUT_HEIGHT: 45px;
+      $BUTTON_MARGIN: 3px;
+      $BUTTON_WIDTH: 95px;
+
+      position: relative;
+      input{
+        font-size: .7em;
+        height: $INPUT_HEIGHT;
+        line-height: $INPUT_HEIGHT;
+        padding: 0 10px;
+        padding-right: $BUTTON_WIDTH+$BUTTON_MARGIN*2;
+        width:100%;
+        border:none;
+      }
+      button{
+        height: $INPUT_HEIGHT - $BUTTON_MARGIN*2;
+        width: $BUTTON_WIDTH;
+        position: absolute;
+        right:0;
+        top:0;
+        margin:$BUTTON_MARGIN;
+
+        border: none;
+        background-color: $color_dark;
+        color: $text_light;
+        font-size: .7em;
+        text-transform: uppercase;
+        letter-spacing: .06em;
+        @include transition(background-color .2s);
+        &:hover{
+          background-color: darken($color_dark,5);
+        }
+        &:active{
+          background-color: lighten($color_dark,5);
+        }
+      }
+    }
+    ul{
+      padding: 0;
+      margin: 0;
+      margin-top: 20px;
+      list-style: none;
+      li{
+        display: inline-block;
+        font-size: 1.7em;
+        margin-right: 25px;
+        cursor: pointer;
+        &.fb{
+          color: $facebook;
+        }
+        &.twt{
+          color: $twitter;
+        }
+        &.sc{
+          color: $soundcloud;
+        }
+      }
+    }
+  }
+}
+.container.copy{
+  p{
+    font-size: .70em;
+    color: lighten($text_dark,20);
+    padding: 15px 0;
+    margin:0;
+  }
+}
+
+//COL-SM AND LOWER
+@media (max-width: 575px) {
+  .episodes{
+    &.list{
+      .episode-card{
+        $PADDING: 10px;
+        $SIDE_SPACE: 70px;
+        $NAME_SPACE: 150px;
+
+        >div{
+          padding:$PADDING $SIDE_SPACE $PADDING $SIDE_SPACE+$NAME_SPACE;
+          h3{
+            max-width: $NAME_SPACE;
+            font-size: .7em;
+            top:15px;
+          }
+          .meta{
+            top:50px;
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 767px) {
+  .episodes{
+    &.list{
+      .episode-card{
+
+        >div{
+
+          >p{
+            display: none;
+          }
+
         }
       }
     }
