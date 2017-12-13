@@ -620,12 +620,12 @@ a:focus {
 
 .hero.mod .hero-episode-card .data .play button {
   position: relative;
-  background-color: transparent;
+  background-color: #212121;
   height: 45px;
   width: 150px;
   font-size: .9em;
-  color: #D64933;
-  border: 2px solid #D64933;
+  color: #F5F5F9;
+  border: 0px solid #D64933;
   overflow: hidden;
   z-index: 1;
   -webkit-transition: border-color 0.2s;
@@ -635,8 +635,10 @@ a:focus {
 }
 
 .hero.mod .hero-episode-card .data .play button::before {
-  content: "PLAY";
-  line-height: 40px;
+  content: "\f04b";
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: 1.7em;
+  line-height: 45px;
   position: absolute;
   background-color: #D64933;
   height: 100%;
@@ -655,16 +657,28 @@ a:focus {
 }
 
 .hero.mod .hero-episode-card .data .play button:active {
-  border-color: #df6f5d;
+  border-color: #b23724;
 }
 
 .hero.mod .hero-episode-card .data .play button:active::before {
-  background-color: #df6f5d;
+  background-color: #b23724;
 }
 
 .hero.mod .hero-episode-card .data .play a {
-  color: #D64933;
+  color: #212121;
   font-size: 2em;
+  -webkit-transition: color 0.1s;
+  -moz-transition: color 0.1s;
+  -o-transition: color 0.1s;
+  transition: color 0.1s;
+}
+
+.hero.mod .hero-episode-card .data .play a:hover {
+  color: #b23724;
+}
+
+.hero.mod .hero-episode-card .data .play a:active {
+  color: #D64933;
 }
 
 .hero.mod .hero-episode-card .data .play a i::before {
@@ -672,6 +686,17 @@ a:focus {
   right: 20px;
   bottom: 0;
   line-height: 45px;
+}
+
+body.about .hero.mod .text h1:nth-child(1) {
+  text-transform: lowercase;
+  font-size: 3.4em;
+}
+
+body.about .hero.mod .text p {
+  width: 100%;
+  max-width: none;
+  margin: 0;
 }
 
 .collection-top > div {
@@ -702,6 +727,21 @@ a:focus {
   color: #D64933;
 }
 
+.collection-top > div .make-list, .collection-top > div .make-grid {
+  -webkit-transition: color 0.2s;
+  -moz-transition: color 0.2s;
+  -o-transition: color 0.2s;
+  transition: color 0.2s;
+}
+
+.collection-top > div .make-list:hover, .collection-top > div .make-grid:hover {
+  color: #b23724;
+}
+
+.collection-top > div .make-list:active, .collection-top > div .make-grid:active {
+  color: #df6f5d;
+}
+
 .collection-top > div span.pages {
   display: inline-block;
   position: absolute;
@@ -723,6 +763,10 @@ a:focus {
   color: #D64933;
 }
 
+.episodes {
+  min-height: 540px;
+}
+
 .episodes .episode-card {
   margin: 0 auto;
   overflow: hidden;
@@ -731,31 +775,41 @@ a:focus {
   width: 100%;
   height: 380px;
   position: relative;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+  -webkit-transition: height 0.2s, width 0.2s, max-width 0.2s;
+  -moz-transition: height 0.2s, width 0.2s, max-width 0.2s;
+  -o-transition: height 0.2s, width 0.2s, max-width 0.2s;
+  transition: height 0.2s, width 0.2s, max-width 0.2s;
 }
 
 .episodes .episode-card img {
   position: absolute;
   top: 0;
   width: 100%;
+  height: auto;
 }
 
 .episodes .episode-card > div {
   position: absolute;
   height: 60%;
   bottom: 0;
-  background-color: #212121;
+  background-color: #F5F5F9;
   padding: 20px;
+  -webkit-transition: height 0.2s;
+  -moz-transition: height 0.2s;
+  -o-transition: height 0.2s;
+  transition: height 0.2s;
 }
 
 .episodes .episode-card > div h3 {
-  color: #f7f7f7;
+  color: #212121;
   font-size: .95em;
   letter-spacing: .08em;
   margin-bottom: 15px;
 }
 
 .episodes .episode-card > div > p {
-  color: #dedede;
+  color: #3b3b3b;
   font-size: .7em;
   margin-bottom: 15px;
   max-height: 48px;
@@ -776,12 +830,13 @@ a:focus {
 }
 
 .episodes .episode-card > div .meta p, .episodes .episode-card > div .meta i {
-  color: #ababab;
+  color: #545454;
   font-size: .7em;
   margin-bottom: 5px;
 }
 
 .episodes .episode-card > div .meta i {
+  color: #D64933;
   margin-left: 20px;
   margin-right: 5px;
   font-size: 1.2em;
@@ -797,12 +852,12 @@ a:focus {
 
 .episodes .episode-card > div .play button {
   position: relative;
-  background-color: transparent;
+  background-color: #212121;
   height: 45px;
   width: 150px;
   font-size: .9em;
   color: #F5F5F9;
-  border: 2px solid #F5F5F9;
+  border: 0px solid #D64933;
   overflow: hidden;
   z-index: 1;
   -webkit-transition: border-color 0.2s;
@@ -812,36 +867,64 @@ a:focus {
 }
 
 .episodes .episode-card > div .play button::before {
-  content: "PLAY";
-  line-height: 40px;
+  content: "\f04b";
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: 1.7em;
+  line-height: 45px;
   position: absolute;
-  background-color: #F5F5F9;
+  background-color: #D64933;
   height: 100%;
   width: 100%;
-  right: 100%;
+  right: 250%;
   bottom: 0;
-  color: #212121;
-  -webkit-transition: right 0.2s, background-color 0.2s;
-  -moz-transition: right 0.2s, background-color 0.2s;
-  -o-transition: right 0.2s, background-color 0.2s;
-  transition: right 0.2s, background-color 0.2s;
+  color: #f7f7f7;
+  -ms-transform: scale(2.5, 1);
+  /* IE 9 */
+  -webkit-transform: scale(2.5, 1);
+  /* Safari */
+  -moz-transform: scale(2.5, 1);
+  -o-transform: scale(2.5, 1);
+  transform: scale(2.5, 1);
+  -webkit-transition: right 0.3s, background-color 0.2s, transform 0.5s;
+  -moz-transition: right 0.3s, background-color 0.2s, transform 0.5s;
+  -o-transition: right 0.3s, background-color 0.2s, transform 0.5s;
+  transition: right 0.3s, background-color 0.2s, transform 0.5s;
 }
 
 .episodes .episode-card > div .play button:hover::before {
   right: 0;
+  -ms-transform: scale(1, 1);
+  /* IE 9 */
+  -webkit-transform: scale(1, 1);
+  /* Safari */
+  -moz-transform: scale(1, 1);
+  -o-transform: scale(1, 1);
+  transform: scale(1, 1);
 }
 
 .episodes .episode-card > div .play button:active {
-  border-color: #d5d5e6;
+  border-color: #b23724;
 }
 
 .episodes .episode-card > div .play button:active::before {
-  background-color: #d5d5e6;
+  background-color: #b23724;
 }
 
 .episodes .episode-card > div .play a {
-  color: #F5F5F9;
+  color: #212121;
   font-size: 2em;
+  -webkit-transition: color 0.1s;
+  -moz-transition: color 0.1s;
+  -o-transition: color 0.1s;
+  transition: color 0.1s;
+}
+
+.episodes .episode-card > div .play a:hover {
+  color: #b23724;
+}
+
+.episodes .episode-card > div .play a:active {
+  color: #D64933;
 }
 
 .episodes .episode-card > div .play a i::before {
@@ -870,12 +953,8 @@ a:focus {
   max-width: none;
 }
 
-.episodes.list .episode-card img {
-  display: none;
-}
-
 .episodes.list .episode-card > div {
-  padding: 10px 70px 10px 320px;
+  padding: 20px 90px 20px 340px;
   height: 100%;
   width: 100%;
 }
@@ -885,18 +964,31 @@ a:focus {
 }
 
 .episodes.list .episode-card > div .play-button {
-  color: #f7f7f7;
+  color: #D64933;
+  cursor: pointer;
   font-size: 3em;
   position: absolute;
   line-height: 80px;
-  left: 15px;
+  left: 25px;
   top: 0;
+  -webkit-transition: color 0.1s;
+  -moz-transition: color 0.1s;
+  -o-transition: color 0.1s;
+  transition: color 0.1s;
+}
+
+.episodes.list .episode-card > div .play-button:hover {
+  color: #df6f5d;
+}
+
+.episodes.list .episode-card > div .play-button:active {
+  color: #b23724;
 }
 
 .episodes.list .episode-card > div h3 {
   margin: 0;
   position: absolute;
-  left: 70px;
+  left: 90px;
   max-width: 250px;
   font-size: .85em;
   top: 20px;
@@ -906,12 +998,12 @@ a:focus {
   max-height: none;
   height: auto;
   margin: 0;
-  padding: 0 10px;
+  padding: 0 20px;
 }
 
 .episodes.list .episode-card > div .meta {
   position: absolute;
-  left: 70px;
+  left: 90px;
   top: 40px;
   font-size: 1em;
 }
@@ -921,7 +1013,7 @@ a:focus {
   height: 100%;
   top: 0;
   padding: 0;
-  right: 10px;
+  right: 20px;
   left: auto;
 }
 
@@ -934,25 +1026,42 @@ a:focus {
   line-height: 80px;
 }
 
-.episodes > div {
-  padding-top: 15px;
-  padding-bottom: 15px;
+.episodes.dark .episode-card > div {
+  background-color: #212121;
 }
 
-.episodes > div:nth-child(even) .episode-card > div {
-  background-color: #D64933;
-}
-
-.episodes > div:nth-child(even) .episode-card > div p {
+.episodes.dark .episode-card > div h3 {
   color: #f7f7f7;
 }
 
-.episodes > div:nth-child(even) .episode-card > div .meta p, .episodes > div:nth-child(even) .episode-card > div .meta i {
+.episodes.dark .episode-card > div p {
   color: #dedede;
 }
 
-.episodes > div:nth-child(even) .episode-card > div .play a {
+.episodes.dark .episode-card > div .meta p {
+  color: #c4c4c4;
+}
+
+.episodes.dark .episode-card > div .play i {
+  color: #f7f7f7;
+}
+
+.episodes.dark .episode-card > div .play button {
+  background-color: #f7f7f7;
   color: #212121;
+}
+
+.episodes.list > div:nth-child(even) .episode-card > div {
+  background-color: #eaeaea;
+}
+
+.episodes.list.dark > div:nth-child(even) .episode-card > div {
+  background-color: #3b3b3b;
+}
+
+.episodes > div {
+  padding-top: 15px;
+  padding-bottom: 15px;
 }
 
 .wrapper.footer {
@@ -1078,5 +1187,20 @@ a:focus {
 @media (max-width: 767px) {
   .episodes.list .episode-card > div > p {
     display: none;
+  }
+}
+
+@media (max-width: 991px) {
+  .hero-episode-card {
+    display: none;
+  }
+  .hero.mod {
+    height: auto;
+  }
+  .hero.mod .text {
+    text-align: center;
+  }
+  .hero.mod .text p {
+    margin: 0 auto;
   }
 }

@@ -72,10 +72,10 @@
           </span>
         </div>
       </div>
-      <div class="row episodes list">
+      <div class="row episodes grid">
         <div class="col-lg-4 col-md-6">
           <div class="episode-card">
-            <img src="resources/stock02.jpeg" alt="" class="grid">
+            <img src="resources/stock02.jpeg" alt="" class="">
             <div>
               <i class="fa fa-play-circle list play-button"></i>
               <h3>#32: Squelching Fire Hose</h3>
@@ -93,7 +93,7 @@
         </div>
         <div class="col-lg-4 col-md-6">
           <div class="episode-card">
-            <img src="resources/stock03.jpg" alt="" class="grid">
+            <img src="resources/stock03.jpg" alt="" class="">
             <div>
               <i class="fa fa-play-circle list play-button"></i>
               <h3>#31: Dating Sim With a Twist</h3>
@@ -111,7 +111,7 @@
         </div>
         <div class="col-lg-4 col-md-6">
           <div class="episode-card">
-            <img src="resources/stock04.jpeg" alt="" class="grid">
+            <img src="resources/stock04.jpeg" alt="" class="">
             <div>
               <i class="fa fa-play-circle list play-button"></i>
               <h3>#30: A Bit of the Ol’ Ultra Farming</h3>
@@ -129,7 +129,7 @@
         </div>
         <div class="col-lg-4 col-md-6">
           <div class="episode-card">
-            <img src="resources/stock05.jpg" alt="" class="grid">
+            <img src="resources/stock05.jpg" alt="" class="">
             <div>
               <i class="fa fa-play-circle list play-button"></i>
               <h3>#29: The Dark Souls of Zoo Sims</h3>
@@ -147,7 +147,7 @@
         </div>
         <div class="col-lg-4 col-md-6">
           <div class="episode-card">
-            <img src="resources/stock06.jpg" alt="" class="grid">
+            <img src="resources/stock06.jpg" alt="" class="">
             <div>
               <i class="fa fa-play-circle list play-button"></i>
               <h3>#28: Education Is Boring</h3>
@@ -165,7 +165,7 @@
         </div>
         <div class="col-lg-4 col-md-6">
           <div class="episode-card">
-            <img src="resources/stock07.jpeg" alt="" class="grid">
+            <img src="resources/stock07.jpeg" alt="" class="">
             <div>
               <i class="fa fa-play-circle list play-button"></i>
               <h3>#27: Little People | Open World</h3>
@@ -242,11 +242,14 @@
       }
 
       $(".make-grid").on("click", function(){
-        console.log("click");
+        $(this).addClass("current");
+        $(".make-list").removeClass("current");
         convertToGrid();
       });
 
       $(".make-list").on("click", function(){
+        $(this).addClass("current");
+        $(".make-grid").removeClass("current");
         convertToList();
       });
 
@@ -254,8 +257,8 @@
         $(episodeCards).each(function(){
           var parent = $(this).parent();
           parent.className = "";
-          $(parent).removeClass("col-lg-4 col-md-6");
           $(parent).addClass("col-12");
+          $(parent).removeClass("col-lg-4 col-md-6");
           $(episodeContainer).removeClass("grid");
           $(episodeContainer).addClass("list");
         });
@@ -263,8 +266,8 @@
       function convertToGrid(){
         $(episodeCards).each(function(){
           var parent = $(this).parent();
-          $(parent).removeClass("col-12");
           $(parent).addClass("col-lg-4 col-md-6");
+          $(parent).removeClass("col-12");
           $(episodeContainer).removeClass("list");
           $(episodeContainer).addClass("grid");
         });

@@ -113,18 +113,20 @@ html{
 
         button{
           position: relative;
-          background-color: rgba(0,0,0,0);
+          background-color: $color_dark;
           height: $CONTENT_HEIGHT;
           width: 150px;
           font-size: .9em;
-          color: $color_main;
-          border: 2px solid $color_main;
+          color: $color_light;
+          border: 0px solid $color_main;
           overflow: hidden;
           z-index: 1;
           @include transition(border-color .2s);
           &::before{
-            content: "PLAY";
-            line-height: $CONTENT_HEIGHT - 5px;
+            content: "\f04b";
+            font: normal normal normal 14px/1 FontAwesome;
+            font-size: 1.7em;
+            line-height: $CONTENT_HEIGHT;
             position: absolute;
             background-color: $color_main;
             height:100%;
@@ -140,15 +142,22 @@ html{
             }
           }
           &:active{
-            border-color: $color_main_light;
+            border-color: darken($color_main,10);
             &::before{
-              background-color: $color_main_light;
+              background-color: darken($color_main,10);
             }
           }
         }
         a{
-          color: $color_main;
+          color: $text_dark;
           font-size: 2em;
+          @include transition(color .1s);
+          &:hover{
+            color: $color_main_dark;
+          }
+          &:active{
+            color: $color_main;
+          }
           i::before{
             position: absolute;
             right: $PADDING;
@@ -156,6 +165,23 @@ html{
             line-height: $CONTENT_HEIGHT;
           }
         }
+      }
+    }
+  }
+}
+body.about{
+  .hero.mod{
+    .text{
+      h1{
+        &:nth-child(1){
+          text-transform: lowercase;
+          font-size: 3.4em;
+        }
+      }
+      p{
+        width:100%;
+        max-width: none;
+        margin:0;
       }
     }
   }
@@ -185,6 +211,15 @@ html{
       color:$color_main;
     }
   }
+  .make-list,.make-grid{
+    @include transition(color .2s);
+    &:hover{
+      color: $color_main_dark;
+    }
+    &:active{
+      color: $color_main_light;
+    }
+  }
   span.pages{
     display: inline-block;
     position: absolute;
@@ -205,6 +240,7 @@ html{
   }
 }
 .episodes{
+  min-height: 540px;
   .episode-card{
     $WIDTH: 360px;
     $HEIGHT:380px;
@@ -216,25 +252,29 @@ html{
     width: 100%;
     height: $HEIGHT;
     position: relative;
+    box-shadow: 5px 5px 10px rgba(0,0,0,.2);
+    @include transition(height .2s, width .2s, max-width .2s);
     img{
       position: absolute;
       top:0;
       width: 100%;
+      height:auto;
     }
     >div{
       position: absolute;
       height: 60%;
       bottom: 0;
-      background-color: $color_dark;
+      background-color: $color_light;
       padding: $PADDING;
+      @include transition(height .2s);
       h3{
-        color: $text_light;
+        color: $text_dark;
         font-size: .95em;
         letter-spacing: .08em;
         margin-bottom: 15px;
       }
       >p{
-        color: darken($text_light,10);
+        color: lighten($text_dark,10);
         font-size: .7em;
         margin-bottom: 15px;
         max-height: 48px;
@@ -251,11 +291,12 @@ html{
       .meta{
         font-size: 1.2em;
         p,i{
-          color: darken(grayscale($text_light),30);
+          color: lighten($text_dark,20);
           font-size: .7em;
           margin-bottom: 5px;
         }
         i{
+          color: $color_main;
           margin-left: 20px;
           margin-right: 5px;
           font-size: 1.2em;
@@ -271,42 +312,53 @@ html{
         bottom: $PADDING;
         button{
           position: relative;
-          background-color: rgba(0,0,0,0);
+          background-color: $color_dark;
           height: $CONTENT_HEIGHT;
           width: 150px;
           font-size: .9em;
           color: $color_light;
-          border: 2px solid $color_light;
+          border: 0px solid $color_main;
           overflow: hidden;
           z-index: 1;
           @include transition(border-color .2s);
           &::before{
-            content: "PLAY";
-            line-height: $CONTENT_HEIGHT - 5px;
+            content: "\f04b";
+            font: normal normal normal 14px/1 FontAwesome;
+            font-size: 1.7em;
+            line-height: $CONTENT_HEIGHT;
             position: absolute;
-            background-color: $color_light;
+            background-color: $color_main;
             height:100%;
             width:100%;
-            right:100%;
+            right:250%;
             bottom:0;
-            color: $text_dark;
-            @include transition(right .2s, background-color .2s);
+            color: $text_light;
+            @include transform(scale(2.5,1));
+            @include transition(right .3s, background-color .2s, transform .5s);
           }
           &:hover{
             &::before{
               right:0;
+              @include transform(scale(1,1));
             }
           }
           &:active{
-            border-color: darken($color_light,10);
+            border-color: darken($color_main,10);
             &::before{
-              background-color: darken($color_light,10);
+              background-color: darken($color_main,10);
             }
           }
         }
         a{
-          color: $color_light;
+          color: $color_dark;
           font-size: 2em;
+          @include transition(color .1s);
+          &:hover{
+            color: $color_main_dark;
+          }
+          &:active{
+            color: $color_main;
+          }
           i::before{
             position: absolute;
             right: $PADDING;
@@ -331,16 +383,13 @@ html{
     }
     .episode-card{
       $HEIGHT: 80px;
-      $SIDE_SPACE: 70px;
+      $PADDING: 20px;
+      $SIDE_SPACE: 70px + $PADDING;
       $NAME_SPACE: 250px;
 
-      $PADDING: 10px;
       height: 80px;
       width: 100%;
       max-width: none;
-      img{
-        display:none;
-      }
       >div{
         padding:$PADDING $SIDE_SPACE $PADDING $SIDE_SPACE+$NAME_SPACE;
         height:100%;
@@ -349,12 +398,20 @@ html{
           display: inline-block;
         }
         .play-button{
-          color: $text_light;
+          color: $color_main;
+          cursor: pointer;
           font-size: 3em;
           position: absolute;
           line-height: $HEIGHT;
           left: $PADDING + 5px;
           top:0;
+          @include transition(color .1s);
+          &:hover{
+            color: $color_main_light;
+          }
+          &:active{
+            color: $color_main_dark;
+          }
         }
         h3{
           margin:0;
@@ -394,29 +451,56 @@ html{
       }
     }
   }
-  >div{
-    padding-top: 15px;
-    padding-bottom: 15px;
-  }
-  >div:nth-child(even){
+  &.dark{
     .episode-card{
       >div{
-        background-color: $color_main;
-        p{
+        background-color: $color_dark;
+        h3{
           color: $text_light;
         }
+        p{
+          color: darken($text_light,10);
+        }
         .meta{
-          p,i{
-            color: darken($text_light,10)
+          p{
+            color: darken($text_light,20);
           }
         }
         .play{
-          a{
-            color: $color_dark;
+          i{
+            color: $text_light;
+          }
+          button{
+            background-color: $text_light;
+            color: $text_dark;
           }
         }
       }
     }
+  }
+
+  //COLOR SWITCHING
+  &.list{
+    >div:nth-child(even){
+      .episode-card{
+        >div{
+          background-color: darken($text_light,5);
+        }
+      }
+    }
+    &.dark{
+      >div:nth-child(even){
+        .episode-card{
+          >div{
+            background-color: lighten($text_dark,10);
+          }
+        }
+      }
+    }
+  }
+  >div{
+    padding-top: 15px;
+    padding-bottom: 15px;
   }
 }
 
@@ -557,6 +641,20 @@ html{
 
         }
       }
+    }
+  }
+}
+@media (max-width: 991px){
+  .hero-episode-card{
+    display:none;
+  }
+  .hero.mod{
+    height:auto;
+  }
+  .hero.mod .text{
+    text-align: center;
+    p{
+      margin:0 auto;
     }
   }
 }
