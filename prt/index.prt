@@ -2,174 +2,92 @@
 <html>
   <head>
     <partial src="partials/headcontent_better.html"/>
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700|Poppins:300,400,500" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/index.css">
     <title>Doug Watro</title>
   </head>
-  <body>
+  <body class="index">
     <partial src="partials/header.html"/>
     <div class="container-fluid index">
-      <div class="row content d-flex intro">
-        <i class="background"></i>
+      <div class="row greeting">
         <div class="col-lg-12">
-          <h2>Hey! Welcome to my site.</h2>
-        </div>
-        <div class="col-lg-12">
-          <h3>I'm a programmer with special interest in Web Development and Game Design.</h3>
-          <hr>
-          <h3><a href="http://docs.google.com/gview?url=http://dougwatro.com/resources/Resume.pdf&amp;embedded=true">Take a look at my résumé</a>, take a look at some of my work below, <a href="about.html">or get to know me a bit!</a></h3>
+          <h2>Web Developer | Game Designer | Programmer</h2>
         </div>
       </div>
-      <a href="boxes.html" class="entry">
-        <div class="parallax p_boxes">
-          <div class="overlay">
-            <h2>Hoppin' Boxes</h2>
-            <p class="work-types">
-              <span>Unreal Engine 4</span>
-              <span>•</span>
-              <span>C++</span>
-            </p>
-            <div class="text-block">
-              <p>An experiment in personality and AI</p>
-            </div>
-          </div>
-        </div>
-      </a>
-      <a href="delve.html" class="entry">
-        <div class="parallax p_delve">
-          <div class="overlay">
-            <h2>Delve</h2>
-            <p class="work-types">
-              <span>Express</span>
-              <span>•</span>
-              <span>Node JS</span>
-              <span>•</span>
-              <span>RethinkDB</span>
-              <span>•</span>
-              <span>SASS</span>
-              <span>•</span>
-              <span>HTML</span>
-              <span>•</span>
-              <span>CSS</span>
-              <span>•</span>
-              <span>Javascript</span>
-            </p>
-            <div class="text-block">
-              <p>Make the DM experience easier with digital tools.</p>
-            </div>
-          </div>
-        </div>
-      </a>
-      <a href="indecision.html" class="entry">
-        <div class="parallax p_indecision">
-          <div class="overlay">
-            <h2>InDecision</h2>
-            <p class="work-types">
-              <span>Android Studio</span>
-              <span>•</span>
-              <span>Java</span>
-            </p>
-            <div class="text-block">
-              <p>An android app designed to help the indecisive</p>
-            </div>
-          </div>
-        </div>
-      </a>
-      <a href="forest.html" class="entry">
-        <div class="parallax p_forest">
-          <div class="overlay">
-            <h2>Evening Forest</h2>
-            <p class="work-types">
-              <span>Unreal Engine 4</span>
-              <span>•</span>
-              <span>C++</span>
-              <span>•</span>
-              <span>Maya</span>
-            </p>
-            <div class="text-block">
-              <p>A forest scene, made to experiment with lighting and particles.</p>
-            </div>
-          </div>
-        </div>
-      </a>
-      <a href="shooty.html" class="entry">
-        <div class="parallax p_shooty">
-          <div class="overlay">
-            <h2>Shooty Music Game</h2>
-            <p class="work-types">
-              <span>HTML5</span>
-              <span>•</span>
-              <span>Javascript</span>
-            </p>
-            <div class="text-block">
-              <p>A webgame that lets you play a Shoot-Em-Up with your own music.</p>
-            </div>
-          </div>
-        </div>
-      </a>
-      <a href="cyber.html" class="entry">
-        <div class="parallax p_cyber">
-          <div class="overlay">
-            <h2>Cyber Commando</h2>
-            <p class="work-types">
-              <span>HTML5</span>
-              <span>•</span>
-              <span>Javascript</span>
-            </p>
-            <div class="text-block">
-              <p>HTML5 Tower Defense with an 80's Ａｅｓｔｈｅｔｉｃ</p>
-            </div>
-          </div>
-        </div>
-      </a>
-      <a href="type.html" class="entry">
-        <div class="parallax p_type">
-          <div class="overlay">
-            <h2>Key-Daemon</h2>
-            <p class="work-types">
-              <span>HTML5</span>
-              <span>•</span>
-              <span>Javascript</span>
-            </p>
-            <div class="text-block">
-              <p>A competative typing game that uses only one keyboard</p>
-            </div>
-          </div>
-        </div>
-      </a>
-      <div class="row content dark">
-        <i class="background"></i>
+      <div class="row nopadding">
         <div class="col-lg-12">
-          <h2>Side projects, experiments, and hobbies</h2>
+          <div class="item">
+            <div>
+              <a href="webdesign.html"></a>
+              <img class="" src="resources/index_new/Web_dev_Index.jpg" alt="">
+              <h3>Experiments in web</h3>
+              <h2>Web Development Challenges</h2>
+              <button type="button" name="button">Take A Look At These</button>
+            </div>
+          </div>
         </div>
       </div>
-      <a href="3dart.html" class="entry">
-        <div class="parallax p_3D">
-          <div class="overlay">
-            <h2>3D Modeling</h2>
-            <p class="work-types">
-              <span>Maya</span>
-              <span>•</span>
-              <span>Substance Painter</span>
-              <span>•</span>
-              <span>Substance Designer</span>
-              <span>•</span>
-              <span>Adobe CC</span>
-            </p>
-            <div class="text-block">
-              <p>A collection of various small-scale 3D project</p>
+      <div class="row nopadding">
+        <div class="col-lg-7">
+          <div class="item dark">
+            <div>
+              <a href="boxes.html"></a>
+              <img src="resources/index/boxes.jpg" alt="">
+              <h3>An experiment in personality</h3>
+              <h2>Hoppin' Boxes</h2>
+              <button type="button" name="button">Check It Out</button>
             </div>
           </div>
         </div>
-      </a>
-      <a href="https://www.shapeways.com/shops/rpg-elements" class="entry">
-        <div class="parallax p_shape">
-          <div class="overlay">
-            <h2>Shapeways Storefront</h2>
-            <div class="text-block">
-              <p>A jewelry storefront useing 3d printing service Shapeways.</p>
+        <div class="col-lg-5">
+          <div class="item ">
+            <div>
+              <a href="indecision.html"></a>
+              <img class="" src="resources/index_new/indecision.jpg" alt="">
+              <h3>An app for the indecisive</h3>
+              <h2>InDecision</h2>
+              <button type="button" name="button">Choose This One</button>
             </div>
           </div>
         </div>
-      </a>
+      </div>
+      <div class="row nopadding">
+        <div class="col-lg-12">
+          <div class="item">
+            <div>
+              <a href="delve.html"></a>
+              <img class="" src="resources/index/delve.jpg" alt="">
+              <h3>Simplify the DnD experience</h3>
+              <h2>Delve</h2>
+              <button type="button" name="button">Explore</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row nopadding">
+        <div class="col-lg-4">
+          <div class="item dark">
+            <div>
+              <a href="shooty.html"></a>
+              <img src="resources/index/shooty.jpg" alt="">
+              <h3>A Shoot Um' Up with your music</h3>
+              <h2>Shooty Music Game</h2>
+              <button type="button" name="button">Rock On</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-8">
+          <div class="item ">
+            <div>
+              <a href="forest.html"></a>
+              <img class="" src="resources/index/forest.jpg" alt="">
+              <h3>How to frame a scene</h3>
+              <h2>Evening Forest</h2>
+              <button type="button" name="button">Take A Walk</button>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
     <partial src="partials/footer.html"/>
   </body>
