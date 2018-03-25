@@ -634,15 +634,15 @@ body.webdev{
             @include transition(transform .3s, -webkit-transform .3s, -moz-webkit-transform .3s);
             pointer-events: none;
           }
-          img{
-          flex-shrink: 0;
-          width:100%;
-          min-width: 1100px;
-          position: absolute;
-          min-height: 100%;
-          z-index: -1;
-          @include transition(transform .2s, -webkit-transform .2s, -moz-webkit-transform .2s);
-        }
+          img {
+            flex-shrink: 0;
+            width:100%;
+            min-width: 1100px;
+            position: absolute;
+            min-height: 100%;
+            z-index: -1;
+            @include transition(transform .2s, -webkit-transform .2s, -moz-webkit-transform .2s);
+          }
           /* width */
           &::-webkit-scrollbar {
               width: 10px;
@@ -670,7 +670,6 @@ body.webdev{
             }
           }
         }
-
       }
       .showcase-content{
         $SPACING_SIZE: 15px;

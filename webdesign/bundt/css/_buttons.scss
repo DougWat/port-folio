@@ -1,0 +1,36 @@
+button.button_slide{
+  $CONTENT_HEIGHT: 40px;
+  position: relative;
+  background-color: rgba(0,0,0,0);
+  height: $CONTENT_HEIGHT;
+  width: 150px;
+  font-size: .9em;
+  color: $color_main;
+  border: 2px solid $color_main;
+  overflow: hidden;
+  z-index: 1;
+  @include transition(border-color .2s);
+  &::before{
+    content: "TEXT";
+    line-height: $CONTENT_HEIGHT - 5px;
+    position: absolute;
+    background-color: $color_main;
+    height:100%;
+    width:100%;
+    right:100%;
+    bottom:0;
+    color: $text_light;
+    @include transition(right .2s, background-color .2s);
+  }
+  &:hover{
+    &::before{
+      right:0;
+    }
+  }
+  &:active{
+    border-color: $color_main_light;
+    &::before{
+      background-color: $color_main_light;
+    }
+  }
+}

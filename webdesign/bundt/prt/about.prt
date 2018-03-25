@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <partial src="partials/headcontent.html"/>
+    <title>About Bundt</title>
+  </head>
+  <body class="about">
+    <partial src="partials/header.html" />
+    <div class="bg hero dark fixed mod">
+      <div class="center-container">
+        <div class="center">
+          <div>
+            <h1>Ideas</h1>
+            <h3>Are made with Bundt</h3>
+          </div>
+        </div>
+      </div>
+      <div class="ideas">
+          <ul class="words">
+            <li>Skeuomorphic</li>
+            <li>Viral</li>
+            <li>Virtualization</li>
+            <li>Transmedia</li>
+            <li>Real-time</li>
+            <li>Responsive</li>
+            <li>Sensorization</li>
+            <li>Immersion</li>
+            <li>Clickthrough</li>
+            <li>Cloud</li>
+            <li>Collaboration</li>
+            <li>Datafication</li>
+            <li>Podcasting</li>
+            <li>Microservices</li>
+            <li>Benchmarking</li>
+            <li>4G</li>
+            <li>Front-end</li>
+            <li>Growth Hacking</li>
+            <li>Machine Learning</li>
+            <li>Modularity</li>
+            <li>Deep dive</li>
+            <li>Deep learning</li>
+            <li>Folksonomy</li>
+            <li>Beta</li>
+            <li>Big data </li>
+            <li>Bleeding edge</li>
+            <li>Blockchain</li>
+            <li>Blog</li>
+          </ul>
+
+        </div>
+    </div>
+    <div class="container">
+      <div class="row content">
+        <div class="col-12">
+          <h2>We Are Thoughtsmiths</h2>
+          <p>Bundt offers aspiring idea makers an affordable way to turn ideas into reality.</p>
+          <p>You don't need experience, context, or knowledge to have a great idea, all you need is an idea!</p>
+          <p>Bundt can turn those "Wouldn't it be cool if..."s into "Wont it be cool when..."s</p>
+          <p>So why don't you give it a try? You think it, we Bundt it!</p>
+        </div>
+      </div>
+      <div class="row content steps">
+        <i class="background"></i>
+        <div class="col-12">
+          <h2>Your Ideas In Three Steps</h2>
+        </div>
+        <div class="col-md-4">
+          <div class="num">
+            <div>
+              <p>1</p>
+            </div>
+          </div>
+          <div class="info">
+            <h3>Find a Thoughtsmith</h3>
+            <p>Shop around, find one that's right for you.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="num">
+            <div>
+              <p>2</p>
+            </div>
+          </div>
+          <div class="info">
+            <h3>Present Your Ideas</h3>
+            <p>The Thoughtsmith will work with you to design a feasable project, and then they'll set a price.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="num">
+            <div>
+              <p>3</p>
+            </div>
+          </div>
+          <div class="info">
+            <h3>Put Your Feet Up</h3>
+            <p>Your Thoughtsmith will give you an estimated time. When they're done, your new shiny idea will be ready for you.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <partial src="partials/footer.html" />
+    <partial src='partials/scripts.html'/>
+    <script type="text/javascript">
+      var wordsUL = $("ul.words");
+      var inactiveWords = $("ul.words li");
+      var activeWords = [];
+
+      var wordInterval = setInterval(wordMaker, 300);
+
+
+      function wordMaker(){
+        var i = getRandomInt(0,inactiveWords.length);
+        spawnWord(inactiveWords[i], activeWords.length);
+        activeWords.push(inactiveWords[i])
+        inactiveWords.splice(i,1);
+      }
+
+      function spawnWord(word, i){
+        var size = getRandomArbitrary(1,4);
+        var op = getRandomArbitrary(.1,.3);
+
+        var from, to;
+        if(getRandomInt(1,3) > 1){
+          from = $(wordsUL).width()+400+"px";
+          to = '-1000px';
+        }else{
+          from = '-1000px';
+          to = $(wordsUL).width()+400+"px";
+        }
+
+        $(word).css('top', getRandomInt(-30, $(wordsUL).height()) + "px");
+        $(word).css('right',from);
+        $(word).css('font-size', size+"em");
+        $(word).css("opacity",0);
+        $(word).animate({right: to, opacity: op},getRandomInt(15,25) * 1000, function(){
+          inactiveWords.push(word);
+          console.log(i);
+          activeWords.splice(i,1);
+        });
+      }
+      // $(wordsArray).each(function(){
+      //   var size = getRandomArbitrary(2,5);
+      //   var op = getRandomArbitrary(.3,.9);
+      //   $(this).css('top', getRandomInt(-30, $(wordsUL).height()) + "px");
+      //   $(this).css('right',$(wordsUL).width()+"px");
+      //   $(this).css('font-size', size+"em");
+      //   $(this).css("opacity",op);
+      //   $(this).animate({right: '-400px'},3000)
+      // });
+
+
+      function getRandomArbitrary(min, max) {
+        return Math.random() * (max - min) + min;
+      }
+
+      function getRandomInt(min, max) {
+        min = Math.ceil(min);
+        max = Math.floor(max);
+        return Math.floor(Math.random() * (max - min)) + min; //The maximum is exclusive and the minimum is inclusive
+      }
+    </script>
+  </body>
+</html>

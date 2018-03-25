@@ -35,7 +35,7 @@
               <li>Streaming</li>
               <li>Entertainment</li>
             </ul>
-            <p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <p class="description">I love me a good podcast, but it's hard not to notice how criminally generic most podcast sites tend to be. This site is a functional attempt at creating a unique look for a podcast site. It was created using the SASS preprocessor, and was built ontop of a custom wordpress theme. The user can make a post using the wordpress dashboard, and episodes can be linked through the soundcloud API for direct play on the site.</p>
             <hr>
             <ul class="color-scheme color-scheme-ideaguys">
               <li></li>
@@ -58,42 +58,7 @@
         <div class="row showcase-item">
           <div class="slideshow col-lg-9 col-md-6 col-12">
             <div class="wrapper">
-              <a href="bunk.com"></a>
-              <i class="fa fa-external-link-square link"></i>
-              <img src="resources/webdev/lyrathol.png" alt="">
-              <!-- <img src="https://static.pexels.com/photos/1656/road-fashion-vintage-bag.jpg" alt="">
-              <img src="https://static.pexels.com/photos/158009/fashion-glasses-go-pro-female-158009.jpeg" alt=""> -->
-            </div>
-          </div>
-          <div class="showcase-content showcase-content-_ col-lg-3 col-md-6 col-12">
-            <h2>Lyrathol</h2>
-            <ul class="tags">
-              <li>Pharmaceuticals</li>
-              <li>Advertisment</li>
-              <li>Public Health</li>
-            </ul>
-            <p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-            <hr>
-            <ul class="color-scheme color-scheme-lyrathol">
-              <li></li>
-              <li></li>
-            </ul>
-            <ul class="style">
-              <li>Informative</li>
-              <li>Inviting</li>
-              <li>Approchable</li>
-            </ul>
-            <ul class="frameworks">
-              <li>Bootstrap</li>
-              <li>jQuery</li>
-              <li>Sass</li>
-            </ul>
-          </div>
-        </div>
-        <div class="row showcase-item">
-          <div class="slideshow col-lg-9 col-md-6 col-12">
-            <div class="wrapper">
-              <a href="bunk.com"></a>
+              <a href="webdesign/bundt/index.html"></a>
               <i class="fa fa-external-link-square link"></i>
               <img src="resources/webdev/bundt.png" alt="">
               <!-- <img src="https://static.pexels.com/photos/1656/road-fashion-vintage-bag.jpg" alt="">
@@ -107,7 +72,7 @@
               <li>Subscription</li>
               <li>Buisness</li>
             </ul>
-            <p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <p class="description">A subscription based web buisness, one that looks to sell you a service at a fair* price. </p>
             <hr>
             <ul class="color-scheme color-scheme-bundt">
               <li></li>
@@ -128,7 +93,42 @@
         <div class="row showcase-item">
           <div class="slideshow col-lg-9 col-md-6 col-12">
             <div class="wrapper">
-              <a href="bunk.com"></a>
+              <a href="webdesign/lyrathol/index.html"></a>
+              <i class="fa fa-external-link-square link"></i>
+              <img src="resources/webdev/lyrathol.png" alt="">
+              <!-- <img src="https://static.pexels.com/photos/1656/road-fashion-vintage-bag.jpg" alt="">
+              <img src="https://static.pexels.com/photos/158009/fashion-glasses-go-pro-female-158009.jpeg" alt=""> -->
+            </div>
+          </div>
+          <div class="showcase-content showcase-content-_ col-lg-3 col-md-6 col-12">
+            <h2>Lyrathol</h2>
+            <ul class="tags">
+              <li>Pharmaceuticals</li>
+              <li>Advertisment</li>
+              <li>Public Health</li>
+            </ul>
+            <p class="description">A concept pharmaceuticals website, designed to envoke that clinical, sterilized feeling you get from visiting one.</p>
+            <hr>
+            <ul class="color-scheme color-scheme-lyrathol">
+              <li></li>
+              <li></li>
+            </ul>
+            <ul class="style">
+              <li>Informative</li>
+              <li>Inviting</li>
+              <li>Approchable</li>
+            </ul>
+            <ul class="frameworks">
+              <li>Bootstrap</li>
+              <li>jQuery</li>
+              <li>Sass</li>
+            </ul>
+          </div>
+        </div>
+        <div class="row showcase-item">
+          <div class="slideshow col-lg-9 col-md-6 col-12">
+            <div class="wrapper">
+              <a href="webdesign/music/index.html"></a>
               <i class="fa fa-external-link-square link"></i>
               <img src="resources/webdev/music.png" alt="">
               <!-- <img src="https://static.pexels.com/photos/1656/road-fashion-vintage-bag.jpg" alt="">
@@ -142,7 +142,7 @@
               <li>Advertisment</li>
               <li>Music</li>
             </ul>
-            <p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <p class="description">A minimalist website advertising a music tour.</p>
             <hr>
             <ul class="color-scheme color-scheme-music">
               <li></li>
@@ -162,7 +162,7 @@
         <div class="row showcase-item">
           <div class="slideshow col-lg-9 col-md-6 col-12">
             <div class="wrapper">
-              <a href="bunk.com"></a>
+              <a href="webdesign/entropy/index.html"></a>
               <i class="fa fa-external-link-square link"></i>
               <img src="resources/webdev/entropy.png" alt="">
               <!-- <img src="https://static.pexels.com/photos/1656/road-fashion-vintage-bag.jpg" alt="">
@@ -175,7 +175,7 @@
               <li>Jewelry</li>
               <li>Storefront</li>
             </ul>
-            <p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <p class="description">A jewelry storefront.</p>
             <hr>
             <ul class="color-scheme color-scheme-entropy">
               <li></li>
@@ -194,5 +194,38 @@
         </div>
       </div>
       <partial src="partials/footer.html"/>
+      <script type="text/javascript">
+        var images = $(".showcase-item .wrapper img");
+        $(images).each(function(i){
+          $(this).closest(".wrapper").mouseenter(function(){
+            if($(this).data("animating") != "true"){
+              $(this).data("animating","true");
+              loopCycle($(this).find("img"));
+            }
+          });
+        });
+
+        function loopCycle(el){
+          var value = -$(el).height() + $(el).closest(".wrapper").height();
+          var animationtime = $(el).height() / 1000;
+
+          $(el).animate({
+            top: value
+          },3000 * animationtime,function(){
+            $(el).animate({
+              top:0
+            },3000 * animationtime,function(){
+              var wrapper = $(this).closest(".wrapper");
+
+              if($(wrapper).is(":hover")){
+                loopCycle(el);
+              }
+              else{
+                $(wrapper).data("animating", "false");
+              }
+            });
+          });
+        }
+      </script>
   </body>
 </html>

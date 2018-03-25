@@ -1,0 +1,813 @@
+@mixin transition($transition...){
+  -webkit-transition: $transition;
+  -moz-transition: $transition;
+  -o-transition: $transition;
+  transition: $transition;
+}
+@mixin radius($rad){
+  border-radius: $rad;
+  -moz-border-radius: $rad;
+  -webkit-border-radius: $rad;
+}
+
+@mixin transform($trans){
+  -ms-transform: $trans; /* IE 9 */
+  -webkit-transform: $trans; /* Safari */
+  -moz-transform: $trans;
+  -o-transform: $trans;
+  transform: $trans;
+}
+//COLOR SCHEME
+@import '_colors.scss';
+@import '_fontstack.scss';
+
+html{
+  overflow-x:hidden;
+}
+body{
+
+}
+
+//RESET//
+input:focus, textarea:focus{
+  outline:none;
+}
+button{
+  &:focus{
+    outline:none;
+  }
+  &:hover{
+    cursor: pointer;
+  }
+}
+a{
+  &:hover{
+    text-decoration: none;
+  }
+  &:focus{
+    text-decoration: none;
+  }
+}
+//RESET//
+
+h1,h2,h3,h4{
+      font-family: $font-stack-headers;
+}
+h2,h3,h4,p{
+  color: lighten($text-dark,10);
+  letter-spacing: .03em;
+}
+
+.content,.container{
+  position: relative;
+}
+.container{
+  >i.background{
+      background-color: $light-color;
+  }
+}
+
+i.background{
+  height:100%;
+  position: absolute;
+  top:0;
+  left:50%;
+  right:50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+ z-index: -10;
+}
+
+//HEADER CODE//
+@import '_headers.scss';
+.header.header_02.mod{
+  *{
+    letter-spacing: .1em;
+  }
+  a.brand{
+    font-size: 2em;
+  }
+}
+
+body{
+  &.about{
+    .header.header_02.mod{
+      a.about{
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
+//HERO IMAGE CODE
+@import '_hero.scss';
+.hero.mod{
+  height: 50vh;
+  min-height: 400px;
+  h1{
+    font-size: 8em;
+    font-weight: 500;
+    letter-spacing: .1em;
+  }
+  button{
+    font-size: 1.3em;
+    letter-spacing: .1em;
+    background-color: rgba($text-light,0);
+    padding: 15px;
+    @include radius(5px);
+    font-weight: 400;
+    color: $text-light;
+    border: 2px solid $text-light;
+
+    @include transition(background-color .2s, color .2s, border-color .2s, padding .25s);
+    &:hover{
+      background-color: rgba($text-light,.2);
+    }
+    &:active{
+      background-color: rgba($text-light,.4);
+    }
+  }
+}
+
+//MAIN CODE
+.row.content{
+  padding: 100px 0;
+  h2{
+    color: $primary-color;
+    font-size: 2.5em;
+    font-weight: 600;
+    letter-spacing: .05em;
+    text-align: center;
+  }
+  p{
+    font-size: .8em;
+    letter-spacing: .07em;
+    color: lighten($text-dark,45);
+    font-family: $font-stack-headers;
+    strong{
+      color: lighten($text-dark,25);
+      font-size: 1.2em;
+    }
+  }
+  h3{
+    color: $primary-color;
+    font-size: 2em;
+  }
+
+  &.dark{
+    h2,h3,h4{
+      color: $text-light;
+    }
+    p{
+      color: darken($text-light,30);
+    }
+  }
+
+  &.headline{
+    i.background{
+      background-color: $light-color;
+      background-image: url("https://www.transparenttextures.com/patterns/grid-noise.png");
+    }
+    h2{
+      font-size: 3em;
+      padding-left: 40%;
+      text-transform: uppercase;
+      text-align: right;
+      margin:0;
+    }
+    p{
+      margin-bottom: 20px;
+      margin-left: 25px;
+    }
+    h3{
+      margin-left: 25px;
+      margin-bottom: 0;
+    }
+  }
+  &.team{
+    i.background{
+      background-color: $light-color;
+      background-image: url("https://www.transparenttextures.com/patterns/grid-noise.png");
+    }
+    >div{
+      text-align: center;
+      margin-bottom: 100px;
+      &.headliner{
+        margin-bottom: 0;
+      }
+      img{
+        width: 100px;
+        height: 100px;
+        @include radius(50%);
+        margin-bottom: 20px;
+              box-shadow: 4px 4px 5px rgba(black,.2);
+        &.lead{
+          width: 200px;
+          height:200px;
+          margin-bottom: 30px;
+        }
+        //border: 4px solid $primary-color-light;
+      }
+      p{
+        margin-bottom: 0;
+      }
+      h2{
+        text-transform: uppercase;
+        margin: 0 0 50px 0;
+      }
+      h3{
+        font-size: 1.5em;
+      }
+      button{
+        background: rgba($primary-color,0);
+        border: 1px solid $primary-color;
+        padding: 16px;
+        margin: 20px 0;
+        font-family: $font-stack-headers;
+        font-size: 1.0em;
+        font-weight: 400;
+        letter-spacing: .07em;
+        color: $primary-color;
+        text-transform: uppercase;
+        @include radius(6px);
+        @include transition(background-color .2s, color .2s, border-color .2s);
+
+        &:hover{
+          background-color: $primary-color;
+          color: $text-light;
+        }
+        &:active{
+          background-color: $primary-color-light;
+          border-color: $primary-color-light;
+        }
+      }
+      &.hire{
+        margin-bottom: 0;
+        img{
+          border: 2px dotted lighten($dark-color,30);
+        }
+        h3{
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+  &.pricing{
+    .headliner{
+      *{
+        margin-bottom: 20px;
+      }
+      *:last-child{
+        margin-bottom: 50px
+      }
+      h2,p{
+        text-align: center;
+      }
+    }
+    .pricecard{
+      $PADDING_SIZE: 25px;
+      $CIRCLE_SIZE: 180px;
+      overflow: hidden;
+      margin:15px auto;
+      max-width: 275px;
+      font-family: $font-stack-type;
+      box-shadow: 4px 4px 5px rgba(black,.2);
+      background-color: darken($light-color,1);
+      border: 1px solid darken($light-color,7);
+      @include transition(transform .2s, -webkit-transform .2s, -ms-transform .2s, -o-transform .2s, -moz-transform .2s, box-shadow .2s);
+
+      @include radius(3px);
+      >*{
+        padding-left:$PADDING_SIZE;
+        padding-right: $PADDING_SIZE;
+      }
+      >:first-child{
+        padding-top: $PADDING_SIZE;
+      }
+      h2,h3,ul,li{
+        margin:0;
+      }
+      ul{
+        list-style: none;
+        text-align: center;
+        height: 70px;
+        li{
+          color: lighten($text-dark,50);
+          font-size: .9em;
+        }
+      }
+
+      h2{
+        padding-bottom: $PADDING_SIZE/2;
+        text-align: center;
+        font-size: 1.2em;
+        text-transform: uppercase;
+        letter-spacing: .06em;
+      }
+      hr{
+        border-top: 2px dotted lighten($text-dark,70);
+        margin: 0 50px;
+      }
+      .pricecenter{
+        height: $CIRCLE_SIZE;
+        width: $CIRCLE_SIZE;
+        margin: $PADDING_SIZE/2 auto;
+        padding: 0;
+        >div{
+          display: table;
+          position: absolute;
+          overflow: hidden;
+
+          width: inherit;
+          height: inherit;
+
+          border: 3px solid $primary-color-light;
+          letter-spacing: .1em;
+
+          @include radius(50%);
+          h3{
+            font-size: 2.5em;
+            font-weight: 700;
+          }
+          h4{
+            color:lighten($text-dark,60);
+            font-weight: 200;
+            font-size: 1em;
+          }
+          >div{
+            display: table-cell;
+            vertical-align: middle;
+            text-align: center;
+          }
+        }
+      }
+      //GET STARTED BUTTON
+      >div:last-of-type{
+        background-color: darken($light-color,4);
+        padding-top: 20px;
+        padding-bottom: 20px;
+        button{
+          background: $primary-color-light;
+          color: $text-light;
+
+          display: block;
+          margin: 0 auto;
+          padding: 10px;
+          border:none;
+
+          text-transform: uppercase;
+          font-weight: 500;
+          letter-spacing: .06em;
+          font-size: .9em;
+
+          @include radius(3px);
+          @include transition(background-color .2s, color .2s);
+          &:hover{
+            background-color: lighten($primary-color-light,10);
+          }
+          &:active{
+            background-color: lighten($primary-color-light,15);
+          }
+        }
+      }
+
+      &.select{
+        background-color: lighten($primary-color,10);
+        border-color: lighten($primary-color,8);
+        h2{
+          color: $text-light;
+        }
+        hr{
+          border-top-color: $text-light;
+        }
+        ul{
+          li{
+            color: $text-light;
+          }
+        }
+        .pricecenter{
+          h3{
+            color: $text-light;
+          }
+          h4{
+            font-weight: 300;
+            color: darken($text-light,4);
+          }
+          >div{
+            border-color: $text-light;
+          }
+        }
+        >div:last-of-type{
+          background-color: lighten($primary-color,5);
+          button{
+            background-color: $light-color;
+            color: $primary-color;
+            &:hover{
+              background-color: lighten($primary-color,40);
+            }
+          }
+        }
+      }
+      &:hover{
+        transform: scale(1.05,1.05);
+        box-shadow: 15px 15px 13px rgba(black,.1);
+      }
+    }
+  }
+  &.apply{
+    text-align: center;
+    padding:0 20px;
+    >.row{
+      overflow: hidden;
+      //display: none;
+      max-height:0;
+      @include transition(max-height .4s) ;
+      //So this is a horrifying way to give fake margins so the entire thing can slide down.
+      &::before, &::after{
+        content: " ";
+        height: 100px;
+        width:100%;
+      }
+      &.open{
+        display: flex;
+        max-height:1400px;
+      }
+    }
+    i.background{
+      background-color: $dark-color;
+      background-image: url("https://www.transparenttextures.com/patterns/classy-fabric.png");
+    }
+    h2{
+      font-size: 2.4em;
+      margin-bottom: 50px;
+    }
+    form{
+      $INPUT_SIZE: 40px;
+      .accent{
+        display: inline-block;
+        text-align: left;
+      }
+      h3{
+        font-size: 1.3em;
+        text-align: left;
+        height: $INPUT_SIZE;
+        line-height: $INPUT_SIZE;
+        p{
+          font-size: 1.1em;
+          color: $text-light;
+          display: inline-block;
+          font-style: normal;
+          height: $INPUT_SIZE;
+          width: $INPUT_SIZE;
+          text-align: center;
+          margin:0 10px 0 0;
+          background-color: $primary-color-light;
+          border-radius: 40% 40% 40% 0;
+        }
+      }
+      input, textarea, button{
+        display: block;
+        width: 100%;
+        height: $INPUT_SIZE;
+        padding:0 10px;
+        font-size: .8em;
+        margin: 20px 0;
+        border:none;
+        @include radius(5px);
+      }
+      button{
+        background-color: $primary-color-light;
+        color: $text-light;
+        font-size: .9em;
+        text-transform: uppercase;
+        letter-spacing: .05em;
+        @include transition(background-color .2s);
+        &:hover{
+          background-color: $primary-color;
+        }
+        &:active{
+          background-color: lighten($primary-color-light,10);
+        }
+      }
+      textarea{
+        padding-top: 10px;
+        padding-bottom:10px;
+        height: 300px;
+        resize: none;
+        max-height: 160px;
+      }
+      .upload{
+        margin: 20px 0;
+        text-align: left;
+        input,button{
+          display: inline-block;
+          margin: 0;
+        }
+        input{
+          width:60%;
+          margin-right: 10px;
+          text-align: left;
+        }
+        button{
+          width: auto;
+        }
+      }
+    }
+    div.submit{
+      >p{
+        text-align: left;
+        font-size:.7em;
+        line-height: 2.0em;
+        margin: 14px 0 20px 0;
+      }
+      button{
+        font-size: 1.1em;
+        padding: 1.5em;
+        color: $text-light;
+        background-color: $primary-color-light;
+        border:none;
+        text-transform: uppercase;
+        letter-spacing: .1em;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 200;
+        @include radius(.3em);
+      }
+    }
+    div.fine{
+      p{
+        text-align: left;
+        font-size: .7em;
+        margin-top: 20px;
+      }
+    }
+  }
+  &.footer{
+    $FOOTER_COLOR: $dark-color;
+    $BOTTOM_ART_SIZE: 160px;
+    padding: 50px 0 0 0;
+    i.background{
+      background-color: $FOOTER_COLOR;
+    }
+    >i.topper{
+      pointer-events: none;
+      position: absolute;
+      width: auto;
+      line-height: 0em;
+      font-size: $BOTTOM_ART_SIZE;
+      top:-$BOTTOM_ART_SIZE + 1px;
+      margin: 0;
+      text-align: center;
+      color:$FOOTER_COLOR;
+      left:-20px;
+    }
+    >div{
+      >*:last-child{
+        margin-bottom: 50px;
+        padding-right: 10%;
+      }
+    }
+    h4{
+      font-size: 1em;
+      margin-bottom: 35px;
+      color: darken($text-light,10);
+    }
+    p{
+      font-size: .7em;
+      color: darken($text-light,35);
+      font-family: "Roboto", sans-serif;
+    }
+    .social{
+      $CIRCLE_SIZE: 30px;
+      ul{
+        list-style: none;
+        padding:0;
+        li{
+          a{
+            color: darken($text-light,35);
+            font-size: .75em;
+            line-height: $CIRCLE_SIZE;
+            @include transition(color .2s);
+            &:hover{
+              color: darken($text-light,10);
+            }
+            i{
+              margin-right: 10px;
+              font-size: 1.2em;
+              color: $text-light;
+              height: $CIRCLE_SIZE;
+              width: $CIRCLE_SIZE;
+              line-height: $CIRCLE_SIZE;
+              text-align: center;
+              @include radius(50%);
+              &.fa-facebook{
+                background-color: #3b5998;
+              }
+              &.fa-instagram{
+                background-color:#D14967;
+              }
+              &.fa-twitter{
+                background-color:#32A1EF;
+              }
+              &.fa-google-plus{
+                background-color:#CF4B3B;
+              }
+            }
+          }
+          margin-bottom: 15px;
+          &:last-child{
+            margin-bottom: 0;
+          }
+        }
+      }
+    }
+    .contact{
+      $ICON_SIZE: 30px;
+      ul{
+        list-style: none;
+        padding:0 0 0 $ICON_SIZE;
+        li{
+          position: relative;
+          i{
+            color: $text-light;
+            font-size: $ICON_SIZE - 5px;
+            height:100%;
+            position: absolute;
+            left: -$ICON_SIZE;
+          }
+          p{
+            display: inline-block;
+          }
+        }
+      }
+    }
+    .copyright{
+      i.background{
+        background-color: darken($FOOTER_COLOR,5);
+      }
+      p,a{
+        font-size: .75em;
+        margin: 15px 0;
+      }
+    }
+  }
+  // &:nth-last-child(3){
+  //   $BOTTOM_ART_SIZE: 1300px;
+  //   &::after{
+  //     content: '\e800 \e800 \e800 \e800';
+  //     font-family: "landscape";
+  //     pointer-events: none;
+  //     position: absolute;
+  //     line-height:1em;
+  //     font-size: $BOTTOM_ART_SIZE;
+  //     width:100%;
+  //     bottom:0;
+  //     left:-100%;
+  //     margin: 0;
+  //     text-align: center;
+  //     color:$dark-color;
+  //     text-shadow: 0px -5px 10px rgba(black,.2);
+  //   }
+  // }
+}
+
+//ABOUT PAGE CODE
+body.about{
+  .hero.mod{
+    height:40vh;
+    min-height: 300px;
+    .ideas{
+      width:100%;
+      height:100%;
+      position: relative;
+      overflow: hidden;
+      h2{
+        color: $text_light;
+        text-align: center;
+        font-size: 5em;
+      }
+      h3{
+        color: $text-light;
+        text-align: center;
+        font-size: 2em;
+      }
+      ul{
+        position: absolute;
+        list-style: none;
+        margin:0;
+        padding:0;
+        top:0;
+        bottom: 0;
+        left:0;
+        right:0;
+        z-index: 10;
+        li{
+          color: $text-light;
+          font-family: $font-stack-headers;
+          line-height: .6em;
+          position: absolute;
+          right:-1000px;
+          width:700px;
+          z-index: 10;
+          letter-spacing: .1em;
+          pointer-events: none;
+        }
+      }
+    }
+  }
+  .steps{
+    i.background{
+      background-color: $light-color;
+      background-image: url("https://www.transparenttextures.com/patterns/grid-noise.png");
+    }
+    h2{
+      margin-bottom: 50px;
+    }
+    p{
+
+    }
+    .num{
+      position: relative;
+      $CIRCLE_SIZE: 60px;
+      margin-bottom: 30px;
+      >div{
+        height: $CIRCLE_SIZE;
+        width:$CIRCLE_SIZE;
+        margin: 0 auto;
+      }
+      p{
+        width: $CIRCLE_SIZE;
+        line-height: $CIRCLE_SIZE;
+        text-align: center;
+        background-color: $primary-color-light;
+        @include radius(50%);
+        color: $text-light;
+        font-size: 1.5em;
+      }
+      &::after{
+        //content: " ";
+        height: 2px;
+        width:100%;
+        position: absolute;
+        background-color: $primary-color;
+        top: 50%;
+        z-index: -1;
+      }
+    }
+    .info{
+      h3{
+        text-align: center;
+        font-size: 1.5em;
+      }
+    }
+  }
+}
+@media (max-width: 300px){
+  .row.content{
+    h2{
+      font-size: 2em;
+    }
+    &.headline{
+      h2{
+        font-size: 2em;
+      }
+    }
+  }
+}
+@media (max-width: 575px){
+  .hero.mod{
+    h1{
+      font-size: 5em;
+    }
+  }
+  .row.content{
+    &.headline{
+      h2{
+        padding:0;
+        text-align: center;
+        margin-bottom: 20px;
+      }
+    }
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767px){
+  .row.content{
+
+    &.headline{
+      h2{
+        padding:0;
+        text-align: center;
+        margin-bottom: 20px;
+      }
+    }
+  }
+}
+@media (min-width: 768px) and (max-width: 991px){
+  .row.content{
+    &.headline{
+      h2{
+        padding-left:20%;
+      }
+    }
+  }
+}

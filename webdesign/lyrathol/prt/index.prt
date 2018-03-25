@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <partial src="partials/headcontent.html"/>
+    <title>WEBSITE</title>
+  </head>
+  <body>
+    <div class="bg hero">
+      <div class="center-container">
+        <div class="">
+          <partial src="partials/header.html" />
+        </div>
+        <div class="center">
+          <h1>Lyrathol<i style="font-size: .2em">™</i></h1>
+          <h2>Remember To Forget</h2>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="content">
+          <i class="background"></i>
+          <div class="col-lg-12">
+            <div class="text-block">
+              <p>Millions of American's suffer from chronic Head-Boggle, and many don't know where to turn.</p>
+              <h3 class="headline">If you suffer from moderate to severe Mind Bulging, Lyrathol may be right for you.</h3>
+              <p>Lyrathol is the only doctor recommended, FDA approved drug that aids in the reduction of Brain Suffer, and treats symptoms commonly associated with proxaxia.*</p>
+              <button type="button" name="button" class="button button_01">Learn More</button>
+            </div>
+        </div>
+      </div>
+      <div class="row content d-flex inspire inspire-2">
+        <i class="background"></i>
+        <div class="col-lg-6 align-self-center">
+          <div class="text-block">
+            <h3 class="headline">Patients report feeling calm and in control after only their first dose of Lyrathol, though effects are most pronounced 3 to 4 weeks into treatment.</h3>
+          </div>
+        </div>
+        <div class="col-lg-6 align-self-center">
+          <div class="quote right">
+            <h3><span>"</span>I found something weird in my backyard, so my doctor recommended Lyrathol.<span>"</span></h3>
+          <h4>-David, Lyrathol patient</h4>
+        </div>
+        <!-- <a href="#" style="text-align:right">Read More Testimonials</a> -->
+        <button type="button" name="button" class="button button_01 right">Read Testimonies</button>
+        </div>
+      </div>
+      <div class="row content threes d-flex">
+        <i class="background"></i>
+        <div class="col-lg-12">
+          <h2>Lyrathol can also help if you suffer from</h2>
+        </div>
+        <div class="col-lg-3 col-sm-6 col-xs-6">
+          <i class="icon circle fa fa-heartbeat"></i>
+          <h4>Abnormal Heartbeat</h4>
+        </div>
+        <div class="col-lg-3 col-sm-6 col-xs-6">
+          <i class="icon circle fa fa-tint"></i>
+          <h4>Runny Nose</h4>
+        </div>
+        <div class="col-lg-3 col-sm-6 col-xs-6">
+          <i class="icon circle fa fa-trash"></i>
+          <h4>Existential Dread</h4>
+        </div>
+        <div class="col-lg-3 col-sm-6 col-xs-6">
+          <i class="icon circle fa fa-thumbs-down"></i>
+          <h4>Fear Of Failure</h4>
+        </div>
+        <div class="col-lg-3 col-sm-6 col-xs-6">
+          <i class="icon circle fa fa-certificate"></i>
+          <h4>Painful Memories</h4>
+        </div>
+        <div class="col-lg-3 col-sm-6 col-xs-6">
+          <i class="icon circle fa fa-chain-broken"></i>
+          <h4>Lost Love</h4>
+        </div>
+        <div class="col-lg-3 col-sm-6 col-xs-6">
+          <i class="icon circle fa fa-arrow-down"></i>
+          <h4>Under-Achievement</h4>
+        </div>
+        <div class="col-lg-3 col-sm-6 col-xs-6">
+          <i class="icon circle fa fa-eye-slash"></i>
+          <h4>Terrifying Images</h4>
+        </div>
+      </div>
+    </div>
+    <div class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-3 col-sm-6">
+            <ul>
+              <h5>About Lyrathol</h5>
+              <li><a href="#">What is Lyrathol?</a></li>
+              <li><a href="#">How Lyrathol Works</a></li>
+              <li><a href="#">The Once-A-Day Scoop</a></li>
+            </ul>
+          </div>
+            <div class="col-lg-3 col-sm-6 col-xs-12">
+            <ul>
+              <h5>Starting Lyrathol</h5>
+              <li><a href="#">What's Right For You</a></li>
+              <li><a href="#">Lyrathol Kids</a></li>
+              <li><a href="#">How to store Lyrathol</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-3 col-sm-6 col-xs-12">
+            <ul>
+              <h5>What You May Experience</h5>
+              <li><a href="#">How you may feel</a></li>
+              <li><a href="#">Common side effects</a></li>
+              <li><a href="#">What to expect</a></li>
+              <li><a href="#">Getting started</a></li>
+            </ul>
+          </div>
+            <div class="col-lg-3 col-sm-6 col-xs-12">
+            <ul>
+              <h5>Frequently Asked Questions</h5>
+              <li><a href="#">How does Lyrathol work?</a></li>
+              <li><a href="#">What are the potential side effects of Lyrathol?</a></li>
+              <li><a href="#">How long can I use the Scoop?</a></li>
+              <li><a href="#">Is brain pain normal?</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="row fineprint">
+          <ul>
+            <li><a href="#">Privacy Statment</a></li>
+            <li><a href="#">Terms of Use</a></li>
+            <li><a href="#">Copyright</a></li>
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">Sitemap</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <partial src='partials/scripts.html'/>
+    <script type="text/javascript">
+      var quote = $(".quote");
+      var quotetext = $(".quote h3");
+      var patientname = $(".quote h4");
+
+      function Quote(q, n){
+        this.quote = q;
+        this.name = n;
+      }
+
+      var quoteholder = [];
+      quoteholder.push(new Quote("Lyrathol made everything in my life tolerable. I forgot how to worry.", "-Jimmin, Lyrathol patient"));
+      quoteholder.push(new Quote("Ever since Lyrathol I don't remember why I was so scared of the corner of my room.","-Bella, Lyrathol patient"));
+      quoteholder.push(new Quote("Because of Lyrathol I need not remember all that I see with my lidless eyes.", "-Lidless Joe, Lyrathol patient"));
+      quoteholder.push(new Quote("I found something weird in my backyard, so my doctor recommended Lyrathol.", "-David, Lyrathol patient"));
+      quoteholder.push(new Quote("I'm perfect because all of my mistakes are gone.", "-Kate, Lyrathol patient"));
+
+      setInterval(function(){
+        ChangeQuote();
+      },8000);
+      function ChangeQuote(){
+        var rand;
+        while(true){
+          rand = Math.floor(Math.random() * quoteholder.length);
+          if(quotetext.text !== ("<span>\"</span>" + quoteholder[rand].quote + "<span>\"</span>")){
+            break;
+          }
+        }
+        quote.fadeTo(500,0,function(){
+          quotetext.html("<span>\"</span>" + quoteholder[rand].quote + "<span>\"</span>");
+          patientname.html(quoteholder[rand].name);
+          quote.fadeTo(500,1);
+        });
+      }
+
+    </script>
+  </body>
+</html>
