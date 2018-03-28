@@ -1,0 +1,21 @@
+.transition-top,.transition-bottom,.transition-left,.transition-right{
+  $TRANSITION_TIME: 1s;
+  opacity: 0;
+  @include transition(-webkit-transform $TRANSITION_TIME, -moz-transform $TRANSITION_TIME, -o-transform $TRANSITION_TIME, transform $TRANSITION_TIME, opacity $TRANSITION_TIME);
+  &.transition-done{
+    @include transform(translate(0, 0));
+    opacity: 1;
+  }
+}
+.transition-top{
+  @include transform(translate(0, -60px));
+}
+.transition-bottom{
+  @include transform(translate(0, 60px));
+}
+.transition-right{
+  @include transform(translate(60px,0));
+}
+.transition-left{
+  @include transform(translate(-60px,0));
+}
