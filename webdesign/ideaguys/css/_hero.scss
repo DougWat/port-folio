@@ -1,0 +1,95 @@
+.hero{
+  $SIZE: 50%;
+  $BACKGROUND_IMAGE_URL: "";
+  $BACKGROUND_COLOR: $color_dark;
+  $BACKGROUND_ALPHA: 1;
+  $BACKGROUND_POSITION: bottom;
+
+  $TEXT_LIGHT: $text_light;
+  $TEXT_DARK: $text_dark;
+
+  $FONT_SIZE_MULT: 1;
+  $SPACING: 40px;
+  $FONT_STACK_MAIN: $font_stack;
+  $FONT_STACK_SUB: $font_stack;
+
+  /* Full height */
+  height: $SIZE;
+  position: relative;
+  overflow: hidden;
+
+  h1,h2,h3,h4,p{
+    color: $TEXT_DARK;
+    margin:0;
+  }
+  h2,h3,h4,p,button{
+    font-family: $FONT_STACK_SUB;
+  }
+
+  h1{
+    font-family: $FONT_STACK_MAIN;
+    font-weight: 400;
+    font-size: 4em * $FONT_SIZE_MULT;;
+    letter-spacing: .1em;
+  }
+
+  h2,h3,h4,p{
+    letter-spacing: .05em;
+  }
+
+  h2{
+    font-weight: 400;
+    font-size: 2.6em * $FONT_SIZE_MULT;
+  }
+  h3{
+    font-weight: 300;
+    font-size: 1.8em * $FONT_SIZE_MULT;;
+  }
+
+  p{
+    font-weight: 300;
+    font-size: .9em;
+  }
+
+  .center-container{
+    background-color: rgba($BACKGROUND_COLOR,$BACKGROUND_ALPHA);
+    display: table;
+    position: absolute;
+    height: 101%;
+    width: 100%;
+    .center{
+      display: table-cell;
+      vertical-align: middle;
+      >*{
+        //margin-bottom: $SPACING;
+        &:last-child{
+          //margin-bottom: 0;
+        }
+      }
+    }
+  }
+  .wrapper{
+    background-color: rgba($BACKGROUND_COLOR,$BACKGROUND_ALPHA);
+    background-image: url("https://www.transparenttextures.com/patterns/az-subtle.png");
+    height:100%;
+  }
+  &.bg {
+    /* The image used */
+    background-image: url($BACKGROUND_IMAGE_URL);
+
+    /* Center and scale the image nicely */
+    background-position: $BACKGROUND_POSITION;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment:scroll;
+    &.fixed{
+      background-attachment: fixed;
+    }
+  }
+
+  &.dark{
+    h1,h2,h3,h4,p{
+      color: $TEXT_LIGHT;
+    }
+  }
+}

@@ -1,0 +1,1667 @@
+html {
+  overflow-x: hidden;
+}
+
+.container {
+  padding: 0;
+}
+
+input:focus, textarea:focus {
+  outline: none;
+}
+
+button:focus {
+  outline: none;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+a:focus {
+  text-decoration: none;
+}
+
+.header {
+  font-family: "Open Sans", sans-serif;
+  background-color: #F5F5F9;
+}
+
+.header input:focus {
+  outline: none;
+}
+
+.header button:focus {
+  outline: none;
+}
+
+.header button:hover {
+  cursor: pointer;
+}
+
+.header a:hover {
+  text-decoration: none;
+}
+
+.header a:focus {
+  text-decoration: none;
+}
+
+.header * {
+  color: #212121;
+}
+
+.header *:not(.fa) {
+  font-family: "Open Sans", sans-serif;
+}
+
+.header .container, .header .container-fluid {
+  position: relative;
+  height: 60px;
+  line-height: 60px;
+  -webkit-transition: height 0.2s, line-height 0.2s;
+  -moz-transition: height 0.2s, line-height 0.2s;
+  -o-transition: height 0.2s, line-height 0.2s;
+  transition: height 0.2s, line-height 0.2s;
+}
+
+.header ul {
+  position: absolute;
+  height: inherit;
+  display: block;
+}
+
+.header ul.left {
+  left: 0px;
+  top: 0;
+}
+
+.header ul.right {
+  right: 0px;
+  top: 0;
+}
+
+.header li {
+  list-style: none;
+  display: inline-block;
+}
+
+.header li a:hover {
+  padding-bottom: 20px;
+}
+
+.header li a:hover + .sub {
+  display: block;
+  opacity: 1;
+  visibility: visible;
+}
+
+.header a {
+  -webkit-transition: color 0.2s;
+  -moz-transition: color 0.2s;
+  -o-transition: color 0.2s;
+  transition: color 0.2s;
+}
+
+.header a:hover {
+  text-decoration: none;
+}
+
+.header button {
+  line-height: normal;
+}
+
+.header input.search {
+  line-height: normal;
+}
+
+.header .divider::after {
+  content: "";
+  font-size: 1em;
+  background-size: 1px 40px;
+  border-left: 1px solid #212121;
+}
+
+.header .brand {
+  font-family: "Open Sans", sans-serif;
+}
+
+.header .brand * {
+  color: #212121;
+}
+
+.header .brand i {
+  -webkit-transition: color 0.2s;
+  -moz-transition: color 0.2s;
+  -o-transition: color 0.2s;
+  transition: color 0.2s;
+}
+
+.header .brand i:hover {
+  color: #545454;
+}
+
+.header .brand a {
+  font-size: "1.2em";
+}
+
+.header .sub {
+  position: absolute;
+  bottom: 0;
+  z-index: 10;
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: opacity 0.2s;
+  -moz-transition: opacity 0.2s;
+  -o-transition: opacity 0.2s;
+  transition: opacity 0.2s;
+}
+
+.header .sub ul {
+  background-color: #F5F5F9;
+  padding: 0;
+  margin: 0;
+  line-height: normal;
+}
+
+.header .sub ul li {
+  margin: 10px 15px 10px 15px;
+  font-family: "Open Sans", sans-serif;
+  font-size: 1em;
+}
+
+.header .sub ul li a {
+  color: #212121;
+}
+
+.header .sub ul li a:hover {
+  color: #545454;
+}
+
+.header .sub .icon {
+  display: inline;
+  margin-right: 10px;
+}
+
+.header .sub:hover {
+  visibility: visible;
+  opacity: 1;
+}
+
+.header .mobile {
+  display: none;
+}
+
+.header.dark {
+  background-color: #212121;
+}
+
+.header.dark * {
+  color: #f7f7f7;
+}
+
+.header.dark a.mobile {
+  color: #f7f7f7;
+}
+
+.header.dark .divider::after {
+  border-left-color: #f7f7f7;
+}
+
+.header.dark .brand * {
+  color: #212121;
+}
+
+.header.dark .brand i {
+  -webkit-transition: color 0.2s;
+  -moz-transition: color 0.2s;
+  -o-transition: color 0.2s;
+  transition: color 0.2s;
+}
+
+.header.dark .brand i:hover {
+  color: #545454;
+}
+
+.header.dark .sub ul {
+  background-color: #212121;
+}
+
+.header.dark .sub ul a {
+  color: #f7f7f7;
+}
+
+.header.dark .sub ul a:hover {
+  color: #c4c4c4;
+}
+
+.header.sticky {
+  position: fixed;
+  width: 100%;
+}
+
+.header.sticky.scrolling .container, .header.sticky.scrolling .container-fluid {
+  height: 60px;
+  line-height: 60px;
+}
+
+.header.mobile div.container, .header.mobile div.container-fluid {
+  height: auto !important;
+  line-height: normal;
+  padding: 0;
+}
+
+.header.mobile div.container .brand, .header.mobile div.container-fluid .brand {
+  display: inline-block;
+  position: absolute;
+  text-align: left;
+  margin: 20px 40px 10px 40px;
+}
+
+.header.mobile div.container > ul, .header.mobile div.container-fluid > ul {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  display: none;
+}
+
+.header.mobile div.container > ul li, .header.mobile div.container-fluid > ul li {
+  margin: 0;
+  padding: 15px 40px;
+  display: block;
+}
+
+.header.mobile div.container > ul li.divider, .header.mobile div.container-fluid > ul li.divider {
+  display: none;
+}
+
+.header.mobile div.container > ul .sub, .header.mobile div.container-fluid > ul .sub {
+  position: relative;
+}
+
+.header.mobile div.container > ul a.mobile, .header.mobile div.container-fluid > ul a.mobile {
+  text-align: center;
+}
+
+.header.mobile div.container a.mobile, .header.mobile div.container-fluid a.mobile {
+  display: block;
+  width: 100%;
+  font-size: 1.3em;
+  padding: 15px 40px;
+  text-align: right;
+}
+
+.header.mobile div.container a.mobile:hover, .header.mobile div.container-fluid a.mobile:hover {
+  cursor: pointer;
+}
+
+.header.header_02 li {
+  margin: 0 21px;
+  text-transform: uppercase;
+}
+
+.header.header_02 li a {
+  font-size: 0.8em;
+}
+
+.header.header_02 li:last-of-type {
+  margin-right: 0;
+}
+
+.header.header_02 button {
+  padding: 10px;
+  font-size: 0.8em;
+  font-weight: 500;
+  text-transform: uppercase;
+  border-style: none;
+  color: #f7f7f7;
+  background-color: #212121;
+  border-radius: 4px;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -webkit-transition: color 0.2s, background-color 0.2s;
+  -moz-transition: color 0.2s, background-color 0.2s;
+  -o-transition: color 0.2s, background-color 0.2s;
+  transition: color 0.2s, background-color 0.2s;
+}
+
+.header.header_02 button.outline {
+  background-color: transparent;
+  border: 1px solid #212121;
+}
+
+.header.header_02 button.outline:hover {
+  background-color: rgba(33, 33, 33, 0.1);
+}
+
+.header.header_02 button:hover {
+  cursor: pointer;
+  background-color: #3b3b3b;
+}
+
+.header.header_02 span.search {
+  position: relative;
+}
+
+.header.header_02 input.search {
+  background-color: transparent;
+  border: 1px solid #212121;
+  border-radius: 3px;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  height: 30px;
+  padding: 10px;
+  padding-left: 30px;
+  font-size: 0.9em;
+}
+
+.header.header_02 input.search + i {
+  font-size: 0.9em;
+  position: absolute;
+  top: 3px;
+  left: 10px;
+  -webkit-transition: color 0.2s;
+  -moz-transition: color 0.2s;
+  -o-transition: color 0.2s;
+  transition: color 0.2s;
+}
+
+.header.header_02 input.search:focus + i {
+  color: #D64933 !important;
+}
+
+.header.header_02 .sub {
+  bottom: 30px;
+}
+
+.header.header_02 .sub li {
+  padding: 15px 25px 15px 25px;
+  margin: 0;
+}
+
+.header.header_02 .sub ul {
+  box-shadow: 0px 3px 14px rgba(0, 0, 0, 0.4);
+}
+
+.header.header_02 .sub a {
+  color: #212121;
+}
+
+.header.header_02 .sub a:hover {
+  color: #545454;
+}
+
+.header.header_02.dark .brand i {
+  color: #f7f7f7;
+}
+
+.header.header_02.dark .brand i:hover {
+  color: #c4c4c4;
+}
+
+.header.header_02.dark .sub .ul li a {
+  color: #dedede;
+}
+
+.header.header_02.dark .sub .ul li a:hover {
+  color: white;
+}
+
+.header.header_02.dark .sub .ul li.divider::after {
+  border-left-color: #f7f7f7;
+}
+
+.header.header_02.dark button {
+  background-color: #F5F5F9;
+  color: #212121;
+}
+
+.header.header_02.dark button.outline {
+  background-color: transparent;
+  border-color: #F5F5F9;
+}
+
+.header.header_02.dark button.outline:hover {
+  background-color: rgba(245, 245, 249, 0.1);
+}
+
+.header.header_02.dark button:hover {
+  background-color: #d5d5e6;
+}
+
+.header.header_02.dark input.search {
+  color: #f7f7f7;
+  border: 1px solid #f7f7f7;
+}
+
+.header.header_02.dark input.search + i {
+  color: #f7f7f7;
+}
+
+.header.mod .brand {
+  text-transform: uppercase;
+}
+
+.header.mod ul li a {
+  letter-spacing: .17em;
+}
+
+.hero {
+  /* Full height */
+  height: 50%;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero h1, .hero h2, .hero h3, .hero h4, .hero p {
+  color: #212121;
+  margin: 0;
+}
+
+.hero h2, .hero h3, .hero h4, .hero p, .hero button {
+  font-family: "Open Sans", sans-serif;
+}
+
+.hero h1 {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 4em;
+  letter-spacing: .1em;
+}
+
+.hero h2, .hero h3, .hero h4, .hero p {
+  letter-spacing: .05em;
+}
+
+.hero h2 {
+  font-weight: 400;
+  font-size: 2.6em;
+}
+
+.hero h3 {
+  font-weight: 300;
+  font-size: 1.8em;
+}
+
+.hero p {
+  font-weight: 300;
+  font-size: .9em;
+}
+
+.hero .center-container {
+  background-color: #212121;
+  display: table;
+  position: absolute;
+  height: 101%;
+  width: 100%;
+}
+
+.hero .center-container .center {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.hero .wrapper {
+  background-color: #212121;
+  background-image: url("https://www.transparenttextures.com/patterns/az-subtle.png");
+  height: 100%;
+}
+
+.hero.bg {
+  /* The image used */
+  background-image: url("");
+  /* Center and scale the image nicely */
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: scroll;
+}
+
+.hero.bg.fixed {
+  background-attachment: fixed;
+}
+
+.hero.dark h1, .hero.dark h2, .hero.dark h3, .hero.dark h4, .hero.dark p {
+  color: #f7f7f7;
+}
+
+.hero.mod {
+  height: 350px;
+}
+
+.hero.mod .container {
+  padding: 48px 0 65px 0;
+  height: 100%;
+}
+
+.hero.mod .container .row {
+  height: 100%;
+}
+
+.hero.mod .text h1 {
+  text-transform: uppercase;
+  font-size: 4.15em;
+  font-weight: 700;
+  margin-bottom: 30px;
+  line-height: .7em;
+}
+
+.hero.mod .text p {
+  font-size: .75em;
+  max-width: 370px;
+}
+
+.hero.mod .hero-episode-card {
+  overflow: hidden;
+  background-color: #F5F5F9;
+  height: 230px;
+  width: 100%;
+  position: relative;
+}
+
+.hero.mod .hero-episode-card img {
+  position: absolute;
+  vertical-align: inherit;
+  min-height: 100%;
+  width: auto;
+  right: 60%;
+}
+
+.hero.mod .hero-episode-card .data {
+  margin-left: 40%;
+  padding: 20px;
+  position: relative;
+  height: 100%;
+}
+
+.hero.mod .hero-episode-card .data h3 {
+  color: #212121;
+  font-size: .95em;
+  letter-spacing: .08em;
+  margin-bottom: 15px;
+}
+
+.hero.mod .hero-episode-card .data > p {
+  color: #3b3b3b;
+  font-size: .7em;
+  margin-bottom: 15px;
+  max-height: 48px;
+  height: 48px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
+
+.hero.mod .hero-episode-card .data .meta p, .hero.mod .hero-episode-card .data .meta i {
+  color: #3b3b3b;
+  font-size: .7em;
+}
+
+.hero.mod .hero-episode-card .data .meta i {
+  margin-left: 20px;
+  margin-right: 5px;
+  font-size: 1.1em;
+}
+
+.hero.mod .hero-episode-card .data .play {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  padding: 0 20px;
+  bottom: 20px;
+}
+
+.hero.mod .hero-episode-card .data .play button {
+  position: relative;
+  background-color: #212121;
+  height: 45px;
+  width: 150px;
+  font-size: .9em;
+  color: #F5F5F9;
+  border: 0px solid #D64933;
+  overflow: hidden;
+  z-index: 1;
+  -webkit-transition: border-color 0.2s;
+  -moz-transition: border-color 0.2s;
+  -o-transition: border-color 0.2s;
+  transition: border-color 0.2s;
+}
+
+.hero.mod .hero-episode-card .data .play button::before {
+  content: "\f04b";
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: 1.7em;
+  line-height: 45px;
+  position: absolute;
+  background-color: #D64933;
+  height: 100%;
+  width: 100%;
+  right: 100%;
+  bottom: 0;
+  color: #f7f7f7;
+  -webkit-transition: right 0.2s, background-color 0.2s;
+  -moz-transition: right 0.2s, background-color 0.2s;
+  -o-transition: right 0.2s, background-color 0.2s;
+  transition: right 0.2s, background-color 0.2s;
+}
+
+.hero.mod .hero-episode-card .data .play button:hover::before {
+  right: 0;
+}
+
+.hero.mod .hero-episode-card .data .play button:active {
+  border-color: #b23724;
+}
+
+.hero.mod .hero-episode-card .data .play button:active::before {
+  background-color: #b23724;
+}
+
+.hero.mod .hero-episode-card .data .play a {
+  color: #212121;
+  font-size: 2em;
+  -webkit-transition: color 0.1s;
+  -moz-transition: color 0.1s;
+  -o-transition: color 0.1s;
+  transition: color 0.1s;
+}
+
+.hero.mod .hero-episode-card .data .play a:hover {
+  color: #b23724;
+}
+
+.hero.mod .hero-episode-card .data .play a:active {
+  color: #D64933;
+}
+
+.hero.mod .hero-episode-card .data .play a i::before {
+  position: absolute;
+  right: 20px;
+  bottom: 0;
+  line-height: 45px;
+}
+
+.headline-02 .headline {
+  background-color: #D64933;
+  background-image: url("https://www.transparenttextures.com/patterns/concrete-wall.png");
+  text-align: center;
+  padding: 120px 0;
+  font-family: "Open Sans", sans-serif;
+}
+
+.headline-02 .headline * {
+  margin: 0;
+  padding: 0;
+}
+
+.headline-02 .headline h1 {
+  color: #f7f7f7;
+  font-size: 5.5em;
+  font-weight: bold;
+}
+
+.headline-02 .headline p {
+  color: #f7f7f7;
+  font-weight: 300;
+  font-size: 1.1em;
+  letter-spacing: .07em;
+}
+
+body.about-us .about {
+  font-family: "Open Sans", sans-serif;
+  padding: 80px 0;
+  text-align: center;
+  color: #f7f7f7;
+}
+
+body.about-us .about * {
+  padding: 0;
+  margin: 0;
+}
+
+body.about-us .about h2 {
+  font-size: 1.3em;
+  font-weight: 400;
+  letter-spacing: .08em;
+  margin-bottom: 10px;
+}
+
+body.about-us .about h3 {
+  font-size: .83em;
+  font-weight: 300;
+  text-transform: uppercase;
+  color: rgba(247, 247, 247, 0.8);
+  margin-bottom: 40px;
+  letter-spacing: .03em;
+}
+
+body.about-us .about p {
+  font-size: .75em;
+  letter-spacing: .08em;
+  max-width: 750px;
+  margin: 0 auto;
+  line-height: 2em;
+  margin-bottom: 80px;
+}
+
+body.about-us .about .picture > div {
+  display: inline-block;
+  text-align: center;
+}
+
+body.about-us .about .picture img {
+  border-radius: 50%;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  max-width: 200px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+body.about-us .about .picture.left {
+  text-align: right;
+  padding-right: 50px;
+}
+
+body.about-us .about .picture.right {
+  text-align: left;
+  padding-left: 50px;
+}
+
+body.about-us .about .picture h2 {
+  margin-top: 10px;
+  font-weight: 300;
+  font-size: 1.3em;
+}
+
+body.about-us .container-fluid {
+  background-color: #141414;
+}
+
+.collection-top > div {
+  position: relative;
+  height: 120px;
+}
+
+.collection-top > div h2 {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.2em;
+  color: #212121;
+  margin: 0;
+  line-height: 120px;
+  letter-spacing: .08em;
+  font-weight: 600;
+  display: inline-block;
+}
+
+.collection-top > div i {
+  line-height: 120px;
+  margin-left: 15px;
+  font-size: 1.2em;
+  cursor: pointer;
+  color: #C9C9C9;
+}
+
+.collection-top > div i.current {
+  color: #D64933;
+}
+
+.collection-top > div .make-list, .collection-top > div .make-grid {
+  -webkit-transition: color 0.2s;
+  -moz-transition: color 0.2s;
+  -o-transition: color 0.2s;
+  transition: color 0.2s;
+}
+
+.collection-top > div .make-list:hover, .collection-top > div .make-grid:hover {
+  color: #b23724;
+}
+
+.collection-top > div .make-list:active, .collection-top > div .make-grid:active {
+  color: #df6f5d;
+}
+
+.collection-top > div span.pages {
+  display: inline-block;
+  position: absolute;
+  right: 15px;
+  height: 120px;
+}
+
+.collection-top > div span.pages a, .collection-top > div span.pages p {
+  display: inline-block;
+  margin: 0;
+  line-height: 120px;
+  color: #212121;
+  font-size: 1.2em;
+  letter-spacing: .1em;
+  font-weight: 600;
+}
+
+.collection-top > div span.pages a.current {
+  color: #D64933;
+}
+
+.episodes {
+  min-height: 540px;
+}
+
+.episodes .episode-card {
+  margin: 0 auto;
+  overflow: hidden;
+  max-width: 360px;
+  min-width: 260px;
+  width: 100%;
+  height: 380px;
+  position: relative;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+  -webkit-transition: height 0.2s, width 0.2s, max-width 0.2s;
+  -moz-transition: height 0.2s, width 0.2s, max-width 0.2s;
+  -o-transition: height 0.2s, width 0.2s, max-width 0.2s;
+  transition: height 0.2s, width 0.2s, max-width 0.2s;
+}
+
+.episodes .episode-card img {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: auto;
+  -webkit-transition: opacity 0.2s;
+  -moz-transition: opacity 0.2s;
+  -o-transition: opacity 0.2s;
+  transition: opacity 0.2s;
+}
+
+.episodes .episode-card img:hover {
+  opacity: .8;
+}
+
+.episodes .episode-card p.number {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  background-color: #D64933;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  color: #f7f7f7;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
+  pointer-events: none;
+}
+
+.episodes .episode-card iframe.soundcloud-iframe {
+  position: absolute;
+  z-index: 1;
+  height: 40%;
+  opacity: .8;
+  display: none;
+}
+
+.episodes .episode-card iframe.soundcloud-iframe.playing {
+  display: block;
+}
+
+.episodes .episode-card > div {
+  position: absolute;
+  height: 60%;
+  bottom: 0;
+  width: 100%;
+  z-index: 2;
+  background-color: #F5F5F9;
+  padding: 20px;
+  -webkit-transition: height 0.2s;
+  -moz-transition: height 0.2s;
+  -o-transition: height 0.2s;
+  transition: height 0.2s;
+}
+
+.episodes .episode-card > div h3 {
+  color: #212121;
+  font-size: .95em;
+  letter-spacing: .08em;
+  margin-bottom: 15px;
+  white-space: nowrap;
+  overflow: hidden;
+  -webkit-transition: color 0.2s;
+  -moz-transition: color 0.2s;
+  -o-transition: color 0.2s;
+  transition: color 0.2s;
+}
+
+.episodes .episode-card > div h3:hover {
+  color: #b23724;
+}
+
+.episodes .episode-card > div > p {
+  color: #3b3b3b;
+  font-size: .7em;
+  margin-bottom: 15px;
+  max-height: 48px;
+  height: 48px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
+
+.episodes .episode-card > div > p:nth-of-type(n+2) {
+  display: none;
+}
+
+.episodes .episode-card > div hr {
+  margin: 0;
+}
+
+.episodes .episode-card > div .meta {
+  font-size: 1.2em;
+}
+
+.episodes .episode-card > div .meta p, .episodes .episode-card > div .meta i {
+  color: #545454;
+  font-size: .7em;
+  margin-bottom: 5px;
+}
+
+.episodes .episode-card > div .meta i {
+  color: #D64933;
+  margin-left: 20px;
+  margin-right: 5px;
+  font-size: 1.2em;
+}
+
+.episodes .episode-card > div .play {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  padding: 0 20px;
+  bottom: 20px;
+}
+
+.episodes .episode-card > div .play a {
+  color: #212121;
+  font-size: 2em;
+  -webkit-transition: color 0.1s;
+  -moz-transition: color 0.1s;
+  -o-transition: color 0.1s;
+  transition: color 0.1s;
+}
+
+.episodes .episode-card > div .play a:hover {
+  color: #b23724;
+}
+
+.episodes .episode-card > div .play a:active {
+  color: #D64933;
+}
+
+.episodes .episode-card > div .play a i::before {
+  position: absolute;
+  right: 20px;
+  bottom: 0;
+  line-height: 45px;
+}
+
+.episodes.grid .list {
+  display: none;
+}
+
+.episodes.grid .episode-card .play-button {
+  position: relative;
+  background-color: #212121;
+  height: 45px;
+  width: 150px;
+  font-size: .9em;
+  color: #F5F5F9;
+  border: 0px solid #D64933;
+  overflow: hidden;
+  z-index: 1;
+  -webkit-transition: border-color 0.2s;
+  -moz-transition: border-color 0.2s;
+  -o-transition: border-color 0.2s;
+  transition: border-color 0.2s;
+}
+
+.episodes.grid .episode-card .play-button::before {
+  content: "\f04b";
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: 1.7em;
+  line-height: 45px;
+  position: absolute;
+  background-color: #D64933;
+  height: 100%;
+  width: 100%;
+  right: 250%;
+  bottom: 0;
+  color: #f7f7f7;
+  -ms-transform: scale(1.5, 1);
+  /* IE 9 */
+  -webkit-transform: scale(1.5, 1);
+  /* Safari */
+  -moz-transform: scale(1.5, 1);
+  -o-transform: scale(1.5, 1);
+  transform: scale(1.5, 1);
+  -webkit-transition: right 0.3s, background-color 0.2s, transform 0.4s;
+  -moz-transition: right 0.3s, background-color 0.2s, transform 0.4s;
+  -o-transition: right 0.3s, background-color 0.2s, transform 0.4s;
+  transition: right 0.3s, background-color 0.2s, transform 0.4s;
+}
+
+.episodes.grid .episode-card .play-button::after {
+  content: "\f04c";
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: 1.7em;
+  line-height: 45px;
+  position: absolute;
+  background-color: #D64933;
+  height: 100%;
+  width: 100%;
+  left: 250%;
+  bottom: 0;
+  color: #f7f7f7;
+  -ms-transform: scale(1.5, 1);
+  /* IE 9 */
+  -webkit-transform: scale(1.5, 1);
+  /* Safari */
+  -moz-transform: scale(1.5, 1);
+  -o-transform: scale(1.5, 1);
+  transform: scale(1.5, 1);
+  -webkit-transition: left 0.3s, background-color 0.2s, transform 0.4s;
+  -moz-transition: left 0.3s, background-color 0.2s, transform 0.4s;
+  -o-transition: left 0.3s, background-color 0.2s, transform 0.4s;
+  transition: left 0.3s, background-color 0.2s, transform 0.4s;
+}
+
+.episodes.grid .episode-card .play-button:hover::before {
+  right: 0;
+  -ms-transform: scale(1, 1);
+  /* IE 9 */
+  -webkit-transform: scale(1, 1);
+  /* Safari */
+  -moz-transform: scale(1, 1);
+  -o-transform: scale(1, 1);
+  transform: scale(1, 1);
+}
+
+.episodes.grid .episode-card .play-button:active {
+  border-color: #b23724;
+}
+
+.episodes.grid .episode-card .play-button:active::before {
+  background-color: #b23724;
+}
+
+.episodes.grid .episode-card .play-button:active::after {
+  background-color: #b23724;
+}
+
+.episodes.grid .episode-card.playing .play-button::after {
+  left: 0;
+  -ms-transform: scale(1, 1);
+  /* IE 9 */
+  -webkit-transform: scale(1, 1);
+  /* Safari */
+  -moz-transform: scale(1, 1);
+  -o-transform: scale(1, 1);
+  transform: scale(1, 1);
+}
+
+.episodes.grid .episode-card.playing .seekbar {
+  top: 137px;
+}
+
+.episodes.grid .episode-card.paused .play-button::before {
+  right: 0;
+  -ms-transform: scale(1, 1);
+  /* IE 9 */
+  -webkit-transform: scale(1, 1);
+  /* Safari */
+  -moz-transform: scale(1, 1);
+  -o-transform: scale(1, 1);
+  transform: scale(1, 1);
+}
+
+.episodes.grid .episode-card.paused .seekbar {
+  top: 137px;
+}
+
+.episodes.grid .episode-card .seekbar {
+  padding: 0;
+  background-color: #D64933;
+  position: absolute;
+  z-index: 1;
+  height: 15px;
+  top: 152px;
+  -webkit-transition: top 0.2s;
+  -moz-transition: top 0.2s;
+  -o-transition: top 0.2s;
+  transition: top 0.2s;
+}
+
+.episodes.grid .episode-card .seekbar progress[value] {
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  vertical-align: super;
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+.episodes.grid .episode-card .seekbar progress[value]::-webkit-progress-value {
+  background-color: #D64933;
+}
+
+.episodes.list {
+  min-height: 0px;
+}
+
+.episodes.list .grid {
+  display: none;
+}
+
+.episodes.list > div {
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.episodes.list .episode-card {
+  height: 80px;
+  width: 100%;
+  max-width: none;
+}
+
+.episodes.list .episode-card > div {
+  padding: 20px 90px 20px 440px;
+  position: relative;
+  height: 80px;
+  width: 100%;
+}
+
+.episodes.list .episode-card > div .play-button {
+  color: #D64933;
+  cursor: pointer;
+  font-size: 3em;
+  position: absolute;
+  line-height: 80px;
+  left: 25px;
+  top: 0;
+  -webkit-transition: color 0.1s;
+  -moz-transition: color 0.1s;
+  -o-transition: color 0.1s;
+  transition: color 0.1s;
+}
+
+.episodes.list .episode-card > div .play-button:hover {
+  color: #df6f5d;
+}
+
+.episodes.list .episode-card > div .play-button:active {
+  color: #b23724;
+}
+
+.episodes.list .episode-card > div h3 {
+  margin: 0;
+  position: absolute;
+  left: 90px;
+  max-width: 350px;
+  font-size: .85em;
+  top: 20px;
+}
+
+.episodes.list .episode-card > div > p {
+  max-height: none;
+  height: auto;
+  margin: 0;
+  padding: 0 20px;
+}
+
+.episodes.list .episode-card > div .meta {
+  position: absolute;
+  left: 90px;
+  top: 40px;
+  font-size: 1em;
+}
+
+.episodes.list .episode-card > div .play {
+  width: auto;
+  height: 100%;
+  top: 0;
+  padding: 0;
+  right: 20px;
+  left: auto;
+}
+
+.episodes.list .episode-card > div .play a i::before {
+  position: relative;
+  right: 0;
+}
+
+.episodes.list .episode-card > div .play a, .episodes.list .episode-card > div .play i {
+  line-height: 80px;
+}
+
+.episodes.list .episode-card.playing {
+  height: 95px;
+}
+
+.episodes.list .episode-card.playing .play-button::before {
+  content: "\f28b";
+}
+
+.episodes.list .episode-card.paused {
+  height: 95px;
+}
+
+.episodes.list .episode-card.paused .play-button::before {
+  content: '\f144';
+}
+
+.episodes.list .episode-card .seekbar {
+  height: 15px;
+  position: absolute;
+  top: 80px;
+  padding: 0;
+  background-color: #D64933;
+}
+
+.episodes.list .episode-card .seekbar progress[value] {
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  vertical-align: super;
+  border: none;
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+.episodes.list .episode-card .seekbar progress[value]::-webkit-progress-value {
+  background-color: #D64933;
+}
+
+.episodes.dark .episode-card > div {
+  background-color: #212121;
+}
+
+.episodes.dark .episode-card > div h3 {
+  color: #f7f7f7;
+}
+
+.episodes.dark .episode-card > div p {
+  color: #dedede;
+}
+
+.episodes.dark .episode-card > div .meta p {
+  color: #c4c4c4;
+}
+
+.episodes.dark .episode-card > div .play i {
+  color: #f7f7f7;
+}
+
+.episodes.dark .episode-card > div .play button {
+  background-color: #f7f7f7;
+  color: #212121;
+}
+
+.episodes.list.dark > div:nth-child(even) .episode-card > div {
+  background-color: #3b3b3b;
+}
+
+.episodes > div {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.soundcloud-iframe {
+  opacity: 0;
+  position: absolute;
+  top: -5000px;
+}
+
+.wrapper.footer {
+  width: 100%;
+  background-color: #212121;
+  background-image: url("https://www.transparenttextures.com/patterns/az-subtle.png");
+}
+
+.wrapper.copy {
+  width: 100%;
+  background-color: #141414;
+  background-image: url("https://www.transparenttextures.com/patterns/az-subtle.png");
+}
+
+.container.footer {
+  font-family: "Open Sans", sans-serif;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.container.footer h3 {
+  color: #f7f7f7;
+  margin-bottom: 20px;
+  font-size: .95em;
+}
+
+.container.footer p {
+  color: #ababab;
+  font-size: .65em;
+  letter-spacing: .02em;
+  line-height: 1.7em;
+  margin-bottom: 20px;
+}
+
+.container.footer .connect .subscribe {
+  position: relative;
+}
+
+.container.footer .connect .subscribe input {
+  font-size: .7em;
+  height: 45px;
+  line-height: 45px;
+  padding: 0 10px;
+  padding-right: 101px;
+  width: 100%;
+  border: none;
+}
+
+.container.footer .connect .subscribe button {
+  height: 39px;
+  width: 95px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  margin: 3px;
+  border: none;
+  background-color: #212121;
+  color: #f7f7f7;
+  font-size: .7em;
+  text-transform: uppercase;
+  letter-spacing: .06em;
+  -webkit-transition: background-color 0.2s;
+  -moz-transition: background-color 0.2s;
+  -o-transition: background-color 0.2s;
+  transition: background-color 0.2s;
+}
+
+.container.footer .connect .subscribe button:hover {
+  background-color: #141414;
+}
+
+.container.footer .connect .subscribe button:active {
+  background-color: #2e2e2e;
+}
+
+.container.footer .connect ul {
+  padding: 0;
+  margin: 0;
+  margin-top: 20px;
+  list-style: none;
+}
+
+.container.footer .connect ul li {
+  display: inline-block;
+  font-size: 1.7em;
+  margin-right: 25px;
+  cursor: pointer;
+}
+
+.container.footer .connect ul li.fb {
+  color: #3B5998;
+}
+
+.container.footer .connect ul li.twt {
+  color: #32A1EF;
+}
+
+.container.footer .connect ul li.sc {
+  color: #FB571B;
+}
+
+.container.copy p {
+  font-size: .70em;
+  color: #545454;
+  padding: 15px 0;
+  margin: 0;
+}
+
+.episode-main-header {
+  position: relative;
+  overflow: hidden;
+}
+
+.episode-main-header img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  width: auto;
+  height: auto;
+  min-height: 100%;
+}
+
+.episode-main-header .row:first-of-type {
+  padding: 30px;
+}
+
+.episode-main-header .episode-main {
+  padding: 30px;
+  background-color: rgba(245, 245, 249, 0.9);
+  font-family: "Open Sans", sans-serif;
+}
+
+.episode-main-header .episode-main .title {
+  max-height: 60px;
+  margin-bottom: 20px;
+}
+
+.episode-main-header .episode-main .title * {
+  margin: 0;
+  padding: 0;
+}
+
+.episode-main-header .episode-main .title h2 {
+  display: inline-block;
+  font-size: 2.5em;
+  font-weight: 600;
+  color: #212121;
+}
+
+.episode-main-header .episode-main .title h2::before {
+  content: "#";
+}
+
+.episode-main-header .episode-main .title > div {
+  margin-left: 20px;
+  display: inline-block;
+}
+
+.episode-main-header .episode-main .title > div > p {
+  font-size: .85em;
+  font-weight: 600;
+  color: #212121;
+  letter-spacing: .1em;
+}
+
+.episode-main-header .episode-main .title > div span * {
+  display: inline-block;
+  font-size: .75em;
+  letter-spacing: .06em;
+}
+
+.episode-main-header .episode-main .title > div span i {
+  margin-left: 20px;
+  color: #D64933;
+  font-size: 1.1em;
+}
+
+.episode-main-header .episode-main .tags {
+  margin-bottom: 20px;
+}
+
+.episode-main-header .episode-main .tags * {
+  margin: 0;
+  padding: 0;
+}
+
+.episode-main-header .episode-main .tags ul {
+  font-size: .75em;
+  letter-spacing: .05em;
+  color: #c9c9c9;
+}
+
+.episode-main-header .episode-main .tags ul * {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.episode-main-header .episode-main .tags ul *::before {
+  content: "#";
+}
+
+.episode-main-header .episode-main .content {
+  font-size: .75em;
+  color: #212121;
+  letter-spacing: .05em;
+  line-height: 2em;
+}
+
+.episode-main-header .seekbar {
+  position: relative;
+  padding: 0;
+  background-color: #D64933;
+  height: 45px;
+}
+
+.episode-main-header .seekbar progress[value] {
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  vertical-align: super;
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+.episode-main-header .seekbar progress[value]::-webkit-progress-value {
+  background-color: #D64933;
+}
+
+.episode-main-header .seekbar p {
+  position: absolute;
+  line-height: 45px;
+  top: 0;
+  margin: 0 10px;
+  font-size: .75em;
+  color: #f7f7f7;
+  letter-spacing: .06em;
+  pointer-events: none;
+}
+
+.episode-main-header .seekbar p.time-current {
+  left: 0;
+}
+
+.episode-main-header .seekbar p.time-total {
+  right: 0;
+}
+
+.episode-main-header .play > div {
+  height: 100%;
+}
+
+.episode-main-header .play .play-button {
+  background-color: transparent;
+  border: none;
+  height: auto;
+  font-size: 9em;
+  color: #D64933;
+  opacity: .9;
+  margin: 50px auto;
+  -webkit-transition: color 0.2s, transform 0.2s, -webkit-transform 0.2s, -moz-webkit-transform 0.2s, opacity 0.2s;
+  -moz-transition: color 0.2s, transform 0.2s, -webkit-transform 0.2s, -moz-webkit-transform 0.2s, opacity 0.2s;
+  -o-transition: color 0.2s, transform 0.2s, -webkit-transform 0.2s, -moz-webkit-transform 0.2s, opacity 0.2s;
+  transition: color 0.2s, transform 0.2s, -webkit-transform 0.2s, -moz-webkit-transform 0.2s, opacity 0.2s;
+}
+
+.episode-main-header .play .play-button:hover {
+  -ms-transform: scale(1.1, 1.1);
+  /* IE 9 */
+  -webkit-transform: scale(1.1, 1.1);
+  /* Safari */
+  -moz-transform: scale(1.1, 1.1);
+  -o-transform: scale(1.1, 1.1);
+  transform: scale(1.1, 1.1);
+  opacity: 1;
+  cursor: pointer;
+}
+
+.episode-main-header .play .play-button:active {
+  -ms-transform: scale(0.9, 0.9);
+  /* IE 9 */
+  -webkit-transform: scale(0.9, 0.9);
+  /* Safari */
+  -moz-transform: scale(0.9, 0.9);
+  -o-transform: scale(0.9, 0.9);
+  transform: scale(0.9, 0.9);
+  opacity: 1;
+  color: #b23724;
+}
+
+.episode-main-header.playing .play-button::before {
+  content: "\f28b";
+}
+
+@media (max-width: 575px) {
+  .episodes.list .episode-card > div {
+    padding: 10px 70px 10px 220px;
+  }
+  .episodes.list .episode-card > div h3 {
+    max-width: 150px;
+    font-size: .7em;
+    top: 15px;
+    white-space: normal;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+  }
+  .episodes.list .episode-card > div .meta {
+    top: 50px;
+  }
+}
+
+@media (max-width: 767px) {
+  .episodes.list .episode-card > div > p {
+    display: none;
+  }
+  body.about-us .about .picture {
+    text-align: center !important;
+    padding: 0 !important;
+  }
+  body.about-us .about .picture.right {
+    margin-top: 40px;
+  }
+}
+
+@media (max-width: 991px) {
+  .hero-episode-card {
+    display: none;
+  }
+  .hero.mod {
+    height: auto;
+  }
+  .hero.mod .text {
+    text-align: center;
+  }
+  .hero.mod .text p {
+    margin: 0 auto;
+  }
+}

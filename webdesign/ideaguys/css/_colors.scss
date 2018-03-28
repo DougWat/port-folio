@@ -1,0 +1,29 @@
+$color_dark:#212121;
+$color_light:#F5F5F9;
+$color_gray:#C9C9C9;
+
+$color_main:#D64933;
+$color_main_dark:darken($color_main,10);
+$color_main_light: lighten($color_main,10);
+
+$color_accent: $color_main;
+
+$text_dark: grayscale($color_dark);
+$text_light: grayscale($color_light);
+$text_gray: grayscale($color_gray);
+
+$facebook:#3B5998;
+$twitter: #32A1EF;
+$soundcloud: #FB571B;
+// $primary-color:#0D606B;
+// $primary-color-dark: darken($primary-color,10);
+// $primary-color-light: lighten($primary-color,10);
+// $secondary-color:#1E2E41;
+// $secondary-color-dark:darken($secondary-color,5);;
+// $accent-color:#FF1F44;
+//
+// $dark-color:#1b2026;
+// $light-color:#F2F2F2;
+//
+// $text-dark:#151515;
+// $text-light:#F2F2F0;
