@@ -1,3 +1,4 @@
+//Compile
 $background-1:#efefef;
 $background-2:#fafafa;
 
@@ -785,6 +786,26 @@ body.webdev{
               margin-right: 10px;
               color: lighten($text-dark-muted,40);
             }
+          }
+        }
+        div.view-button{
+          margin: 20px 0;
+        }
+        a.view-button{
+          text-decoration: none;
+          font-family: $font-stack;
+          background-color: $primary-color-dark;
+          color: $text-light;
+          font-size: .9em;
+          padding: 10px 15px;
+          font-weight: 400;
+          height:30px;
+          letter-spacing: .1em;
+          @include radius(.3em);
+          @include transition(background-color .15s);
+          &:hover{
+            text-decoration: none;
+            background-color: lighten($primary-color-dark,10);
           }
         }
       }

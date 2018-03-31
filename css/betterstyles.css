@@ -823,6 +823,34 @@ body.webdev .showcase .showcase-item .showcase-content ul.frameworks li, body.we
   color: #969696;
 }
 
+body.webdev .showcase .showcase-item .showcase-content div.view-button {
+  margin: 20px 0;
+}
+
+body.webdev .showcase .showcase-item .showcase-content a.view-button {
+  text-decoration: none;
+  font-family: Roboto, sans-serif;
+  background-color: #161616;
+  color: #FAFAFA;
+  font-size: .9em;
+  padding: 10px 15px;
+  font-weight: 400;
+  height: 30px;
+  letter-spacing: .1em;
+  border-radius: 0.3em;
+  -moz-border-radius: 0.3em;
+  -webkit-border-radius: 0.3em;
+  -webkit-transition: background-color 0.15s;
+  -moz-transition: background-color 0.15s;
+  -o-transition: background-color 0.15s;
+  transition: background-color 0.15s;
+}
+
+body.webdev .showcase .showcase-item .showcase-content a.view-button:hover {
+  text-decoration: none;
+  background-color: #303030;
+}
+
 /*HELPERS*/
 .parallax {
   /* Set a specific height */
