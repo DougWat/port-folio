@@ -1,0 +1,150 @@
+//main:../style.scss
+
+/* Start of _buttons.scss */
+
+//Default Rox& styled button, can be used for both <a> tags and <button> tags
+a[class*='rox-button'],button[class*='rox-button']{
+  cursor: pointer;
+  color: color(white);
+  text-align: center;
+  background-color: color(primary,base);
+  font-family: font(normal);
+  font-size: .9rem;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: .07em;
+  padding:1.1em 1.5em;
+  position: relative;
+  display: inline-block;
+  margin:.4rem;
+  @include radius(.2em);
+  @include transition(color .3s,background-color .3s, box-shadow-transition(.3));
+  &:hover{
+    color: color(white);
+    background-color: color(primary,dark);
+  }
+
+  //Addition class post-fix to make the buttom smaller
+  &[class*='-small']{
+    font-size: .8rem;
+    padding: 1em 1.4em;
+  }
+  //Post-fix to make the button lighter
+  &[class*='-light'], +.dark{
+    color: color(gray,dark);
+    background-color: color(white);
+    &:hover{
+      background-color: color(primary,base);
+      color:color(white);
+    }
+    &[class*='-outline']{
+      color:color(gray,light);
+      font-weight: 400;
+      @include inset-border(color(gray,light));
+      &:hover{
+        @include inset-border(rgba(0,0,0,0));
+      }
+    }
+  }
+  //Post fix to make the button dark
+  &[class*='-dark']{
+    background-color: lighten(color(gray,dark),10);
+    font-weight: 300;
+    &:hover{
+      background-color: lighten(color(gray,dark),3);
+    }
+    &[class*='-outline']{
+      color:lighten(color(gray,dark),10);
+      @include inset-border(lighten(color(gray,dark),10));
+      &:hover{
+        color:color(white);
+        background-color: lighten(color(gray,dark),10);
+      }
+    }
+  }
+  //Post-fix to make the button outlined
+  &[class*='-outline']{
+    color: color(primary,base);
+    background-color: rgba(0,0,0,0);
+    font-weight: 400;
+    @include inset-border(color(primary,base));
+    &:hover{
+      color:color(white);
+      background-color: color(primary,base);
+    }
+  }
+  //Post-fix to make the button thinner
+  &[class*='-thin']{
+    padding-top: .8em;
+    padding-bottom: .8em;
+  }
+}
+
+//The special button. More visually interesting.
+.rox-special-button{
+  cursor:pointer;
+  overflow: hidden;
+  color: color(primary,base) !important;
+  background-color: lighten(color(primary,light),20);
+  padding: 1em 1.8em;
+  font-weight:500;
+  letter-spacing: .1em;
+  display: inline-block;
+  position: relative;
+  @include radius(2em);//Rounded
+  @include box-shadow(3px, 3px, 7px, rgba(0,0,0,.2));//Shadowed
+  @include transition(background-color .3s, color .3s, box-shadow-transition(.3));
+  &::before, &::after{
+    content: " ";
+    background-color: rgba(color(primary,light),.4);
+    position: absolute;
+    right: 100%;
+    left:0;
+    top:0;
+    bottom:0;
+  }
+  &::before{
+    @include transition(right .8s, left 1s);
+  }
+  &::after{
+    @include transition(right .4s, left .6s);
+  }
+  &:hover{
+    background-color: color(white);
+    @include box-shadow(5px, 5px, 12px, rgba(0,0,0,.3));
+    &::before, &::after{
+      left:100%;
+      right:0;
+    }
+  }
+
+  //Makes the button darker
+  &.dark{
+    color: color(white) !important;
+    background-color: color(primary,light);
+    &:hover{
+      background-color: color(primary,base);
+    }
+    &::before, &::after{
+      background-color: rgba(color(white),.2);
+    }
+  }
+  //Makes the animation longer
+  &.long{
+    $TRAN: 1.0;
+    &::before{
+      @include transition(right $TRAN + .5s, left $TRAN + .7s);
+    }
+    &::after{
+      @include transition(right $TRAN + .1s, left $TRAN + .4s);
+    }
+  }
+}
+//'.max' class makes any button stretch to the max width of its parent
+a, button{
+  &.max{
+    width:100%;
+  }
+}
+
+/* End of _buttons.scss */

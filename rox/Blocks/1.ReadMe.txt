@@ -1,0 +1,11 @@
+Hey, how you doing?
+
+I see you're taking a look through the Blocks folder.
+
+Just wanted to let you know, this folder, that is, the 'Blocks' folder, should not be included in your deployment.
+This folder holds samples of all the content blocks featured in ROX& to make your life easier.
+
+Open any of these HTML files in your browser of choice, and you'll see a sample of a type of content block (The name of the file clues you in to the type of block it is).
+You'll see a code viewer under the sample, you can copy the code in that viewer and past it directly into your website scaffolding. If everything was set up right, it should work out of the box.
+
+If all of this seems a bit confusing, try taking a look through the included template files for some real world examples.

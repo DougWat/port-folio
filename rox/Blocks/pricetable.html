@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>ROX& Blocks: Pricetables</title>
+    <!-- FONT AWESOME -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+    <!-- STROKE GAP FONT ICONS -->
+    <link rel="stylesheet" href="./style/font_icons/stroke_gap_icons.css">
+    <!-- BOOTSTRAP -->
+    <link rel="stylesheet" href="./style/bootstrap/bootstrap.min.css">
+    <!-- MAIN STYLE -->
+    <link rel="stylesheet" href="./style/style.min.css">
+    <!-- BLOCK SPECIFIC STYLE -->
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- DEVICE SCALING -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  </head>
+  <body>
+    <!-- Light/Dark Switch -->
+    <button class="rox-debug-dark-switch dark-switch on"type="button" name="button" onclick="turnDownTheLights()"> <i class="et-icon-lightbulb"></i> </button>
+    <!-- Title -->
+    <section class="rox p-small text-center">
+      <h2 class="my-2">Pricetables: Type 1</h2>
+      <p>Show off your prices. Add as many perks as you please. Define a special offer with one class.</p>
+    </section>
+
+    <!-- Start of Pricetables: Type 1 -->
+    <section class="rox">
+      <!-- Optional Image Background -->
+      <!-- <i class="background fixed" style="background-image: url(BACKGROUND_URL)"></i> -->
+      <!-- Optional Video Background -->
+      <!-- <video class="background opacity-2" src="VIDEO URL" autoplay muted loop></video> -->
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-12 col-md-6 col-lg-4">
+            <!-- Start of Pricetable Type 1 Card -->
+            <div class="rox-pricetable-card-1 selected">
+              <!-- Icon container div -->
+              <!-- You can change the contained Icon into any font-icon you wish -->
+              <div class="image">
+                <i class="et-icon-telescope icon"></i>
+              </div>
+              <!-- Head contains the Name, Pricing information, and a description -->
+              <div class="head">
+                <h6 class="name">Lite</h6><!-- The name of the tier -->
+                <!-- Price data, change the sign to your regional currsency, and change the metric to reflect your billing period -->
+                <div class="price">
+                  <h2 class="value"><span class="sign">$</span>10<span class="metric">/mo</span></h2>
+                  <p class="small">billed annually</p> <!-- Optional additional info -->
+                </div>
+                <!-- Description of the tier, Optional -->
+                <p class="description">Perfect for a tight budget.</p>
+              </div>
+              <!-- Body contains the services offered per tier -->
+              <div class="body">
+                <!-- Offers are formated via <ul> -->
+                <ul class="no-style perks">
+                  <!-- In each <li> there is a <p> tag, containing an optional font-icon -->
+                  <li><p><i class="fas fa-check"></i>Weekly compliments</p></li>
+                  <li><p><i class="fas fa-check"></i>Bi-weekly tickles</p></li>
+                  <li><p><i class="fas fa-check"></i>24 Hour support</p></li>
+                  <!-- Add the class '.inactive' to the <li> to show an unavailable offer -->
+                  <!-- Make sure to change the font-icon, if using, to a relevent one -->
+                  <li class="inactive"><p><i class="fas fa-times"></i>Won't eat your food</p></li>
+                  <li class="inactive"><p><i class="fas fa-times"></i>Free meat on saturdays</p></li>
+                </ul>
+                <!-- Call To Action button, styled via default rox-button styles -->
+                <a class="rox-button-outline-thin rounded" href="#">Buy Now</a>
+              </div>
+            </div>
+            <!-- End of Pricetable Type 1 Card -->
+          </div>
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="rox-pricetable-card-1">
+              <div class="image">
+                <i class="et-icon-beaker icon"></i>
+              </div>
+              <div class="head">
+                <h6 class="name">Single</h6>
+                <div class="price">
+                  <h2 class="value"><span class="sign">$</span>25<span class="metric">/mo</span></h2>
+                  <p class="small">billed annually</p>
+                </div>
+                <p class="description">Great if you want a little more.</p>
+              </div>
+              <div class="body">
+                <ul class="no-style perks">
+                  <li><p><i class="fas fa-check"></i>Daily compliments</p></li>
+                  <li><p><i class="fas fa-check"></i>Weekly tickles</p></li>
+                  <li><p><i class="fas fa-check"></i>24 Hour live support</p></li>
+                  <li><p><i class="fas fa-check"></i>Won't eat your food</p></li>
+                  <li class="inactive"><p><i class="fas fa-times"></i>Free meat on saturdays</p></li>
+                </ul>
+                <a class="rox-button-outline-thin rounded" href="#">Buy Now</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="rox-pricetable-card-1">
+              <div class="image">
+                <i class="et-icon-genius icon"></i>
+              </div>
+              <div class="head">
+                <h6 class="name">Pro</h6>
+                <div class="price">
+                  <h2 class="value"><span class="sign">$</span>100<span class="metric">/mo</span></h2>
+                  <p class="small">billed annually</p>
+                </div>
+                <p class="description">The best of the best.</p>
+              </div>
+              <div class="body">
+                <ul class="no-style perks">
+                  <li><p><i class="fas fa-check"></i>Unlimited compliments</p></li>
+                  <li><p><i class="fas fa-check"></i>Daily tickles</p></li>
+                  <li><p><i class="fas fa-check"></i>24 Hour at-home support</p></li>
+                  <li><p><i class="fas fa-check"></i>Won't eat your food</p></li>
+                  <li><p><i class="fas fa-check"></i>Free meat on saturdays</p></li>
+                </ul>
+                <a class="rox-button-outline-thin rounded" href="#">Buy Now</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End of Pricetables: Type 1 -->
+
+    <!-- Code Viewer -->
+    <section class="rox p-xsmall">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-12">
+            <div class="code-block">
+              <div class="code-body">
+                <script type="text/plain" class="language-markup">
+                <!-- Start of Pricetables: Type 1 -->
+                <section class="rox">
+                  <!-- Optional Image Background -->
+                  <!-- <i class="background fixed" style="background-image: url(BACKGROUND_URL)"></i> -->
+                  <!-- Optional Video Background -->
+                  <!-- <video class="background opacity-2" src="VIDEO URL" autoplay muted loop></video> -->
+                  <div class="container">
+                    <div class="row justify-content-center">
+                      <div class="col-12 col-md-6 col-lg-4">
+                        <!-- Start of Pricetable Type 1 Card -->
+                        <div class="rox-pricetable-card-1 selected">
+                          <!-- Icon container div -->
+                          <!-- You can change the contained Icon into any font-icon you wish -->
+                          <div class="image">
+                            <i class="et-icon-telescope icon"></i>
+                          </div>
+                          <!-- Head contains the Name, Pricing information, and a description -->
+                          <div class="head">
+                            <h6 class="name">Lite</h6><!-- The name of the tier -->
+                            <!-- Price data, change the sign to your regional currsency, and change the metric to reflect your billing period -->
+                            <div class="price">
+                              <h2 class="value"><span class="sign">$</span>10<span class="metric">/mo</span></h2>
+                              <p class="small">billed annually</p> <!-- Optional additional info -->
+                            </div>
+                            <!-- Description of the tier, Optional -->
+                            <p class="description">Perfect for a tight budget.</p>
+                          </div>
+                          <!-- Body contains the services offered per tier -->
+                          <div class="body">
+                            <!-- Offers are formated via <ul> -->
+                            <ul class="no-style perks">
+                              <!-- In each <li> there is a <p> tag, containing an optional font-icon -->
+                              <li><p><i class="fas fa-check"></i>Weekly compliments</p></li>
+                              <li><p><i class="fas fa-check"></i>Bi-weekly tickles</p></li>
+                              <li><p><i class="fas fa-check"></i>24 Hour support</p></li>
+                              <!-- Add the class '.inactive' to the <li> to show an unavailable offer -->
+                              <!-- Make sure to change the font-icon, if using, to a relevent one -->
+                              <li class="inactive"><p><i class="fas fa-times"></i>Wont eat your food</p></li>
+                              <li class="inactive"><p><i class="fas fa-times"></i>Free meat on saturdays</p></li>
+                            </ul>
+                            <!-- Call To Action button, styled via default rox-button styles -->
+                            <a class="rox-button-outline-thin rounded" href="#">Buy Now</a>
+                          </div>
+                        </div>
+                        <!-- End of Pricetable Type 1 Card -->
+                      </div>
+                      <div class="col-12 col-md-6 col-lg-4">
+                        <div class="rox-pricetable-card-1">
+                          <div class="image">
+                            <i class="et-icon-beaker icon"></i>
+                          </div>
+                          <div class="head">
+                            <h6 class="name">Single</h6>
+                            <div class="price">
+                              <h2 class="value"><span class="sign">$</span>25<span class="metric">/mo</span></h2>
+                              <p class="small">billed annually</p>
+                            </div>
+                            <p class="description">Great if you want a little more.</p>
+                          </div>
+                          <div class="body">
+                            <ul class="no-style perks">
+                              <li><p><i class="fas fa-check"></i>Daily compliments</p></li>
+                              <li><p><i class="fas fa-check"></i>Weekly tickles</p></li>
+                              <li><p><i class="fas fa-check"></i>24 Hour live support</p></li>
+                              <li><p><i class="fas fa-check"></i>Wont eat your food</p></li>
+                              <li class="inactive"><p><i class="fas fa-times"></i>Free meat on saturdays</p></li>
+                            </ul>
+                            <a class="rox-button-outline-thin rounded" href="#">Buy Now</a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-12 col-md-6 col-lg-4">
+                        <div class="rox-pricetable-card-1">
+                          <div class="image">
+                            <i class="et-icon-genius icon"></i>
+                          </div>
+                          <div class="head">
+                            <h6 class="name">Pro</h6>
+                            <div class="price">
+                              <h2 class="value"><span class="sign">$</span>100<span class="metric">/mo</span></h2>
+                              <p class="small">billed annually</p>
+                            </div>
+                            <p class="description">The best of the best.</p>
+                          </div>
+                          <div class="body">
+                            <ul class="no-style perks">
+                              <li><p><i class="fas fa-check"></i>Unlimited compliments</p></li>
+                              <li><p><i class="fas fa-check"></i>Daily tickles</p></li>
+                              <li><p><i class="fas fa-check"></i>24 Hour at-home support</p></li>
+                              <li><p><i class="fas fa-check"></i>Wont eat your food</p></li>
+                              <li><p><i class="fas fa-check"></i>Free meat on saturdays</p></li>
+                            </ul>
+                            <a class="rox-button-outline-thin rounded" href="#">Buy Now</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </section>
+                <!-- End of Pricetables: Type 1 -->
+                </script>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End of Code Viewer -->
+
+    <!-- Title -->
+    <section class="rox p-small text-center">
+      <h2 class="my-2">Pricetables: Type 2</h2>
+      <p>Show off your prices. Add as many perks as you please. Define a special offer with one class.</p>
+    </section>
+
+    <!-- Start of Pricetables: Type 2 -->
+    <section class="rox">
+      <!-- Optional Image Background -->
+      <!-- <i class="background fixed" style="background-image: url(BACKGROUND_URL)"></i> -->
+      <!-- Optional Video Background -->
+      <!-- <video class="background opacity-2" src="VIDEO URL" autoplay muted loop></video> -->
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-12 col-md-6 col-lg-4">
+            <!-- Start of Pricetable Type 2 Card -->
+            <div class="rox-pricetable-card-2 selected">
+              <!-- Icon container div -->
+              <!-- You can change the contained Icon into any font-icon you wish -->
+              <!-- Not used in .rox-pricetable-card-2, but retained for easy swapping -->
+              <div class="image">
+                <i class="et-icon-telescope icon"></i>
+              </div>
+              <!-- Head contains the Name, Pricing information, and a description -->
+              <div class="head">
+                <h6 class="name">Lite</h6><!-- The name of the tier -->
+                <!-- Price data, change the sign to your regional currsency, and change the metric to reflect your billing period -->
+                <div class="price">
+                  <h2 class="value"><span class="sign">$</span>10<span class="metric">/mo</span></h2>
+                  <p class="small">billed annually</p> <!-- Optional additional info -->
+                </div>
+                <!-- Description of the tier, Optional -->
+                <p class="description">Perfect for a tight budget.</p>
+              </div>
+              <!-- Body contains the services offered per tier -->
+              <div class="body">
+                <!-- Offers are formated via <ul> -->
+                <ul class="no-style perks">
+                  <!-- In each <li> there is a <p> tag, containing an optional font-icon -->
+                  <li><p><i class="fas fa-check"></i>Weekly compliments</p></li>
+                  <li><p><i class="fas fa-check"></i>Bi-weekly tickles</p></li>
+                  <li><p><i class="fas fa-check"></i>24 Hour support</p></li>
+                  <!-- Add the class '.inactive' to the <li> to show an unavailable offer -->
+                  <!-- Make sure to change the font-icon, if using, to a relevent one -->
+                  <li class="inactive"><p><i class="fas fa-times"></i>Won't eat your food</p></li>
+                  <li class="inactive"><p><i class="fas fa-times"></i>Free meat on saturdays</p></li>
+                </ul>
+                <!-- Call To Action button, styled via default rox-button styles -->
+                <a class="rox-button-outline-thin rounded" href="#">Buy Now</a>
+              </div>
+            </div>
+            <!-- End of Pricetable Type 2 Card -->
+          </div>
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="rox-pricetable-card-2">
+              <div class="image">
+                <i class="et-icon-beaker icon"></i>
+              </div>
+              <div class="head">
+                <h6 class="name">Single</h6>
+                <div class="price">
+                  <h2 class="value"><span class="sign">$</span>25<span class="metric">/mo</span></h2>
+                  <p class="small">billed annually</p>
+                </div>
+                <p class="description">Great if you want a little more.</p>
+              </div>
+              <div class="body">
+                <ul class="no-style perks">
+                  <li><p><i class="fas fa-check"></i>Daily compliments</p></li>
+                  <li><p><i class="fas fa-check"></i>Weekly tickles</p></li>
+                  <li><p><i class="fas fa-check"></i>24 Hour live support</p></li>
+                  <li><p><i class="fas fa-check"></i>Won't eat your food</p></li>
+                  <li class="inactive"><p><i class="fas fa-times"></i>Free meat on saturdays</p></li>
+                </ul>
+                <a class="rox-button-outline-thin rounded" href="#">Buy Now</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="rox-pricetable-card-2">
+              <div class="image">
+                <i class="et-icon-genius icon"></i>
+              </div>
+              <div class="head">
+                <h6 class="name">Pro</h6>
+                <div class="price">
+                  <h2 class="value"><span class="sign">$</span>100<span class="metric">/mo</span></h2>
+                  <p class="small">billed annually</p>
+                </div>
+                <p class="description">The best of the best.</p>
+              </div>
+              <div class="body">
+                <ul class="no-style perks">
+                  <li><p><i class="fas fa-check"></i>Unlimited compliments</p></li>
+                  <li><p><i class="fas fa-check"></i>Daily tickles</p></li>
+                  <li><p><i class="fas fa-check"></i>24 Hour at-home support</p></li>
+                  <li><p><i class="fas fa-check"></i>Won't eat your food</p></li>
+                  <li><p><i class="fas fa-check"></i>Free meat on saturdays</p></li>
+                </ul>
+                <a class="rox-button-outline-thin rounded" href="#">Buy Now</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End of Pricetables: Type 2 -->
+
+    <!-- Code Viewer -->
+    <section class="rox p-xsmall">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-12">
+            <div class="code-block">
+              <div class="code-body">
+                <script type="text/plain" class="language-markup">
+                <!-- Start of Pricetables: Type 2 -->
+                <section class="rox">
+                  <!-- Optional Image Background -->
+                  <!-- <i class="background fixed" style="background-image: url(BACKGROUND_URL)"></i> -->
+                  <!-- Optional Video Background -->
+                  <!-- <video class="background opacity-2" src="VIDEO URL" autoplay muted loop></video> -->
+                  <div class="container">
+                    <div class="row justify-content-center">
+                      <div class="col-12 col-md-6 col-lg-4">
+                        <!-- Start of Pricetable Type 2 Card -->
+                        <div class="rox-pricetable-card-2 selected">
+                          <!-- Icon container div -->
+                          <!-- You can change the contained Icon into any font-icon you wish -->
+                          <!-- Not used in .rox-pricetable-card-2, but retained for easy swapping -->
+                          <div class="image">
+                            <i class="et-icon-telescope icon"></i>
+                          </div>
+                          <!-- Head contains the Name, Pricing information, and a description -->
+                          <div class="head">
+                            <h6 class="name">Lite</h6><!-- The name of the tier -->
+                            <!-- Price data, change the sign to your regional currsency, and change the metric to reflect your billing period -->
+                            <div class="price">
+                              <h2 class="value"><span class="sign">$</span>10<span class="metric">/mo</span></h2>
+                              <p class="small">billed annually</p> <!-- Optional additional info -->
+                            </div>
+                            <!-- Description of the tier, Optional -->
+                            <p class="description">Perfect for a tight budget.</p>
+                          </div>
+                          <!-- Body contains the services offered per tier -->
+                          <div class="body">
+                            <!-- Offers are formated via <ul> -->
+                            <ul class="no-style perks">
+                              <!-- In each <li> there is a <p> tag, containing an optional font-icon -->
+                              <li><p><i class="fas fa-check"></i>Weekly compliments</p></li>
+                              <li><p><i class="fas fa-check"></i>Bi-weekly tickles</p></li>
+                              <li><p><i class="fas fa-check"></i>24 Hour support</p></li>
+                              <!-- Add the class '.inactive' to the <li> to show an unavailable offer -->
+                              <!-- Make sure to change the font-icon, if using, to a relevent one -->
+                              <li class="inactive"><p><i class="fas fa-times"></i>Wont eat your food</p></li>
+                              <li class="inactive"><p><i class="fas fa-times"></i>Free meat on saturdays</p></li>
+                            </ul>
+                            <!-- Call To Action button, styled via default rox-button styles -->
+                            <a class="rox-button-outline-thin rounded" href="#">Buy Now</a>
+                          </div>
+                        </div>
+                        <!-- End of Pricetable Type 2 Card -->
+                      </div>
+                      <div class="col-12 col-md-6 col-lg-4">
+                        <div class="rox-pricetable-card-2">
+                          <div class="image">
+                            <i class="et-icon-beaker icon"></i>
+                          </div>
+                          <div class="head">
+                            <h6 class="name">Single</h6>
+                            <div class="price">
+                              <h2 class="value"><span class="sign">$</span>25<span class="metric">/mo</span></h2>
+                              <p class="small">billed annually</p>
+                            </div>
+                            <p class="description">Great if you want a little more.</p>
+                          </div>
+                          <div class="body">
+                            <ul class="no-style perks">
+                              <li><p><i class="fas fa-check"></i>Daily compliments</p></li>
+                              <li><p><i class="fas fa-check"></i>Weekly tickles</p></li>
+                              <li><p><i class="fas fa-check"></i>24 Hour live support</p></li>
+                              <li><p><i class="fas fa-check"></i>Wont eat your food</p></li>
+                              <li class="inactive"><p><i class="fas fa-times"></i>Free meat on saturdays</p></li>
+                            </ul>
+                            <a class="rox-button-outline-thin rounded" href="#">Buy Now</a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-12 col-md-6 col-lg-4">
+                        <div class="rox-pricetable-card-2">
+                          <div class="image">
+                            <i class="et-icon-genius icon"></i>
+                          </div>
+                          <div class="head">
+                            <h6 class="name">Pro</h6>
+                            <div class="price">
+                              <h2 class="value"><span class="sign">$</span>100<span class="metric">/mo</span></h2>
+                              <p class="small">billed annually</p>
+                            </div>
+                            <p class="description">The best of the best.</p>
+                          </div>
+                          <div class="body">
+                            <ul class="no-style perks">
+                              <li><p><i class="fas fa-check"></i>Unlimited compliments</p></li>
+                              <li><p><i class="fas fa-check"></i>Daily tickles</p></li>
+                              <li><p><i class="fas fa-check"></i>24 Hour at-home support</p></li>
+                              <li><p><i class="fas fa-check"></i>Wont eat your food</p></li>
+                              <li><p><i class="fas fa-check"></i>Free meat on saturdays</p></li>
+                            </ul>
+                            <a class="rox-button-outline-thin rounded" href="#">Buy Now</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </section>
+                <!-- End of Pricetables: Type 2 -->
+                </script>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Code Viewer -->
+
+    <!-- Start of Javascript -->
+    <!-- JQUERY -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- DARK/LIGHT SWITCH -->
+    <script type="text/javascript" src="./js/lights.js"></script>
+    <!-- CODE VIEWER -->
+    <script src="./js/prism.js"></script>
+  </body>
+</html>

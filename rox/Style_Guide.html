@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Style Guide</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/doc_style.css">
+    <link rel="stylesheet" href="./css/prism.css">
+    <!-- DEVICE SCALING -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  </head>
+  <body>
+    <button class="rox-debug-dark-switch dark-switch on"type="button" name="button" onclick="turnDownTheLights()"> <i class="far fa-lightbulb"></i> </button>
+
+    <section class="rox rox-navbar-01 sticky" data-sticky="true">
+      <div class="container">
+        <nav>
+          <a href="./index.html" class="brand">
+            <div>
+              <img src="./resources/logo/logo.png" alt="" class="show-light">
+              <img src="./resources/logo/logo-dark.png" alt="" class="show-dark">
+            </div>
+          </a>
+          <a class="mobile"><i class="fas fa-bars"></i></a>
+          <ul class="right">
+            <li>
+              <a href="./index.html">Documentation</a>
+            </li>
+            <li><a href="#">Blocks <i class="fa fa-chevron-down"></i></a>
+              <div class="sub">
+                <ul>
+                  <li><a href="../Blocks/contact_us.html">Contact</a></li>
+                  <li><a href="../Blocks/counter.html">Counter</a></li>
+                  <li><a href="../Blocks/cta.html">Call To Action</a></li>
+                  <li><a href="../Blocks/faq.html">FAQ</a></li>
+                  <li><a href="../Blocks/footer.html">Footer</a></li>
+                  <li><a href="../Blocks/hero.html">Hero</a></li>
+                  <li><a href="../Blocks/info.html">Info</a></li>
+                  <li><a href="../Blocks/loader.html">Loader</a></li>
+                  <li><a href="../Blocks/map.html">Map</a></li>
+                  <li><a href="../Blocks/navbar.html">Navbar</a></li>
+                  <li><a href="../Blocks/pricetable.html">Pricetable</a></li>
+                  <li><a href="../Blocks/services.html">Services</a></li>
+                  <li><a href="../Blocks/subscribe.html">Subscribe</a></li>
+                  <li><a href="../Blocks/team.html">Team</a></li>
+                  <li><a href="../Blocks/testimonials.html">Testimonials</a></li>
+                </ul>
+              </div>
+            </li>
+            <li class="divider">
+            </li>
+            <li>
+              
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </section>
+    <section class="rox">
+      <i class="background repeat opacity-2 fixed" style="background-image: url(./resources/backgrounds/bg_04.jpg)"></i>
+      <div class="container">
+        <div class="row text-center">
+          <div class="col-12">
+            <h2 class="display-4 font-weight-normal m-0">Style Guide</h2>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="rox rox-style-guide">
+      <div class="container-fluid">
+        <!-- <div class="row">
+          <div class="col-12">
+            <div class="row">
+              <div class="col-6">
+
+              </div>
+              <div class="col-6">
+
+              </div>
+            </div>
+          </div>
+        </div> -->
+        <div class="row">
+          <div class="col-12">
+            <div class="row justify-content-center internal">
+              <div class="col-12 text-center">
+                <h4 class="mb-5">Basic Type</h4>
+              </div>
+              <div class="col-xl-3">
+                <div class="card p-3">
+                  <h1 class="mb-2">H1: Header</h1>
+                  <h2 class="mb-2">H2: Header</h2>
+                  <h3 class="mb-2">H3: Header</h3>
+                  <h4 class="mb-2">H4: Header</h4>
+                  <h5 class="mb-2">H5: Header</h5>
+                  <h6 class="mb-2">H6: Header</h6>
+                  <p class="mb-0">Paragraph</p>
+                  <a href="#">Anchor</a>
+                  <p class="mb-0 small">Small Paragraph</p>
+                </div>
+              </div>
+              <div class="col-xl-3">
+                <div class="code-block">
+                  <div class="code-body">
+                    <script type="text/plain" class="language-markup text-monospace">
+                      <h1>H1: Header</h1>
+                      <h2>H2: Header</h2>
+                      <h3>H3: Header</h3>
+                      <h4>H4: Header</h4>
+                      <h5>H5: Header</h5>
+                      <h6>H6: Header</h6>
+                      <p>Paragraph</p>
+                      <a href="#">Anchor</a>
+                      <p class="small">Small Paragraph</p>
+                    </script>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row justify-content-center internal">
+              <div class="col-12 text-center">
+                <h4 class="mb-5">Typeface</h4>
+              </div>
+              <div class="col-xl-3">
+                <div class="card p-3">
+                  <h4 class="mb-3 font-normal font-weight-normal">Normal Font: Rubik</h3>
+                  <h4 class="mb-3 font-header font-weight-normal">Header Font: Open Sans</h3>
+                  <h4 class="mb-0 font-fancy font-weight-normal">Fancy Font: Quicksand</h3>
+                </div>
+              </div>
+              <div class="col-xl-3">
+                <div class="code-block">
+                  <div class="code-body">
+                    <script type="text/plain" class="language-markup text-monospace">
+                      <h4 class="font-normal">Normal Font: Rubik</h3>
+                      <h4 class="font-header">Header Font: Open Sans</h3>
+                      <h4 class="font-fancy">Fancy Font: Quicksand</h3>
+                    </script>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row justify-content-center internal">
+              <div class="col-12 text-center">
+                <h4 class="mb-5">Section Header</h4>
+              </div>
+              <div class="col-8 mb-5">
+                <div class="card p-3">
+                  <div class="col-12 text-center">
+                    <div class="col-12">
+                      <h2>This Is A Header</h2>
+                      <p class="rox-subtitle">This Is A Subtitle</p>
+                      <hr>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-8">
+                <div class="code-block">
+                  <div class="code-body">
+                    <script type="text/plain" class="language-markup text-monospace">
+                      <div class="col-12">
+                        <h2>This Is A Header</h2>
+                        <p class="rox-subtitle">This Is A Subtitle</p>
+                        <hr>
+                      </div>
+                    </script>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row justify-content-center internal">
+              <div class="col-12 text-center">
+                <h4 class="mb-5">Buttons</h4>
+              </div>
+              <div class="col-xl-3">
+                <div class="card p-3">
+                  <button class="rox-button" type="button" name="button">Button</button>
+                  <button class="rox-button-thin" type="button" name="button">Thin Button</button>
+                  <button class="rox-button-small" type="button" name="button">Small Button</button>
+                  <br>
+                  <button class="rox-button-outline" type="button" name="button">Outline</button>
+                  <button class="rox-button-thin-outline" type="button" name="button">Thin Outline</button>
+                  <button class="rox-button-small-outline" type="button" name="button">Small Outline</button>
+                </div>
+              </div>
+              <div class="col-xl-3">
+                <div class="code-block">
+                  <div class="code-body">
+                    <script type="text/plain" class="language-markup text-monospace">
+                      <button class="rox-button" type="button" name="button">Button</button>
+                      <button class="rox-button-thin" type="button" name="button">Thin Button</button>
+                      <button class="rox-button-small" type="button" name="button">Small Button</button>
+                      <button class="rox-button-outline" type="button" name="button">Outline</button>
+                      <button class="rox-button-thin-outline" type="button" name="button">Thin Outline</button>
+                      <button class="rox-button-small-outline" type="button" name="button">Small Outline</button>
+                    </script>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row justify-content-center internal">
+              <div class="col-12 text-center">
+                <h4 class="mb-5">Anchor Buttons</h4>
+              </div>
+              <div class="col-xl-3">
+                <div class="card p-3">
+                  <a class="rox-button" href="#">Button</a>
+                  <a class="rox-button-thin" href="#">Thin Button</a>
+                  <a class="rox-button-small" href="#">Small Button</a>
+                  <br>
+                  <a class="rox-button-outline" href="#">Outline</a>
+                  <a class="rox-button-thin-outline" href="#">Thin Outline</a>
+                  <a class="rox-button-small-outline" href="#">Small Outline</a>
+                </div>
+              </div>
+              <div class="col-xl-3">
+                <div class="code-block">
+                  <div class="code-body">
+                    <script type="text/plain" class="language-markup text-monospace">
+                      <a class="rox-button" href="#">Button</a>
+                      <a class="rox-button-thin" href="#">Thin Button</a>
+                      <a class="rox-button-small" href="#">Small Button</a>
+                      <a class="rox-button-outline" href="#">Outline</a>
+                      <a class="rox-button-thin-outline" href="#">Thin Outline</a>
+                      <a class="rox-button-small-outline" href="#">Small Outline</a>
+                    </script>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row justify-content-center internal">
+              <div class="col-12 text-center">
+                <h4 class="mb-5">Unordered List</h4>
+              </div>
+              <div class="col-xl-3">
+                <div class="card p-3">
+                  <ul class="rox-list mb-0">
+                    <li>List Item</li>
+                    <li>List Item</li>
+                    <li>List Item</li>
+                    <li>List Item</li>
+                    <li>List Item</li>
+                    <li>List Item</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-xl-3">
+                <div class="code-block">
+                  <div class="code-body">
+                    <script type="text/plain" class="language-markup text-monospace">
+                      <ul class="rox-list">
+                        <li>List Item</li>
+                        <li>List Item</li>
+                        <li>List Item</li>
+                        <li>List Item</li>
+                        <li>List Item</li>
+                        <li>List Item</li>
+                      </ul>
+                    </script>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row justify-content-center internal">
+              <div class="col-12 text-center">
+                <h4 class="mb-5">Input: Text</h4>
+              </div>
+              <div class="col-xl-3">
+                <div class="card p-3">
+                  <input class="rox-input max" type="text" name="" value="" placeholder="Textbox">
+                  <div class="rox-input-icon-search max">
+                    <input class="rox-input max" type="text" name="" value="" placeholder="Search">
+                  </div>
+                  <div class="rox-input-icon-email max">
+                    <input class="rox-input max" type="text" name="" value="" placeholder="Email">
+                  </div>
+                  <div class="rox-input-icon-password max">
+                    <input class="rox-input max" type="password" name="" value="" placeholder="Password">
+                  </div>
+                  <div class="rox-input-icon-number max">
+                    <input class="rox-input max" type="text" name="" value="" placeholder="Number">
+                  </div>
+                  <textarea class="rox-input" name="name" rows="3" cols="80" placeholder="Textarea"></textarea>
+                </div>
+              </div>
+              <div class="col-xl-3">
+                <div class="code-block">
+                  <div class="code-body">
+                    <script type="text/plain" class="language-markup text-monospace">
+                      <input class="rox-input max" type="text" name="" value="" placeholder="Textbox">
+                      <div class="rox-input-icon-search max">
+                        <input class="rox-input max" type="text" name="" value="" placeholder="Search">
+                      </div>
+                      <div class="rox-input-icon-email max">
+                        <input class="rox-input max" type="text" name="" value="" placeholder="Email">
+                      </div>
+                      <div class="rox-input-icon-password max">
+                        <input class="rox-input max" type="password" name="" value="" placeholder="Password">
+                      </div>
+                      <div class="rox-input-icon-number max">
+                        <input class="rox-input max" type="text" name="" value="" placeholder="Number">
+                      </div>
+                      <textarea class="rox-input" name="name" rows="3" cols="80" placeholder="Textarea"></textarea>
+                    </script>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row justify-content-center internal">
+              <div class="col-12 text-center">
+                <h4 class="mb-5">Input: Radio</h4>
+              </div>
+              <div class="col-xl-3">
+                <div class="card p-3">
+                    <input class="rox-input" type="radio" name="r-button" id="r-button-1"/>
+                    <label for="r-button-1" class="mb-0">Radio</label>
+                    <input class="rox-input" type="radio" name="r-button" id="r-button-2"/>
+                    <label for="r-button-2" class="mb-0">Radio</label>
+                    <input class="rox-input" type="radio" name="r-button" id="r-button-3"/>
+                    <label for="r-button-3" class="mb-0">Radio</label>
+                    <input class="rox-input" type="radio" name="r-button" id="r-button-4"/>
+                    <label for="r-button-4" class="mb-0">Radio</label>
+                </div>
+              </div>
+              <div class="col-xl-3">
+                <div class="code-block">
+                  <div class="code-body">
+                    <script type="text/plain" class="language-markup text-monospace">
+                      <input class="rox-input" type="radio" name="r-button" id="r-button-1"/>
+                      <label for="r-button-1">Radio</label>
+                      <input class="rox-input" type="radio" name="r-button" id="r-button-2"/>
+                      <label for="r-button-2">Radio</label>
+                      <input class="rox-input" type="radio" name="r-button" id="r-button-3"/>
+                      <label for="r-button-3">Radio</label>
+                      <input class="rox-input" type="radio" name="r-button" id="r-button-4"/>
+                      <label for="r-button-4">Radio</label>
+                    </script>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row justify-content-center internal">
+              <div class="col-12 text-center">
+                <h4 class="mb-5">Input: Checkbox</h4>
+              </div>
+              <div class="col-xl-3">
+                <div class="card p-3">
+                    <input class="rox-input" type="checkbox" name="r-button" id="c-button-1"/>
+                    <label for="c-button-1" class="mb-0">Checkbox</label>
+                    <input class="rox-input" type="checkbox" name="r-button" id="c-button-2"/>
+                    <label for="c-button-2" class="mb-0">Checkbox</label>
+                    <input class="rox-input" type="checkbox" name="r-button" id="c-button-3"/>
+                    <label for="c-button-3" class="mb-0">Checkbox</label>
+                    <input class="rox-input" type="checkbox" name="r-button" id="c-button-4"/>
+                    <label for="c-button-4" class="mb-0">Checkbox</label>
+                </div>
+              </div>
+              <div class="col-xl-3">
+                <div class="code-block">
+                  <div class="code-body">
+                    <script type="text/plain" class="language-markup text-monospace">
+                      <input class="rox-input" type="checkbox" name="r-button" id="c-button-1"/>
+                      <label for="c-button-1">Checkbox</label>
+                      <input class="rox-input" type="checkbox" name="r-button" id="c-button-2"/>
+                      <label for="c-button-2">Checkbox</label>
+                      <input class="rox-input" type="checkbox" name="r-button" id="c-button-3"/>
+                      <label for="c-button-3">Checkbox</label>
+                      <input class="rox-input" type="checkbox" name="r-button" id="c-button-4"/>
+                      <label for="c-button-4">Checkbox</label>
+                    </script>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- <div class="row">
+          <div class="col-12">
+            <div class="row">
+              <div class="col-6">
+
+              </div>
+              <div class="col-6">
+
+              </div>
+            </div>
+          </div>
+        </div> -->
+      </div>
+    </section>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="./js/prism.js"></script>
+    <script src="./js/lights.js"></script>
+    <script src="./js/navbar.js"type="text/javascript"></script>
+  </body>
+</html>

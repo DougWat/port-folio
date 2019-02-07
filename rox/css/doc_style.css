@@ -1,0 +1,119 @@
+.doc-header h1, .doc-header h3 {
+  letter-spacing: normal;
+  font-family: Open Sans, sans-serif;
+}
+
+.doc-header h4 {
+  font-weight: 300 !important;
+}
+
+.doc-sticky {
+  position: sticky !important;
+  top: 6rem;
+  z-index: 10;
+}
+
+.noverflow {
+  overflow: unset !important;
+}
+
+.doc-navigation {
+  border: 1px solid #CDCDCD;
+  width: 200px;
+  max-height: 400px;
+  border-radius: .2rem;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
+.doc-navigation a {
+  display: block;
+  padding-left: 20px;
+  font-weight: 400;
+  letter-spacing: .06rem;
+  width: 200px;
+  height: 50px;
+  line-height: 50px;
+  border-bottom: 1px solid #CACACA;
+  color: #1D1D1D;
+}
+
+.doc-navigation a:last-of-type {
+  border: none;
+}
+
+.doc-navigation a:hover {
+  background-color: #EFEFEF;
+}
+
+img {
+  margin: 0 0 1rem 0;
+  border-radius: .3rem;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+img + .subtitle {
+  margin-top: -.5rem;
+  opacity: .8;
+  font-style: italic;
+  font-size: .8rem;
+}
+
+.content > section {
+  margin: 4rem 0;
+}
+
+.content > section:first-of-type {
+  margin-top: 0;
+}
+
+.content > section:last-of-type {
+  margin-bottom: 0;
+}
+
+.code-block {
+  border-radius: .2rem;
+  overflow: hidden;
+  margin-bottom: 1rem;
+  letter-spacing: .03rem;
+  font-size: .96rem;
+}
+
+.code-block pre {
+  margin: 0 !important;
+}
+
+.code-header {
+  background-color: #242424;
+  padding: 10px;
+}
+
+.code-header p {
+  margin-bottom: 0;
+  color: white;
+  font-family: "Consolas", "Bitstream Vera Sans Mono", "Courier New", Courier, monospace !important;
+}
+
+.token.comment, .token.block-comment {
+  font-size: .9em;
+}
+
+.rox-style-guide .card {
+  background-color: rgba(128, 128, 128, 0.05);
+}
+
+.rox-style-guide .code-block {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+.rox-style-guide .code-body, .rox-style-guide .code-toolbar, .rox-style-guide .code-body pre {
+  height: 100%;
+}
+
+.rox-style-guide .internal {
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  margin: 0;
+  padding: 30px 0 !important;
+}

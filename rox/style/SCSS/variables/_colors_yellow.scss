@@ -1,0 +1,54 @@
+// main: ../../style_yellow.scss
+
+/* Start of variables/_colors.scss */
+
+$color-primary: #c9e623; // The primary color of the webpage. Change this to change your primary color
+
+//Generic color spectrum
+$red: #d83c3c;
+$orange: #d8943c;
+$yellow: #d8d83c;
+$green: #49d83c;
+$blue: #3cd2d8;
+$purple: #993cd8;
+
+//Map for calling colors in other sass files in a unified way
+$colors:(
+  primary:(
+    //The primary color, as well as a dark and a light varient. EX: color(primary,base)
+    base: $color-primary,
+    light: lighten($color-primary,10),
+    dark: darken($color-primary,10)
+  ),
+  //The whites and the blacks. EX: color(white)
+  white: mix($color-primary,#FFFFFF,0%),
+  black: mix($color-primary, #1C1C1C, 1%),
+  gray:(
+    //4 Types of grays, partially tinted with the primary color. EX: color(gray,base)
+    base: mix($color-primary,#808080,1%),
+    light: mix($color-primary,#c5c5c5,1%),
+    extralight: mix($color-primary,#e1e1e1,1%),
+    dark: mix($color-primary,#1d2025,1%)
+  ),
+  //The generic colors. EX: color(colors,yellow);
+  colors:(
+    primary: $color-primary,
+    red: $red,
+    orange: $orange,
+    yellow: $yellow,
+    green: $green,
+    blue: $blue,
+    purple: $purple
+  )
+);
+
+//Function to call colors from the $color map in a unified way.
+@function color($color-name, $color-variant:null) {
+  @if ($color-variant != null) {
+    @return map-get(map-get($colors,$color-name),$color-variant);
+  } @else {
+    @return map-get($colors,$color-name);
+  }
+}
+
+/* End of variables/_colors.scss */

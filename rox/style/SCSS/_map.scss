@@ -1,0 +1,102 @@
+//main: ../style.scss
+
+/* Start of _map.scss */
+
+// The map block has a different padding method in order to allow the map to stretch from top to bottom.
+section.rox.rox-map{
+  padding-top:0;
+  padding-bottom:0;
+  .row{
+    >*:not(#rox-map){
+      padding:$rox-section-padding-small;
+    }
+  }
+}
+#rox-map{
+  min-height: 400px;
+}
+
+//The card containing contact information, generally placed next to the google map, but can be seperated
+//This card is designed to be dark only, and so there is version that is light.
+.rox-contact-info-card{
+  background-color: rgba(darken(color(gray,dark),5),.8);
+  width: 100%;
+  padding: 2rem;
+
+  @include box-shadow(4px,4px,10px, rgba(black,.2));
+  @include radius(.2rem);
+  p{
+    margin-bottom: .5rem;
+    font-size: .8rem;
+    line-height: normal;
+    letter-spacing: .1rem;
+    &:last-of-type{
+      margin-bottom: 0;
+    }
+  }
+  //Each seperate block of contact information is contained inside a <div> with the class '.item'
+  .item{
+    margin-bottom: 3rem;
+    i{
+      font-size: 1.5rem;
+    }
+    &:last-of-type{
+      margin-bottom:0;
+    }
+  }
+  // The social media links
+  .social{
+    li{
+      margin-top:.7em;
+    }
+    a{
+      $ICON_SIZE: 34px;
+      height:$ICON_SIZE;
+      width:$ICON_SIZE;
+      line-height: $ICON_SIZE;
+      display: block;
+      background-color: rgba(color(gray,base),.3);
+      text-align: center;
+      //@include radius(50%);
+      @include transition(background-color .2s, color .2s);
+      &:hover{
+        background-color: color(primary,base);
+        color: color(white);
+      }
+    }
+  }
+}
+
+//Media Queries
+
+// Extra small devices (portrait phones, less than 576px)
+@media (max-width: 575.98px) {
+  section.rox.rox-map{
+    .row{
+      >*:not(#rox-map){
+        padding:1.5rem;
+      }
+    }
+  }
+  .rox-contact-info-card{
+    .item{
+      i{
+        font-size: 1.2rem;
+      }
+      p{
+        font-size:.7rem;
+      }
+    }
+  }
+}
+
+// Small devices (landscape phones, less than 768px)
+@media (max-width: 767.98px) {}
+
+// Medium devices (tablets, less than 992px)
+@media (max-width: 991.98px) {}
+
+// Large devices (desktops, less than 1200px)
+@media (max-width: 1199.98px) {}
+
+/* End of _map.scss */

@@ -1,0 +1,48 @@
+//main: ../style.scss
+
+/* Start of _subscribe.scss */
+.rox-subscribe-form{
+  // SASS Variables to create a button contained inside an input.
+  // Change any of these variables as you see fit, everything should automatically adjust properly
+  $BUTTON_HEIGHT:45px;
+  $BUTTON_WIDTH: 130px;
+  $INPUT_HEIGHT: $BUTTON_HEIGHT + 8px;
+  $INPUT_PADDING_X:20px;
+  $BUTTON_OFFSET: ($INPUT_HEIGHT - $BUTTON_HEIGHT) / 2;
+
+  position: relative;
+
+  button{
+    font-family: font(normal);
+    font-weight: 400;
+    letter-spacing: .15em;
+    font-size: .8rem;
+    height: $BUTTON_HEIGHT;
+    width:$BUTTON_WIDTH;
+    position: absolute;
+    right: $BUTTON_OFFSET;
+    top: $BUTTON_OFFSET;
+  }
+  input{
+    height: $INPUT_HEIGHT;
+    width: 100%;
+    padding-left: $INPUT_PADDING_X;
+    padding-right: ($BUTTON_OFFSET + $BUTTON_WIDTH + $INPUT_PADDING_X);
+    border:none;
+    @include box-shadow(0,0,20px,rgba(black,.2));
+    @include radius(2em);
+    &:focus{
+      outline: none;
+    }
+  }
+}
+// Style changes in a dark section
+.dark{
+  .rox-subscribe-form{
+    input{
+      background-color: lighten(color(gray,dark),10);
+      color:color(white);
+    }
+  }
+}
+/* End of _subscribe.scss */

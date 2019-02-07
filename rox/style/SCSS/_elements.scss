@@ -1,0 +1,202 @@
+// main: style.scss
+
+/* Start of _elements.scss */
+// Rox& styled inputs
+
+// Place this class in an input or a text area in order to use ROX& styles on it
+
+//Mixins
+
+// General input structure mixin
+@mixin input-structure {
+  padding:.4rem .6rem;
+  margin:.6rem 0;
+  letter-spacing: .04rem;
+  border: 1px solid rgba(color(gray,dark),.1);
+  font-size: .8rem;
+  @include radius(.2rem);
+}
+
+
+/*Reset*/
+input,textarea,select,option,button{
+  &:focus{
+    outline:none;
+  }
+}
+
+/* Input and Textarea*/
+.rox-input{
+  &[type~="text"],&[type~="number"],&[type~="password"],&[type~="email"],&[type~="search"]{
+    @include input-structure;
+    background-color: rgba(darken(color(white),8),.6);
+    color: color(gray,dark);
+  }
+  &[type~="radio"]{
+    position: absolute;
+    opacity: 0;
+    visibility: hidden;
+    +label{
+      cursor: pointer;
+      @include transition(color .2s);
+      &::before{
+        display: inline-block;
+        content: "";
+        height: 1rem;
+        width: 1rem;
+        margin-right: 0.6rem;
+        border: 0.1rem solid color(primary,base);
+        border-radius: 50%;
+        @include transition(border .2s);
+      }
+      &:hover{
+        color: color(primary,base);
+      }
+    }
+    &:checked +label {
+      color: color(primary,base);
+      &::before {
+        border: 0.3rem solid color(primary,base);
+      }
+    }
+  }
+  &[type~="checkbox"]{
+    position: absolute;
+    opacity: 0;
+    visibility: hidden;
+    +label{
+      cursor: pointer;
+      @include transition(color .2s);
+      &::before{
+        content: "\f00c";
+        color: rgba(color(white),0);
+        font-family: FontAwesome;
+        line-height: 1rem;
+        text-align: center;
+        font-size: .7rem;
+        display: inline-block;
+        height: 1rem;
+        width: 1rem;
+        margin-right: .6rem;
+        @include inset-border(color(primary,base), 2px);
+        @include transition(color .2s, background-color .2s);
+        //border: .1rem solid color(primary,base);
+      }
+      &:hover{
+        color: color(primary,base);
+      }
+    }
+    &:checked +label::before{
+      color:color(white);
+      background-color: color(primary,base);
+    }
+  }
+  &.max{
+    width:100%;
+  }
+}
+[class*="rox-input-icon"]{
+  $ICON_SPACE: 40px;
+  display: inline-block;
+  position: relative;
+  margin-top:.6rem;
+  margin-bottom:.6rem;
+  input{
+    margin-top:0 !important;
+    margin-bottom:0 !important;
+    height:2.6rem;
+    padding-left: $ICON_SPACE !important;
+  }
+  &::before{
+    content: "";
+    font-family: Font Awesome\ 5 Free;
+    font-weight: normal;
+    display: block;
+    position: absolute;
+    line-height: 2.7rem;
+    width: $ICON_SPACE;
+    text-align: center;
+    color: color(primary,base);
+    height:1.6rem;
+    left:0;
+  }
+  &[class*="search"]{
+    &::before{
+      content: "\f002";
+      font-weight: 900;
+    }
+  }
+  &[class*="email"]{
+    &::before{
+      content: "\f0e0";
+      font-weight: 900;
+    }
+  }
+  &[class*="password"]{
+    &::before{
+      content: "\f023";
+      font-weight: 900;
+    }
+  }
+  &[class*="number"]{
+    &::before{
+      content: "\f292";
+      font-weight: 900;
+    }
+  }
+}
+
+textarea.rox-input{
+  @include input-structure;
+  background-color: rgba(darken(color(white),8),.6);
+  color: color(gray,dark);
+}
+
+//The dark varient
+.dark{
+  .rox-input{
+    color: color(gray,light);
+    background-color: rgba(lighten(color(gray,dark),7),.9);
+    border-color: rgba(color(gray,base),.1);
+  }
+  option,label{
+   color: color(gray,base);
+  }
+}
+
+textarea{
+  //Adding this class to a text area will prevent it from being resizable
+  &.no-resize{
+    resize:none;
+  }
+}
+
+/* Lists */
+
+ul.rox-list{
+  list-style: none;
+  li{
+    position: relative;
+    &:before{
+      content: '•';
+      position: absolute;
+      left:-20px;
+      bottom:1px;
+      font-size: 2rem;
+      color: color(primary,base);
+      @include text-outline(color(primary,base));
+    }
+  }
+}
+
+/* Select and Option */
+
+select.rox-input{
+  @include input-structure;
+  option{
+    @include input-structure;
+    padding-bottom:20px;
+  }
+}
+
+/* End of _elements.scss */

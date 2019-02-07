@@ -1,0 +1,275 @@
+//main:style.scss
+
+/* Start of _pricetable.scss */
+// There are two styles of price tables
+
+//The generic styles that each of the price tables share
+[class*='rox-pricetable-card']{
+  position: relative;
+  background-color: color(white);
+  max-width: 300px;
+  min-width:200px;
+  margin: 2rem auto;
+  text-align: center;
+  border: 1px solid rgba(color(gray,dark),.2);
+  @include box-shadow(0px,0px,20px,rgba(black,.2));
+}
+
+//Styles for Pricetable Type 1
+.rox-pricetable-card-1{
+  $SPACE: 1.5rem; //Controls the spacing in the card, including padding and margins
+  padding: $SPACE;
+
+  //The image or the icon present at the top of the card
+  .image{
+    color: color(primary,base);
+    font-size: 3rem;
+    @include transform(translate(0,0));
+    @include transition(transform-transition(.5));
+  }
+  //Margins for the items in the head of the card
+  .name,.price,.value{
+    margin-bottom: .75rem;
+  }
+  .price{
+    p{
+      font-weight: 400;
+      color:color(gray,light);
+      margin:0;
+    }
+  }
+
+  //Contains the price of the table, as well as the pricing metric and the currency sign
+  .value{
+    font-weight: bold;
+    margin:0;
+    span{
+      font-size: 1rem;
+      font-weight: 400;
+      color:color(gray,base);
+    }
+  }
+  .description{
+    color: color(primary,base);
+    padding:.75rem 0;
+    font-size: .8rem;
+    font-weight: 400;
+    border-bottom: 1px solid rgba(black,.1);
+    border-top: 1px solid rgba(black,.1);
+  }
+  .perks{
+    li{
+      margin-bottom: .5rem;
+      &:last-of-type{
+        margin-bottom: 1rem;
+      }
+    }
+    p{
+      font-size: .8rem;
+      font-weight: 400;
+      color: color(gray,base);
+      margin:0;
+    }
+    i{
+      margin-right:.4rem;
+      color:color(primary,base);
+    }
+  }
+  //Defines a perk <li> as inactive, and grays it out
+  .inactive{
+    p{
+      color:color(gray,light);
+    }
+    i{
+      color:color(gray,base);
+    }
+  }
+  //Defines the entire card as the special offer, and provides additional styling to reflect that
+  &.selected{
+    border-color: rgba(color(primary,base),.8);
+    border-width: 2px;
+    @include transform(scale(1.04,1.04));
+    &::after{
+      $SPECIAL_SCALE: 70px;
+
+      content: "SPECIAL";
+      color:color(white);
+      background-color: color(primary,base);
+      width:$SPECIAL_SCALE;
+      height: $SPECIAL_SCALE;
+      line-height: $SPECIAL_SCALE;
+      font-family: font(fancy);
+      font-size: .83rem;
+      position: absolute;
+      top:-20px;
+      right:-20px;
+      @include radius(50%);
+      @include transform(rotate(10deg));
+    }
+  }
+  //Simple hover effect
+  &:hover{
+    .image{
+      @include transform(translate(0,-10px));
+    }
+  }
+}
+
+// Dark styles for pricetable type 1
+.dark{
+  .rox-pricetable-card-1{
+      background-color: color(gray,dark);
+    border-color:  rgba(color(gray,base),.2);
+    .body{
+      p{
+        color: color(gray,light);
+      }
+      li.inactive{
+        p{
+        color: color(gray,base);
+        }
+      }
+    }
+  }
+}
+
+//Styles for pricetable type 2
+.rox-pricetable-card-2{
+  $SPACE: 1.5rem; //Controls the spacing in the card, including padding and margins
+  overflow: hidden;
+  @include radius(.5rem);
+  //The image or the icon present at the top of the card
+  .image{
+    display:none;
+  }
+  .head{
+    position: relative;
+    background-color: color(gray,dark);
+    padding-top: $SPACE;
+  }
+  .name{
+    color:color(white);
+    font-weight: bold;
+    font-family: font(fancy);
+    margin-bottom: 2rem;
+  }
+  .price{
+    margin-bottom:.75rem;
+    p{
+      margin:0;
+    }
+  }
+  //Contains the price of the table, as well as the pricing metric and the currency sign
+  .value{
+    color: color(white);
+    display: inline-block;
+    font-size: 5.5rem;
+    font-family: font(normal);
+    line-height: 4rem;
+    position: relative;
+    margin:0;
+    span{
+      color:color(gray,base);
+      line-height: normal;
+      position: absolute;
+    }
+    //The currency symbol
+    .sign{
+      font-size: .8rem;
+      left:-15px;
+    }
+    //The price plan (/month, /year, /day, /hour)
+    .metric{
+      font-size: .60rem;
+      font-style: italic;
+      bottom:0;
+    }
+  }
+  .description{
+    color: color(gray,base);
+    font-size: .70rem;
+    font-weight: 400;
+    line-height: 1.4rem;
+    margin: 0 0 1.75rem 0;
+    display: inline-block;
+  }
+  .body{
+    padding:$SPACE;
+    border-top:1px solid rgba(black,.1);
+  }
+  .perks{
+    margin:0;
+    li{
+      padding: $SPACE/2 0;
+      border-bottom: 1px solid rgba(black,.1);
+      &:first-of-type{
+        padding-top: 0;
+      }
+      &:last-of-type{
+        border:none;
+        padding-bottom: $SPACE;
+      }
+    }
+    i{
+      margin-right:.4rem;
+      color:color(primary,base);
+    }
+    p{
+      font-size: .8rem;
+      font-weight: 400;
+      margin:0;
+      color: color(gray,base);
+    }
+  }
+  //Defines a perk <li> as inactive, and grays it out
+  .inactive{
+    p{
+      color:color(gray,light);
+    }
+    p i{
+      color:color(gray,base);
+    }
+  }
+  //Defines the entire card as the special offer, and provides additional styling to reflect that
+  &.selected{
+    border-color: rgba(color(primary,base),.8);
+    @include transform(scale(1.04,1.04));
+    &::after{
+      $SPECIAL_SCALE: 60px;
+
+      content: "SPECIAL";
+      color:color(white);
+      background-color: color(primary,base);
+      width:$SPECIAL_SCALE;
+      height: $SPECIAL_SCALE;
+      line-height: $SPECIAL_SCALE;
+      font-family: font(fancy);
+      font-size: .7rem;
+      letter-spacing: .06rem;
+      position: absolute;
+      top:10px;
+      right:10px;
+      @include radius(50%);
+    }
+  }
+}
+
+//Dark styles for pricetable type 2
+.dark{
+  .rox-pricetable-card-2{
+    background-color: color(gray,dark);
+    border-color:  rgba(color(gray,base),.2);
+    .body{
+      p{
+        color: color(gray,light);
+      }
+      li.inactive{
+        p{
+        color: color(gray,base);
+        }
+      }
+    }
+  }
+}
+
+/* End of _pricetable.scss */

@@ -1,0 +1,16 @@
+//main: ../style.scss
+
+/* Start of _footer.scss */
+.rox-footer{
+  img{
+    max-width: 150px;
+    height:auto;
+    &.small{
+      max-width: 100px;
+    }
+    &.large{
+      max-width: 200px;
+    }
+  }
+}
+ /* End of _footer.scss */

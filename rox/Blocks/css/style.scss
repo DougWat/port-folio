@@ -1,0 +1,56 @@
+// Compile
+@import "prism.scss";
+
+.code-block{
+  border-radius: .2rem;
+  overflow: hidden;
+  margin-bottom: 1rem;
+  letter-spacing: .03rem;
+  font-size: .96rem;
+  pre{
+    margin:0 !important;
+  }
+}
+
+.code-header{
+  background-color: darken(#313131,5);
+  padding: 10px;
+  p{
+    margin-bottom: 0;
+    color: white;
+    font-family: "Consolas", "Bitstream Vera Sans Mono", "Courier New", Courier, monospace !important
+  }
+}
+
+.code-body{
+  pre.language-markup{
+      max-height: 500px;
+  }
+  .toolbar{
+    margin-right: 20px;
+  }
+    /* width */
+  ::-webkit-scrollbar {
+      width: 10px;
+      height: 10px;
+  }
+
+  /* Track */
+  ::-webkit-scrollbar-track {
+      background: darken(#313131,5);;
+  }
+
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+      background: #888;
+  }
+
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+      background: #555;
+  }
+}
+
+.token.comment, .token.block-comment{
+  font-size: .9em;
+}

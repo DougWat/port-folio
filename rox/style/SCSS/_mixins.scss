@@ -1,0 +1,67 @@
+// main: style.scss
+
+/* Start of _mixins.scss */
+// You probably have no reason to be editing these
+
+// Mixin for all types of transitions
+@mixin transition($transition...){
+  -webkit-transition: $transition;
+  -moz-transition: $transition;
+  -o-transition: $transition;
+  transition: $transition;
+}
+
+// All radius types
+@mixin radius($rad){
+  border-radius: $rad;
+  -moz-border-radius: $rad;
+  -webkit-border-radius: $rad;
+}
+// All Transformations
+@mixin transform($trans){
+  -ms-transform: $trans; /* IE 9 */
+  -webkit-transform: $trans; /* Safari */
+  -moz-transform: $trans;
+  -o-transform: $trans;
+  transform: $trans;
+}
+
+//Adds a gradient to text
+@mixin font-gradient($direction, $from, $to){
+  background-image: -webkit-linear-gradient($direction, $from, $to); /* For Chrome and Safari */
+  background-image:    -moz-linear-gradient($direction, $from, $to); /* For old Fx (3.6 to 15) */
+  background-image:     -ms-linear-gradient($direction, $from, $to); /* For pre-releases of IE 10*/
+  background-image:      -o-linear-gradient($direction, $from, $to); /* For old Opera (11.1 to 12.0) */
+  background-image:         linear-gradient(to $direction, $from, $to); /* Standard syntax; must be last */
+  color:transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+//Outlines text
+@mixin text-outline($COLOR, $STROKE: 1px){
+  -webkit-text-fill-color: rgba(0,0,0,0); /* Will override color (regardless of order) */
+  -webkit-text-stroke-width: $STROKE;
+  -webkit-text-stroke-color: $COLOR;
+}
+
+//Adds a box shadow, optionally inset.
+@mixin box-shadow($top, $left, $blur, $color, $inset: false) {
+  @if $inset {
+    -webkit-box-shadow:inset $top $left $blur $color;
+    -moz-box-shadow:inset $top $left $blur $color;
+    box-shadow:inset $top $left $blur $color;
+  } @else {
+    -webkit-box-shadow: $top $left $blur $color;
+    -moz-box-shadow: $top $left $blur $color;
+    box-shadow: $top $left $blur $color;
+  }
+}
+
+//Creates an inset border
+@mixin inset-border($color, $width : 1px){
+  -webkit-box-shadow:inset 0px 0px 0px $width $color;
+  -moz-box-shadow:inset 0px 0px 0px $width $color;
+  box-shadow:inset 0px 0px 0px $width $color;
+}
+/* End of _mixins.scss */

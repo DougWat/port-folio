@@ -1,0 +1,248 @@
+// main: ../style.scss
+
+section.rox[class*="rox-navbar"]{
+  $HEIGHT: 100px;
+  $HEIGHT_SCROLL: 70px;
+  $HEIGHT_MOBILE: 60px;
+
+  position: relative;
+  height: $HEIGHT;
+  line-height: $HEIGHT;
+  overflow: visible;
+  padding: 0 !important;
+  @include transition(height .2s, line-height .2s, background-color .2s);
+
+  >div{
+    height: 100%;
+  }
+  nav{
+    height: 100%;
+    position: relative;
+    >ul{
+      position: absolute;
+      height:inherit;
+      display: block;
+      top:0;
+      &.left{
+        left:0px;
+      }
+      &.right{
+        right:0px;
+      }
+      >li{
+        display: inline-block;
+        margin-right: 20px;
+        position: relative;
+        &:last-of-type{
+          margin-right:0;
+        }
+      }
+    }
+  }
+  li{
+    list-style: none;
+    *{
+      margin: 0;
+    }
+  }
+  a{
+    &:hover{
+      padding-bottom: 50px;
+      +.sub{
+        opacity: 1;
+        visibility: visible;
+      }
+    }
+  }
+
+  .brand{
+    display: table;
+    height: 100%;
+    padding: 0 !important;
+    >div{
+      display: table-cell;
+      vertical-align: middle;
+    }
+    img{
+      max-height: 30px;
+      display: inline;
+    }
+  }
+  .divider::after{
+    content: " ";
+    background-size: 1px 40px;
+  }
+  .sub{
+    position: absolute;
+    top:100%;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 10;
+    max-height: 80vh;
+    overflow-y: auto;
+    @include transition(opacity .2s);
+    ul{
+      background-color: color(white);
+      padding: 0;
+      margin: 0;
+      line-height: normal;
+    }
+    li{
+      margin-bottom:0px;
+      color: color(gray,dark);
+      background-color: transparent;
+      @include transition(background-color .2s);
+      &:last-of-type{
+        margin: 0;
+      }
+      &:hover{
+        color: lighten(color(gray,dark),20);
+        background-color: darken(color(white),10);
+      }
+    }
+    a{
+      padding: 5px 15px;
+      display: block;
+      height:100%;
+      width: 100%;
+    }
+    .icon{
+      display: inline;
+      margin-right: 10px;
+    }
+    &:hover{
+      visibility: visible;
+      opacity: 1;
+    }
+  }
+  i.background{
+    @include transition(opacity .2s);
+  }
+  a.mobile{
+    display: none;
+  }
+
+  &.dark{
+    .sub{
+      ul{
+        background-color: color(gray,dark);
+      }
+      li{
+        &:hover{
+          background-color: lighten(color(gray,dark),10);
+        }
+      }
+    }
+  }
+  &.sticky{
+    position: fixed;
+    top:0;
+    width: 100%;
+    z-index: 100;
+    background-color: rgba(0,0,0,0);
+    i.background{
+      opacity: 0 !important;
+    }
+  }
+  &.mobile{
+    height: auto !important;
+    max-height: 80vh;
+    line-height: normal;
+    overflow-y: auto;
+    padding: 0;
+    .brand{
+      position: absolute;
+      margin: 0 40px;
+      height:$HEIGHT_MOBILE;
+      >div{
+        display: table-cell;
+        vertical-align: middle;
+      }
+      img{
+        max-height: 17px;
+      }
+    }
+    nav{
+      >ul{
+        position: relative;
+        margin: 0;
+        padding: 0;
+        padding-bottom: 20px;
+        overflow: hidden;
+        >li{
+          margin:0;
+          padding: 10px 40px;
+          display: block;
+          &.divider{
+            display: none;
+          }
+        }
+        a.mobile{
+          text-align: center;
+        }
+      }
+    }
+    .sub{
+      position: relative;
+      opacity: 1;
+      visibility: visible;
+      overflow-y: auto;
+      height:200px;
+      background-color: rgba(black,.05);
+      >ul{
+        display: block;
+        background-color: transparent !important;
+      }
+      li{
+        background-color: transparent !important;
+        border-bottom: 1px solid rgba(black,.1);
+      }
+    }
+    a.mobile{
+      display: block;
+      width: 100%;
+      padding: 15px 40px;
+      text-align: right;
+      &:hover{
+        cursor: pointer;
+      }
+    }
+  }
+  &.scrolling.sticky,&.mobile{
+    background-color: color(white);
+    height: $HEIGHT_SCROLL;
+    line-height: $HEIGHT_SCROLL;
+    i.background{
+      opacity: .6 !important;
+    }
+    @include box-shadow(2px, 2px, 6px, rgba(black,.2));
+    &.dark{
+      background-color: color(gray,dark);
+    }
+  }
+
+  &.rox-navbar-01{
+    a{
+      text-transform: uppercase;
+      letter-spacing: .05rem;
+      font-weight: 300;
+      font-size: .8rem;
+      color: color(gray,dark);
+      font-family: font(header);
+    }
+    .divider::after{
+      border-left: 1px solid color(gray,dark);
+    }
+  }
+
+  &.dark{
+    &.rox-navbar-01{
+      a{
+        color: color(gray,light);
+      }
+      .divider::after{
+        border-color: color(gray,light);
+      }
+    }
+  }
+}

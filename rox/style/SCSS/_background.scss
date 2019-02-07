@@ -1,0 +1,92 @@
+// main: ../style.scss
+
+/* Start of _background.scss */
+
+//Code for image based backgrounds using an <i> tag
+i.background{
+  position: absolute;
+  top:0;bottom:0;left:0;right:0;
+  opacity: .1;
+  background-position: center;
+  background-repeat: repeat;
+  background-size:cover;
+
+  //The following classes will define a different blending method for the background image
+  &.overlay{
+    mix-blend-mode: overlay;
+  }
+  &.lighten{
+    mix-blend-mode: lighten;
+  }
+  &.darken{
+    mix-blend-mode: darken;
+  }
+
+  //The following classes define different attachment types for the background image
+  &.fixed{
+    background-attachment: fixed;
+  }
+
+  //The following classes define different position types for the background image
+  &.left{
+    background-position: left;
+  }
+  &.right{
+    background-position: right;
+  }
+
+  &.repeat{
+    background-repeat: repeat;
+    background-size: auto;
+  }
+}
+//Code for video based backgrounds
+video.background{
+  position: absolute;
+  top:0;
+  left:0;
+  min-width: 100%;
+  min-height: 100%;
+  opacity: .2;
+  &::after{
+    content: " ";
+    background-color: color(gray,dark);
+    position: absolute;
+    top:0;bottom:0;left:0;right:0;
+  }
+}
+
+//Handles the transitioning background color.
+//Every other section will have a darker than default background color for visual clarity.
+body>section{
+  background-color: color(white);
+  &:nth-child(even){
+    background-color: darken(color(white),3); //Change the number here to increase or decrease the visual difference between sections
+  }
+
+  &.dark{
+    background-color: color(gray,dark);
+    &:nth-child(even){
+      background-color: darken(color(gray,dark), 5); //Change the number here to increase or decrease the visual difference between sections
+    }
+  }
+}
+
+//Background color overrides. Defining any one of these classes in an element will change that element's background regardless of other css.
+.rox-bg-primary{
+  background-color: color(primary,base) !important;
+}
+
+.rox-bg-lightgray{
+  background-color: color(gray,light) !important;
+}
+
+.rox-bg-dark{
+  background-color: color(gray,dark) !important;
+}
+
+.rox-bg-white{
+  background-color: color(white) !important;
+}
+
+/* End of _background.scss */

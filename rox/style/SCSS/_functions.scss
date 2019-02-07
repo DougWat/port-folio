@@ -1,0 +1,13 @@
+//main: ../style.scss
+
+/* Start of _functions.scss */
+
+@function transform-transition($time){
+  @return transform #{$time}s, -ms-transform #{$time}s, -webkit-transform #{$time}s, -moz-transform #{$time}s, -o-transform #{$time}s;
+}
+
+@function box-shadow-transition($time){
+  @return -webkit-box-shadow #{$time}s, -moz-box-shadow #{$time}s, box-shadow #{$time}s;
+}
+
+/* End of _functions.scss */

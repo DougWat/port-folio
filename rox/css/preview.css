@@ -1,0 +1,70 @@
+.preview-card {
+  overflow: hidden;
+  border-radius: 15px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.preview-card .image {
+  height: 500px;
+}
+
+.preview-card .image img {
+  transform: translateY(0);
+  width: 100%;
+  -webkit-transition: all 5s cubic-bezier(0.645, 0.045, 0.355, 1);
+  -moz-transition: all 5s cubic-bezier(0.645, 0.045, 0.355, 1);
+  -o-transition: all 5s cubic-bezier(0.645, 0.045, 0.355, 1);
+  transition: all 5s cubic-bezier(0.645, 0.045, 0.355, 1);
+  /* easeInOutCubic */
+}
+
+.preview-card .image:hover img {
+  transform: translateY(calc(-100% + 500px));
+}
+
+.block-preview-card {
+  width: 250px;
+  height: 200px;
+  text-align: center;
+  overflow: hidden;
+  margin: 20px auto;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
+  position: relative;
+  border-radius: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  -webkit-transition: all .2s;
+  -moz-transition: all .2s;
+  -o-transition: all .2s;
+  transition: all .2s;
+  /* easeInOutCubic */
+  cursor: pointer;
+}
+
+.block-preview-card:hover {
+  transform: scale(1.05, 1.05);
+  box-shadow: 7px 7px 13px rgba(0, 0, 0, 0.2);
+}
+
+.block-preview-card .text-link {
+  font-size: 1.3rem;
+  padding: 10px;
+  display: block;
+}
+
+.block-preview-card .big-link {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.block-preview-card .image {
+  width: 100%;
+}
+
+.block-preview-card .image img {
+  width: 100%;
+}

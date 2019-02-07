@@ -1,0 +1,636 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/doc_style.css">
+  <link rel="stylesheet" href="./css/prism.css">
+  <meta charset="utf-8">
+  <title></title>
+</head>
+
+<body>
+  <!-- Start Of Navbar -->
+<!-- A class of sticky along with data-sticky="true" forces the header to stick to the top of the page. -->
+<!-- Remove the class and the data variable to make the header block based  -->
+<section class="rox rox-navbar-01 sticky dark" data-sticky="true">
+  <div class="container">
+    <nav>
+      <a href="./index.html" class="brand">
+        <div>
+          <img src="./resources/logo/logo.png" alt="" class="show-light">
+          <img src="./resources/logo/logo-dark.png" alt="" class="show-dark">
+        </div>
+      </a>
+      <a class="mobile"><i class="fas fa-bars"></i></a>
+      <ul class="right">
+        <li>
+          <a href="./Style_Guide.html">Style Guide</a>
+        </li>
+        <li><a href="#">Blocks <i class="fa fa-chevron-down"></i></a>
+          <div class="sub">
+            <ul>
+              <li><a href="../Blocks/contact_us.html">Contact</a></li>
+              <li><a href="../Blocks/counter.html">Counter</a></li>
+              <li><a href="../Blocks/cta.html">Call To Action</a></li>
+              <li><a href="../Blocks/faq.html">FAQ</a></li>
+              <li><a href="../Blocks/footer.html">Footer</a></li>
+              <li><a href="../Blocks/hero.html">Hero</a></li>
+              <li><a href="../Blocks/info.html">Info</a></li>
+              <li><a href="../Blocks/loader.html">Loader</a></li>
+              <li><a href="../Blocks/map.html">Map</a></li>
+              <li><a href="../Blocks/navbar.html">Navbar</a></li>
+              <li><a href="../Blocks/pricetable.html">Pricetable</a></li>
+              <li><a href="../Blocks/services.html">Services</a></li>
+              <li><a href="../Blocks/subscribe.html">Subscribe</a></li>
+              <li><a href="../Blocks/team.html">Team</a></li>
+              <li><a href="../Blocks/testimonials.html">Testimonials</a></li>
+            </ul>
+          </div>
+        </li>
+        <li class="divider">
+        </li>
+        <li>
+          
+        </li>
+      </ul>
+    </nav>
+  </div>
+</section>
+<!-- End Of Navbar -->
+  <section class="rox dark p-large doc-header">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 text-center">
+          <h1 class="display-4 font-weight-bold">ROX& Documentation</h1>
+          <h4>Getting Started With ROX&</h4>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="rox noverflow">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-md-4 col-lg-3">
+          <div class="doc-sticky">
+            <div class="doc-navigation">
+              <a href="#about">About</a>
+              <a href="#dependencies">Dependencies</a>
+              <a href="#fontsandicons">Fonts & Font-Icons</a>
+              <a href="#5minute">5 Minute Rundown</a>
+              <a href="#navbar">Navbar</a>
+              <a href="#sections">Sections</a>
+              <a href="#darkmode">Dark Mode</a>
+              <a href="#imagebackground">Image Backgrounds</a>
+              <a href="#videobackground">Video Backgrounds</a>
+              <a href="#scrollreveal">Scroll Reveal</a>
+              <a href="#styles">Styles and Styling</a>
+              <a href="#colors">Color</a>
+              <a href="#custcolor">Custom Color</a>
+              <a href="#deploy">Deployment</a>
+              <a href="#help">Help / Bug Reports</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-8 col-lg-9 content">
+          <section id="about">
+            <h2>First Things First</h2>
+            <p>Thanks for purchasing or considering ROX&. This template was built from the ground up with ease of use and affordability in mind. The user experience of both your visitors and you yourself was the backbone of this entire project. With that
+              in mind, we encourage you to take a look through this documentation to learn exactly how ROX& works.</p>
+            <h5>A Few Other Things...</h5>
+            <p>ROX& assumes you have at least a beginner level of experience with basic web-development. Nothing crazy, just knowledge of a text-editor, as well as simple HTML and CSS markup experience.</p>
+            <h5>Bootstrap</h5>
+            <p>ROX& was built with <a href="https://getbootstrap.com/">Bootstrap</a> at its foundation. You don't need to know Bootstrap to work with ROX&, but understanding key elements of Bootstrap, such as its grid system, will allow you to better understand
+              the markup that builds your site.</p>
+            <h5>SASS</h5>
+            <p>ROX& was developed using <a href="https://sass-lang.com/">SASS</a>. If you're already familiar with SASS, then fantastic, you're equipped to get the best out of ROX&. If you aren't familiar with SASS, no worries, ROX& is designed to be usable
+              by non-advanced developers and designers as well. You can basically forget this SASS thing; if you don't know it, you don't need it. <br><span class="small">(of course we recommend learning it in general, SASS is a brilliant little piece of kit).</span></p>
+          </section>
+          <hr>
+          <section id="dependencies">
+            <h2>Dependencies</h2>
+            <p>ROX& Makes use of a variety of frameworks and plugins to produce a fantastic user experience for you as well as your end user. These dependencies are:</p>
+            <ul class="rox-list">
+              <li><a href="https://getbootstrap.com/">Bootstrap 4</a></li>
+              <li><a href="https://jquery.com/">jQuery</a></li>
+              <li><a href="https://cloud.google.com/maps-platform/">Google Maps API</a></li>
+              <li><a href="https://owlcarousel2.github.io/OwlCarousel2/">Owl Carousel</a></li>
+              <li><a href="https://github.com/bfintal/Counter-Up">Counter Up</a></li>
+              <li><a href="https://scrollrevealjs.org/">Scroll Reveal</a></li>
+              <li><a href="https://github.com/lokesh/lightbox2/">Lightbox</a></li>
+              <li><a href="http://imakewebthings.com/waypoints/">Waypoints</a></li>
+            </ul>
+          </section>
+          <hr>
+          <section id="fontsandicons">
+            <h2>Fonts & Font-Icons</h2>
+            <p>ROX& uses a variety of web-fonts and font-icons. Those are:</p>
+            <h5>Fonts:</h5>
+            <ul class="rox-list">
+              <li><a href="https://fonts.google.com/specimen/Rubik">Rubik</a></li>
+              <li><a href="https://fonts.google.com/specimen/Open+Sans">Open Sans</a></li>
+              <li><a href="https://fonts.google.com/specimen/Quicksand">Quicksand</a></li>
+            </ul>
+            <h5>Font-Icons</h5>
+            <ul class="rox-list">
+              <li><a href="https://fontawesome.com/">Font Awesome 5</a></li>
+              <li><a href="https://www.elegantthemes.com/blog/freebie-of-the-week/free-line-style-icons">ET Line Icons</a></li>
+            </ul>
+            <h6>Using ET Line Icons</h6>
+            <p>ET Line icons work much the same way as Font Awesome font icons. Included <a href="./fonts/index.html">here</a> is a list of ET Line icons and their associated classes.</p>
+            <p>Following is a small example of how to use ET Line Icons.</p>
+            <div class="code-block">
+              <div class="code-body">
+                <script type="text/plain" class="language-markup">
+                  <i class="et-line-heart"></i>
+                </script>
+              </div>
+            </div>
+          </section>
+          <hr>
+          <section id="5minute">
+            <h2>5 Minute Rundown</h2>
+            <p>ROX& is designed to be easy to use. With a basic understanding of HTML and CSS, you can easily create a site that looks great. This 5 Minute Rundown is all you need to begin working with ROX&.</p>
+            <p>More detailed explanations of ROX&'s various systems are provided in the below sections.</p>
+            <h5>Getting Started</h5>
+            <p>To work with and edit ROX& templates you will need to be familiar with a text editor. ROX& was developed using <a href="https://atom.io">Atom</a>, but any text editor will do.</p>
+            <p>Familiarity with <a href="https://sass-lang.com/">SASS</a> will allow you to make style changes easily, but is not required.</p>
+            <p>You will also need a web-server to host your files on, but this is outside of the scope of this documentation.</p>
+            <h5>Using Pre-built Templates</h5>
+            <p>ROX& provides a variety of templates to start with. These templates are built section by section in a modular fashion. This process allows the designer/developer to quickly re-order content blocks in an intuitive way.</p>
+            <p>These pre-built template HTML files can be found in the main ROX& folder. These templates can be opened and viewed in any web browser. Look through all of them and find one you like. Copy your prefered template, and re-name it as you please.
+              Make sure your copied HTML file remains in the same folder as the other HTML templates.</p>
+            <img src="./resources/ex_01.jpg" alt="" class="center">
+            <p class="subtitle">The template files and their path</p>
+            <p>Than simply open up your newly copied HTML file, and replace the filler text, images, links, etc with your own content.</p>
+            <h5>Rolling Your Own With Content Blocks</h5>
+            <p>If you would prefer, you may build your website piece by piece with individual content blocks. This is a more advanced process, and may take more time than simply editing a provided template, but it will allow you a greater degree of control.
+              It is recommended that you have an advanced text editor for this process.</p>
+            <p>For this purpose, a file called <span class="font-weight-bold">starter.html</span> is included in the main ROX& directory. Copy and rename this file, and open it in your text editor of choice. Besides scripts, the body element of this file
+              is empty, you will be building your site based on the content block files we will explore next.</p>
+            <p>Opening up the <span class="font-weight-bold">Blocks</span> folder in the main <span class="font-weight-bold">Directory</span>, you will see a variety of HTML files. Each of these files represent one type of content block, with each filename
+              making it more or less evident of what each block is.</p>
+            <img src="./resources/ex_02.jpg" alt="">
+            <p class="subtitle">The content block files, subject to change</p>
+            <p>Each individual block file may contain multiple versions of the block for better customization.</p>
+            <p>Look through these files in a browser of your choice to get an idea of what kind of content each of them has. When you identify a content block you would like to add, all you need to do is scroll down to the code windows just below the example, and click 'COPY' in the corner. This will copy the code to your computer's clipboard. From there, simply paste the code into your copied version of starter.html in whatever hierarchy you want.</p>
+            <p>From there, you can modify each of the sections as you please. Most sections have a corosponding scss file for styling that you may also edit.</p>
+            <p>In depth comments are provided on each of the section blocks.</p>
+          </section>
+          <hr>
+          <section id="navbar">
+            <h2>Navbar</h2>
+            <p>Most sites are going to need a navbar, so it's a good idea for you to know how to use the one featured in ROX&.</p>
+            <p>ROX&'s navbar can stick to the top of the page regardless of the user scrolling, or it can act as a block element. Like other blocks in ROX&, the navbar is styled for both light and dark designs. The navbar is also responsive, and works well on mobile and desktop.</p>
+            <p>ROX&'s navbar is modular, you can easily add or remove links, dropdown menus, inputs, and buttons.</p>
+            <p>A simple navbar that contains a brand image, 2 links, and sticks to the top of the browser looks as follows.</p>
+            <div class="code-block">
+              <div class="code-body">
+                <script type="text/plain" class="language-markup">
+                  <section class="rox rox-navbar-01 sticky" data-sticky="true">
+                    <div class="container">
+                      <nav>
+                        <a href="#" class="brand">
+                          <div>
+                            <img src="../resources/logo/logo.png" alt="" class="show-light">
+                            <img src="../resources/logo/logo-dark.png" alt="" class="show-dark">
+                          </div>
+                        </a>
+                        <a class="mobile"><i class="fas fa-bars"></i></a>
+                        <ul class="right">
+                          <li>
+                            <a href="#">Link</a>
+                          </li>
+                          <li>
+                            <a href="#">Another Link</a>
+                          </li>
+                        </ul>
+                      </nav>
+                    </div>
+                  </section>
+                </script>
+              </div>
+            </div>
+            <p>Lets unpack this a bit.</p>
+            <h4>The Section</h4>
+            <p>The entire navbar, like most other blocks in ROX&, is contained inside of a section element. That section and container elements, without any other code, looks as follows.</p>
+            <div class="code-block">
+              <div class="code-body">
+                <script type="text/plain" class="language-markup">
+                  <section class="rox rox-navbar-01 sticky" data-sticky="true">
+                    <div class="container">
+                      <nav>
+                        <!-- Navbar Code -->
+                      </nav>
+                    </div>
+                  </section>
+                </script>
+              </div>
+            </div>
+            <p>The section element holds one important piece of data, outside of the navbar class. It defines whether the navbar is sticky, and fixed to the top of the browser, or block-based, and attached to the top of the page.</p>
+            <p>Removing the class '.sticky' and changing the sticky data attribute to 'false' will make the navbar block based.</p>
+            <h4>The Brand</h4>
+            <p>The brand is the first element set inside of the nav element. It looks like this, keeping in mind that the following code would go inside the nav element:</p>
+            <div class="code-block">
+              <div class="code-body">
+                <script type="text/plain" class="language-markup">
+                  <a href="#" class="brand">
+                    <div>
+                      <img src="../resources/logo/logo.png" alt="" class="show-light">
+                      <img src="../resources/logo/logo-dark.png" alt="" class="show-dark">
+                    </div>
+                  </a>
+                </script>
+              </div>
+            </div>
+            <p>The entire brand is contained inside of an anchor tag, allowing the user to click it as a link.</p>
+            <p>Now, why the two logos? Because this navbar is designed to dynamically switch between it's light and dark varients. If you don't have a need for this, you can simply have a single image containing your logo and remove the image's class.</p>
+            <h4>The Mobile Dropdown</h4>
+            <p>When the navbar transitions into it's mobile form, it displays a dropdown button and menu containing the links. The code for the dropdown button is as follows, and is inserted directly after the brand element.</p>
+            <div class="code-block">
+              <div class="code-body">
+                <script type="text/plain" class="language-markup">
+                  <a class="mobile"><i class="fas fa-bars"></i></a>
+                </script>
+              </div>
+            </div>
+            <h4>The Navbar Items</h4>
+            <p>Navbar items are contained inside of the an unordered list; they can be:</p>
+            <ul class="rox-list">
+              <li>Links</li>
+              <li>Dropdown Menus</li>
+              <li>Inputs</li>
+              <li>Special ROX& inputs</li>
+              <li>Dividers</li>
+              <li>Buttons</li>
+            </ul>
+            <p>The following code contains examples of all possible navbar items:</p>
+            <div class="code-block">
+              <div class="code-body">
+                <script type="text/plain" class="language-markup">
+                  <!-- A Simple Link -->
+                  <li>
+                    <a href="#">Link</a>
+                  </li>
+
+                  <!-- A Dropdown Item-->
+                  <li>
+                    <a href="#">Dropdown Icons <i class="fas fa-chevron-down"></i></a>
+                    <div class="sub">
+                      <ul>
+                        <li><a href="#"><i class="fas fa-users icon"></i>Item</a></li>
+                        <li><a href="#"><i class="fas fa-users icon"></i>Item</a></li>
+                        <li><a href="#"><i class="fas fa-users icon"></i>Item</a></li>
+                      </ul>
+                    </div>
+                  </li>
+
+                  <!-- A Search Box -->
+                  <li>
+                    <div class="rox-input-icon-search">
+                      <input type="text" name="" value="" class="rox-input" placeholder="Search">
+                    </div>
+                  </li>
+
+                  <!-- A Divider -->
+                  <li class="divider"></li>
+
+                  <!-- A Button -->
+                  <li>
+                    <a class="rox-button-outline-small" href="https://www.themesnap.com/html-css-templates/rox-multipurpose-bootstrap-landing-page.html">DOWNLOAD</a>
+                  </li>
+                </script>
+              </div>
+            </div>
+            <p>You can place however many items in your list as you want, in whatever order you please.</p>
+          </section>
+          <hr>
+          <section id="sections">
+            <h2>Sections</h2>
+            <p>Each content block is contained inside a section element. Generally, each section element will have a bootstrap container, in which the block's content will exist. Classes and other elements can be added to a section element to achieve different
+              effects. Every main content holding section element should have the class '.rox'. </p>
+            <h5 id="darkmode">Dark Mode</h5>
+            <p>Most sections are able to be converted into a dark counter-part by adding the class '.dark'. Following is an example of this.</p>
+            <div class="code-block">
+              <div class="code-body">
+                <script type="text/plain" class="language-markup">
+                  <!-- A Normal Section -->
+                  <section class="rox">
+                    <!-- Content -->
+                  </section>
+
+                  <!-- A Dark Section -->
+                  <section class="rox dark">
+                    <!-- Content -->
+                  </section>
+                </script>
+              </div>
+            </div>
+            <p>Indeed, simply appending the class '.dark' to the main content block section will turn that section dark. No other work needs to be done. Try it in on a provided template.</p>
+            <h5 id="imagebackground">Image Backgrounds</h5>
+            <p>In ROX& backgrounds are added as separate elements inside the section. This allows us greater control over the way the background looks. Look to the following code for an example.</p>
+            <div class="code-block">
+              <div class="code-body">
+                <script type="text/plain" class="language-markup">
+                  <section class="rox">
+                    <!-- This <i> Element is our background.-->
+                    <!-- Set the image by changing the path on the inline style -->
+                    <i class="background" style="background-image: url(PATH TO YOUR BACKGROUND IMAGE)">
+                    <!-- Content -->
+                  </section>
+                </script>
+              </div>
+            </div>
+            <p>Some classes you can add to the background i element are as follows:</p>
+            <table class="table">
+              <tr>
+                <th scope="col">Class</th>
+                <th scope="col">Effect</th>
+              </tr>
+              <tr>
+                <td>overlay</td>
+                <td>Changes the blending for the background to Overlay</td>
+              </tr>
+              <tr>
+                <td>lighten</td>
+                <td>Changes the blending for the background to Lighten</td>
+              </tr>
+              <tr>
+                <td>darken</td>
+                <td>Changes the blending for the background to Darken</td>
+              </tr>
+              <tr>
+                <td>fixed</td>
+                <td>Sets the background attachment to 'fixed'</td>
+              </tr>
+              <tr>
+                <td>left</td>
+                <td>Sets the background position to 'left'</td>
+              </tr>
+              <tr>
+                <td>right</td>
+                <td>Sets the background position to 'right'</td>
+              </tr>
+              <tr>
+                <td>repeat</td>
+                <td>Returns the background image to auto scale and makes it repeat. Use this for repeating background textures.</td>
+              </tr>
+            </table>
+            <p>All content blocks will have a background element present and commented out. Unless you are building your own blocks based on the ROX& style you will probably not run into a situation where you need to add this code to a block.</p>
+            <h5 id="videobackground">Video Backgrounds</h5>
+            <p>Video backgrounds are achieved in roughly the same way as image backgrounds, but with a video element instead. The follow code gives an example of how to format this</p>
+            <div class="code-block">
+              <div class="code-body">
+                <script type="text/plain" class="language-markup">
+                  <section class="rox">
+                    <!-- This <video> Element is our background.-->
+                    <!-- Set the video by changing the path on the src variable -->
+                    <!-- Set the pre-load image by changing the path on the poster variable -->
+                    <video src="VIDEO PATH" class="background" autoplay loop poster="IMAGE PATH"></video>
+                    <!-- Content -->
+                  </section>
+                </script>
+              </div>
+            </div>
+            <p>A video background can be added to any main section.</p>
+            <h5>Other Section Classes</h5>
+            <p>Following are a few other classes that can be added to the main section.</p>
+            <table class="table">
+              <tr>
+                <th>Class</th>
+                <th>Effect</th>
+              </tr>
+              <tr>
+                <td>p-none</td>
+                <td>No Top/Bottom padding.</td>
+              </tr>
+              <tr>
+                <td>p-xsmall</td>
+                <td>Extra Small Top/Bottom padding of 2rem</td>
+              </tr>
+              <tr>
+                <td>p-small</td>
+                <td>Small Top/Bottom padding of 5rem</td>
+              </tr>
+              <tr>
+                <td>p-large</td>
+                <td>Large Top/Bottom padding of 9rem</td>
+              </tr>
+            </table>
+          </section>
+          <hr>
+          <section id="scrollreveal">
+            <h2>Scroll Reveal</h2>
+            <p>ROX& uses Scroll Reveal 3 for the 'slide-in' on scroll effect you can see in the included template files.</p>
+            <p>ROX& also uses some custom code in addition to Scroll Reveal in order to increase Scroll Reveal's functionality.</p>
+            <p>You can now define certain additional Scroll Reveal effects right in the html markup using data attribute. Don't know what those are, but you still want some content to reveal on scroll? Don't worry, there's a simple way to define a reveal target, read on!</p>
+            <h4>The Basics</h4>
+            <p>If you don't want to, or don't need to fuss around and get reveal effects tailored just right, <strong>all you need to do is add a class of 'sr' to any element you want to reveal on scroll</strong>.</p>
+            <p>That's it. This works with almost all elements, included the entire body element if you want (you probably shouldn't).</p>
+            <p>Want a bit more control? Read on.</p>
+            <h4>Advanced</h4>
+            <p>Do you know what a data attribute is? <a href="https://developer.mozilla.org/en-US/docs/Learn/HTML/Howto/Use_data_attributes">Want To Learn?</a> If you want to have deeper control over the way your content reveals, you can use data attributes.</p>
+            <p>Let's take a look at each, remember that you should understand what a data attribute is first before using this functionality.</p>
+            <h5>Reveal Origin</h5>
+            <p>Use this data attribute to change the direction the content reveals from.</p>
+            <table class="table mb-5">
+              <tr>
+                <th scope="col">Attribute</th>
+                <th scope="col">Effect</th>
+              </tr>
+              <tr>
+                <td>data-sr-origin="left"</td>
+                <td>Content reveals from the <strong>Left</strong></td>
+              </tr>
+              <tr>
+                <td>data-sr-origin="right"</td>
+                <td>Content reveals from the <strong>Right</strong></td>
+              </tr>
+              <tr>
+                <td>data-sr-origin="top"</td>
+                <td>Content reveals from the <strong>Top</strong></td>
+              </tr>
+              <tr>
+                <td>data-sr-origin="bottom"</td>
+                <td>Content reveals from the <strong>Bottom</strong></td>
+              </tr>
+            </table>
+            <h5>Reveal Distance</h5>
+            <p>Use this data attribute to change the distance of the slide-in reveal.</p>
+            <table class="table mb-5">
+              <tr>
+                <th scope="col">Attribute</th>
+                <th scope="col">Effect</th>
+              </tr>
+              <tr>
+                <td>data-sr-distance="100px"</td>
+                <td>Content reveals from <strong>100px</strong> away</td>
+              </tr>
+              <tr>
+                <td>data-sr-distance="***px"</td>
+                <td>Remember: Any amount can be used</td>
+              </tr>
+            </table>
+            <h5>Reveal Duration</h5>
+            <p>Use this data attribute to change how long the content takes to fully reveal (in milliseconds).</p>
+            <table class="table mb-5">
+              <tr>
+                <th scope="col">Attribute</th>
+                <th scope="col">Effect</th>
+              </tr>
+              <tr>
+                <td>data-sr-duration="500"</td>
+                <td>Content takes <strong>500ms</strong> to fully reveal.</td>
+              </tr>
+              <tr>
+                <td>data-sr-duration="***px"</td>
+                <td>Remember: Any amount can be used</td>
+              </tr>
+            </table>
+            <h5>Reveal Scale</h5>
+            <p>Use this data attribute to change the scale of the element when it starts to reveal. The element will than grow or shrink to be scaled to 100% at the completion of the reveal.</p>
+            <table class="table mb-5">
+              <tr>
+                <th scope="col">Attribute</th>
+                <th scope="col">Effect</th>
+              </tr>
+              <tr>
+                <td>data-sr-scale="1"</td>
+                <td>No scale effect at all.</td>
+              </tr>
+              <tr>
+                <td>data-sr-scale="0"</td>
+                <td>Also no scale effect at all. Set to at least .1 for an effect.</td>
+              </tr>
+              <tr>
+                <td>data-sr-scale=".1"</td>
+                <td>Element will start at a scale of 10% and grow to 100%</td>
+              </tr>
+              <tr>
+                <td>data-sr-scale="2"</td>
+                <td>Element will start at a scale of 200% and shrink to 100%</td>
+              </tr>
+              <tr>
+                <td>data-sr-scale="***"</td>
+                <td>Remember: Any value can be used here.</td>
+              </tr>
+            </table>
+            <h5>Reveal Opacity</h5>
+            <p>Use this data attribute to change the opacity the element starts at.</p>
+            <table class="table mb-5">
+              <tr>
+                <th scope="col">Attribute</th>
+                <th scope="col">Effect</th>
+              </tr>
+              <tr>
+                <td>data-sr-opacity="0"</td>
+                <td>Element starts <strong>fully transparent</strong> and fades in.</td>
+              </tr>
+              <tr>
+                <td>data-sr-opacity=".1"</td>
+                <td>Element starts <strong>10% visible</strong> and fades in.</td>
+              </tr>
+              <tr>
+                <td>data-sr-opacity="1"</td>
+                <td>Element starts <strong>100% visible</strong></td>
+              </tr>
+              <tr>
+                <td>data-sr-opacity="***"</td>
+                <td class="small">Remember, any number between 0 - 1, including decimals can be used here.</td>
+              </tr>
+            </table>
+            <h5>Reveal Sets</h5>
+            <p>These are a bit more involved, but not by much. You can add elements into 'sets' to allow them to reveal as a cascade. That is, one revealing after the other. It's a pretty nice effect and you can find it on display at certain parts of the included templates.</p>
+            <p>Lets take a look at the markup</p>
+            <table class="table mb-5">
+              <tr>
+                <th scope="col">Attribute</th>
+                <th scope="col">Effect</th>
+              </tr>
+              <tr>
+                <td class="small">data-sr-set="*YOUR SET NAME*"</td>
+                <td class="small">Reveal all content with the same set name in a cascade based on HTML hierarchy.</td>
+              </tr>
+            </table>
+            <p>You probably already figured it out, but you add the above attribute, along with a 'set name' of your choice, to as many elements as you choose.</p>
+            <p>Those elements will than reveal in a cascade as soon as the first element is revealed.</p>
+            <p>As well, the attributes of the final element in the set hierarchy will be used for the entire set.</p>
+            <p>Lets take a look at a code example:</p>
+            <div class="code-block">
+              <div class="code-body">
+                <script type="text/plain" class="language-markup">
+                  <div class="sr" data-sr-set="dataset1">
+                    <!--STUFF IS IN HERE-->
+                  </div>
+                  <div class="sr" data-sr-set="dataset1">
+                    <!--STUFF IS IN HERE-->
+                  </div>
+                  <div class="sr" data-sr-set="dataset1">
+                    <!--STUFF IS IN HERE-->
+                  </div>
+                  <div class="sr" data-sr-set="dataset1" data-sr-origin="left" data-sr-distance="100px">
+                    <!--STUFF IS IN HERE-->
+                  </div>
+                </script>
+              </div>
+            </div>
+            <p>The 4 divs in that example will reveal in a cascade because they are all part of the same data-set ('dataset1')</p>
+            <p>The final div has other data attributes which will also be applied to every other elements in the hierarchy.</p>
+          </section>
+          <hr>
+          <section id="styles">
+            <h2>Styles and Styling</h2>
+            <p>ROX&'s styles are built using SASS. It's no problem if you have no experience with SASS, and changes to the style you can do with normal CSS, but SASS will make those changes easier to implement.</p>
+            <p>Changing the styles should only be done by an knowledgeable developer or designer. ROX& has many moving parts, and so a faulty edit could cause style problems. If you know what you're doing, please follow along.</p>
+            <h5>Styling With SASS</h5>
+            <p>Generic ROX& themeing, typography, backgrounds, variables, and individual ROX& content blocks have their own .scss file. These files exist in the 'style' folder in the main ROX& directory.</p>
+            <img src="./resources/ex_03.jpg" alt="">
+            <p>The main .scss file is 'style.scss'. This file, when compiled, consolidates all the other .scss files into one 'style.css' file, the file that the browser loads.</p>
+            <p>If you wish to make changes or add additional styles, you may use the included '_custom.scss' file, to be compiled into the final .css file, or you can roll your own if you know what you're doing.</p>
+            <p>It is not recommended that you change other .scss files directly, as these files may be updated on future releases.</p>
+            <p><span class="font-weight-bold">On updating, do not overwrite the _custom.scss file if you are using it.</span></p>
+            <h5>Styling With CSS</h5>
+            <p>In the 'style' folder in the ROX& directory you will find a file called 'custom.css'. You can use this file to change already existing styles or add new ones.</p>
+            <p>It is not recommended that you directly change the style.css file, as this file may be updated in future release, or would be overwritten if the SCSS is every re-compiled.</p>
+          </section>
+          <hr>
+          <section id="colors">
+            <h2>Color</h2>
+            <p>ROX& is designed with a single accent color in mind. This color is featured throughout the webpages to draw attention and just generally make everything look nice.</p>
+            <p>The default color is our favorite, but you may find yourself wanting something different. ROX& features a variety of alternate color style.css files. These files are named accordingly, as 'style_{COLOR}.css'.</p>
+            <p>If you wish to load one of these, simply change the style path in the head of your webpage to reference the alternative style file.</p>
+            <img src="./resources/ex_04.jpg" alt="">
+            <p class="subtitle">Change This</p>
+            <img src="./resources/ex_05.jpg" alt="">
+            <p class="subtitle">To This (Or Some Other Color)</p>
+            <h5 id="custcolor">Custom Color With SASS</h5>
+            <p>If none of the included colors work for you, there is an easy way to define and use a custom color instead.<br><span class="font-weight-bold">You are required to know, and be able to compile SASS in order to achieve this.</span></p>
+            <p>Navigate to <i>ROX&/style/variables/colors.scss</i></p>
+            <p>In this file, one of the first lines of code refers to a variable called '$color-primary'. Changing this variable and recompiling the main .scss file will change the primary color in the resulting style.css file.</p>
+          </section>
+          <hr>
+          <section id="deploy">
+            <h2>Deployment</h2>
+            <p>Some files are provided for development purposes are not needed for deployment. If you are a knowledgeable developer, you already know what you do and don't need, but if you are unsure read on.</p>
+            <p>The ROX& directory, that is the folder called "ROX&" contains everything you need for deployment.</p>
+            <p>Inside of the style folder, every file and folder should be included <span class="font-weight-bold">EXCEPT FOR THE SCSS FOLDER, AND THE style.scss FILE</span></p>
+            <p>Including any of these files on your web server will not harm your website, they will simply take up unnecessary space.</p>
+          </section>
+          <hr>
+          <section id="help">
+            <h2>Help Support, and Bug Reports</h2>
+            <p>If you need help with any component of ROX&, contact us directly, either through ThemeSnap, or the email provided on the template page.</p>
+            <p>We're always open to suggestion, improvements, and requests.</p>
+            <p>Thank you again, and Happy Developing!</p>
+          </section>
+        </div>
+      </div>
+    </div>
+  </section>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="./js/navbar.js"type="text/javascript"></script>
+  <script src="./js/prism.js"></script>
+</body>
+
+</html>

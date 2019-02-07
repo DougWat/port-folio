@@ -1,0 +1,45 @@
+//main: ../style.scss
+
+/* Start of _hero.scss */
+// A hero section is defined with a '.rox-hero' class
+[class*='rox-hero']{
+  // The section is displayed as a table for easy vertical aligning
+  display: table;
+  width:100%;
+  min-height: 200px;
+  // A post-fix on the '.rox-hero' class defines how tall the hero section is
+
+  //100 will make the section as tall as the screen, filling it 100%
+  &.rox-hero-100{
+    height: 100vh;
+  }
+  //90% in case you want your hero image to take up most of the screen height.
+  &.rox-hero-90{
+
+  }
+  //50 will take up 50% of the screen
+  &.rox-hero-50{
+    height: 50vh;
+  }
+  &.rox-hero-25{
+    height: 25vh;
+  }
+  &.rox-hero-35{
+    height: 35vh;
+  }
+  // 75 will take up 75% of the screen
+  &.rox-hero-75{
+    height: 75vh;
+  }
+  .center{
+    display: table-cell;
+    vertical-align: middle;
+  }
+
+  @for $i from 1 through 6{
+    h#{$i}.hero{
+      font-size: 7.5rem - .5rem*$i;
+    }
+  }
+}
+/* End of _hero.scss */

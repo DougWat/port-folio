@@ -1,0 +1,95 @@
+//main: ../style.scss
+/* Start of _service.scss */
+
+// Selects all service card types to set shared styles
+[class*='rox-service-card']{
+  position: relative;
+  margin-top:1rem;
+  margin-bottom:1rem;
+  .icon{
+    color: color(primary,base);
+    display: block;
+    font-size: 1.5rem;
+    @include transform(translate(0,0));
+    @include transition(transform-transition(.3));
+  }
+  .link{
+    font-size: .8rem;
+  }
+  &:hover{
+    @include roxLineHover;
+    .icon{
+      @include transform(translate(0,-10px));
+    }
+  }
+}
+
+// Style changes specific to the Type 1 Service card design
+.rox-service-card-1{
+  padding:1rem;
+  .name,.icon, .content{
+    margin-bottom:1rem;
+  }
+}
+// Style changes specific to the Type 2 Service card design
+.rox-service-card-2{
+  padding:1rem;
+  .name,.icon,.content{
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+  .icon{
+    $size: 3.2em;
+    height:$size;
+    width:$size;
+    line-height: $size;
+    margin-left: auto;
+    margin-right: auto;
+    @include radius(50%);
+    border: 1px dashed color(gray,base);
+    text-align: center;
+    @include transition(background-color .3s, color .3s, border-color .3s, transform-transition(.3));
+  }
+  &:hover{
+    .icon{
+      border-color: rgba(0,0,0,0);
+      background-color: color(primary,base);
+      color: color(white);
+    }
+  }
+}
+// Style changes specific to the Type 3 Service card design
+.rox-service-card-3{
+  padding: 3rem 2rem 2rem 2rem;
+  background-color: darken(color(white),6);
+  .icon{
+    padding-bottom: 3rem;
+    text-align: center;
+  }
+  @include box-shadow(2px, 2px, 20px, rgba(0,0,0,.2));
+  @include transition(box-shadow-transition(.3));
+  &::before{
+    content:' ';
+    background-color: color(primary,base);
+    position: absolute;
+    width: 0;
+    height: 1px;
+    top:0;
+    left:0;
+    @include transition(width .3s);
+  }
+  &:hover{
+    @include box-shadow(4px, 4px, 25px, rgba(0,0,0,.3));
+    &::before{
+      width:100%;
+    }
+  }
+}
+// Style changes when in a dark section
+.dark{
+  .rox-service-card-3{
+    background-color: lighten(color(gray,dark),5);
+  }
+}
+
+/* End of _service.scss */

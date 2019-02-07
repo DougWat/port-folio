@@ -1,0 +1,86 @@
+//main: ../style.scss
+
+/* Start of _counter.scss */
+
+// Styles for the first type of counter style
+.rox-counter-card-1{
+  text-align: center;
+  margin:2rem auto;
+  //Styles for the icon
+  .icon{
+    color: color(primary,base);
+    font-size: 2.6rem;
+    margin-bottom:1rem;
+    @include transform(tranlate(0,0));
+    @include transition(transform-transition(.3));
+  }
+  //Styles for the number that counts up
+  .counter{
+    font-size: 3.5rem;
+    font-weight: 500;
+    font-family: font(fancy);
+    margin-bottom: 1rem;
+    color: color(primary,base);
+  }
+  //Styles for the text representing the item (I.E.: Coffee Drank, Products Sold, etc.)
+  .item{
+    font-weight: 600;
+    font-size: .95rem;
+    font-family: font(fancy);
+    color:color(gray,base);
+    margin:0;
+  }
+  // A hover effect
+  &:hover{
+    .icon{
+      @include transform(translate(0,-10px));
+    }
+  }
+}
+
+//Styles for the second counter style
+.rox-counter-card-2{
+  margin:2rem auto;
+  text-align: center;
+  //Styles for the icon
+  .icon{
+    color:color(white);
+    font-size: 2.4rem;
+    width:2.5em;
+    height:2.5em;
+    line-height: 2.5em;
+    background-color: color(primary,base);
+    @include radius(50%);
+    @include transform(tranlate(0,0));
+    @include transition(transform-transition(.3));
+  }
+  //Styles for the number that counts up
+  .counter{
+    color:color(primary,base);
+    font-family: font(fancy);
+    margin: 1.2rem 0;
+  }
+  //Styles for the text representing the item (I.E.: Coffee Drank, Products Sold, etc.)
+  .item{
+    font-size: .9rem;
+    font-family: font(fancy);
+    font-weight: 600;
+    color:color(gray,base);
+    margin:0;
+  }
+  // A hover effect
+  &:hover{
+    .icon{
+      @include transform(translate(0,-10px));
+    }
+  }
+}
+
+// Style changes in a dark parent
+.dark .rox-counter-card{
+  .item{
+    color: color(gray,light);
+  }
+}
+
+/* End of _counter.scss */

@@ -1,0 +1,51 @@
+//main : style.scss
+
+/* Start of _carousel.scss */
+
+// Custom styles to be applied to any Owl-Carousel element with the class '.rox-carousel'
+[class*="rox-carousel"]{
+  .owl-nav{
+    text-align: center;
+  }
+  .owl-prev, .owl-next{
+    font-size: .8rem;
+    height: 3em;
+    width: 3em;
+    background: rgba(color(primary,base),.4);
+    margin: 1em 1em;
+    color: color(white);
+    @include radius(50%);
+    @include transition(background-color .2s);
+    i{
+      @include transition(transform-transition(.3));
+    }
+    &.disabled{
+        background-color:color(gray,light);
+    }
+    &:hover{
+      &:not(.disabled){
+        background-color: color(primary,base);
+      }
+      &.disabled{
+        cursor: auto;
+      }
+    }
+    &:active{
+      &:not(.disabled){
+        background-color: color(primary,dark);
+      }
+      i{
+        @include transform(scale(.7,.7));
+      }
+    }
+  }
+  .owl-item{
+    //opacity: 0;
+    @include transition(opacity 1s);
+    &.active{
+      opacity: 1;
+    }
+  }
+}
+
+/* End of _carousel.scss */

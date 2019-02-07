@@ -1,0 +1,15 @@
+// main: style.scss
+
+/* Start of _clients.scss */
+// Helps with centering the logo
+.rox-client-logo{
+  height:100px;
+  line-height: 100px;
+  img{
+    line-height: 100px;
+    vertical-align: middle;
+    display: inline !important;
+  }
+}
+
+/* End of _clients.scss */

@@ -1,0 +1,21 @@
+//main: ../style.scss
+
+/* Start of variables/_type.scss */
+
+//Primary type faces used in the app. Change these to change the site-wide typeface
+$font:"Rubik", sans-serif;
+$font-header:"Open Sans", sans-serif;
+$font-fancy:"Quicksand", sans-serif;
+
+//Map of fonts to create a unified way to call fonts in other sass files. EX: font(normal)
+$fonts:(
+  normal: $font,
+  header: $font-header,
+  fancy: $font-fancy
+);
+
+//Function for calling a font
+@function font($font-name){
+  @return map-get($fonts,$font-name);
+}
+/* End of variables/_type.scss */

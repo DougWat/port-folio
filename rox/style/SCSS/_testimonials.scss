@@ -1,0 +1,45 @@
+// main : style.scss
+
+/* Start of _testimonials.scss */
+.rox-testi-card{
+  $IMAGE_SIZE: 100px;
+  // The Image
+  .rox-testi-image{
+    width:$IMAGE_SIZE;
+    height:$IMAGE_SIZE;
+    overflow: hidden;
+    margin: 0 auto;
+    @include radius(50%);
+    img{
+      display: block;
+      width: 100%;
+      height:auto;
+    }
+  }
+  //The name and subtitle
+  .rox-testi-info{
+    margin-top:1rem;
+    margin-bottom: 1rem;
+    text-align: center;
+    span{
+      margin-top: .3rem;
+      display: block;
+      font-size: .9em;
+      color: color(primary,base)
+    }
+  }
+  // The social links
+  .rox-testi-social{
+    *{font-size: 1.2rem;}
+    margin-bottom: 1rem;
+  }
+  //The quote text
+  p{
+    margin-left: auto;
+    margin-right: auto;
+    border-left: 2px solid color(primary,base);
+    padding-left: 10px;
+    max-width: 400px;
+  }
+}
+/* End of _testimonials.scss */

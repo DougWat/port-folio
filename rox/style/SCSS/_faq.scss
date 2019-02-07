@@ -1,0 +1,45 @@
+//main: ../style.scss
+
+/* Start of _faq.scss */
+.rox-faq{
+  $ICON_SCALE: 3rem; //The size of the icon.
+  max-width: 450px;
+  margin:2rem auto 0 auto;
+  position: relative;
+  padding:0rem 1rem 0rem $ICON_SCALE + 1rem;
+  &:first-of-type{
+    margin-top:0;
+  }
+  //The icon positioned to the left, with a background of the primary color
+  .icon{
+    height:$ICON_SCALE;
+    width:$ICON_SCALE;
+    line-height: $ICON_SCALE;
+    font-size: 1.5rem;
+    text-align: center;
+    position: absolute;
+    background-color: color(primary,base);
+    left:0;
+    color:color(white);
+  }
+  .answer{
+    margin:0;
+  }
+  .question{
+    margin-bottom:0;
+  }
+  hr{
+    margin-top:.5rem;
+  }
+}
+
+/* Dark Styling for the FAQ block */
+.dark{
+  .rox-faq{
+    hr{
+      background-color: color(primary,base);
+    }
+  }
+}
+
+/* End of _faq.scss */

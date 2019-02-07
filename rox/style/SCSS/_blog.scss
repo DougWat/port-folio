@@ -1,0 +1,384 @@
+//main: ../style.scss
+
+/*Start of blog.scss*/
+//Primary Blog Card style
+.rox-blog-card{
+  background-color: color(white);
+  max-width: 340px;
+  padding: 1rem;
+  margin: 10px auto;
+  @include box-shadow(0px,0px,30px,rgba(black,.2));
+
+  //The image included with the blog post
+  .image{
+    width:100%;
+    height: 200px;
+    position: relative;
+    overflow: hidden;
+    &:hover{
+      img{
+         @include transform(scale(1.1,1.1));
+      }
+    }
+    img{
+      width:100%;
+      @include transition(transform-transition(.2));
+    }
+  }
+
+  //The date marker at the top right corner of the blog image
+  .date{
+    $FONT_SIZE: .80rem; //The size of the text, as well as the size of the circle the text is contained in.
+
+    background-color: color(primary,base);
+    height:4.5em;
+    width:4.5em;
+    font-size: $FONT_SIZE;
+    text-align: center;
+    display: table;
+    position: absolute;
+
+    //Offsets the date container from the edge of the image
+    top:10px;
+    right:10px;
+
+    @include radius(50%);
+    *{
+      margin:0;
+      line-height: normal;
+    }
+
+    //Name of the month
+    p{
+      font-size: $FONT_SIZE;
+      color:color(white);
+
+      //Allow us to center the multi-lined text in the container
+      display: table-cell;
+      vertical-align: middle;
+    }
+
+    //Numerical date
+    span{
+      font-size: .85em;
+      display: block;
+    }
+  }
+
+  //The favorite button in the top left corner of the card
+  i.favorite, i.favorited{
+    cursor: pointer;
+    color: rgba(color(gray,base),.5);
+    font-size: 1.5rem;
+    position: absolute;
+    top:10px;
+    left: 10px;
+    @include transition(color .2s);
+    &:hover{
+      color: color(colors,red);
+    }
+  }
+
+  //Class of the icon representing a favorited post
+  //Defaults to display:none
+  i.favorited{
+    color: color(colors,red);
+    display: none;
+  }
+
+  //If the card itself has the class of '.favorited'
+  //The outlined icon is replaced with a solid icon,
+  //representing a favorited post.
+  &.favorited{
+    i.favorite{
+      display: none;
+    }
+    i.favorited{
+      display: inline;
+    }
+  }
+
+  //The main content of the Card
+  //containing meta date, title and subtitle of the post,
+  //and a snippet of the content of the post itself
+  .body{
+    padding: 0 .8rem;
+    text-align: center;
+    >*{
+      margin:.3rem 0;
+    }
+
+    //A list containing a collection of meta-data
+    //relating to the blog post.
+    .data{
+      li{
+        margin:0 1rem;
+      }
+      p{
+        margin-left: .4rem;
+        margin-bottom:0;
+        font-size: .7rem;
+        display: inline-block;
+      }
+      p,i{
+        color: color(gray,light);
+      }
+    }
+
+    //The title of the post
+    .title{
+      line-height: 1.5em;
+    }
+
+    //Optional subtitle, used as an author space.
+    .subtitle{
+      margin-top: -.6rem;
+      font-size: .8rem;
+      opacity: .8;
+      line-height: normal;
+    }
+
+    //Content of the blog post
+    .content{
+      text-align: left;
+      margin: 1rem 0;
+      font-size: .8rem;
+    }
+  }
+
+  //The end of the card
+  .foot{
+    padding: 0 .8rem 0rem .8rem;
+    >*{
+      display: inline-block;
+    }
+    .icon{
+      margin-right: .5rem;
+      font-size: .8rem;
+      color: color(gray,light);
+    }
+    .tags li{
+      margin: 0 .1rem;
+    }
+    .tags li a{
+      font-size: .75rem;
+      margin: 0 .1rem;
+      color: color(gray,light);
+      line-height: normal;
+      &::after{
+        content: ",";
+      }
+      &:hover{
+        color: color(gray,base);
+      }
+    }
+  }
+}
+
+//Conditions for the card if the parent element is set to dark.
+.dark .rox-blog-card{
+  background-color: lighten(color(gray,dark),3);
+
+  .data{
+    p,i{
+      //Changes the color of the meta data on a dark section
+      color: darken(color(gray,base),10);
+    }
+  }
+}
+
+.rox-blog-card-mini{
+  padding:5px;
+  margin-bottom: 5px;
+  position: relative;
+  @include transition(background-color .2s);
+  &:last-of-type{
+    margin-bottom: 0px;
+  }
+  &:hover{
+    background-color: rgba(color(gray,light),.2);
+  }
+  a{
+    position: absolute;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+  }
+  border: 1px solid color(gray,light);
+  @include radius(.2rem);
+  .image{
+    width: 50px;
+    height: 50px;
+    overflow: hidden;
+    margin-right: 10px;
+  }
+  .content{
+    p{
+      font-size: .8rem;
+      line-height: normal;
+      margin-bottom: .2rem;
+    }
+  }
+  .content,.image{
+    display: inline-block;
+    height:50px;
+    vertical-align: bottom;
+  }
+  .meta{
+    p{
+      display: inline-block;
+      font-size: .7rem;
+      margin-right: 10px;
+      color: color(gray,base);
+    }
+    i{
+      margin-right: 5px;
+    }
+  }
+  img{
+    width:50px;
+  }
+}
+
+.rox-blog-sidebar{
+  section{
+    margin-bottom: 2rem;
+  }
+  h6{
+    font-size: .9rem;
+    font-weight: 600;
+    margin-bottom: 0;
+  }
+  hr{
+    margin-top: .8rem;
+    background-color: color(primary,base);
+    opacity: .7;
+  }
+  a{
+    font-size: .8rem;
+    color: color(gray,base);
+    font-weight: 500;
+    font-family: font(header);
+    &:hover{
+      color: color(gray,dark);
+    }
+  }
+}
+
+.rox-blog-page-card{
+  margin-bottom: 3rem;
+  .image{
+    width:100%;
+    max-height: 500px;
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 2rem;
+    img{
+      width: 100%;
+      height:auto;
+    }
+    a{
+      position: absolute;
+      top:0;
+      bottom:0;
+      left:0;
+      right:0;
+    }
+  }
+  .head{
+    text-align: center;
+    margin: 0rem 0 1rem 0;
+  }
+  .meta{
+    p{
+      display: inline-block;
+      margin-right:1rem;
+      margin-bottom: 0;
+      font-size: .8rem;
+      color:color(gray,base);
+      &:last-of-type{
+        margin-right:0;
+      }
+    }
+    i{
+      margin-right:.4rem;
+    }
+  }
+  .title{
+    margin: 0;
+    font-weight: 600;
+    font-size: 1.4rem;
+    letter-spacing: .1rem;
+    font-family: font(header);
+  }
+  .author{
+    margin: -.2rem 0 0 0;
+    font-size: .8rem;
+  }
+  .tags{
+    >*{
+      display: inline-block;
+    }
+    .icon{
+      color: color(gray,base);
+    }
+    li{
+      margin:0 0 0 .5rem;
+    }
+    a{
+      color:color(gray,base);
+      font-size: .8rem;
+      &::after{
+        content: ',';
+      }
+      &:hover{
+        color: color(gray,dark);
+      }
+    }
+  }
+  hr{
+    border: 0;
+    border-bottom: 1px dashed color(gray,light);
+    background: rgba(0,0,0,0);
+  }
+}
+
+.rox-blog-comments{
+  margin-bottom: 3rem;
+  .rox-comment{
+    .author-image{
+      height: 80px;
+      width: 80px;
+      float: left;
+      overflow: hidden;
+      @include radius(50%);
+      img{
+        width:100%;
+      }
+    }
+    .body{
+      margin-left: 100px;
+      p{
+        margin-bottom: .4rem;
+      }
+      .reply{
+        margin-left: .5rem;
+        color: color(primary,base);
+      }
+    }
+  }
+  .nested-comment{
+    padding-left: 0;
+    .rox-comment{
+      .author-image{
+        margin-left:-50px;
+      }
+      .body{
+        margin-left: 50px;
+      }
+    }
+  }
+}
+
+/*End of blog.scss*/

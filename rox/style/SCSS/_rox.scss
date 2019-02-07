@@ -1,0 +1,330 @@
+//main: ../style.scss
+
+/* Start of _rox.scss */
+
+//Padding and positional styles for each individual section tag
+section.rox{
+  padding: $rox-section-padding-default 0;
+  position: relative;
+  overflow: hidden;
+  &.p-small{
+    padding: $rox-section-padding-small 0;
+  }
+  &.p-large{
+    padding: $rox-section-padding-large 0;
+  }
+  &.p-xsmall{
+    padding: $rox-section-padding-xsmall 0;
+  }
+  &.p-none{
+    padding:0 !important;
+  }
+}
+
+//Default, reset button styles. Removed the outline from non-rox buttons
+button{
+  border: none;
+  cursor: pointer;
+  &:focus{
+    outline:none;
+  }
+}
+
+//Styles relating to unordered lists
+
+ul.no-style{
+  //'.no-styles' class removed all bullet points and margins from list
+  margin:0;
+  padding:0;
+  list-style: none;
+}
+ul.list-inline-all{
+  //'.list-inline-all' forces all children of the list to be inline.
+  margin:0;
+  padding:0;
+  list-style: none;
+  li{
+    display: inline-block;
+    margin:.5em;
+  }
+}
+
+//Styles pertaining to the rox-line class
+//Creates a line under the element with the class
+
+//Mixin for other styles that look to impliment the line class, and would like interaction.
+@mixin roxLineHover{
+  [class*='rox-line']{
+    &.rox-line-left, &.rox-line{
+      &::after{
+        width:100%;
+      }
+    }
+    &.rox-line-right{
+      &::after{
+        width:100%;
+        margin-left: 0%;
+      }
+    }
+    &.rox-line-center{
+      &::after{
+        width:100%;
+      }
+    }
+  }
+}
+
+[class*='rox-line']{
+  &::after{
+    content:" ";
+    display: block;
+    height:1px;
+    margin-top:.3rem;
+    background-color: color(primary, base);
+    @include transition(width .3s, margin .3s);
+  }
+  &.rox-line-left, &.rox-line{
+    &::after{
+      width:0%;
+    }
+  }
+  &.rox-line-right{
+    &::after{
+      width: 0%;
+      margin-left: 100%;
+    }
+  }
+  &.rox-line-center{
+    &::after{
+      width:0%;
+      margin-left:auto;
+      margin-right:auto;
+    }
+  }
+}
+.row:not(:first-child){
+  margin-top: 2rem;
+}
+
+//Will add a dashed circle around the text element this class is applied to
+.rox-circle{
+  $size: 3.2em;
+  height:$size;
+  width:$size;
+  line-height: $size;
+  margin-left: auto;
+  margin-right: auto;
+  @include radius(50%);
+  border: 1px dashed color(gray,base);
+  text-align: center;
+  @include transition(background-color .3s, color .3s, border-color .3s);
+}
+
+//Variable Opacities
+@for $i from 0 through 10{
+  .opacity-#{$i}{
+    opacity: $i / 10 !important;
+  }
+}
+
+//Formats the tagged text as a quote
+.quote{
+  position: relative;
+  font-style: italic;
+  &::before{
+    content:"\"";
+    position: absolute;
+    top:0;
+    left:-2rem;
+    font-size:  3rem;
+    color: color(primary,base);
+  }
+}
+
+
+@for $i from 1 through 10{
+  h#{$i}{
+    margin-bottom: 2.2rem - (.2 * $i);
+  }
+
+  h#{$i} + .rox-subtitle{
+    margin-top: -((2.2rem - (.2 * $i)) - .4);
+  }
+
+  .w-max-#{$i * 100}{
+    max-width: 100px * $i !important;
+  }
+  .h-max-#{$i * 100}{
+    max-height: 100px * $i !important;
+  }
+}
+[class*='w-max']{
+  width:100%;
+}
+[class*='h-max']{
+  height:100%;
+}
+.center{
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+
+.v-center{
+  display: table;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  .v-center-child{
+    display: table-cell;
+    vertical-align: middle;
+  }
+}
+
+//Logo versions dependent on the color of the parent element
+section.rox:not(.dark){
+  .logo-dark{
+    display: none !important;
+  }
+}
+
+.dark{
+  .logo-light{
+    display:none !important;
+  }
+}
+
+// Classes for defining elements that only appear in a dark or a light section
+// '.show-dark' will only appear in a dark section
+// '.show-light' will only appear in a light section
+section.rox:not(.dark){
+  .show-dark{
+    display: none !important;
+  }
+}
+
+.dark{
+  .show-light{
+    display: none !important;
+  }
+}
+
+//Styles for a debug block that switches the sections of a page between light and dark
+.rox-debug-dark-switch{
+  font-size: 1.8rem;
+  padding: .35em 1em;
+  color: color(primary,base);
+  position: fixed;
+  text-align: center;
+  z-index: 1000;
+  top:0;
+  background-color: lighten(color(gray,dark),15);
+  @include box-shadow(5px,5px,20px,rgba(black,.3));
+  @include transition(color .3s, background-color .3s);
+  &:hover{
+    background-color: color(gray,dark);
+  }
+  &.on{
+    color:color(gray,dark);
+    background-color:color(primary,light);
+  }
+}
+
+//Social styles
+ul.social{
+  $SIZE:34px;
+  a{
+    height: $SIZE;
+    width:$SIZE;
+    line-height: $SIZE;
+    display: block;
+    background-color: color(gray,dark);
+    color: color(white);
+    @include transition(color .3s, background-color .3s);
+    &:hover{
+      background-color: color(primary,base) !important;
+    }
+  }
+  &.circle{
+    a{
+      @include radius(50%);
+    }
+  }
+}
+
+//Dark social styles
+.dark ul.social{
+  a{
+    background-color: lighten(color(gray,dark),5);
+  }
+}
+
+.max{
+  width:100% !important;
+}
+
+pre{
+  background-color: color(gray,dark);
+  color:color(white);
+  white-space:pre-wrap;
+  code{
+    white-space: pre;
+  }
+}
+
+// Styles for pagination
+.rox-pagination{
+  font-size: 0;
+  text-align: center;
+  a,p{
+    min-width: 40px;
+    padding:0 .6rem;
+    border-top: 1px solid;
+    border-bottom: 1px solid;
+    border-color: color(gray,light);
+    border-left: 1px solid rgba(color(gray,light),.5);
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    display: inline-block;
+    @include transition(background-color .2s, color .2s);
+    &:first-child{
+      border-left: 1px solid;
+      border-color: color(gray,light);
+      @include radius(.3rem 0 0 .3rem);
+    }
+    &:last-child{
+      border-right: 1px solid color(gray,light);
+      @include radius(0 .3rem .3rem 0);
+    }
+  }
+  a{
+    &:hover,&.current{
+      background-color: rgba(color(gray,light),.2);
+    }
+  }
+}
+
+@media (max-width: 767.98px){
+  .rox-pagination{
+    a,p{
+      min-width: 25px;
+      font-size: .8rem;
+    }
+  }
+}
+
+.dark .rox-pagination{
+ a,p{
+   border-color: lighten(color(gray,dark),10);
+ }
+ a{
+   &:hover,&.current{
+     background-color: rgba(black,.2);
+   }
+ }
+}
+
+
+/* End of _rox.scss */

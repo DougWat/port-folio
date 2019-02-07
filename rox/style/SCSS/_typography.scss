@@ -1,0 +1,115 @@
+//main: ../style.scss
+
+/* Start of _typography */
+
+*{
+  font-family: font(normal);
+}
+
+// Default header styles
+h1,h2,h3,h4,h5,h6{
+  font-family: font(header);
+  letter-spacing: .1rem;
+  color: color(gray,dark);
+}
+
+// SASS loop for defining header sizes
+@for $i from 1 through 6{
+  h#{$i}{
+    margin-bottom: 2.2rem - (.2 * $i);
+  }
+
+  h#{$i} + .rox-subtitle{
+    margin-top: -((2.2rem - (.2 * $i)) - .4);
+  }
+}
+
+// Default styles for <p> <a> and <li> elements
+p,a,li,input,label,textarea, option,select{
+  font-size: .9rem;
+  font-family: font(normal);
+  line-height: 1.7rem;
+  letter-spacing: .03rem;
+  font-weight: 300;
+}
+// Default color for <p> and <li> elements
+p,li,label,option{
+  color: darken(color(gray,base),20);
+}
+// Default color and hover effects to <a> elements
+a{
+  color: color(primary,base);
+  @include transition(color .3s);
+  &:hover{
+    color: color(primary,dark);
+    text-decoration: none;
+  }
+}
+
+// Dark styles for text
+.dark{
+  h1,h2,h3,h4,h5,h6{
+    color:color(white);
+    font-weight: 400;
+  }
+  p,li{
+    color:color(gray,base);
+    font-weight: 300;
+  }
+}
+
+// SASS Loop to define helper classes for text sizes
+@for $i from 1 through 20{
+  .font-size-#{$i}{
+    font-size: ($i * .1) + .6rem !important;
+  }
+}
+
+@for $i from 1 through 5{
+  .huge-#{$i}{
+    font-size: 6rem + abs(6rem - $i);
+  }
+}
+
+// Font-family class styles
+.font-header{
+  font-family: font(header) !important;
+}
+.font-normal{
+  font-family: font(normal) !important;
+}
+.font-fancy{
+  font-family: font(fancy) !important;
+}
+
+// Text outline classes
+.rox-outline-primary{
+  @include text-outline(color(primary,base));
+}
+.rox-outline-white{
+  @include text-outline(color(white));
+}
+.rox-outline-dark{
+  @include text-outline(color(gray,dark));
+}
+
+// Classes for setting text color
+.clr-primary{
+  color: color(primary,base) !important;
+}
+.clr-white{
+  color: color(white) !important;
+}
+.clr-gray-light{
+  color: color(gray,light) !important;
+}
+
+.rox-subtitle{
+  line-height: normal;
+  color:color(primary,base) !important;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-family: font(header);
+}
+
+/* End of _typeography */

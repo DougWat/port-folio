@@ -1,0 +1,82 @@
+//main: ../style.scss
+
+/* Start of team.scss */
+.rox-team-card{
+  max-width: 250px; // Make the card wider by changing this
+  margin:2rem auto;
+  text-align: center;
+  background-color: color(white);
+  @include box-shadow(0px,0px,25px,rgba(0,0,0,.2));
+  .image{
+    height:250px; //Make the image bigger or smaller by changing this
+    overflow:hidden;
+    position: relative;
+  }
+  img{
+    width:100%;
+  }
+  // Defines padding on the main body
+  .body{
+    padding:1rem;
+  }
+  // The member's job title, or just a subtitle if you would like
+  .title{
+    font-size: .8rem;
+    color:color(primary,base);
+    display: block;
+    margin-top:.3rem;
+  }
+  //A Short bio
+  .desc{
+    line-height: 1.8em;
+    font-size: .75rem;
+  }
+  //The social media links
+  //Social media links are hidden until the card is scrolled over.
+  //On smaller displays, links are revealed by default.
+  .social{
+    $SIZE: 32px;//Change this to make the circles smaller. may have to modify font-size as well.
+    position: absolute;
+    width: 100%;
+    bottom:-$SIZE;
+    @include transition(bottom .3s);
+    li{
+      margin-top:0;
+      margin-bottom:0;
+    }
+    a{
+      height: $SIZE;
+      width: $SIZE;
+      line-height: $SIZE;
+      font-size: .8rem;
+      background-color: color(gray,base);
+      color:color(white);
+      display: block;
+      @include transition(background-color .2s, color .2s);
+      @include radius(50%);
+      &:hover{
+        background-color: color(primary,base);
+      }
+    }
+  }
+  //Hovering over the card will reveal social media links
+  &:hover{
+    .social{
+      bottom: 10px;
+    }
+  }
+}
+.dark{
+  .rox-team-card{
+    background-color: lighten(color(gray,dark),2);
+  }
+}
+//Media query for revealing social links by default on smaller screens
+@media (max-width: 991.98px) {
+  .rox-team-card{
+    .social{
+      bottom: 10px !important;
+    }
+  }
+}
+/* End of team.scss */

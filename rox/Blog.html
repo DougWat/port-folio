@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>ROX&</title>
+    <!-- FONT AWESOME -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+    <!-- STROKE GAP FONT ICONS -->
+    <link rel="stylesheet" href="./style/font_icons/stroke_gap_icons.css">
+    <!-- BOOTSTRAP -->
+    <link rel="stylesheet" href="./style/bootstrap/bootstrap.min.css" >
+    <!-- OWL CAROUSEL -->
+    <link rel="stylesheet" href="./style/owl_carousel/owl.carousel.min.css">
+    <!-- ANIMATE.CSS -->
+    <link rel="stylesheet" href="./style/animate/animate.css">
+    <!-- MAIN STYLE -->
+    <link rel="stylesheet" href="./style/style.css">
+    <!-- DEVICE SCALING -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  </head>
+  <body>
+    <!-- Start Of Pre-Loader -->
+    <section class="rox-loader">
+      <div class="loader">
+        <div class="pulse"></div>
+      </div>
+      <div class="loader-left"></div>
+      <div class="loader-right"></div>
+    </section>
+    <!-- End Of Pre-Loader -->
+
+    <!-- Start Of Navbar -->
+    <!-- A class of sticky along with data-sticky="true" forces the header to stick to the top of the page. -->
+    <!-- Remove the class and the data variable to make the header block based  -->
+    <section class="rox rox-navbar-01 dark sticky" data-sticky="true">
+      <!-- Optional background texture -->
+      <!-- <i class="background repeat opacity-6" style="background-image:url(./resources/patterns/pattern_dark_02.png)"></i> -->
+      <div class="container">
+        <nav>
+          <!-- The Brand image and link -->
+          <a href="#" class="brand">
+            <div>
+              <!-- Dark and light brand images are defined here. -->
+              <img src="./resources/logo/logo.png" alt="" class="show-light">
+              <img src="./resources/logo/logo-dark.png" alt="" class="show-dark">
+            </div>
+          </a>
+          <!-- Mobile dropdown bars, will only display in mobile mode -->
+          <a class="mobile"><i class="fas fa-bars"></i></a>
+          <!-- A list of links -->
+          <!-- This list is justified right -->
+          <!-- change the class to 'left' to justify the content left -->
+          <!-- Rearrange, copy, or remove the following <li>s as you please-->
+          <ul class="right">
+            <!-- A simple link -->
+            <li>
+              <a href="#">Link</a>
+            </li>
+            <!-- A dropdown link with icons-->
+            <li>
+              <a href="#">Dropdown Icons <i class="fas fa-chevron-down"></i></a>
+              <div class="sub">
+                <ul>
+                  <!-- Dropdown menu items -->
+                  <!-- Add as many as you need -->
+                  <li><a href="#"><i class="fas fa-users icon"></i>Item</a></li>
+                  <li><a href="#"><i class="fas fa-users icon"></i>Item</a></li>
+                  <li><a href="#"><i class="fas fa-users icon"></i>Item</a></li>
+                </ul>
+              </div>
+            </li>
+            <!-- A dropdown link -->
+            <li><a href="#">Dropdown <i class="fa fa-chevron-down"></i></a>
+              <div class="sub">
+                <ul>
+                  <!-- Dropdown menu items -->
+                  <!-- Add as many as you need -->
+                  <li><a href="#">Item</a></li>
+                  <li><a href="#">Item</a></li>
+                  <li><a href="#">Item</a></li>
+                </ul>
+              </div>
+            </li>
+            <!-- A search box -->
+            <li>
+              <div class="rox-input-icon-search">
+                <input type="text" name="" value="" class="rox-input" placeholder="Search">
+              </div>
+            </li>
+            <!-- Divider -->
+            <li class="divider">
+            </li>
+            <!-- Button -->
+            <li>
+              <a class="rox-button-outline-small" href="https://www.themesnap.com/html-css-templates/rox-multipurpose-bootstrap-landing-page.html">DOWNLOAD</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </section>
+    <!-- End Of Navbar -->
+
+    <!-- A simple hero -->
+    <!-- This can be replace with any other included hero style -->
+    <section class="rox rox-hero-50 dark">
+      <i class="background opacity-3 fixed" style="background-image: url(./resources/backgrounds/bg_13.jpg)"></i>
+      <section class="center">
+        <div class="container">
+          <div class="col-12 col-lg-12 text-center">
+            <h2 class="display-3 font-fancy mb-0">Rox<span class="clr-primary">&</span> Blog</h2>
+          </div>
+        </div>
+      </section>
+    </section>
+
+    <!-- Start of Main Blog -->
+    <section class="rox">
+      <div class="container">
+        <div class="row row justify-content-between">
+          <!-- Start of Blog Content -->
+          <div class="col-12 col-md-9 col-lg-8 rox-blog-content">
+            <!-- Pagination -->
+            <div class="rox-pagination mb-4">
+              <!-- Pagination is a simple set of anchors with links -->
+              <a href="#">Prev</a>
+              <a href="#" class="current">1</a> <!-- The current page is denoted with the '.current' class -->
+              <a href="#">2</a>
+              <a href="#" class="d-none d-sm-inline-block">3</a> <!-- Some pages will only fit on larger sized screens. This link will display on 'small' screens and above -->
+              <a href="#" class="d-none d-sm-inline-block">4</a>
+              <p>...</p> <!-- Denotes a break in the link set, traditionally followed by links to the last few pages -->
+              <a href="#">9</a>
+              <a href="#">Next</a>
+            </div>
+            <!-- End of Pagination -->
+
+            <!-- A Single Blog Card -->
+            <div class="rox-blog-page-card">
+              <!-- The post's image -->
+              <div class="image">
+                <img src="./resources/blog/blog_01.jpg" alt="">
+                <a href="#"></a>
+              </div>
+              <!-- The post's header, containing a title, author, and some meta data -->
+              <div class="head">
+                <a href="#" class="title">The Title Of The Post</a>
+                <p class="author">By Srimbo Scrumbo</p>
+                <div class="meta">
+                  <p><i class="fas fa-calendar"></i>5/20/18</p>
+                  <p><i class="fas fa-comments"></i>23 Comments</p>
+                </div>
+              </div>
+              <!-- The main preview content -->
+              <div class="body">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <a href="#" class="read-more">Read More</a>
+              </div>
+              <hr>
+              <!-- A collection of tags -->
+              <div class="tags">
+                <i class="fas fa-tags icon"></i>
+                <ul class="no-style list-inline-all">
+                  <!-- Tags are contained in an unordered list, each tag being an anchor contained inside a list item -->
+                  <li><a href="#">This</a></li>
+                  <li><a href="#">Is A</a></li>
+                  <li><a href="#">Set Of</a></li>
+                  <li><a href="#">Tags</a></li>
+                </ul>
+              </div>
+            </div>
+            <!-- End Of A Single Blog Card -->
+
+            <div class="rox-blog-page-card">
+              <div class="image">
+                <img src="./resources/blog/blog_02.jpg" alt="">
+                <a href="#"></a>
+              </div>
+              <div class="head">
+                <a href="#" class="title">The Title Of The Post</a>
+                <p class="author">By Srimbo Scrumbo</p>
+                <div class="meta">
+                  <p><i class="fas fa-calendar"></i>5/20/18</p>
+                  <p><i class="fas fa-comments"></i>23 Comments</p>
+                </div>
+              </div>
+              <div class="body">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <a href="#" class="read-more">Read More</a>
+              </div>
+              <hr>
+              <div class="tags">
+                <i class="fas fa-tags icon"></i>
+                <ul class="no-style list-inline-all">
+                  <li><a href="#">This</a></li>
+                  <li><a href="#">Is A</a></li>
+                  <li><a href="#">Set Of</a></li>
+                  <li><a href="#">Tags</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="rox-blog-page-card">
+              <div class="image">
+                <img src="./resources/blog/blog_03.jpg" alt="">
+                <a href="#"></a>
+              </div>
+              <div class="head">
+                <a href="#" class="title">The Title Of The Post</a>
+                <p class="author">By Srimbo Scrumbo</p>
+                <div class="meta">
+                  <p><i class="fas fa-calendar"></i>5/20/18</p>
+                  <p><i class="fas fa-comments"></i>23 Comments</p>
+                </div>
+              </div>
+              <div class="body">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <a href="#" class="read-more">Read More</a>
+              </div>
+              <hr>
+              <div class="tags">
+                <i class="fas fa-tags icon"></i>
+                <ul class="no-style list-inline-all">
+                  <li><a href="#">This</a></li>
+                  <li><a href="#">Is A</a></li>
+                  <li><a href="#">Set Of</a></li>
+                  <li><a href="#">Tags</a></li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- Bottom Pagination -->
+            <div class="rox-pagination mt-4 mb-4 mb-md-0">
+                <a href="#">Prev</a>
+                <a href="#" class="current">1</a>
+                <a href="#">2</a>
+                <a href="#" class="d-none d-sm-inline-block">3</a>
+                <a href="#" class="d-none d-sm-inline-block">4</a>
+                <p>...</p>
+                <a href="#">9</a>
+                <a href="#">Next</a>
+            </div>
+          </div>
+          <!-- End of Blog Content -->
+
+          <!-- Start of Sidebar -->
+          <div class="col-12 d-md-block col-md-3 col-lg-3">
+            <div class="rox-blog-sidebar">
+              <!-- Sidebar segments are seperated by sections -->
+              <!-- The sections can contain most HTML elements -->
+              <section>
+                <div class="rox-input-icon-search max m-0">
+                  <input type="search" name="" value="" class="rox-input max" placeholder="Search">
+                </div>
+              </section>
+              <section>
+                <h6>Recent Posts</h6>
+                <hr>
+                <ul class="no-style">
+                  <li><a href="#">5 Things You Didn't Know</a></li>
+                  <li><a href="#">How I Got Out Of That Hole</a></li>
+                  <li><a href="#">I'm Scared Of Rabbits And This Is Why</a></li>
+                  <li><a href="#">Who Ate My Turnips?</a></li>
+                </u>
+              </section>
+              <section>
+                <h6>Archives</h6>
+                <hr>
+                <ul class="no-style">
+                  <li><a href="#">June 2018</a></li>
+                  <li><a href="#">May 2018</a></li>
+                  <li><a href="#">April 2018</a></li>
+                </u>
+              </section>
+              <section>
+                <h6>Popular Tags</h6>
+                <hr>
+                <ul class="no-style">
+                  <li><a href="#">Web Design</a></li>
+                  <li><a href="#">HTML</a></li>
+                  <li><a href="#">Template</a></li>
+                </u>
+              </section>
+              <section>
+                <h6>Admin</h6>
+                <hr>
+                <ul class="no-style">
+                  <li><a href="#">Login</a></li>
+                  <li><a href="#">RSS</a></li>
+                  <li><a href="#">CMS</a></li>
+                </u>
+              </section>
+            </div>
+          </div>
+          <!-- End of Sidebar -->
+        </div>
+      </div>
+    </section>
+    <!-- End of Main Blog -->
+
+    <!-- Start of Footer 1-->
+    <section class="rox rox-footer p-small dark">
+      <!-- Optional Image Background -->
+      <!-- <i class="background fixed" style="background-image: url(BACKGROUND_URL)"></i> -->
+      <!-- Optional Video Background -->
+      <!-- <video class="background opacity-2" src="VIDEO URL" autoplay muted loop></video> -->
+      <footer>
+        <div class="container">
+          <div class="row">
+            <div class="col-12 text-center">
+              <!-- Two logo images, one shows if the section is dark, and one shows if the section is light -->
+              <img src="./resources/logo/logo-dark.png" alt="" class="mb-3 logo-dark small">
+              <img src="./resources/logo/logo.png" alt="" class="mb-3 logo-light small">
+              <!-- Social Media Links -->
+              <!-- These are examples -->
+              <!-- Add more, or remove as needed -->
+              <ul class="list-inline-all social circle mb-3">
+                <li><a href="#"> <i class="fab fa-facebook-f"></i></a></li>
+                <li><a href="#"> <i class="fab fa-twitter"></i></a></li>
+                <li><a href="#"> <i class="fab fa-google-plus-g"></i></a></li>
+                <li><a href="#"> <i class="fab fa-linkedin-in"></i></a></li>
+              </ul>
+              <!-- Copyright -->
+              <p class="small">© 2018 Extropy Design. ALL RIGHTS RESERVED.</p>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </section>
+    <!-- End of Footer 1-->
+
+    <!-- //////////////////////////////////////////////////////////////////// -->
+    <!-- Start of Javascript -->
+    <!-- //////////////////////////////////////////////////////////////////// -->
+
+    <!-- JQUERY -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <!-- PAGE LOADER -->
+    <script src="./js/loader.js" type="text/javascript"></script>
+
+    <!-- NAVBAR -->
+    <script src="./js/navbar.js"type="text/javascript"></script>
+
+    <!-- WAYPOINTS -->
+    <script type="text/javascript" src="./js/waypoints.min.js"></script>
+
+    <!-- COUNTER UP -->
+    <script type="text/javascript" src="./js/counterup.min.js"></script>
+
+    <!-- SCROLL REVEAL -->
+    <script src="./js/scrollreveal.min.js"></script>
+    <script type="text/javascript" src="./js/scrollreveal.custom.js"></script>
+
+    <!-- OWL CAROUSEL -->
+    <script type="text/javascript" src="./js/owl.carousel.min.js"></script>
+
+    <!-- CUSTOM CAROUSEL -->
+    <script type="text/javascript" src="./js/carousel.js"></script>
+
+    <!-- GOOGLE MAPS -->
+    <!-- edit map.js to change map location -->
+    <script src="./js/map.js" type="text/javascript"></script>
+    <!-- REMINDER: CHANGE API KEY -->
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=*YOUR API KEY HERE*&callback=initMap"></script>
+
+    <!-- ROX& SCRIPTS -->
+    <script src="./js/rox.js" type="text/javascript"></script>
+
+    <!-- End of Javascript -->
+  </body>
+</html>
